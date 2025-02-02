@@ -1,7 +1,7 @@
 # RustSec Advisory Database
 
 [![Build Status][build-image]][build-link]
-![Maintained: Q1 2023][maintained-image]
+![Maintained: Q1 2024][maintained-image]
 [![Project Chat][chat-image]][chat-link]
 
 The RustSec Advisory Database is a repository of security advisories filed
@@ -12,7 +12,7 @@ We also [export](https://github.com/rustsec/advisory-db/tree/osv) data to the [O
 All our data is available on [osv.dev](https://osv.dev/list?ecosystem=crates.io&q=)
 and through their [API](https://osv.dev/#use-the-api).
 
-[Github Advisory Database](https://github.com/advisories/) imports our advisories.
+[GitHub Advisory Database](https://github.com/advisories/) imports our advisories.
 
 The following tools consume this advisory database and can be used for auditing
 and reporting (send PRs to add yours):
@@ -28,6 +28,8 @@ and reporting (send PRs to add yours):
 
 To report a new vulnerability, open a pull request using the template below.
 See [CONTRIBUTING.md] for more information.
+
+See [HOWTO_UNMAINTAINED.md] before filing an advisory for an unmaintained crate.
 
 <a href="https://github.com/RustSec/advisory-db/blob/main/CONTRIBUTING.md">
   <img alt="Report Vulnerability" width="250px" height="60px" src="https://rustsec.org/img/report-vuln-button.svg">
@@ -60,13 +62,14 @@ date = "2021-01-31"
 #withdrawn = "YYYY-MM-DD"
 
 # URL to a long-form description of this issue, e.g. a GitHub issue/PR,
-# a change log entry, or a blogpost announcing the release (optional)
+# a change log entry, or a blogpost announcing the release (optional, except
+# for advisories using a license that requires attribution).
 url = "https://github.com/mystuff/mycrate/issues/123"
 
 # URL to additional helpful references regarding the advisory (optional)
 #references = ["https://github.com/mystuff/mycrate/discussions/1"]
 
-# Optional: Indicates the type of informational security  advisory
+# Optional: Indicates the type of informational security advisory
 #  - "unsound" for soundness issues
 #  - "unmaintained" for crates that are no longer maintained
 #  - "notice" for other informational notices
@@ -91,6 +94,13 @@ keywords = ["ssl", "mitm"]
 # e.g. CVE for a C library wrapped by a -sys crate)
 #related = ["CVE-2018-YYYY", "CVE-2018-ZZZZ"]
 
+# Optional: the advisory license as an SPDX identifier. The default is "CC0-1.0".
+# Accepted values are "CC0-1.0" and "CC-BY-4.0".
+# When using "CC-BY-4.0", the `url` field must contain the link to the source
+# advisory. This should only be used for advisories imported for the GitHub
+# Advisory database ("GHSA").
+#license = "CC-BY-4.0"
+
 # Optional: metadata which narrows the scope of what this advisory affects
 [affected]
 # CPU architectures impacted by this vulnerability (optional).
@@ -112,7 +122,8 @@ keywords = ["ssl", "mitm"]
 # name (e.g. if the function was renamed between versions). 
 # The path syntax is `cratename::path::to::function`, without any
 # parameters or additional information, followed by a list of version reqs.
-functions = { "mycrate::MyType::vulnerable_function" = ["< 1.2.0, >= 1.1.0"] }
+[affected.functions]
+"mycrate::MyType::vulnerable_function" = ["< 1.2.0, >= 1.1.0"]
 
 # Versions which include fixes for this vulnerability (mandatory)
 # All selectors supported by Cargo are supported here:
@@ -129,15 +140,21 @@ The above [TOML] "front matter" is followed by the long description in [Markdown
 
 ## License
 
-All content in this repository is placed in the public domain.
+All content in this repository is placed in the public domain, except otherwise specified.
 
-[![Public Domain](http://i.creativecommons.org/p/zero/1.0/88x31.png)](https://github.com/RustSec/advisory-db/blob/main/LICENSE.txt)
+[![Public Domain](http://i.creativecommons.org/p/zero/1.0/88x31.png)](https://github.com/RustSec/advisory-db/blob/main/LICENSES/CC0-1.0.txt)
+
+The exceptions are advisories imported from [GitHub Advisory Database](https://docs.github.com/en/site-policy/github-terms/github-terms-for-additional-products-and-features#advisory-database),
+placed under CC-BY 4.0 license.
+They contain a `license` field explicitly indicating their license and a `url` field pointing to the original advisory for proper attribution.
+
+[![Creative Commons Attribution](https://licensebuttons.net/l/by/4.0/88x31.png)](https://github.com/RustSec/advisory-db/blob/main/LICENSES/CC-BY-4.0.txt)
 
 [//]: # (badges)
 
 [build-image]: https://github.com/rustsec/advisory-db/workflows/Validate/badge.svg
 [build-link]: https://github.com/rustsec/advisory-db/actions
-[maintained-image]: https://img.shields.io/maintenance/yes/2023.svg
+[maintained-image]: https://img.shields.io/maintenance/yes/2025.svg
 [chat-image]: https://img.shields.io/badge/zulip-join_chat-blue.svg
 [chat-link]: https://rust-lang.zulipchat.com/#narrow/stream/146229-wg-secure-code/
 
@@ -151,3 +168,4 @@ All content in this repository is placed in the public domain.
 [trivy]: https://aquasecurity.github.io/trivy/
 [dependabot]: https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/about-dependabot-security-updates
 [CONTRIBUTING.md]: https://github.com/RustSec/advisory-db/blob/main/CONTRIBUTING.md
+[HOWTO_UNMAINTAINED.md]: ./HOWTO_UNMAINTAINED.md
