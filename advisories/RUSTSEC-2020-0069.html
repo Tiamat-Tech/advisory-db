@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/lettre/RUSTSEC-2020-0069.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/lettre/RUSTSEC-2020-0069.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/lettre/RUSTSEC-2020-0069.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0069">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           November 11, 2020
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -145,16 +146,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-vc2p-r46x-m3vx">GHSA-vc2p-r46x-m3vx</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/lettre/lettre/pull/508/commits/bbe7cc5381c5380b54fb8bbb4f77a3725917ff0b">
-          https://github.com/lettre/lettre/pull/508/commits/bbe7cc5381c5380b54fb8bbb4f77a3725917ff0b
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/lettre/lettre/pull/508/commits/bbe7cc5381c5380b54fb8bbb4f77a3725917ff0b">
+              https://github.com/lettre/lettre/pull/508/commits/bbe7cc5381c5380b54fb8bbb4f77a3725917ff0b
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -174,7 +188,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -204,7 +218,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N</a></dd>
+      
 
       
 
@@ -213,13 +230,13 @@
         
         <ul>
           
-          <li><code>&gt;=0.10.0-alpha.4</code></li>
+          <li><code>&#62;=0.10.0-alpha.4</code></li>
           
-          <li><code>&lt;0.10.0-alpha.1, &gt;=0.9.5</code></li>
+          <li><code>&#60;0.10.0-alpha.1, &#62;=0.9.5</code></li>
           
-          <li><code>&lt;0.9.0, &gt;=0.8.4</code></li>
+          <li><code>&#60;0.9.0, &#62;=0.8.4</code></li>
           
-          <li><code>&lt;0.8.0, &gt;=0.7.1</code></li>
+          <li><code>&#60;0.8.0, &#62;=0.7.1</code></li>
           
         </ul>
         
@@ -230,7 +247,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.7.0</code></li>
+          <li><code>&#60;0.7.0</code></li>
           
         </ul>
       </dd>
@@ -253,7 +270,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.10.0-alpha.1</code></li>
+          <li><code>&#60;0.10.0-alpha.1</code></li>
           
         </ul>
       </dd>
@@ -262,7 +279,7 @@
       <dd>
         <ul>
           
-          <li><code>&gt;=0.10.0-alpha.1, &lt;=0.10.0-alpha.3</code></li>
+          <li><code>&#62;=0.10.0-alpha.1, &#60;=0.10.0-alpha.3</code></li>
           
         </ul>
       </dd>
@@ -271,7 +288,7 @@
       <dd>
         <ul>
           
-          <li><code>&gt;=0.10.0-alpha.1, &lt;=0.10.0-alpha.3</code></li>
+          <li><code>&#62;=0.10.0-alpha.1, &#60;=0.10.0-alpha.3</code></li>
           
         </ul>
       </dd>
@@ -294,5 +311,11 @@ before passing the destination addresses.</p>
 affected.</p>
 <p>This vulnerability was reported by vin01.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

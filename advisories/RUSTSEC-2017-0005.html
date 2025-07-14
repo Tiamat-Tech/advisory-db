@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/cookie/RUSTSEC-2017-0005.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/cookie/RUSTSEC-2017-0005.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/cookie/RUSTSEC-2017-0005.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2017-0005">JSON (OSV)</a>
         </span>
     
 
@@ -83,12 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2020-10-02">
-          October  2, 2020
+        <time datetime="2020-10-01">
+          October  1, 2020
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -132,16 +133,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-vjrq-cg9x-rfjp">GHSA-vjrq-cg9x-rfjp</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/alexcrichton/cookie-rs/pull/86">
-          https://github.com/alexcrichton/cookie-rs/pull/86
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/alexcrichton/cookie-rs/pull/86">
+              https://github.com/alexcrichton/cookie-rs/pull/86
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -161,7 +175,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -191,7 +205,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+      
 
       
 
@@ -200,11 +217,11 @@
         
         <ul>
           
-          <li><code>&lt;0.6.0</code></li>
+          <li><code>&#60;0.6.0</code></li>
           
           <li><code>^0.6.2</code></li>
           
-          <li><code>&gt;=0.7.6</code></li>
+          <li><code>&#62;=0.7.6</code></li>
           
         </ul>
         
@@ -227,5 +244,11 @@ will panic if the value is greater than 2^64/1000 and less than or equal to
 <p>This flaw was corrected by explicitly checking for the <code>Max-Age</code> being in this
 integer range and clamping the value to the maximum duration value.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/openssl/RUSTSEC-2018-0010.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/openssl/RUSTSEC-2018-0010.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/openssl/RUSTSEC-2018-0010.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2018-0010">JSON (OSV)</a>
         </span>
     
 
@@ -83,12 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2020-10-02">
-          October  2, 2020
+        <time datetime="2020-10-01">
+          October  1, 2020
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -132,16 +133,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-xjxc-vfw2-cg96">GHSA-xjxc-vfw2-cg96</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/sfackler/rust-openssl/pull/942">
-          https://github.com/sfackler/rust-openssl/pull/942
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/sfackler/rust-openssl/pull/942">
+              https://github.com/sfackler/rust-openssl/pull/942
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -161,7 +175,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -191,7 +205,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+      
 
       
 
@@ -200,7 +217,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.10.9</code></li>
+          <li><code>&#62;=0.10.9</code></li>
           
         </ul>
         
@@ -211,7 +228,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.10.8</code></li>
+          <li><code>&#60;0.10.8</code></li>
           
         </ul>
       </dd>
@@ -227,5 +244,11 @@
     <h3 id="description">Description</h3>
     <p>Affected versions of the OpenSSL crate used structures after they'd been freed.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

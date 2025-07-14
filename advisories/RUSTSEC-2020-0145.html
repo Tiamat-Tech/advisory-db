@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/heapless/RUSTSEC-2020-0145.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/heapless/RUSTSEC-2020-0145.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/heapless/RUSTSEC-2020-0145.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0145">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           February 27, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -144,16 +145,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-qgwf-r2jj-2ccv">GHSA-qgwf-r2jj-2ccv</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/japaric/heapless/issues/181">
-          https://github.com/japaric/heapless/issues/181
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/japaric/heapless/issues/181">
+              https://github.com/japaric/heapless/issues/181
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -173,7 +187,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -203,7 +217,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+      
 
       
 
@@ -212,7 +229,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.6.1</code></li>
+          <li><code>&#62;=0.6.1</code></li>
           
         </ul>
         
@@ -237,7 +254,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;=0.6</code></li>
+          <li><code>&#60;=0.6</code></li>
           
         </ul>
       </dd>
@@ -252,5 +269,11 @@
 If the iterator is partially consumed the consumed items will be copied, thus creating a use-after-free access.</p>
 <p>A proof of concept is available in the original bug report.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

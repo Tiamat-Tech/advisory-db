@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/rkyv/RUSTSEC-2021-0054.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/rkyv/RUSTSEC-2021-0054.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/rkyv/RUSTSEC-2021-0054.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2021-0054">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           April 29, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -147,16 +148,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-w5cr-frph-hw7f">GHSA-w5cr-frph-hw7f</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/djkoloski/rkyv/issues/113">
-          https://github.com/djkoloski/rkyv/issues/113
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/djkoloski/rkyv/issues/113">
+              https://github.com/djkoloski/rkyv/issues/113
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -176,7 +190,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -206,7 +220,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</a></dd>
+      
 
       
 
@@ -215,7 +232,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.6.0</code></li>
+          <li><code>&#62;=0.6.0</code></li>
           
         </ul>
         
@@ -240,7 +257,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.6.0</code></li>
+          <li><code>&#60;0.6.0</code></li>
           
         </ul>
       </dd>
@@ -255,5 +272,11 @@
 transmitted. During serialization, struct padding bytes and unused enum bytes may not be
 initialized. These bytes may be written to disk or sent over unsecured channels.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/va-ts/RUSTSEC-2020-0114.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/va-ts/RUSTSEC-2020-0114.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/va-ts/RUSTSEC-2020-0114.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0114">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           January 21, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -136,16 +137,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-3hj2-hh36-hv9v">GHSA-3hj2-hh36-hv9v</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/video-audio/va-ts/issues/4">
-          https://github.com/video-audio/va-ts/issues/4
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/video-audio/va-ts/issues/4">
+              https://github.com/video-audio/va-ts/issues/4
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -165,7 +179,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>High</d>
+          <dt>Attack complexity</dt><dd>High</dd>
           
 
           
@@ -195,7 +209,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+      
 
       
 
@@ -204,7 +221,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.0.4</code></li>
+          <li><code>&#62;=0.0.4</code></li>
           
         </ul>
         
@@ -224,5 +241,11 @@
 <p>This allows sending a non-Send type <code>T</code> across thread boundaries, which can cause undefined behavior like unlocking a mutex from a thread that didn't lock the mutex, or memory corruption from data race.</p>
 <p>The flaw was corrected in commit 0562cbf by adding a <code>T: Send</code> bound to the <code>Send</code> impl for <code>Demuxer&lt;T&gt;</code>.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/buttplug/RUSTSEC-2020-0112.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/buttplug/RUSTSEC-2020-0112.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/buttplug/RUSTSEC-2020-0112.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0112">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           January 20, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -136,16 +137,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-r7rv-2rph-hvhj">GHSA-r7rv-2rph-hvhj</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/buttplugio/buttplug-rs/issues/225">
-          https://github.com/buttplugio/buttplug-rs/issues/225
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/buttplugio/buttplug-rs/issues/225">
+              https://github.com/buttplugio/buttplug-rs/issues/225
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -165,7 +179,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>High</d>
+          <dt>Attack complexity</dt><dd>High</dd>
           
 
           
@@ -195,7 +209,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+      
 
       
 
@@ -204,7 +221,7 @@
         
         <ul>
           
-          <li><code>&gt;=1.0.4</code></li>
+          <li><code>&#62;=1.0.4</code></li>
           
         </ul>
         
@@ -225,5 +242,11 @@
 If <code>T: !Sync</code> for <code>ButtplugFutureStateShared&lt;T&gt;</code>, it is possible to cause data race to <code>T</code> (e.g. <code>T</code>=<code>Arc&lt;Cell&lt;_&gt;&gt;</code>) and lead to undefined behavior.</p>
 <p>The flaw was corrected in version 1.0.4 by removing manual implementations of <code>Send</code>/<code>Sync</code> for <code>ButtplugFutureStateShared&lt;T&gt;</code> to let rustc generate auto trait implementations with correct trait bounds on <code>T</code>.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

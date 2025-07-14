@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/raw-cpuid/RUSTSEC-2021-0089.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/raw-cpuid/RUSTSEC-2021-0089.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/raw-cpuid/RUSTSEC-2021-0089.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2021-0089">JSON (OSV)</a>
         </span>
     
 
@@ -83,8 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2021-08-22">
-          August 22, 2021
+        <time datetime="2021-08-21">
+          August 21, 2021
+        </time>
+        
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -122,13 +127,45 @@
       
 
       
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45687">CVE-2021-45687</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-jf5h-cf95-w759">GHSA-jf5h-cf95-w759</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-w428-f65r-h4q2">GHSA-w428-f65r-h4q2</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/gz/rust-cpuid/issues/43">
-          https://github.com/gz/rust-cpuid/issues/43
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/gz/rust-cpuid/issues/43">
+              https://github.com/gz/rust-cpuid/issues/43
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -142,7 +179,7 @@
         
         <ul>
           
-          <li><code>&gt;=9.1.1</code></li>
+          <li><code>&#62;=9.1.1</code></li>
           
         </ul>
         
@@ -153,7 +190,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;=3.1.0</code></li>
+          <li><code>&#60;=3.1.0</code></li>
           
         </ul>
       </dd>
@@ -177,5 +214,11 @@ invariants in safe code, leading to:</p>
 </ul>
 <p>See https://github.com/gz/rust-cpuid/issues/43.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/pnet_packet/RUSTSEC-2020-0167.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/pnet_packet/RUSTSEC-2020-0167.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/pnet_packet/RUSTSEC-2020-0167.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0167">JSON (OSV)</a>
         </span>
     
 
@@ -85,6 +86,10 @@
       <dd>
         <time datetime="2023-02-09">
           February  9, 2023
+        </time>
+        
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -120,13 +125,33 @@
       
 
       
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-cf4g-fcf8-3cr9">GHSA-cf4g-fcf8-3cr9</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/libpnet/libpnet/issues/449">
-          https://github.com/libpnet/libpnet/issues/449
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/libpnet/libpnet/issues/449">
+              https://github.com/libpnet/libpnet/issues/449
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -146,7 +171,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -176,7 +201,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H">CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H">CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H</a></dd>
+      
 
       
 
@@ -185,7 +213,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.27.2</code></li>
+          <li><code>&#62;=0.27.2</code></li>
           
         </ul>
         
@@ -204,5 +232,11 @@
     <p>As indicated by this <a href="https://github.com/libpnet/libpnet/issues/449#issuecomment-663355987">issue</a>, a buffer overrun is possible in the <code>set_payload</code> setter of the various mutable &quot;Packet&quot; struct setters. The offending <code>set_payload</code> functions were defined within the struct <code>impl</code> blocks in earlier versions of the package, and later by the <code>packet</code> macro.</p>
 <p>Fixed in the <code>packet</code> macro by <a href="https://github.com/libpnet/libpnet/pull/455">this</a> PR.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

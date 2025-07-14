@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/multiqueue/RUSTSEC-2020-0143.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/multiqueue/RUSTSEC-2020-0143.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/multiqueue/RUSTSEC-2020-0143.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0143">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           February  4, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -136,16 +137,35 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-jf43-3v8j-qwwr">GHSA-jf43-3v8j-qwwr</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-r2x6-vrxx-jgv4">GHSA-r2x6-vrxx-jgv4</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/schets/multiqueue/issues/31">
-          https://github.com/schets/multiqueue/issues/31
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/schets/multiqueue/issues/31">
+              https://github.com/schets/multiqueue/issues/31
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -165,7 +185,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>High</d>
+          <dt>Attack complexity</dt><dd>High</dd>
           
 
           
@@ -195,7 +215,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+      
 
       
 
@@ -219,5 +242,11 @@
     <p>Affected versions of this crate unconditionally implemented <code>Send</code> for types used in queue implementations (<code>InnerSend&lt;RW, T&gt;</code>, <code>InnerRecv&lt;RW, T&gt;</code>, <code>FutInnerSend&lt;RW, T&gt;</code>, <code>FutInnerRecv&lt;RW, T&gt;</code>).</p>
 <p>This allows users to send non-Send types to other threads, which can lead to data race bugs or other undefined behavior.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

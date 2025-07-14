@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2020-0141: noise_search: MvccRwLock allows data races &amp; aliasing violations › RustSec Advisory Database</title>
+<title>RUSTSEC-2020-0141: noise_search: MvccRwLock allows data races &#38; aliasing violations › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/noise_search/RUSTSEC-2020-0141.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/noise_search/RUSTSEC-2020-0141.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/noise_search/RUSTSEC-2020-0141.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0141">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           February  1, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -136,16 +137,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-wxjf-9f4g-3v44">GHSA-wxjf-9f4g-3v44</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/pipedown/noise/issues/72">
-          https://github.com/pipedown/noise/issues/72
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/pipedown/noise/issues/72">
+              https://github.com/pipedown/noise/issues/72
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -165,7 +179,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>High</d>
+          <dt>Attack complexity</dt><dd>High</dd>
           
 
           
@@ -195,7 +209,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+      
 
       
 
@@ -220,5 +237,11 @@
 This can lead to data races when types that are either <code>!Send</code> or <code>!Sync</code> (e.g. <code>Rc&lt;T&gt;</code>, <code>Arc&lt;Cell&lt;_&gt;&gt;</code>) are contained inside <code>MvccRwLock</code> and sent across thread boundaries. The data races can potentially lead to memory corruption (as demonstrated in the PoC from the original report issue).</p>
 <p>Also, safe APIs of <code>MvccRwLock</code> allow aliasing violations by allowing <code>&amp;T</code> and <code>LockResult&lt;MutexGuard&lt;Box&lt;T&gt;&gt;&gt;</code> to co-exist in conflicting lifetime regions. The APIs of <code>MvccRwLock</code> should either be marked as <code>unsafe</code> or <code>MbccRwLock</code> should be changed to private or pub(crate).</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

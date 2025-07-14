@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2018-0021: libpulse-binding: Use-after-free with objects returned by `Stream`&#x27;s `get_format_info` and `get_context` methods › RustSec Advisory Database</title>
+<title>RUSTSEC-2018-0021: libpulse-binding: Use-after-free with objects returned by `Stream`&#39;s `get_format_info` and `get_context` methods › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/libpulse-binding/RUSTSEC-2018-0021.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/libpulse-binding/RUSTSEC-2018-0021.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/libpulse-binding/RUSTSEC-2018-0021.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2018-0021">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           October 25, 2020
         </time>
         
-        <time datetime="2021-06-09">
-          (last modified: June  9, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -130,7 +131,31 @@
           
           <li>
             
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-25027">CVE-2018-25027</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-25028">CVE-2018-25028</a>
+            
+          </li>
+          
+          <li>
+            
             <a href="https://github.com/advisories/GHSA-ghpq-vjxw-ch5w">GHSA-ghpq-vjxw-ch5w</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-hxjf-h2mh-r6hj">GHSA-hxjf-h2mh-r6hj</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-jqpv-jm4m-86j9">GHSA-jqpv-jm4m-86j9</a>
             
           </li>
           
@@ -139,11 +164,18 @@
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/jnqnfe/pulse-binding-rust/security/advisories/GHSA-ghpq-vjxw-ch5w">
-          https://github.com/jnqnfe/pulse-binding-rust/security/advisories/GHSA-ghpq-vjxw-ch5w
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/jnqnfe/pulse-binding-rust/security/advisories/GHSA-ghpq-vjxw-ch5w">
+              https://github.com/jnqnfe/pulse-binding-rust/security/advisories/GHSA-ghpq-vjxw-ch5w
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -157,7 +189,7 @@
         
         <ul>
           
-          <li><code>&gt;=1.2.1</code></li>
+          <li><code>&#62;=1.2.1</code></li>
           
         </ul>
         
@@ -182,7 +214,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;1.2.1</code></li>
+          <li><code>&#60;1.2.1</code></li>
           
         </ul>
       </dd>
@@ -191,7 +223,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;1.2.1</code></li>
+          <li><code>&#60;1.2.1</code></li>
           
         </ul>
       </dd>
@@ -204,5 +236,11 @@
     <h3 id="description">Description</h3>
     <p>Affected versions contained a pair of use-after-free issues with the objects returned by the <code>get_format_info</code> and <code>get_context</code> methods of <code>Stream</code> objects. These objects were mistakenly being constructed without setting an important flag to prevent destruction of the underlying C objects they reference upon their own destruction.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

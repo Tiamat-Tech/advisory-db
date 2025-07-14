@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2020-0130: bunch: Bunch&lt;T&gt; unconditionally implements Send/Sync › RustSec Advisory Database</title>
+<title>RUSTSEC-2020-0130: bunch: Bunch&#60;T&#62; unconditionally implements Send/Sync › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/bunch/RUSTSEC-2020-0130.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/bunch/RUSTSEC-2020-0130.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/bunch/RUSTSEC-2020-0130.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0130">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           January 30, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -136,16 +137,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-jwph-qp5h-f9wj">GHSA-jwph-qp5h-f9wj</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/krl/bunch/issues/1">
-          https://github.com/krl/bunch/issues/1
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/krl/bunch/issues/1">
+              https://github.com/krl/bunch/issues/1
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -165,7 +179,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>High</d>
+          <dt>Attack complexity</dt><dd>High</dd>
           
 
           
@@ -195,7 +209,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+      
 
       
 
@@ -220,5 +237,11 @@
 This allows users to insert <code>T: !Sync</code> to <code>Bunch&lt;T&gt;</code>. It is possible to create a data race to a <code>T: !Sync</code> by invoking the <code>Bunch::get()</code> API (which returns <code>&amp;T</code>) from multiple threads. It is also possible to send <code>T: !Send</code> to other threads by inserting <code>T</code> inside <code>Bunch&lt;T&gt;</code> and sending <code>Bunch&lt;T&gt;</code> to another thread, allowing to create a data race by inserting types like <code>T = Rc&lt;_&gt;</code>.</p>
 <p>Such data races can lead to memory corruption.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

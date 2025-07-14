@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/spin/RUSTSEC-2023-0031.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/spin/RUSTSEC-2023-0031.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/spin/RUSTSEC-2023-0031.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2023-0031">JSON (OSV)</a>
         </span>
     
 
@@ -83,8 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2023-04-03">
-          April  3, 2023
+        <time datetime="2023-04-04">
+          April  4, 2023
+        </time>
+        
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -112,13 +117,33 @@
       
 
       
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-2qv5-7mw5-j3cg">GHSA-2qv5-7mw5-j3cg</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/mvdnes/spin-rs/issues/148">
-          https://github.com/mvdnes/spin-rs/issues/148
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/mvdnes/spin-rs/issues/148">
+              https://github.com/mvdnes/spin-rs/issues/148
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -132,7 +157,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.9.8</code></li>
+          <li><code>&#62;=0.9.8</code></li>
           
         </ul>
         
@@ -143,7 +168,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.9.3</code></li>
+          <li><code>&#60;0.9.3</code></li>
           
         </ul>
       </dd>
@@ -159,5 +184,11 @@
     <h3 id="description">Description</h3>
     <p><code>Once::try_call_once</code> is unsound if invoked more than once concurrently and any call fails to initialise successfully.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

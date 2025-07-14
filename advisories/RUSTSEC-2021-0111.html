@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/tremor-script/RUSTSEC-2021-0111.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/tremor-script/RUSTSEC-2021-0111.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/tremor-script/RUSTSEC-2021-0111.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2021-0111">JSON (OSV)</a>
         </span>
     
 
@@ -85,6 +86,10 @@
       <dd>
         <time datetime="2021-09-18">
           September 18, 2021
+        </time>
+        
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -122,13 +127,57 @@
       
 
       
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45701">CVE-2021-45701</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45702">CVE-2021-45702</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-3pp4-64mp-9cg9">GHSA-3pp4-64mp-9cg9</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-9qvw-46gf-4fv8">GHSA-9qvw-46gf-4fv8</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-q2x5-6q7q-r872">GHSA-q2x5-6q7q-r872</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/tremor-rs/tremor-runtime/pull/1217">
-          https://github.com/tremor-rs/tremor-runtime/pull/1217
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/tremor-rs/tremor-runtime/pull/1217">
+              https://github.com/tremor-rs/tremor-runtime/pull/1217
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -142,7 +191,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.11.6</code></li>
+          <li><code>&#62;=0.11.6</code></li>
           
         </ul>
         
@@ -153,7 +202,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;=0.7.2</code></li>
+          <li><code>&#60;=0.7.2</code></li>
           
         </ul>
       </dd>
@@ -200,5 +249,11 @@ let state = tmp
 <p>The flaw was corrected in <code>tremor-script</code> version 0.11.6 via commit <a href="https://github.com/tremor-rs/tremor-runtime/commit/1a2efcdbe68e5e7fd0a05836ac32d2cde78a0b2e">1a2efcd</a> by removing the optimization
 and always clone the target expression of a <a href="https://www.tremor.rs/docs/tremor-script/index#merge">Merge</a> or [Patch](https://www.tremor.rs/docs/tremor-script/index#patch.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

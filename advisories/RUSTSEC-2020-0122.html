@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/beef/RUSTSEC-2020-0122.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/beef/RUSTSEC-2020-0122.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/beef/RUSTSEC-2020-0122.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0122">JSON (OSV)</a>
         </span>
     
 
@@ -83,12 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2021-01-27">
-          January 27, 2021
+        <time datetime="2021-01-26">
+          January 26, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -136,16 +137,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-m7w4-8wp8-m2xq">GHSA-m7w4-8wp8-m2xq</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/maciejhirsz/beef/issues/37">
-          https://github.com/maciejhirsz/beef/issues/37
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/maciejhirsz/beef/issues/37">
+              https://github.com/maciejhirsz/beef/issues/37
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -165,7 +179,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>High</d>
+          <dt>Attack complexity</dt><dd>High</dd>
           
 
           
@@ -195,7 +209,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+      
 
       
 
@@ -204,7 +221,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.5.0</code></li>
+          <li><code>&#62;=0.5.0</code></li>
           
         </ul>
         
@@ -224,5 +241,11 @@
 <p>Such data races can lead to memory corruption.</p>
 <p>The flaw was corrected in commit d1c7658 by adding trait bounds <code>T: Sync</code> and <code>T::Owned: Send</code> to the <code>Send</code> impl for <code>Cow&lt;'_, T, U&gt;</code>.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

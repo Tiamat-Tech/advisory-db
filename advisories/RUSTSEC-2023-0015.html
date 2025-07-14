@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/ascii/RUSTSEC-2023-0015.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/ascii/RUSTSEC-2023-0015.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/ascii/RUSTSEC-2023-0015.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2023-0015">JSON (OSV)</a>
         </span>
     
 
@@ -85,6 +86,10 @@
       <dd>
         <time datetime="2023-02-25">
           February 25, 2023
+        </time>
+        
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -128,13 +133,33 @@
       
 
       
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-mrrw-grhq-86gf">GHSA-mrrw-grhq-86gf</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/tomprogrammer/rust-ascii/issues/64">
-          https://github.com/tomprogrammer/rust-ascii/issues/64
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/tomprogrammer/rust-ascii/issues/64">
+              https://github.com/tomprogrammer/rust-ascii/issues/64
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -148,7 +173,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.9.3</code></li>
+          <li><code>&#62;=0.9.3</code></li>
           
         </ul>
         
@@ -159,7 +184,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;=0.6.0</code></li>
+          <li><code>&#60;=0.6.0</code></li>
           
         </ul>
       </dd>
@@ -176,5 +201,11 @@
     <p>Affected version of this crate had implementation of <code>From&lt;&amp;mut AsciiStr&gt;</code> for <code>&amp;mut [u8]</code> and <code>&amp;mut str</code>. This can result in out-of-bounds array indexing in safe code.</p>
 <p>The flaw was corrected in commit <a href="https://github.com/tomprogrammer/rust-ascii/pull/63/commits/8a6c7798c202766bd57d70fb8d12739dd68fb9dc">8a6c779</a> by removing those impls.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/openssl-src/RUSTSEC-2021-0098.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/openssl-src/RUSTSEC-2021-0098.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/openssl-src/RUSTSEC-2021-0098.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2021-0098">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           August 24, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -136,16 +137,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-q9wj-f4qw-6vfj">GHSA-q9wj-f4qw-6vfj</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://www.openssl.org/news/secadv/20210824.txt">
-          https://www.openssl.org/news/secadv/20210824.txt
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://www.openssl.org/news/secadv/20210824.txt">
+              https://www.openssl.org/news/secadv/20210824.txt
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -165,7 +179,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>High</d>
+          <dt>Attack complexity</dt><dd>High</dd>
           
 
           
@@ -195,7 +209,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H</a></dd>
+      
 
       
 
@@ -204,7 +221,7 @@
         
         <ul>
           
-          <li><code>&gt;=111.16</code></li>
+          <li><code>&#62;=111.16</code></li>
           
         </ul>
         
@@ -249,5 +266,11 @@ then this issue could be hit. This might result in a crash (causing a Denial of
 Service attack). It could also result in the disclosure of private memory
 contents (such as private keys, or sensitive plaintext).</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

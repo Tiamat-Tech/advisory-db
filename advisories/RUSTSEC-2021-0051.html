@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/outer_cgi/RUSTSEC-2021-0051.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/outer_cgi/RUSTSEC-2021-0051.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/outer_cgi/RUSTSEC-2021-0051.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2021-0051">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           April  2, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -134,16 +135,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-6vmq-jh76-hq43">GHSA-6vmq-jh76-hq43</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/SolraBizna/outer_cgi/issues/1">
-          https://github.com/SolraBizna/outer_cgi/issues/1
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/SolraBizna/outer_cgi/issues/1">
+              https://github.com/SolraBizna/outer_cgi/issues/1
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -163,7 +177,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -193,7 +207,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+      
 
       
 
@@ -202,7 +219,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.2.1</code></li>
+          <li><code>&#62;=0.2.1</code></li>
           
         </ul>
         
@@ -226,5 +243,11 @@ behavior and miscompilations.</p>
 <p>This issue was fixed in commit <a href="https://github.com/SolraBizna/outer_cgi/commit/dd59b3066e616a08e756f72de8dc3ab11b7036c4">dd59b30</a>
 by zero-initializing the buffers before passing them.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

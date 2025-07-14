@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2020-0032: alpm-rs: StrcCtx deallocates a memory region that it doesn&#x27;t own › RustSec Advisory Database</title>
+<title>RUSTSEC-2020-0032: alpm-rs: StrcCtx deallocates a memory region that it doesn&#39;t own › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/alpm-rs/RUSTSEC-2020-0032.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/alpm-rs/RUSTSEC-2020-0032.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/alpm-rs/RUSTSEC-2020-0032.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0032">JSON (OSV)</a>
         </span>
     
 
@@ -83,12 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2020-10-02">
-          October  2, 2020
+        <time datetime="2020-10-01">
+          October  1, 2020
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -126,16 +127,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-qc4m-gc8r-mg8m">GHSA-qc4m-gc8r-mg8m</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/pigeonhands/rust-arch/issues/2">
-          https://github.com/pigeonhands/rust-arch/issues/2
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/pigeonhands/rust-arch/issues/2">
+              https://github.com/pigeonhands/rust-arch/issues/2
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -155,7 +169,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -185,7 +199,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+      
 
       
 
@@ -209,5 +226,11 @@
     <p><code>StrcCtx</code> deallocate a memory region that it doesn't own when <code>StrcCtx</code> is created without using <code>StrcCtx::new</code>.
 This can introduce memory safety issues such as double-free and use-after-free to client programs.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

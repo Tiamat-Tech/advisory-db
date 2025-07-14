@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/net2/RUSTSEC-2020-0078.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/net2/RUSTSEC-2020-0078.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/net2/RUSTSEC-2020-0078.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0078">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           December  2, 2020
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-07-08">
+          (last modified: July  8, 2023)
         </time>
         
       </dd>
@@ -137,16 +138,41 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35920">CVE-2020-35920</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-458v-4hrf-g3m4">GHSA-458v-4hrf-g3m4</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-c79c-gwph-gqfm">GHSA-c79c-gwph-gqfm</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/deprecrated/net2-rs/issues/105">
-          https://github.com/deprecrated/net2-rs/issues/105
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/deprecrated/net2-rs/issues/105">
+              https://github.com/deprecrated/net2-rs/issues/105
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -166,7 +192,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -196,7 +222,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</a></dd>
+      
 
       
 
@@ -205,7 +234,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.2.36</code></li>
+          <li><code>&#62;=0.2.36</code></li>
           
         </ul>
         
@@ -229,5 +258,11 @@ layout, and this will cause invalid memory access if the standard library
 changes the implementation. No warnings or errors will be emitted once the
 change happens.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

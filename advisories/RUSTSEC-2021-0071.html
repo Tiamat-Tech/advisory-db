@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/grep-cli/RUSTSEC-2021-0071.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/grep-cli/RUSTSEC-2021-0071.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/grep-cli/RUSTSEC-2021-0071.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2021-0071">JSON (OSV)</a>
         </span>
     
 
@@ -83,12 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2021-06-14">
-          June 14, 2021
+        <time datetime="2021-06-15">
+          June 15, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -149,16 +150,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-g4xg-fxmg-vcg5">GHSA-g4xg-fxmg-vcg5</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/BurntSushi/ripgrep/issues/1773">
-          https://github.com/BurntSushi/ripgrep/issues/1773
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/BurntSushi/ripgrep/issues/1773">
+              https://github.com/BurntSushi/ripgrep/issues/1773
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -178,7 +192,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -208,7 +222,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+      
 
       
 
@@ -217,7 +234,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.1.6</code></li>
+          <li><code>&#62;=0.1.6</code></li>
           
         </ul>
         
@@ -251,7 +268,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.1.6</code></li>
+          <li><code>&#60;0.1.6</code></li>
           
         </ul>
       </dd>
@@ -295,5 +312,11 @@ on the argument given to its <code>--pre</code> flag.</li>
 when doing decompression search, the second mitigation is imperfect. The more
 fundamental issue is that <code>std::process::Command</code> is itself vulnerable to this.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

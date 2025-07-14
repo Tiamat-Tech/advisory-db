@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/reffers/RUSTSEC-2020-0094.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/reffers/RUSTSEC-2020-0094.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/reffers/RUSTSEC-2020-0094.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0094">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           January  6, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -144,16 +145,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-39xg-8p43-h76x">GHSA-39xg-8p43-h76x</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/diwic/reffers-rs/issues/7">
-          https://github.com/diwic/reffers-rs/issues/7
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/diwic/reffers-rs/issues/7">
+              https://github.com/diwic/reffers-rs/issues/7
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -173,7 +187,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>High</d>
+          <dt>Attack complexity</dt><dd>High</dd>
           
 
           
@@ -203,7 +217,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H</a></dd>
+      
 
       
 
@@ -212,7 +229,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.6.1</code></li>
+          <li><code>&#62;=0.6.1</code></li>
           
         </ul>
         
@@ -234,5 +251,11 @@
 <p>By using the <code>ARefss::map()</code> API, we can insert a <code>!Send</code> or <code>!Sync</code> object into <code>ARefss&lt;'a, V&gt;</code>. After that, it is possible to create a data race to the inner object of <code>ARefss&lt;'a, V&gt;</code>, which can lead to undefined behavior &amp; memory corruption.</p>
 <p>The flaw was corrected in commit 6dd7ca0 (https://github.com/diwic/reffers-rs/commit/6dd7ca0d50f2464df708975cdafcfaeeb6d41c66) by adding trait bound <code>V: Send + Sync</code> to <code>ARefss::map()</code> API.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

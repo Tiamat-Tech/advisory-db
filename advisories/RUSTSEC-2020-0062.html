@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/futures-util/RUSTSEC-2020-0062.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/futures-util/RUSTSEC-2020-0062.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/futures-util/RUSTSEC-2020-0062.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0062">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           October 31, 2020
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -147,16 +148,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-5r9g-j7jj-hw6c">GHSA-5r9g-j7jj-hw6c</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/rust-lang/futures-rs/issues/2050">
-          https://github.com/rust-lang/futures-rs/issues/2050
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/rust-lang/futures-rs/issues/2050">
+              https://github.com/rust-lang/futures-rs/issues/2050
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -176,7 +190,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -206,7 +220,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</a></dd>
+      
 
       
 
@@ -215,7 +232,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.3.2</code></li>
+          <li><code>&#62;=0.3.2</code></li>
           
         </ul>
         
@@ -226,7 +243,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.3.0</code></li>
+          <li><code>&#60;0.3.0</code></li>
           
         </ul>
       </dd>
@@ -249,7 +266,7 @@
       <dd>
         <ul>
           
-          <li><code>&gt;=0.3.0</code></li>
+          <li><code>&#62;=0.3.0</code></li>
           
         </ul>
       </dd>
@@ -266,5 +283,11 @@ interior mutability without any code to handle synchronized access to the underl
 of access synchronization.</p>
 <p>The issue was fixed by adding access synchronization code around insertion of tasks into the list.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/atomic-option/RUSTSEC-2020-0113.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/atomic-option/RUSTSEC-2020-0113.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/atomic-option/RUSTSEC-2020-0113.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0113">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           January 20, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -136,16 +137,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-8gf5-q9p9-wvmc">GHSA-8gf5-q9p9-wvmc</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/reem/rust-atomic-option/issues/4">
-          https://github.com/reem/rust-atomic-option/issues/4
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/reem/rust-atomic-option/issues/4">
+              https://github.com/reem/rust-atomic-option/issues/4
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -165,7 +179,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>High</d>
+          <dt>Attack complexity</dt><dd>High</dd>
           
 
           
@@ -195,7 +209,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+      
 
       
 
@@ -221,5 +238,11 @@
 <p>This allows programmers to move non-Sync types across thread boundaries (e.g. <code>Rc&lt;T&gt;</code>, <code>Arc&lt;Cell&lt;T&gt;&gt;</code>), which can lead to data races and undefined behavior.
 It is also possible to send non-Send types like <code>std::sync::MutexGuard</code> to other threads, which can lead to undefined behavior.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/kamadak-exif/RUSTSEC-2021-0143.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/kamadak-exif/RUSTSEC-2021-0143.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/kamadak-exif/RUSTSEC-2021-0143.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2021-0143">JSON (OSV)</a>
         </span>
     
 
@@ -150,11 +151,18 @@
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/kamadak/exif-rs/commit/1b05eab57e484cd7d576d4357b9cda7fdc57df8c">
-          https://github.com/kamadak/exif-rs/commit/1b05eab57e484cd7d576d4357b9cda7fdc57df8c
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/kamadak/exif-rs/commit/1b05eab57e484cd7d576d4357b9cda7fdc57df8c">
+              https://github.com/kamadak/exif-rs/commit/1b05eab57e484cd7d576d4357b9cda7fdc57df8c
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -174,7 +182,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -204,7 +212,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H</a></dd>
+      
 
       
 
@@ -213,7 +224,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.5.3</code></li>
+          <li><code>&#62;=0.5.3</code></li>
           
         </ul>
         
@@ -224,7 +235,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.5.2</code></li>
+          <li><code>&#60;0.5.2</code></li>
           
         </ul>
       </dd>
@@ -247,7 +258,7 @@
       <dd>
         <ul>
           
-          <li><code>&gt;=0.5.2, &lt;0.5.3</code></li>
+          <li><code>&#62;=0.5.2, &#60;0.5.3</code></li>
           
         </ul>
       </dd>
@@ -260,5 +271,11 @@
     <h3 id="description">Description</h3>
     <p>Attacker crafted data can cause a infinite loop leading to DoS if used with untrusted data.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

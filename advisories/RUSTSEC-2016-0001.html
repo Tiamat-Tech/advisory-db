@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/openssl/RUSTSEC-2016-0001.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/openssl/RUSTSEC-2016-0001.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/openssl/RUSTSEC-2016-0001.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2016-0001">JSON (OSV)</a>
         </span>
     
 
@@ -83,12 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2020-10-02">
-          October  2, 2020
+        <time datetime="2020-10-01">
+          October  1, 2020
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -134,16 +135,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-34p9-f4q3-c4r7">GHSA-34p9-f4q3-c4r7</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/sfackler/rust-openssl/releases/tag/v0.9.0">
-          https://github.com/sfackler/rust-openssl/releases/tag/v0.9.0
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/sfackler/rust-openssl/releases/tag/v0.9.0">
+              https://github.com/sfackler/rust-openssl/releases/tag/v0.9.0
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -163,7 +177,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>High</d>
+          <dt>Attack complexity</dt><dd>High</dd>
           
 
           
@@ -193,7 +207,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+      
 
       
 
@@ -202,7 +219,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.9.0</code></li>
+          <li><code>&#62;=0.9.0</code></li>
           
         </ul>
         
@@ -228,5 +245,11 @@ by default and exposing APIs to perform hostname verification. Use the
 <code>SslConnector</code> and <code>SslAcceptor</code> types to take advantage of these new features
 (as opposed to the lower-level <code>SslContext</code> type).</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

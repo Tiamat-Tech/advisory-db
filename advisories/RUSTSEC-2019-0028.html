@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/flatbuffers/RUSTSEC-2019-0028.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/flatbuffers/RUSTSEC-2019-0028.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/flatbuffers/RUSTSEC-2019-0028.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2019-0028">JSON (OSV)</a>
         </span>
     
 
@@ -83,12 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2020-10-02">
-          October  2, 2020
+        <time datetime="2020-10-01">
+          October  1, 2020
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -125,16 +126,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-gx73-2498-r55c">GHSA-gx73-2498-r55c</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/google/flatbuffers/issues/5530">
-          https://github.com/google/flatbuffers/issues/5530
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/google/flatbuffers/issues/5530">
+              https://github.com/google/flatbuffers/issues/5530
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -154,7 +168,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -184,7 +198,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+      
 
       
 
@@ -193,7 +210,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.6.1</code></li>
+          <li><code>&#62;=0.6.1</code></li>
           
         </ul>
         
@@ -204,7 +221,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.4.0</code></li>
+          <li><code>&#60;0.4.0</code></li>
           
         </ul>
       </dd>
@@ -227,9 +244,9 @@
       <dd>
         <ul>
           
-          <li><code>&gt;=0.4.0</code></li>
+          <li><code>&#62;=0.4.0</code></li>
           
-          <li><code>&lt;=0.6.0</code></li>
+          <li><code>&#60;=0.6.0</code></li>
           
         </ul>
       </dd>
@@ -244,5 +261,11 @@
 <p>In Rust <code>bool</code> has stringent requirements for its in-memory representation. Use of this function
 allows to violate these requirements and invoke undefined behaviour in safe code.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/futures-intrusive/RUSTSEC-2020-0072.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/futures-intrusive/RUSTSEC-2020-0072.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/futures-intrusive/RUSTSEC-2020-0072.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0072">JSON (OSV)</a>
         </span>
     
 
@@ -83,12 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2020-11-19">
-          November 19, 2020
+        <time datetime="2020-11-18">
+          November 18, 2020
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -144,16 +145,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-4hjg-cx88-g9f9">GHSA-4hjg-cx88-g9f9</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/Matthias247/futures-intrusive/issues/53">
-          https://github.com/Matthias247/futures-intrusive/issues/53
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/Matthias247/futures-intrusive/issues/53">
+              https://github.com/Matthias247/futures-intrusive/issues/53
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -173,7 +187,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -203,7 +217,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</a></dd>
+      
 
       
 
@@ -212,7 +229,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.4.0</code></li>
+          <li><code>&#62;=0.4.0</code></li>
           
         </ul>
         
@@ -239,5 +256,11 @@ and segfaults from safe Rust code.</p>
 <p>This bug is <a href="https://github.com/rust-lang/rust/issues/41622">similar to one</a> in
 <code>std::sync::Mutex</code>.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

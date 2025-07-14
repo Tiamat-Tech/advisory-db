@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/atom/RUSTSEC-2020-0044.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/atom/RUSTSEC-2020-0044.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/atom/RUSTSEC-2020-0044.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0044">JSON (OSV)</a>
         </span>
     
 
@@ -83,12 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2020-10-02">
-          October  2, 2020
+        <time datetime="2020-10-01">
+          October  1, 2020
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -135,16 +136,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-9cg2-2j2h-59v9">GHSA-9cg2-2j2h-59v9</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/slide-rs/atom/issues/13">
-          https://github.com/slide-rs/atom/issues/13
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/slide-rs/atom/issues/13">
+              https://github.com/slide-rs/atom/issues/13
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -164,7 +178,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>High</d>
+          <dt>Attack complexity</dt><dd>High</dd>
           
 
           
@@ -194,7 +208,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H</a></dd>
+      
 
       
 
@@ -203,7 +220,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.3.6</code></li>
+          <li><code>&#62;=0.3.6</code></li>
           
         </ul>
         
@@ -223,5 +240,11 @@
 of the Send trait. It incorrectly allows any arbitrary type to be sent across
 threads potentially leading to use-after-free issues through memory races.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

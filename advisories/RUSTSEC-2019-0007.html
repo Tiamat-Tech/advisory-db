@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/asn1_der/RUSTSEC-2019-0007.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/asn1_der/RUSTSEC-2019-0007.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/asn1_der/RUSTSEC-2019-0007.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2019-0007">JSON (OSV)</a>
         </span>
     
 
@@ -83,12 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2020-10-02">
-          October  2, 2020
+        <time datetime="2020-10-01">
+          October  1, 2020
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -132,16 +133,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-v5r6-6r3c-wqxc">GHSA-v5r6-6r3c-wqxc</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/KizzyCode/asn1_der/issues/1">
-          https://github.com/KizzyCode/asn1_der/issues/1
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/KizzyCode/asn1_der/issues/1">
+              https://github.com/KizzyCode/asn1_der/issues/1
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -161,7 +175,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -191,7 +205,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+      
 
       
 
@@ -200,7 +217,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.6.2</code></li>
+          <li><code>&#62;=0.6.2</code></li>
           
         </ul>
         
@@ -220,5 +237,11 @@
 <p>This allows an attacker to trigger a SIGABRT by creating length fields that announce more bytes than the allocator can provide.</p>
 <p>The flaw was corrected by not preallocating memory.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

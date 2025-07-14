@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/libsecp256k1/RUSTSEC-2021-0076.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/libsecp256k1/RUSTSEC-2021-0076.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/libsecp256k1/RUSTSEC-2021-0076.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2021-0076">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           July 13, 2021
         </time>
         
-        <time datetime="2021-11-06">
-          (last modified: November  6, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -134,16 +135,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-g4vj-x7v9-h82m">GHSA-g4vj-x7v9-h82m</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/paritytech/libsecp256k1/pull/67">
-          https://github.com/paritytech/libsecp256k1/pull/67
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/paritytech/libsecp256k1/pull/67">
+              https://github.com/paritytech/libsecp256k1/pull/67
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -157,7 +171,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.5.0</code></li>
+          <li><code>&#62;=0.5.0</code></li>
           
         </ul>
         
@@ -178,5 +192,11 @@ secp256k1 curve order, which differs from other implementations. This could
 lead to invalid signatures being verified.</p>
 <p>The error is resolved in 0.5.0 by adding a <code>check_overflow</code> flag.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

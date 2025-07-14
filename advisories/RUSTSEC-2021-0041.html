@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/parse_duration/RUSTSEC-2021-0041.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/parse_duration/RUSTSEC-2021-0041.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/parse_duration/RUSTSEC-2021-0041.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2021-0041">JSON (OSV)</a>
         </span>
     
 
@@ -83,12 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2021-03-25">
-          March 25, 2021
+        <time datetime="2021-03-24">
+          March 24, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -149,16 +150,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-qpgv-g792-wh6x">GHSA-qpgv-g792-wh6x</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/zeta12ti/parse_duration/issues/21">
-          https://github.com/zeta12ti/parse_duration/issues/21
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/zeta12ti/parse_duration/issues/21">
+              https://github.com/zeta12ti/parse_duration/issues/21
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -178,7 +192,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -208,7 +222,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+      
 
       
 
@@ -252,5 +269,11 @@
     <p>The <code>parse_duration::parse</code> function allows for parsing duration strings with exponents like <code>5e5s</code> where under the hood, the <a href="https://github.com/zeta12ti/parse_duration/blob/26940ab5cd4e3a9d6bd97aa101f8d4bbfd18ee8c/src/parse.rs#L335"><code>BigInt</code> type along with the <code>pow</code> function are used for such payloads</a>. Passing an arbitrarily big exponent makes the <code>parse_duration::parse</code> function to process the payload for a very long time taking up CPU and memory.</p>
 <p>This allows an attacker to cause a DoS if the <code>parse_duration::parse</code> function is used to process untrusted input.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

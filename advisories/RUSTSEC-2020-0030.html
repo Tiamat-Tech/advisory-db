@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/mozwire/RUSTSEC-2020-0030.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/mozwire/RUSTSEC-2020-0030.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/mozwire/RUSTSEC-2020-0030.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0030">JSON (OSV)</a>
         </span>
     
 
@@ -83,12 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2020-10-02">
-          October  2, 2020
+        <time datetime="2020-10-01">
+          October  1, 2020
         </time>
         
-        <time datetime="2023-02-09">
-          (last modified: February  9, 2023)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -132,16 +133,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-4vhw-4rw7-jfpv">GHSA-4vhw-4rw7-jfpv</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/NilsIrl/MozWire/issues/14">
-          https://github.com/NilsIrl/MozWire/issues/14
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/NilsIrl/MozWire/issues/14">
+              https://github.com/NilsIrl/MozWire/issues/14
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -161,7 +175,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -191,7 +205,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H</a></dd>
+      
 
       
 
@@ -200,7 +217,7 @@
         
         <ul>
           
-          <li><code>&gt;0.4.1</code></li>
+          <li><code>&#62;0.4.1</code></li>
           
         </ul>
         
@@ -222,5 +239,11 @@ after the hostname field in the json document.</p>
 <p>This allows an attacker in control of mozilla's servers to overwrite/create local files named .conf.</p>
 <p>The flaw was corrected by sanitizing the hostname field.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

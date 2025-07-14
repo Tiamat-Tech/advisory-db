@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/tower-http/RUSTSEC-2022-0043.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/tower-http/RUSTSEC-2022-0043.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/tower-http/RUSTSEC-2022-0043.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2022-0043">JSON (OSV)</a>
         </span>
     
 
@@ -83,8 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2022-08-04">
-          August  4, 2022
+        <time datetime="2022-08-05">
+          August  5, 2022
+        </time>
+        
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -129,13 +134,33 @@
       
 
       
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-qrqq-9c63-xfrg">GHSA-qrqq-9c63-xfrg</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/tower-rs/tower-http/pull/204">
-          https://github.com/tower-rs/tower-http/pull/204
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/tower-rs/tower-http/pull/204">
+              https://github.com/tower-rs/tower-http/pull/204
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -149,9 +174,9 @@
         
         <ul>
           
-          <li><code>&gt;=0.2.1</code></li>
+          <li><code>&#62;=0.2.1</code></li>
           
-          <li><code>&gt;=0.1.3, &lt;0.2.0</code></li>
+          <li><code>&#62;=0.1.3, &#60;0.2.0</code></li>
           
         </ul>
         
@@ -188,5 +213,11 @@ could potentially read files anywhere on the filesystem.</p>
 <p>This only impacts Windows. Linux and other unix likes are not impacted by this.</p>
 <p>See <a href="https://github.com/tower-rs/tower-http/pull/204">tower-http#204</a> for more details.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

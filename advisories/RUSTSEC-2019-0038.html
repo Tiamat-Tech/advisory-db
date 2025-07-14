@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/libpulse-binding/RUSTSEC-2019-0038.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/libpulse-binding/RUSTSEC-2019-0038.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/libpulse-binding/RUSTSEC-2019-0038.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2019-0038">JSON (OSV)</a>
         </span>
     
 
@@ -85,6 +86,10 @@
       <dd>
         <time datetime="2020-10-25">
           October 25, 2020
+        </time>
+        
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -121,13 +126,45 @@
       
 
       
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-25055">CVE-2019-25055</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-wcxc-jf6c-8rx9">GHSA-wcxc-jf6c-8rx9</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-xvcg-2q82-r87j">GHSA-xvcg-2q82-r87j</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/jnqnfe/pulse-binding-rust/commit/7fd282aef7787577c385aed88cb25d004b85f494">
-          https://github.com/jnqnfe/pulse-binding-rust/commit/7fd282aef7787577c385aed88cb25d004b85f494
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/jnqnfe/pulse-binding-rust/commit/7fd282aef7787577c385aed88cb25d004b85f494">
+              https://github.com/jnqnfe/pulse-binding-rust/commit/7fd282aef7787577c385aed88cb25d004b85f494
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -141,7 +178,7 @@
         
         <ul>
           
-          <li><code>&gt;=2.6.0</code></li>
+          <li><code>&#62;=2.6.0</code></li>
           
         </ul>
         
@@ -160,5 +197,11 @@
     <p>Affected versions of this crate failed to catch panics crossing FFI boundaries via callbacks, which
 is a form of UB. This flaw was corrected by <a href="https://github.com/jnqnfe/pulse-binding-rust/commit/7fd282aef7787577c385aed88cb25d004b85f494">this commit</a> which was included in version 2.6.0.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/crossbeam-channel/RUSTSEC-2020-0052.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/crossbeam-channel/RUSTSEC-2020-0052.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/crossbeam-channel/RUSTSEC-2020-0052.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0052">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           October 11, 2020
         </time>
         
-        <time datetime="2021-01-04">
-          (last modified: January  4, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -130,13 +131,19 @@
           
           <li>
             
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-15254">CVE-2020-15254</a>
+            
+          </li>
+          
+          <li>
+            
             <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35904">CVE-2020-35904</a>
             
           </li>
           
           <li>
             
-            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-15254">CVE-2020-15254</a>
+            <a href="https://github.com/advisories/GHSA-m8h8-v6jh-c762">GHSA-m8h8-v6jh-c762</a>
             
           </li>
           
@@ -151,11 +158,18 @@
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/crossbeam-rs/crossbeam/pull/533">
-          https://github.com/crossbeam-rs/crossbeam/pull/533
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/crossbeam-rs/crossbeam/pull/533">
+              https://github.com/crossbeam-rs/crossbeam/pull/533
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -169,7 +183,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.4.4</code></li>
+          <li><code>&#62;=0.4.4</code></li>
           
         </ul>
         
@@ -180,7 +194,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.4.3</code></li>
+          <li><code>&#60;0.4.3</code></li>
           
         </ul>
       </dd>
@@ -196,5 +210,11 @@
     <h3 id="description">Description</h3>
     <p>The affected version of this crate's the <code>bounded</code> channel incorrectly assumes that <code>Vec::from_iter</code> has allocated capacity that same as the number of iterator elements. <code>Vec::from_iter</code> does not actually guarantee that and may allocate extra memory. The destructor of the <code>bounded</code> channel reconstructs <code>Vec</code> from the raw pointer based on the incorrect assumes described above. This is unsound and causing deallocation with the incorrect capacity when <code>Vec::from_iter</code> has allocated different sizes with the number of iterator elements.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

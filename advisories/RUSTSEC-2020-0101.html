@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2020-0101: conquer-once: conquer-once&#x27;s OnceCell lacks Send bound for its Sync trait. › RustSec Advisory Database</title>
+<title>RUSTSEC-2020-0101: conquer-once: conquer-once&#39;s OnceCell lacks Send bound for its Sync trait. › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/conquer-once/RUSTSEC-2020-0101.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/conquer-once/RUSTSEC-2020-0101.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/conquer-once/RUSTSEC-2020-0101.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0101">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           January 20, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -143,16 +144,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-3jc5-5hc5-33gj">GHSA-3jc5-5hc5-33gj</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/oliver-giersch/conquer-once/issues/3">
-          https://github.com/oliver-giersch/conquer-once/issues/3
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/oliver-giersch/conquer-once/issues/3">
+              https://github.com/oliver-giersch/conquer-once/issues/3
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -172,7 +186,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -202,7 +216,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H</a></dd>
+      
 
       
 
@@ -211,7 +228,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.3.2</code></li>
+          <li><code>&#62;=0.3.2</code></li>
           
         </ul>
         
@@ -234,5 +251,11 @@ threads leading to undefined behavior and memory corruption in concurrent
 programs.</p>
 <p>The issue was fixed by adding a <code>Send</code> constraint to <code>OnceCell</code>.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

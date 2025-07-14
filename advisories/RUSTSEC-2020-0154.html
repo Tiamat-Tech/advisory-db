@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/buffoon/RUSTSEC-2020-0154.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/buffoon/RUSTSEC-2020-0154.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/buffoon/RUSTSEC-2020-0154.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0154">JSON (OSV)</a>
         </span>
     
 
@@ -83,8 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2021-08-22">
-          August 22, 2021
+        <time datetime="2021-08-21">
+          August 21, 2021
+        </time>
+        
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -121,13 +126,45 @@
       
 
       
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36512">CVE-2020-36512</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-hmx9-jm3v-33hv">GHSA-hmx9-jm3v-33hv</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-v938-qcc9-rwv8">GHSA-v938-qcc9-rwv8</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/carllerche/buffoon/issues/2">
-          https://github.com/carllerche/buffoon/issues/2
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/carllerche/buffoon/issues/2">
+              https://github.com/carllerche/buffoon/issues/2
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -157,5 +194,11 @@
 <p>Arbitrary <code>Read</code> implementations can read from the uninitialized buffer (memory exposure) and also can return incorrect number of bytes written to the buffer.
 Reading from uninitialized memory produces undefined values that can quickly invoke undefined behavior.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

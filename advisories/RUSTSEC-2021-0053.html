@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2021-0053: algorithmica: &#x27;merge_sort::merge()&#x27; crashes with double-free for `T: Drop` › RustSec Advisory Database</title>
+<title>RUSTSEC-2021-0053: algorithmica: &#39;merge_sort::merge()&#39; crashes with double-free for `T: Drop` › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/algorithmica/RUSTSEC-2021-0053.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/algorithmica/RUSTSEC-2021-0053.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/algorithmica/RUSTSEC-2021-0053.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2021-0053">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           April 15, 2021
         </time>
         
-        <time datetime="2021-11-06">
-          (last modified: November  6, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -134,16 +135,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-jh37-772x-4hpw">GHSA-jh37-772x-4hpw</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/AbrarNitk/algorithmica/issues/1">
-          https://github.com/AbrarNitk/algorithmica/issues/1
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/AbrarNitk/algorithmica/issues/1">
+              https://github.com/AbrarNitk/algorithmica/issues/1
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -172,5 +186,11 @@
     <p>In the affected versions of this crate, <code>merge_sort::merge()</code> wildly duplicates and drops ownership of <code>T</code> without guarding against double-free. Due to such implementation,
 simply invoking <code>merge_sort::merge()</code> on <code>Vec&lt;T: Drop&gt;</code> can cause <strong>double free</strong> bugs.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

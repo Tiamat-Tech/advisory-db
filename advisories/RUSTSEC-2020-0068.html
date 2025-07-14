@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/multihash/RUSTSEC-2020-0068.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/multihash/RUSTSEC-2020-0068.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/multihash/RUSTSEC-2020-0068.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0068">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           November  9, 2020
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -145,16 +146,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-h7qh-3h6f-w79p">GHSA-h7qh-3h6f-w79p</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/multiformats/rust-multihash/pull/72">
-          https://github.com/multiformats/rust-multihash/pull/72
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/multiformats/rust-multihash/pull/72">
+              https://github.com/multiformats/rust-multihash/pull/72
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -174,7 +188,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -204,7 +218,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+      
 
       
 
@@ -213,7 +230,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.11.3</code></li>
+          <li><code>&#62;=0.11.3</code></li>
           
         </ul>
         
@@ -238,7 +255,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.11.3</code></li>
+          <li><code>&#60;0.11.3</code></li>
           
         </ul>
       </dd>
@@ -247,7 +264,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.11.3</code></li>
+          <li><code>&#60;0.11.3</code></li>
           
         </ul>
       </dd>
@@ -263,5 +280,11 @@ It's never documented that <code>from_slice</code> (and <code>from_bytes</code> 
 <p>In practice, <code>from_slice</code>/<code>from_bytes</code> is frequently used in networking code (for example <a href="https://github.com/libp2p/rust-libp2p/blob/7b415d5e7040e45c541f76f2c409e63d4d3249c6/core/src/peer_id.rs#L89">in rust-libp2p</a>) and is being called with unsanitized data from untrusted sources.
 This can allow attackers to cause DoS by causing an unexpected <code>panic</code> in the network client's code.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

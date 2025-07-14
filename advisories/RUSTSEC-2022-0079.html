@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2022-0079: elf_rs: ELF header parsing library doesn&#x27;t check for valid offset › RustSec Advisory Database</title>
+<title>RUSTSEC-2022-0079: elf_rs: ELF header parsing library doesn&#39;t check for valid offset › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/elf_rs/RUSTSEC-2022-0079.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/elf_rs/RUSTSEC-2022-0079.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/elf_rs/RUSTSEC-2022-0079.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2022-0079">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           January 15, 2023
         </time>
         
-        <time datetime="2023-01-18">
-          (last modified: January 18, 2023)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -133,13 +134,33 @@
       
 
       
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-g6pw-999w-j75m">GHSA-g6pw-999w-j75m</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/vincenthouyi/elf_rs/issues/11">
-          https://github.com/vincenthouyi/elf_rs/issues/11
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/vincenthouyi/elf_rs/issues/11">
+              https://github.com/vincenthouyi/elf_rs/issues/11
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -153,7 +174,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.3.0</code></li>
+          <li><code>&#62;=0.3.0</code></li>
           
         </ul>
         
@@ -195,5 +216,11 @@ that it's trivial to cause SIGABRT (signal 6), or SEGV (signal 11).</p>
 for providing only valid inputs, or it should ideally do the due diligence to ensure that the
 offset doesn't exceed the bounds of the header (and add additional checks as necessary).</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

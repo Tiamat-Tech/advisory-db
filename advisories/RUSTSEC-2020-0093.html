@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/async-h1/RUSTSEC-2020-0093.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/async-h1/RUSTSEC-2020-0093.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/async-h1/RUSTSEC-2020-0093.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0093">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           December 18, 2020
         </time>
         
-        <time datetime="2021-02-26">
-          (last modified: February 26, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -150,16 +151,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-c8rq-crxj-mj9m">GHSA-c8rq-crxj-mj9m</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/http-rs/async-h1/releases/tag/v2.3.0">
-          https://github.com/http-rs/async-h1/releases/tag/v2.3.0
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/http-rs/async-h1/releases/tag/v2.3.0">
+              https://github.com/http-rs/async-h1/releases/tag/v2.3.0
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -173,7 +187,7 @@
         
         <ul>
           
-          <li><code>&gt;=2.3.0</code></li>
+          <li><code>&#62;=2.3.0</code></li>
           
         </ul>
         
@@ -198,7 +212,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;2.3.0</code></li>
+          <li><code>&#60;2.3.0</code></li>
           
         </ul>
       </dd>
@@ -207,7 +221,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;2.3.0</code></li>
+          <li><code>&#60;2.3.0</code></li>
           
         </ul>
       </dd>
@@ -224,5 +238,11 @@
 <p>Another potential concern with this vulnerability is that if a reverse proxy is sending multiple http clients' requests along the same keep-alive connection, it would be possible for the smuggled request to specify a long content and capture another user's request in its body. This content could be captured in a post request to an endpoint that allows the content to be subsequently retrieved by the adversary.</p>
 <p>The flaw was corrected in commit <a href="https://github.com/http-rs/async-h1/commit/7df79f1d5d99fc0f492b315eebc7f0d301a85212">7df79f</a> by ensuring that the request body is always consumed from the tcp stream before attempting to read subsequent keep-alive request headers from it.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

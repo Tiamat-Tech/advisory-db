@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/cdr/RUSTSEC-2021-0012.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/cdr/RUSTSEC-2021-0012.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/cdr/RUSTSEC-2021-0012.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2021-0012">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           January 24, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -134,16 +135,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-37jj-wp7g-7wj4">GHSA-37jj-wp7g-7wj4</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/hrektts/cdr-rs/issues/10">
-          https://github.com/hrektts/cdr-rs/issues/10
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/hrektts/cdr-rs/issues/10">
+              https://github.com/hrektts/cdr-rs/issues/10
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -163,7 +177,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -193,7 +207,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+      
 
       
 
@@ -202,7 +219,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.2.4</code></li>
+          <li><code>&#62;=0.2.4</code></li>
           
         </ul>
         
@@ -222,5 +239,11 @@
 <p>Passing an uninitialized buffer to an arbitrary <code>Read</code> implementation is currently defined as undefined behavior in Rust. Official documentation for the <code>Read</code> trait explains the following: &quot;It is your responsibility to make sure that buf is initialized before calling read. Calling read with an uninitialized buf (of the kind one obtains via MaybeUninit<!-- raw HTML omitted -->) is not safe, and can lead to undefined behavior.&quot;</p>
 <p>The flaw was corrected in commit ce310f7 by zero-initializing the newly allocated buffer before handing it to <code>Deserializer.reader.read_exact()</code>.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

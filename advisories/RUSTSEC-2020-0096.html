@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/im/RUSTSEC-2020-0096.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/im/RUSTSEC-2020-0096.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/im/RUSTSEC-2020-0096.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0096">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           January 18, 2021
         </time>
         
-        <time datetime="2022-06-07">
-          (last modified: June  7, 2022)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -135,16 +136,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-q9h2-4xhf-23xx">GHSA-q9h2-4xhf-23xx</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/bodil/im-rs/issues/157">
-          https://github.com/bodil/im-rs/issues/157
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/bodil/im-rs/issues/157">
+              https://github.com/bodil/im-rs/issues/157
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -164,7 +178,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>High</d>
+          <dt>Attack complexity</dt><dd>High</dd>
           
 
           
@@ -194,7 +208,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H</a></dd>
+      
 
       
 
@@ -203,7 +220,7 @@
         
         <ul>
           
-          <li><code>&gt;=15.1.0</code></li>
+          <li><code>&#62;=15.1.0</code></li>
           
         </ul>
         
@@ -214,7 +231,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;12.0.0</code></li>
+          <li><code>&#60;12.0.0</code></li>
           
         </ul>
       </dd>
@@ -232,5 +249,11 @@
 <p>This allows a data race in safe Rust code if <code>TreeFocus</code> is extracted from <code>Focus</code> type.
 Typical users that only use <code>Focus</code> type are not affected.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

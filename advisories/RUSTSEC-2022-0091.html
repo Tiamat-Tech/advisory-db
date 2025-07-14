@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/tauri/RUSTSEC-2022-0091.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/tauri/RUSTSEC-2022-0091.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/tauri/RUSTSEC-2022-0091.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2022-0091">JSON (OSV)</a>
         </span>
     
 
@@ -141,11 +142,18 @@
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/tauri-apps/tauri/issues/5234">
-          https://github.com/tauri-apps/tauri/issues/5234
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/tauri-apps/tauri/issues/5234">
+              https://github.com/tauri-apps/tauri/issues/5234
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -165,7 +173,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>High</d>
+          <dt>Attack complexity</dt><dd>High</dd>
           
 
           
@@ -195,7 +203,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:L/I:N/A:N">CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:L/I:N/A:N</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:L/I:N/A:N">CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:L/I:N/A:N</a></dd>
+      
 
       
 
@@ -204,9 +215,9 @@
         
         <ul>
           
-          <li><code>&gt;=1.0.7, &lt;1.1.0</code></li>
+          <li><code>&#62;=1.0.7, &#60;1.1.0</code></li>
           
-          <li><code>&gt;=1.1.2</code></li>
+          <li><code>&#62;=1.1.2</code></li>
           
         </ul>
         
@@ -217,7 +228,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;1.0.0</code></li>
+          <li><code>&#60;1.0.0</code></li>
           
         </ul>
       </dd>
@@ -234,5 +245,11 @@
     <p>A bug identified in <a href="https://github.com/tauri-apps/tauri/issues/5234">this</a> issue allows a partial filesystem scope bypass if glob characters are used within file dialog or drag-and-drop functionalities.</p>
 <p><a href="https://github.com/tauri-apps/tauri/pull/5237">This</a> PR fixes the issue by escaping glob characters.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

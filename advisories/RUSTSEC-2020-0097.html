@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/xcb/RUSTSEC-2020-0097.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/xcb/RUSTSEC-2020-0097.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/xcb/RUSTSEC-2020-0097.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0097">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           January 18, 2021
         </time>
         
-        <time datetime="2023-02-13">
-          (last modified: February 13, 2023)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -137,16 +138,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-c8hq-x4mm-p6q6">GHSA-c8hq-x4mm-p6q6</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/rust-x-bindings/rust-xcb/issues/93">
-          https://github.com/rust-x-bindings/rust-xcb/issues/93
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/rust-x-bindings/rust-xcb/issues/93">
+              https://github.com/rust-x-bindings/rust-xcb/issues/93
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -166,7 +180,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -196,7 +210,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</a></dd>
+      
 
       
 
@@ -205,7 +222,7 @@
         
         <ul>
           
-          <li><code>&gt;=1.0</code></li>
+          <li><code>&#62;=1.0</code></li>
           
         </ul>
         
@@ -226,5 +243,11 @@ With this definition, it is possible to create a <code>base::Error</code> with a
 such as use-after-free or double-free with safe Rust.</p>
 <p>The users of <code>xcb</code> crate are advised not to manipulate the field.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

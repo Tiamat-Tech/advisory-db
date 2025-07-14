@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2021-0112: tectonic_xdv: `Read` on uninitialized buffer may cause UB (&#x27;tectonic_xdv&#x27; crate) › RustSec Advisory Database</title>
+<title>RUSTSEC-2021-0112: tectonic_xdv: `Read` on uninitialized buffer may cause UB (&#39;tectonic_xdv&#39; crate) › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/tectonic_xdv/RUSTSEC-2021-0112.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/tectonic_xdv/RUSTSEC-2021-0112.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/tectonic_xdv/RUSTSEC-2021-0112.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2021-0112">JSON (OSV)</a>
         </span>
     
 
@@ -85,6 +86,10 @@
       <dd>
         <time datetime="2021-09-18">
           September 18, 2021
+        </time>
+        
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -121,13 +126,45 @@
       
 
       
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45703">CVE-2021-45703</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-6692-8qqf-79jc">GHSA-6692-8qqf-79jc</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-qwvx-c8j7-5g75">GHSA-qwvx-c8j7-5g75</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/tectonic-typesetting/tectonic/issues/752">
-          https://github.com/tectonic-typesetting/tectonic/issues/752
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/tectonic-typesetting/tectonic/issues/752">
+              https://github.com/tectonic-typesetting/tectonic/issues/752
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -141,7 +178,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.1.12</code></li>
+          <li><code>&#62;=0.1.12</code></li>
           
         </ul>
         
@@ -161,5 +198,11 @@
 <p>Arbitrary <code>Read</code> implementations can read from the uninitialized buffer (memory exposure) and also can return incorrect number of bytes written to the buffer. Reading from uninitialized memory produces undefined values that can quickly invoke undefined behavior.</p>
 <p>The problem was fixed in commit <code>cdff034</code> by zero-initializing the buffer before passing it to a user-provided <code>Read</code> implementation.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

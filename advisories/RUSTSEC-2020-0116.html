@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2020-0116: unicycle: PinSlab&lt;T&gt; and Unordered&lt;T, S&gt; need bounds on their Send/Sync traits › RustSec Advisory Database</title>
+<title>RUSTSEC-2020-0116: unicycle: PinSlab&#60;T&#62; and Unordered&#60;T, S&#62; need bounds on their Send/Sync traits › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/unicycle/RUSTSEC-2020-0116.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/unicycle/RUSTSEC-2020-0116.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/unicycle/RUSTSEC-2020-0116.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2020-0116">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           January 24, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -136,16 +137,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-686f-ch3r-xwmh">GHSA-686f-ch3r-xwmh</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/udoprog/unicycle/issues/8">
-          https://github.com/udoprog/unicycle/issues/8
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/udoprog/unicycle/issues/8">
+              https://github.com/udoprog/unicycle/issues/8
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -165,7 +179,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>High</d>
+          <dt>Attack complexity</dt><dd>High</dd>
           
 
           
@@ -195,7 +209,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+      
 
       
 
@@ -204,7 +221,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.7.1</code></li>
+          <li><code>&#62;=0.7.1</code></li>
           
         </ul>
         
@@ -224,5 +241,11 @@
 <p>This can result in a data race &amp; memory corruption when types that provide internal mutability without synchronization are contained within <code>PinSlab&lt;T&gt;</code> or <code>Unordered&lt;T, S&gt;</code> and accessed concurrently from multiple threads.</p>
 <p>The flaw was corrected in commits 92f40b4 &amp; 6a6c367 by adding trait bound <code>T: Send</code> to <code>Send</code> impls for <code>PinSlab&lt;T&gt;</code> &amp; <code>Unordered&lt;T, S&gt;</code> and adding <code>T: Sync</code> to <code>Sync</code> impls for <code>PinSlab&lt;T&gt;</code> &amp; <code>Unordered&lt;T, S&gt;</code>.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

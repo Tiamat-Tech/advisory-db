@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2021-0085: binjs_io: &#x27;Read&#x27; on uninitialized memory may cause UB › RustSec Advisory Database</title>
+<title>RUSTSEC-2021-0085: binjs_io: &#39;Read&#39; on uninitialized memory may cause UB › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/binjs_io/RUSTSEC-2021-0085.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/binjs_io/RUSTSEC-2021-0085.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/binjs_io/RUSTSEC-2021-0085.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2021-0085">JSON (OSV)</a>
         </span>
     
 
@@ -83,8 +84,12 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2021-08-22">
-          August 22, 2021
+        <time datetime="2021-08-21">
+          August 21, 2021
+        </time>
+        
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -121,13 +126,45 @@
       
 
       
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45683">CVE-2021-45683</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-c6px-4grw-hrjr">GHSA-c6px-4grw-hrjr</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-cw4j-cf6c-mmfv">GHSA-cw4j-cf6c-mmfv</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/binast/binjs-ref/issues/460">
-          https://github.com/binast/binjs-ref/issues/460
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/binast/binjs-ref/issues/460">
+              https://github.com/binast/binjs-ref/issues/460
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -157,5 +194,11 @@
 <p>Arbitrary <code>Read</code> implementations can read from the uninitialized buffer (memory exposure) and also can return incorrect number of bytes written to the buffer.
 Reading from uninitialized memory produces undefined values that can quickly invoke undefined behavior.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

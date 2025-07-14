@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/openssl-src/RUSTSEC-2023-0009.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/openssl-src/RUSTSEC-2023-0009.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/openssl-src/RUSTSEC-2023-0009.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2023-0009">JSON (OSV)</a>
         </span>
     
 
@@ -85,6 +86,10 @@
       <dd>
         <time datetime="2023-02-07">
           February  7, 2023
+        </time>
+        
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -130,16 +135,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-r7jw-wp68-3xch">GHSA-r7jw-wp68-3xch</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://www.openssl.org/news/secadv/20230207.txt">
-          https://www.openssl.org/news/secadv/20230207.txt
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://www.openssl.org/news/secadv/20230207.txt">
+              https://www.openssl.org/news/secadv/20230207.txt
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -153,9 +171,9 @@
         
         <ul>
           
-          <li><code>&gt;=111.25, &lt;300.0</code></li>
+          <li><code>&#62;=111.25, &#60;300.0</code></li>
           
-          <li><code>&gt;=300.0.12</code></li>
+          <li><code>&#62;=300.0.12</code></li>
           
         </ul>
         
@@ -193,5 +211,11 @@ the <code>BIO</code>. This internal function is in turn called by the public API
 <code>i2d_ASN1_bio_stream</code>, <code>BIO_new_CMS</code>, <code>BIO_new_PKCS7</code>, <code>i2d_CMS_bio_stream</code> and
 <code>i2d_PKCS7_bio_stream</code>.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

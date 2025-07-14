@@ -1,19 +1,20 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>RustSec Advisories</title><id>https://rustsec.org/feed.xml</id><updated>2023-06-01T12:00:00+00:00</updated><author><name>RustSec</name></author><icon>https://rustsec.org/favicon.ico</icon><link href="https://rustsec.org/feed.xml" rel="self" type="application/atom+xml"/><link href="https://rustsec.org/" rel="alternate" type="text/html"/><subtitle xml:lang="en">Security advisories filed against Rust crates</subtitle><entry><title>RUSTSEC-2023-0040: users is unmaintained</title><id>https://rustsec.org/advisories/RUSTSEC-2023-0040.html</id><updated>2023-06-01T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2023-0040.html" rel="alternate" type="text/html" title="RUSTSEC-2023-0040: users is unmaintained"/><published>2023-06-01T12:00:00+00:00</published><summary xml:lang="en">`users` crate is unmaintained</summary><content xml:lang="en" type="html">  &lt;article&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>RustSec Advisories</title><id>https://rustsec.org/feed.xml</id><updated>2025-07-14T12:00:00+00:00</updated><author><name>RustSec</name></author><icon>https://rustsec.org/favicon.ico</icon><link href="https://rustsec.org/feed.xml" rel="self" type="application/atom+xml"/><link href="https://rustsec.org/" rel="alternate" type="text/html"/><subtitle xml:lang="en">Security advisories filed against Rust crates</subtitle><entry><title>RUSTSEC-2025-0044: Vulnerability in slice-ring-buffer</title><id>https://rustsec.org/advisories/RUSTSEC-2025-0044.html</id><updated>2025-07-14T12:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2025-0044.html" rel="alternate" type="text/html" title="RUSTSEC-2025-0044: Vulnerability in slice-ring-buffer"/><published>2025-07-14T12:00:00+00:00</published><summary xml:lang="en">Four unique double-free vulnerabilities triggered via safe APIs</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
         &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/users/RUSTSEC-2023-0040.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/users/RUSTSEC-2023-0040.md&quot;&gt;Edit&lt;/a&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/slice-ring-buffer/RUSTSEC-2025-0044.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/slice-ring-buffer/RUSTSEC-2025-0044.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2025-0044&quot;&gt;JSON (OSV)&lt;/a&gt;
         &lt;/span&gt;
     
 
     &lt;header&gt;
       &lt;h1&gt;
         
-        RUSTSEC-2023-0040
+        RUSTSEC-2025-0044
         
       &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;&lt;code&gt;users&lt;/code&gt; crate is unmaintained&lt;/p&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Four unique double-free vulnerabilities triggered via safe APIs&lt;/p&gt;
 &lt;/span&gt;
     &lt;/header&gt;
 
@@ -22,15 +23,15 @@
     &lt;dl&gt;
       &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
       &lt;dd&gt;
-        &lt;time datetime=&quot;2023-06-01&quot;&gt;
-          June  1, 2023
+        &lt;time datetime=&quot;2025-06-16&quot;&gt;
+          June 16, 2025
         &lt;/time&gt;
       &lt;/dd&gt;
 
       &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
       &lt;dd&gt;
-        &lt;time datetime=&quot;2023-06-01&quot;&gt;
-          June  1, 2023
+        &lt;time datetime=&quot;2025-07-14&quot;&gt;
+          July 14, 2025
         &lt;/time&gt;
         
       &lt;/dd&gt;
@@ -39,105 +40,8 @@
       &lt;dd&gt;
         
         
-        &lt;a href=&quot;/packages/users.html&quot;&gt;users&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/users&quot;&gt;crates.io&lt;/a&gt;)
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
-        Unmaintained
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;a href=&quot;https://github.com/ogham/rust-users/issues/54&quot;&gt;
-          https://github.com/ogham/rust-users/issues/54
-        &lt;/a&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        no patched versions
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The &lt;code&gt;users&lt;/code&gt; crate hasn&apos;t seen any action since 2020-10-08. The developer seems &lt;a href=&quot;https://github.com/ogham/rust-users/issues/54&quot;&gt;MIA&lt;/a&gt; since.&lt;/p&gt;
-&lt;h2&gt;Recommended alternatives&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://crates.io/crates/sysinfo&quot;&gt;&lt;code&gt;sysinfo&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2023-0038: Vulnerability in sequoia-openpgp</title><id>https://rustsec.org/advisories/RUSTSEC-2023-0038.html</id><updated>2023-05-31T12:00:00+00:00</updated><category term="denial-of-service"/><link href="https://rustsec.org/advisories/RUSTSEC-2023-0038.html" rel="alternate" type="text/html" title="RUSTSEC-2023-0038: Vulnerability in sequoia-openpgp"/><published>2023-05-31T12:00:00+00:00</published><summary xml:lang="en">Out-of-bounds array access leads to panic</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/sequoia-openpgp/RUSTSEC-2023-0038.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/sequoia-openpgp/RUSTSEC-2023-0038.md&quot;&gt;Edit&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2023-0038
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Out-of-bounds array access leads to panic&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2023-05-16&quot;&gt;
-          May 16, 2023
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2023-05-31&quot;&gt;
-          May 31, 2023
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/sequoia-openpgp.html&quot;&gt;sequoia-openpgp&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/sequoia-openpgp&quot;&gt;crates.io&lt;/a&gt;)
+        &lt;a href=&quot;/packages/slice-ring-buffer.html&quot;&gt;slice-ring-buffer&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/slice-ring-buffer&quot;&gt;crates.io&lt;/a&gt;)
         
         
       &lt;/dd&gt;
@@ -146,822 +50,6 @@
       &lt;dd&gt;
         
         Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/denial-of-service.html&quot;&gt;denial-of-service&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/panic.html&quot;&gt;#panic&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;a href=&quot;https://lists.sequoia-pgp.org/hyperkitty/list/announce@lists.sequoia-pgp.org/thread/SN2E3QRT4DMQ5JNEK6VIN6DJ5SH766DI/&quot;&gt;
-          https://lists.sequoia-pgp.org/hyperkitty/list/announce@lists.sequoia-pgp.org/thread/SN2E3QRT4DMQ5JNEK6VIN6DJ5SH766DI/
-        &lt;/a&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;gt;=1.1.1, &amp;lt;1.2.0&lt;/code&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;gt;=1.8.1, &amp;lt;1.9.0&lt;/code&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;gt;=1.16.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;Affected versions of the crate have several bugs where
-attacker-controlled input can result in the use of an out-of-bound
-array index.  Rust detects the use of the out-of-bound index and
-causes the application to panic.  An attacker may be able to use this
-to cause a denial-of-service.  However, it is not possible for an
-attacker to read from or write to the application&apos;s address space.&lt;/p&gt;
-
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2023-0039: Vulnerability in buffered-reader</title><id>https://rustsec.org/advisories/RUSTSEC-2023-0039.html</id><updated>2023-05-31T12:00:00+00:00</updated><category term="denial-of-service"/><link href="https://rustsec.org/advisories/RUSTSEC-2023-0039.html" rel="alternate" type="text/html" title="RUSTSEC-2023-0039: Vulnerability in buffered-reader"/><published>2023-05-31T12:00:00+00:00</published><summary xml:lang="en">Out-of-bounds array access leads to panic</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/buffered-reader/RUSTSEC-2023-0039.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/buffered-reader/RUSTSEC-2023-0039.md&quot;&gt;Edit&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2023-0039
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Out-of-bounds array access leads to panic&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2023-05-16&quot;&gt;
-          May 16, 2023
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2023-05-31&quot;&gt;
-          May 31, 2023
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/buffered-reader.html&quot;&gt;buffered-reader&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/buffered-reader&quot;&gt;crates.io&lt;/a&gt;)
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/denial-of-service.html&quot;&gt;denial-of-service&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/panic.html&quot;&gt;#panic&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;a href=&quot;https://lists.sequoia-pgp.org/hyperkitty/list/announce@lists.sequoia-pgp.org/thread/SN2E3QRT4DMQ5JNEK6VIN6DJ5SH766DI/&quot;&gt;
-          https://lists.sequoia-pgp.org/hyperkitty/list/announce@lists.sequoia-pgp.org/thread/SN2E3QRT4DMQ5JNEK6VIN6DJ5SH766DI/
-        &lt;/a&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;gt;=1.0.2, &amp;lt;1.1.0&lt;/code&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;gt;=1.1.5, &amp;lt;1.2.0&lt;/code&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;gt;=1.2.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;Affected versions of the crate have a bug where attacker-controlled
-input can result in the use of an out-of-bound array index.  Rust
-detects the use of the out-of-bound index and causes the application
-to panic.  An attacker may be able to use this to cause a
-denial-of-service.  However, it is not possible for an attacker to
-read from or write to the application&apos;s address space.&lt;/p&gt;
-
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2023-0037: xsalsa20poly1305 is unmaintained</title><id>https://rustsec.org/advisories/RUSTSEC-2023-0037.html</id><updated>2023-05-17T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2023-0037.html" rel="alternate" type="text/html" title="RUSTSEC-2023-0037: xsalsa20poly1305 is unmaintained"/><published>2023-05-17T12:00:00+00:00</published><summary xml:lang="en">crate has been renamed to `crypto_secretbox`</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/xsalsa20poly1305/RUSTSEC-2023-0037.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/xsalsa20poly1305/RUSTSEC-2023-0037.md&quot;&gt;Edit&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2023-0037
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;crate has been renamed to &lt;code&gt;crypto_secretbox&lt;/code&gt;&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2023-05-16&quot;&gt;
-          May 16, 2023
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2023-05-17&quot;&gt;
-          May 17, 2023
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/xsalsa20poly1305.html&quot;&gt;xsalsa20poly1305&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/xsalsa20poly1305&quot;&gt;crates.io&lt;/a&gt;)
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
-        Unmaintained
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;a href=&quot;https://github.com/RustCrypto/AEADs/pull/525&quot;&gt;
-          https://github.com/RustCrypto/AEADs/pull/525
-        &lt;/a&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        no patched versions
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;This crate has been forked/renamed from &lt;code&gt;xsalsa20poly1305&lt;/code&gt; to &lt;code&gt;crypto_secretbox&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The new repository location is at:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/RustCrypto/nacl-compat/tree/master/crypto_secretbox&quot;&gt;https://github.com/RustCrypto/nacl-compat/tree/master/crypto_secretbox&lt;/a&gt;&lt;/p&gt;
-
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2023-0036: tree_magic is unmaintained</title><id>https://rustsec.org/advisories/RUSTSEC-2023-0036.html</id><updated>2023-04-25T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2023-0036.html" rel="alternate" type="text/html" title="RUSTSEC-2023-0036: tree_magic is unmaintained"/><published>2023-04-25T12:00:00+00:00</published><summary xml:lang="en">tree_magic is Unmaintained</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/tree_magic/RUSTSEC-2023-0036.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/tree_magic/RUSTSEC-2023-0036.md&quot;&gt;Edit&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2023-0036
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;tree_magic is Unmaintained&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2023-04-11&quot;&gt;
-          April 11, 2023
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2023-04-25&quot;&gt;
-          April 25, 2023
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/tree_magic.html&quot;&gt;tree_magic&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/tree_magic&quot;&gt;crates.io&lt;/a&gt;)
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
-        Unmaintained
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;a href=&quot;https://github.com/aahancoc/tree_magic/issues/16&quot;&gt;
-          https://github.com/aahancoc/tree_magic/issues/16
-        &lt;/a&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        no patched versions
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The &lt;code&gt;tree_magic&lt;/code&gt; crate is unmaintained. The author has archived the github
-repository.&lt;/p&gt;
-&lt;p&gt;Alternatives:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://crates.io/crates/tree_magic_mini&quot;&gt;tree_magic_mini&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2023-0035: Unsoundness in enumflags2</title><id>https://rustsec.org/advisories/RUSTSEC-2023-0035.html</id><updated>2023-04-23T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2023-0035.html" rel="alternate" type="text/html" title="RUSTSEC-2023-0035: Unsoundness in enumflags2"/><published>2023-04-23T12:00:00+00:00</published><summary xml:lang="en">Adverserial use of `make_bitflags!` macro can cause undefined behavior</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/enumflags2/RUSTSEC-2023-0035.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/enumflags2/RUSTSEC-2023-0035.md&quot;&gt;Edit&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2023-0035
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Adverserial use of &lt;code&gt;make_bitflags!&lt;/code&gt; macro can cause undefined behavior&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2023-04-17&quot;&gt;
-          April 17, 2023
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2023-04-23&quot;&gt;
-          April 23, 2023
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/enumflags2.html&quot;&gt;enumflags2&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/enumflags2&quot;&gt;crates.io&lt;/a&gt;)
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
-        Unsound
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;a href=&quot;https://github.com/meithecatte/enumflags2/releases/tag/v0.7.7&quot;&gt;
-          https://github.com/meithecatte/enumflags2/releases/tag/v0.7.7
-        &lt;/a&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;gt;=0.7.7&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;unaffected&quot;&gt;Unaffected&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;lt;0.7.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The macro relied on an expression of the form &lt;code&gt;Enum::Variant&lt;/code&gt; always being a
-variant of the enum. However, it may also be an associated integer constant, in
-which case there&apos;s no guarantee that the value of said constant consists only of
-bits valid for this bitflag type.&lt;/p&gt;
-&lt;p&gt;Thus, code like this could create an invalid &lt;code&gt;BitFlags&amp;lt;Test&amp;gt;&lt;/code&gt;, which would cause
-iterating over it to trigger undefined behavior. As the debug formatter
-internally iterates over the value, it is also affected.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-rust&quot;&gt;use enumflags2::{bitflags, make_bitflags};
-
-#[bitflags]
-#[repr(u8)]
-#[derive(Copy, Clone, Debug)]
-enum Test {
-    A = 1,
-    B = 2,
-}
-
-impl Test {
-    const C: u8 = 69;
-}
-
-fn main() {
-    let x = make_bitflags!(Test::{C});
-    // printing or iterating over x is UB
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2023-0034: Vulnerability in h2</title><id>https://rustsec.org/advisories/RUSTSEC-2023-0034.html</id><updated>2023-04-20T12:00:00+00:00</updated><category term="denial-of-service"/><link href="https://rustsec.org/advisories/RUSTSEC-2023-0034.html" rel="alternate" type="text/html" title="RUSTSEC-2023-0034: Vulnerability in h2"/><published>2023-04-20T12:00:00+00:00</published><summary xml:lang="en">Resource exhaustion vulnerability in h2 may lead to Denial of Service (DoS)</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/h2/RUSTSEC-2023-0034.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/h2/RUSTSEC-2023-0034.md&quot;&gt;Edit&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2023-0034
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Resource exhaustion vulnerability in h2 may lead to Denial of Service (DoS)&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2023-04-14&quot;&gt;
-          April 14, 2023
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2023-04-20&quot;&gt;
-          April 20, 2023
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/h2.html&quot;&gt;h2&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/h2&quot;&gt;crates.io&lt;/a&gt;)
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/denial-of-service.html&quot;&gt;denial-of-service&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/http.html&quot;&gt;#http&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/http2.html&quot;&gt;#http2&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/h2.html&quot;&gt;#h2&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-26964&quot;&gt;CVE-2023-26964&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-          &lt;li&gt;
-            
-            &lt;a href=&quot;https://github.com/advisories/GHSA-f8vr-r385-rh5r&quot;&gt;GHSA-f8vr-r385-rh5r&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;a href=&quot;https://github.com/hyperium/hyper/issues/2877&quot;&gt;
-          https://github.com/hyperium/hyper/issues/2877
-        &lt;/a&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;gt;=0.3.17&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;If an attacker is able to flood the network with pairs of &lt;code&gt;HEADERS&lt;/code&gt;/&lt;code&gt;RST_STREAM&lt;/code&gt; frames, such that the &lt;code&gt;h2&lt;/code&gt; application is not able to accept them faster than the bytes are received, the pending accept queue can grow in memory usage. Being able to do this consistently can result in excessive memory use, and eventually trigger Out Of Memory.&lt;/p&gt;
-&lt;p&gt;This flaw is corrected in &lt;a href=&quot;https://github.com/hyperium/h2/pull/668&quot;&gt;hyperium/h2#668&lt;/a&gt;, which restricts remote reset stream count by default.&lt;/p&gt;
-
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2023-0033: Unsoundness in borsh</title><id>https://rustsec.org/advisories/RUSTSEC-2023-0033.html</id><updated>2023-04-13T12:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2023-0033.html" rel="alternate" type="text/html" title="RUSTSEC-2023-0033: Unsoundness in borsh"/><published>2023-04-13T12:00:00+00:00</published><summary xml:lang="en">Parsing borsh messages with ZST which are not-copy/clone is unsound</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/borsh/RUSTSEC-2023-0033.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/borsh/RUSTSEC-2023-0033.md&quot;&gt;Edit&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2023-0033
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Parsing borsh messages with ZST which are not-copy/clone is unsound&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2023-04-12&quot;&gt;
-          April 12, 2023
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2023-04-13&quot;&gt;
-          April 13, 2023
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/borsh.html&quot;&gt;borsh&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/borsh&quot;&gt;crates.io&lt;/a&gt;)
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
-        Unsound
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;a href=&quot;https://github.com/near/borsh-rs/issues/19&quot;&gt;
-          https://github.com/near/borsh-rs/issues/19
-        &lt;/a&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        no patched versions
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;Affected versions of borsh cause undefined behavior when zero-sized-types (ZST)
-are parsed and the Copy/Clone traits are not implemented/derived.
-For instance if 1000 instances of a ZST are deserialized, and the ZST is not copy
-(this can be achieved through a singleton), then accessing/writing to deserialized
-data will cause a segmentation fault.&lt;/p&gt;
-&lt;p&gt;There is currently no way for borsh to read data without also providing a Rust type.
-Therefore, if not ZST are used for serialization, then you are not affected by this issue.&lt;/p&gt;
-
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2023-0032: Unsoundness in ntru</title><id>https://rustsec.org/advisories/RUSTSEC-2023-0032.html</id><updated>2023-04-06T12:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2023-0032.html" rel="alternate" type="text/html" title="RUSTSEC-2023-0032: Unsoundness in ntru"/><published>2023-04-06T12:00:00+00:00</published><summary xml:lang="en">Unsound FFI: Wrong API usage causes write past allocated area</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/ntru/RUSTSEC-2023-0032.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/ntru/RUSTSEC-2023-0032.md&quot;&gt;Edit&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2023-0032
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Unsound FFI: Wrong API usage causes write past allocated area&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2023-03-22&quot;&gt;
-          March 22, 2023
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2023-04-06&quot;&gt;
-          April  6, 2023
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/ntru.html&quot;&gt;ntru&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/ntru&quot;&gt;crates.io&lt;/a&gt;)
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
-        Unsound
         
       &lt;/dd&gt;
 
@@ -980,9 +68,9 @@ Therefore, if not ZST are used for serialization, then you are not affected by t
       &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
       &lt;dd&gt;
         
-          &lt;a href=&quot;/keywords/ffi.html&quot;&gt;#ffi&lt;/a&gt;
+          &lt;a href=&quot;/keywords/memory-safety.html&quot;&gt;#memory-safety&lt;/a&gt;
         
-          &lt;a href=&quot;/keywords/buffer-overflow.html&quot;&gt;#buffer-overflow&lt;/a&gt;
+          &lt;a href=&quot;/keywords/double-free.html&quot;&gt;#double-free&lt;/a&gt;
         
       &lt;/dd&gt;
       
@@ -990,11 +78,18 @@ Therefore, if not ZST are used for serialization, then you are not affected by t
       
 
       
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
       &lt;dd&gt;
-        &lt;a href=&quot;https://github.com/FrinkGlobal/ntru-rs/issues/8&quot;&gt;
-          https://github.com/FrinkGlobal/ntru-rs/issues/8
-        &lt;/a&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/LiquidityC/slice_ring_buffer/issues/12&quot;&gt;
+              https://github.com/LiquidityC/slice_ring_buffer/issues/12
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
       &lt;/dd&gt;
       
 
@@ -1025,20 +120,38 @@ Therefore, if not ZST are used for serialization, then you are not affected by t
       &lt;dt&gt;Affected Functions&lt;/dt&gt;
       &lt;dd&gt;Version&lt;/dd&gt;
       
-      &lt;dt&gt;&lt;code&gt;ntru::types::PrivateKey::export&lt;/code&gt;&lt;/dt&gt;
+      &lt;dt&gt;&lt;code&gt;slice_ring_buffer::IntoIter::clone&lt;/code&gt;&lt;/dt&gt;
       &lt;dd&gt;
         &lt;ul&gt;
           
-          &lt;li&gt;&lt;code&gt;&amp;gt;=0.4.3&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code&gt;&amp;#60;=0.3.4&lt;/code&gt;&lt;/li&gt;
           
         &lt;/ul&gt;
       &lt;/dd&gt;
       
-      &lt;dt&gt;&lt;code&gt;ntru::types::PublicKey::export&lt;/code&gt;&lt;/dt&gt;
+      &lt;dt&gt;&lt;code&gt;slice_ring_buffer::SliceRingBuffer::extend_from_slice&lt;/code&gt;&lt;/dt&gt;
       &lt;dd&gt;
         &lt;ul&gt;
           
-          &lt;li&gt;&lt;code&gt;&amp;gt;=0.4.3&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code&gt;&amp;#60;=0.3.4&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;slice_ring_buffer::SliceRingBuffer::insert&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;=0.3.4&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;slice_ring_buffer::SliceRingBuffer::shrink_to_fit&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;=0.3.4&lt;/code&gt;&lt;/li&gt;
           
         &lt;/ul&gt;
       &lt;/dd&gt;
@@ -1049,29 +162,33 @@ Therefore, if not ZST are used for serialization, then you are not affected by t
     
 
     &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The following usage causes undefined behavior.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-rust&quot;&gt;let kp: ntru::types::KeyPair = …;
-kp.get_public().export(Default::default())
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;When compiled with debug assertions, the code above will trigger a &lt;code&gt;attempt to subtract with overflow&lt;/code&gt; panic before UB occurs.
-Other mistakes (e.g. using &lt;code&gt;EncParams&lt;/code&gt; from a different key) may always trigger UB.&lt;/p&gt;
-&lt;p&gt;Likely, older versions of this crate are also affected, but have not been tested.&lt;/p&gt;
+    &lt;p&gt;The crate &lt;a href=&quot;https://crates.io/crates/slice-ring-buffer&quot;&gt;&lt;code&gt;slice-ring-buffer&lt;/code&gt;&lt;/a&gt; was developed as a fork of &lt;a href=&quot;https://crates.io/crates/slice-deque&quot;&gt;&lt;code&gt;slice-deque&lt;/code&gt;&lt;/a&gt; to continue maintenance and provide security patches, since the latter has been officially unmaintained (&lt;a href=&quot;https://rustsec.org/advisories/RUSTSEC-2020-0158.html&quot;&gt;RUSTSEC-2020-0158&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;While &lt;code&gt;slice-ring-buffer&lt;/code&gt; has addressed some previously reported memory safety issues inherited from its fork origin (&lt;a href=&quot;https://rustsec.org/advisories/RUSTSEC-2021-0047.html&quot;&gt;RUSTSEC-2021-0047&lt;/a&gt;), it still retains multiple unresolved memory corruption vulnerabilities.&lt;/p&gt;
+&lt;p&gt;Specifically, we have discovered four new memory safety bugs, each resulting in double-free violations that can occur when only safe APIs are invoked. These vulnerabilities correspond to four distinct safe APIs in the crate, each exposing unsound and vulnerable behavior due to incorrect usage of unsafe code internally.&lt;/p&gt;
+&lt;p&gt;Unfortunately, the maintainer doesn&apos;t have much availability to resolve these issues so there&apos;s no concrete timeline for fixes. Community contributions towards fixing these vulnerabilities would be much appreciated.&lt;/p&gt;
 
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2023-0031: Unsoundness in spin</title><id>https://rustsec.org/advisories/RUSTSEC-2023-0031.html</id><updated>2023-04-03T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2023-0031.html" rel="alternate" type="text/html" title="RUSTSEC-2023-0031: Unsoundness in spin"/><published>2023-04-03T12:00:00+00:00</published><summary xml:lang="en">Initialisation failure in `Once::try_call_once` can lead to undefined behaviour for other initialisers</summary><content xml:lang="en" type="html">  &lt;article&gt;
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2025-0042: Unsoundness in static-alloc</title><id>https://rustsec.org/advisories/RUSTSEC-2025-0042.html</id><updated>2025-07-11T12:00:00+00:00</updated><category term="memory-exposure"/><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2025-0042.html" rel="alternate" type="text/html" title="RUSTSEC-2025-0042: Unsoundness in static-alloc"/><published>2025-07-11T12:00:00+00:00</published><summary xml:lang="en">Uninitialized read after allocating MemBump</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
         &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/spin/RUSTSEC-2023-0031.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/spin/RUSTSEC-2023-0031.md&quot;&gt;Edit&lt;/a&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/static-alloc/RUSTSEC-2025-0042.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/static-alloc/RUSTSEC-2025-0042.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2025-0042&quot;&gt;JSON (OSV)&lt;/a&gt;
         &lt;/span&gt;
     
 
     &lt;header&gt;
       &lt;h1&gt;
         
-        RUSTSEC-2023-0031
+        RUSTSEC-2025-0042
         
       &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Initialisation failure in &lt;code&gt;Once::try_call_once&lt;/code&gt; can lead to undefined behaviour for other initialisers&lt;/p&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Uninitialized read after allocating MemBump&lt;/p&gt;
 &lt;/span&gt;
     &lt;/header&gt;
 
@@ -1080,15 +197,15 @@ Other mistakes (e.g. using &lt;code&gt;EncParams&lt;/code&gt; from a different k
     &lt;dl&gt;
       &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
       &lt;dd&gt;
-        &lt;time datetime=&quot;2023-03-31&quot;&gt;
-          March 31, 2023
+        &lt;time datetime=&quot;2025-07-11&quot;&gt;
+          July 11, 2025
         &lt;/time&gt;
       &lt;/dd&gt;
 
       &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
       &lt;dd&gt;
-        &lt;time datetime=&quot;2023-04-03&quot;&gt;
-          April  3, 2023
+        &lt;time datetime=&quot;2025-07-11&quot;&gt;
+          July 11, 2025
         &lt;/time&gt;
         
       &lt;/dd&gt;
@@ -1097,8 +214,8 @@ Other mistakes (e.g. using &lt;code&gt;EncParams&lt;/code&gt; from a different k
       &lt;dd&gt;
         
         
-        &lt;a href=&quot;/packages/spin.html&quot;&gt;spin&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/spin&quot;&gt;crates.io&lt;/a&gt;)
+        &lt;a href=&quot;/packages/static-alloc.html&quot;&gt;static-alloc&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/static-alloc&quot;&gt;crates.io&lt;/a&gt;)
         
         
       &lt;/dd&gt;
@@ -1112,17 +229,42 @@ Other mistakes (e.g. using &lt;code&gt;EncParams&lt;/code&gt; from a different k
       &lt;/dd&gt;
 
       
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
       &lt;dd&gt;
-        &lt;a href=&quot;https://github.com/mvdnes/spin-rs/issues/148&quot;&gt;
-          https://github.com/mvdnes/spin-rs/issues/148
-        &lt;/a&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/memory-exposure.html&quot;&gt;memory-exposure&lt;/a&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/initialization.html&quot;&gt;#initialization&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/197g/static-alloc/issues/81&quot;&gt;
+              https://github.com/197g/static-alloc/issues/81
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
       &lt;/dd&gt;
       
 
@@ -1136,7 +278,7 @@ Other mistakes (e.g. using &lt;code&gt;EncParams&lt;/code&gt; from a different k
         
         &lt;ul&gt;
           
-          &lt;li&gt;&lt;code&gt;&amp;gt;=0.9.8&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.2.6&lt;/code&gt;&lt;/li&gt;
           
         &lt;/ul&gt;
         
@@ -1147,7 +289,552 @@ Other mistakes (e.g. using &lt;code&gt;EncParams&lt;/code&gt; from a different k
       &lt;dd&gt;
         &lt;ul&gt;
           
-          &lt;li&gt;&lt;code&gt;&amp;lt;0.9.3&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code&gt;&amp;#60;=0.2.1&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+    &lt;dl&gt;
+      &lt;dt&gt;Affected Functions&lt;/dt&gt;
+      &lt;dd&gt;Version&lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;static_alloc::unsync::MemBump::new&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.2.2&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+    &lt;/dl&gt;
+    
+
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;The affected function, &lt;code&gt;MemBump::new()&lt;/code&gt;, would allocate memory without
+initializing it. Subsequently calling the created value&apos;s various &lt;code&gt;alloc&lt;/code&gt;
+methods would then read and write the start of that memory as a &lt;code&gt;Cell&lt;/code&gt; which is
+undefined behavior. Instead, it should zero initialize the start of the
+allocated memory.&lt;/p&gt;
+&lt;p&gt;For instance, some values could violate the internal invariants of the type and
+cause an assertion failure. Nevertheless, no deterministic read is known to
+cause further uninitialized memory to be exposed.&lt;/p&gt;
+&lt;p&gt;Affected downstream users that can not upgrade are advised to call
+&lt;code&gt;MemBump::reset&lt;/code&gt; immediately after allocation to manually perform the missing
+write of the counter best-as-possible.&lt;/p&gt;
+&lt;p&gt;The flaw was corrected in commit d8d6a7d096d3aaafd963b356a8f1bbd8d26fd967 by
+zeroing the Cell at the start of the allocated memory.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2025-0043: Vulnerability in matrix-sdk-sqlite</title><id>https://rustsec.org/advisories/RUSTSEC-2025-0043.html</id><updated>2025-07-11T12:00:00+00:00</updated><category term="format-injection"/><link href="https://rustsec.org/advisories/RUSTSEC-2025-0043.html" rel="alternate" type="text/html" title="RUSTSEC-2025-0043: Vulnerability in matrix-sdk-sqlite"/><published>2025-07-11T12:00:00+00:00</published><summary xml:lang="en">matrix-sdk-sqlite: SQL injection vulnerability in `SqliteEventCacheStore::find_event_with_relations`</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/matrix-sdk-sqlite/RUSTSEC-2025-0043.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/matrix-sdk-sqlite/RUSTSEC-2025-0043.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2025-0043&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2025-0043
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;matrix-sdk-sqlite: SQL injection vulnerability in &lt;code&gt;SqliteEventCacheStore::find_event_with_relations&lt;/code&gt;&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-07-11&quot;&gt;
+          July 11, 2025
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-07-11&quot;&gt;
+          July 11, 2025
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/matrix-sdk-sqlite.html&quot;&gt;matrix-sdk-sqlite&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/matrix-sdk-sqlite&quot;&gt;crates.io&lt;/a&gt;)
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/format-injection.html&quot;&gt;format-injection&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/sql-injection.html&quot;&gt;#sql-injection&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-53549&quot;&gt;CVE-2025-53549&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-275g-g844-73jh&quot;&gt;GHSA-275g-g844-73jh&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/matrix-org/matrix-rust-sdk/security/advisories/GHSA-275g-g844-73jh&quot;&gt;
+              https://github.com/matrix-org/matrix-rust-sdk/security/advisories/GHSA-275g-g844-73jh
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.13.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;unaffected&quot;&gt;Unaffected&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.11.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+    &lt;dl&gt;
+      &lt;dt&gt;Affected Functions&lt;/dt&gt;
+      &lt;dd&gt;Version&lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;matrix_sdk_sqlite::SqliteEventCacheStore::find_event_relations&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.11.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+    &lt;/dl&gt;
+    
+
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;The &lt;code&gt;SqliteEventCacheStore::find_event_with_relations&lt;/code&gt; function constructs SQL
+queries using &lt;code&gt;format!()&lt;/code&gt; with unescaped input, allowing an attacker to inject
+arbitrary SQL. This results in a SQL injection vulnerability.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2024-0442: Unsoundness in wasmtime-jit-debug</title><id>https://rustsec.org/advisories/RUSTSEC-2024-0442.html</id><updated>2025-06-17T12:00:00+00:00</updated><category term="memory-exposure"/><link href="https://rustsec.org/advisories/RUSTSEC-2024-0442.html" rel="alternate" type="text/html" title="RUSTSEC-2024-0442: Unsoundness in wasmtime-jit-debug"/><published>2025-06-17T12:00:00+00:00</published><summary xml:lang="en">Dump Undefined Memory by `JitDumpFile`</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/wasmtime-jit-debug/RUSTSEC-2024-0442.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/wasmtime-jit-debug/RUSTSEC-2024-0442.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2024-0442&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2024-0442
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Dump Undefined Memory by &lt;code&gt;JitDumpFile&lt;/code&gt;&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2024-07-06&quot;&gt;
+          July  6, 2024
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-06-17&quot;&gt;
+          June 17, 2025
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/wasmtime-jit-debug.html&quot;&gt;wasmtime-jit-debug&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/wasmtime-jit-debug&quot;&gt;crates.io&lt;/a&gt;)
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unsound
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/memory-exposure.html&quot;&gt;memory-exposure&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/bytecodealliance/wasmtime/issues/8905&quot;&gt;
+              https://github.com/bytecodealliance/wasmtime/issues/8905
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=24.0.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+    &lt;dl&gt;
+      &lt;dt&gt;Affected Functions&lt;/dt&gt;
+      &lt;dd&gt;Version&lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;wasmtime_jit_debug::perf_jitdump::JitDumpFile::dump_code_load_record&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;=24.0.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+    &lt;/dl&gt;
+    
+
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;The unsound function &lt;code&gt;dump_code_load_record&lt;/code&gt; uses &lt;code&gt;from_raw_parts&lt;/code&gt; to directly convert
+the pointer &lt;code&gt;addr&lt;/code&gt; and &lt;code&gt;len&lt;/code&gt; into a slice without any validation and that memory block
+would be dumped.&lt;/p&gt;
+&lt;p&gt;Thus, the &apos;safe&apos; function dump_code_load_record is actually &apos;unsafe&apos; since it requires
+the caller to guarantee that the addr is valid and len must not overflow.
+Otherwise, the function could dump the memory into file illegally, causing memory leak.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: this is an internal-only crate in the Wasmtime project not intended for
+external use and is more strongly signaled nowadays as of
+&lt;a href=&quot;https://github.com/bytecodealliance/wasmtime/pull/10963&quot;&gt;bytecodealliance/wasmtime#10963&lt;/a&gt;.
+Please open an issue in Wasmtime if you&apos;re using this crate directly.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2025-0041: Vulnerability in matrix-sdk-crypto</title><id>https://rustsec.org/advisories/RUSTSEC-2025-0041.html</id><updated>2025-06-12T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2025-0041.html" rel="alternate" type="text/html" title="RUSTSEC-2025-0041: Vulnerability in matrix-sdk-crypto"/><published>2025-06-12T12:00:00+00:00</published><summary xml:lang="en">matrix-sdk-crypto vulnerable to encrypted event sender spoofing by homeserver administrator</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/matrix-sdk-crypto/RUSTSEC-2025-0041.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/matrix-sdk-crypto/RUSTSEC-2025-0041.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2025-0041&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2025-0041
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;matrix-sdk-crypto vulnerable to encrypted event sender spoofing by homeserver administrator&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-06-11&quot;&gt;
+          June 11, 2025
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-06-12&quot;&gt;
+          June 12, 2025
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/matrix-sdk-crypto.html&quot;&gt;matrix-sdk-crypto&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/matrix-sdk-crypto&quot;&gt;crates.io&lt;/a&gt;)
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-48937&quot;&gt;CVE-2025-48937&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-x958-rvg6-956w&quot;&gt;GHSA-x958-rvg6-956w&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/matrix-org/matrix-rust-sdk/security/advisories/GHSA-x958-rvg6-956w&quot;&gt;
+              https://github.com/matrix-org/matrix-rust-sdk/security/advisories/GHSA-x958-rvg6-956w
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
+      &lt;dd&gt;4.9 &lt;span class=&quot;tag medium&quot;&gt;
+        MEDIUM
+      &lt;/span&gt;&lt;/dd&gt;
+
+      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;dl&gt;
+          
+          &lt;dt&gt;Attack vector&lt;/dt&gt;&lt;dd&gt;Network&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Attack complexity&lt;/dt&gt;&lt;dd&gt;Low&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Privileges required&lt;/dt&gt;&lt;dd&gt;High&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;User interaction&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Scope&lt;/dt&gt;&lt;dd&gt;Unchanged&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Confidentiality&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Integrity&lt;/dt&gt;&lt;dd&gt;High&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Availability&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
+          
+        &lt;/dl&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
+
+      
+      &lt;dd&gt;&lt;a href=&quot;https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N&quot;&gt;CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N&lt;/a&gt;&lt;/dd&gt;
+      
+
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.11.1&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;unaffected&quot;&gt;Unaffected&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.8.0&lt;/code&gt;&lt;/li&gt;
           
         &lt;/ul&gt;
       &lt;/dd&gt;
@@ -1161,6 +848,671 @@ Other mistakes (e.g. using &lt;code&gt;EncParams&lt;/code&gt; from a different k
     
 
     &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;&lt;code&gt;Once::try_call_once&lt;/code&gt; is unsound if invoked more than once concurrently and any call fails to initialise successfully.&lt;/p&gt;
+    &lt;p&gt;matrix-sdk-crypto versions 0.8.0 up to and including 0.11.0 does not correctly validate
+the sender of an encrypted event. Accordingly, a malicious homeserver operator
+can modify events served to clients, making those events appear to the recipient
+as if they were sent by another user.&lt;/p&gt;
+&lt;p&gt;Although the CVSS score is 4.9 (AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N), we
+consider this a High severity security issue.&lt;/p&gt;
 
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2025-0040: Vulnerability in users</title><id>https://rustsec.org/advisories/RUSTSEC-2025-0040.html</id><updated>2025-06-03T12:00:00+00:00</updated><category term="privilege-escalation"/><link href="https://rustsec.org/advisories/RUSTSEC-2025-0040.html" rel="alternate" type="text/html" title="RUSTSEC-2025-0040: Vulnerability in users"/><published>2025-06-03T12:00:00+00:00</published><summary xml:lang="en">`root` appended to group listings</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/users/RUSTSEC-2025-0040.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/users/RUSTSEC-2025-0040.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2025-0040&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2025-0040
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;&lt;code&gt;root&lt;/code&gt; appended to group listings&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-01-15&quot;&gt;
+          January 15, 2025
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-06-03&quot;&gt;
+          June  3, 2025
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/users.html&quot;&gt;users&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/users&quot;&gt;crates.io&lt;/a&gt;)
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/privilege-escalation.html&quot;&gt;privilege-escalation&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/ogham/rust-users/issues/44&quot;&gt;
+              https://github.com/ogham/rust-users/issues/44
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        no patched versions
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;unaffected&quot;&gt;Unaffected&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.8.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;Affected versions append &lt;code&gt;root&lt;/code&gt; to group listings, unless the correct listing
+has exactly 1024 groups.&lt;/p&gt;
+&lt;p&gt;This affects both:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The supplementary groups of a user&lt;/li&gt;
+&lt;li&gt;The group access list of the current process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If the caller uses this information for access control, this may lead to
+privilege escalation.&lt;/p&gt;
+&lt;p&gt;This crate is not currently maintained, so a patched version is not available.&lt;/p&gt;
+&lt;p&gt;Versions older than 0.8.0 do not contain the affected functions, so downgrading
+to them is a workaround.&lt;/p&gt;
+&lt;h2&gt;Recommended alternatives&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://crates.io/crates/uzers&quot;&gt;&lt;code&gt;uzers&lt;/code&gt;&lt;/a&gt; (an actively maintained fork of the &lt;code&gt;users&lt;/code&gt; crate)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://crates.io/crates/sysinfo&quot;&gt;&lt;code&gt;sysinfo&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2025-0039: Unsoundness in anon-vec</title><id>https://rustsec.org/advisories/RUSTSEC-2025-0039.html</id><updated>2025-06-02T12:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2025-0039.html" rel="alternate" type="text/html" title="RUSTSEC-2025-0039: Unsoundness in anon-vec"/><published>2025-06-02T12:00:00+00:00</published><summary xml:lang="en">Lack of sufficient checks in public API</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/anon-vec/RUSTSEC-2025-0039.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/anon-vec/RUSTSEC-2025-0039.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2025-0039&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2025-0039
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Lack of sufficient checks in public API&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-05-06&quot;&gt;
+          May  6, 2025
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-06-02&quot;&gt;
+          June  2, 2025
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/anon-vec.html&quot;&gt;anon-vec&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/anon-vec&quot;&gt;crates.io&lt;/a&gt;)
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unsound
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/RylanYancey/anon-vec&quot;&gt;
+              https://github.com/RylanYancey/anon-vec
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        no patched versions
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+    &lt;dl&gt;
+      &lt;dt&gt;Affected Functions&lt;/dt&gt;
+      &lt;dd&gt;Version&lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;anon_vec::AnonVec::get_mut&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;=0.1.1&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;anon_vec::AnonVec::get_ref&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;=0.1.1&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;anon_vec::AnonVec::remove_get&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;=0.1.1&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+    &lt;/dl&gt;
+    
+
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;The following functions in the anon-vec crate are unsound due to insufficient checks on their
+arguments::&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;AnonVec::get_ref()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AnonVec::get_mut()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AnonVec::remove_get()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The crate was built as a learning project and is not being maintained.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2025-0038: Vulnerability in arrow2</title><id>https://rustsec.org/advisories/RUSTSEC-2025-0038.html</id><updated>2025-05-30T12:00:00+00:00</updated><category term="memory-exposure"/><link href="https://rustsec.org/advisories/RUSTSEC-2025-0038.html" rel="alternate" type="text/html" title="RUSTSEC-2025-0038: Vulnerability in arrow2"/><published>2025-05-30T12:00:00+00:00</published><summary xml:lang="en">Out of bounds access in public safe API</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/arrow2/RUSTSEC-2025-0038.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/arrow2/RUSTSEC-2025-0038.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2025-0038&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2025-0038
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Out of bounds access in public safe API&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-04-24&quot;&gt;
+          April 24, 2025
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-05-30&quot;&gt;
+          May 30, 2025
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/arrow2.html&quot;&gt;arrow2&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/arrow2&quot;&gt;crates.io&lt;/a&gt;)
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/memory-exposure.html&quot;&gt;memory-exposure&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        no patched versions
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;&lt;code&gt;Rows::row_unchecked()&lt;/code&gt; allows out of bounds access to the underlying
+buffer without sufficient checks.&lt;/p&gt;
+&lt;p&gt;The arrow2 crate is no longer maintained, so there are no plans to fix this issue. Users are advised to migrate to the arrow crate, instead.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2025-0037: Vulnerability in pingora-core</title><id>https://rustsec.org/advisories/RUSTSEC-2025-0037.html</id><updated>2025-05-22T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2025-0037.html" rel="alternate" type="text/html" title="RUSTSEC-2025-0037: Vulnerability in pingora-core"/><published>2025-05-22T12:00:00+00:00</published><summary xml:lang="en">Pingora Request Smuggling and Cache Poisoning</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/pingora-core/RUSTSEC-2025-0037.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/pingora-core/RUSTSEC-2025-0037.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2025-0037&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2025-0037
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Pingora Request Smuggling and Cache Poisoning&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-05-22&quot;&gt;
+          May 22, 2025
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-05-22&quot;&gt;
+          May 22, 2025
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/pingora-core.html&quot;&gt;pingora-core&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/pingora-core&quot;&gt;crates.io&lt;/a&gt;)
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/request-smuggling.html&quot;&gt;#request-smuggling&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/cache-poisoning.html&quot;&gt;#cache-poisoning&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4366&quot;&gt;CVE-2025-4366&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://blog.cloudflare.com/resolving-a-request-smuggling-vulnerability-in-pingora/&quot;&gt;
+              https://blog.cloudflare.com/resolving-a-request-smuggling-vulnerability-in-pingora/
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.5.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;Pingora versions prior to 0.5.0 which used the caching functionality in pingora-proxy did not properly drain the downstream request body on cache hits.&lt;/p&gt;
+&lt;p&gt;This allows an attacker to craft malicious HTTP/1.1 requests which could lead to request smuggling or cache poisoning.&lt;/p&gt;
+&lt;p&gt;This flaw was corrected in commit fda3317ec822678564d641e7cf1c9b77ee3759ff by ensuring that the downstream request body is always drained before a connection can be reused.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&quot;https://blog.cloudflare.com/resolving-a-request-smuggling-vulnerability-in-pingora/&quot;&gt;the blog post&lt;/a&gt; for more information.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2025-0036: surf is unmaintained</title><id>https://rustsec.org/advisories/RUSTSEC-2025-0036.html</id><updated>2025-05-17T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2025-0036.html" rel="alternate" type="text/html" title="RUSTSEC-2025-0036: surf is unmaintained"/><published>2025-05-17T12:00:00+00:00</published><summary xml:lang="en">surf is unmaintained</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/surf/RUSTSEC-2025-0036.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/surf/RUSTSEC-2025-0036.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2025-0036&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2025-0036
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;surf is unmaintained&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-05-17&quot;&gt;
+          May 17, 2025
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-05-17&quot;&gt;
+          May 17, 2025
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/surf.html&quot;&gt;surf&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/surf&quot;&gt;crates.io&lt;/a&gt;)
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unmaintained
+        
+      &lt;/dd&gt;
+
+      
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/http-rs/surf/issues/352&quot;&gt;
+              https://github.com/http-rs/surf/issues/352
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        no patched versions
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;The developer has indicated that the crate is unmaintained.&lt;/p&gt;
+&lt;p&gt;The last release is over three years old (from 2021), the crate depends on the
+deprecated &lt;code&gt;async-std&lt;/code&gt; crate and on a very old version of &lt;code&gt;rustls&lt;/code&gt; for TLS
+support.&lt;/p&gt;
+&lt;h2&gt;Possible alternatives&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://crates.io/crates/reqwest&quot;&gt;reqwest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://crates.io/crates/ureq&quot;&gt;ureq&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
   &lt;/article&gt;</content></entry></feed>

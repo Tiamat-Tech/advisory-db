@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/hyper/RUSTSEC-2021-0020.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/hyper/RUSTSEC-2021-0020.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/hyper/RUSTSEC-2021-0020.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2021-0020">JSON (OSV)</a>
         </span>
     
 
@@ -154,11 +155,18 @@
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/hyperium/hyper/security/advisories/GHSA-6hfq-h8hq-87mf">
-          https://github.com/hyperium/hyper/security/advisories/GHSA-6hfq-h8hq-87mf
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/hyperium/hyper/security/advisories/GHSA-6hfq-h8hq-87mf">
+              https://github.com/hyperium/hyper/security/advisories/GHSA-6hfq-h8hq-87mf
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -178,7 +186,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>High</d>
+          <dt>Attack complexity</dt><dd>High</dd>
           
 
           
@@ -208,7 +216,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+      
 
       
 
@@ -217,7 +228,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.14.3</code></li>
+          <li><code>&#62;=0.14.3</code></li>
           
           <li><code>^0.13.10</code></li>
           
@@ -232,7 +243,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.12.0</code></li>
+          <li><code>&#60;0.12.0</code></li>
           
         </ul>
       </dd>
@@ -252,5 +263,11 @@ should have been rejected as illegal. This combined with an upstream HTTP proxy
 that understands the request payload boundary differently can result in
 &quot;request smuggling&quot; or &quot;desync attacks&quot;.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

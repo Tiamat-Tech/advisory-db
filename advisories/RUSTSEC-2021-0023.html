@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/rand_core/RUSTSEC-2021-0023.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/rand_core/RUSTSEC-2021-0023.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/rand_core/RUSTSEC-2021-0023.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2021-0023">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           February 15, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -134,16 +135,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-w7j2-35mf-95p7">GHSA-w7j2-35mf-95p7</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/rust-random/rand/pull/1096">
-          https://github.com/rust-random/rand/pull/1096
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/rust-random/rand/pull/1096">
+              https://github.com/rust-random/rand/pull/1096
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -163,7 +177,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -193,7 +207,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+      
 
       
 
@@ -202,7 +219,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.6.2</code></li>
+          <li><code>&#62;=0.6.2</code></li>
           
         </ul>
         
@@ -213,7 +230,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.6.0</code></li>
+          <li><code>&#60;0.6.0</code></li>
           
         </ul>
       </dd>
@@ -236,7 +253,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.6.2, &gt;=0.6.0</code></li>
+          <li><code>&#60;0.6.2, &#62;=0.6.0</code></li>
           
         </ul>
       </dd>
@@ -245,7 +262,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.6.2, &gt;=0.6.0</code></li>
+          <li><code>&#60;0.6.2, &#62;=0.6.0</code></li>
           
         </ul>
       </dd>
@@ -259,5 +276,11 @@
     <p>Summary: rand_core::le::read_u32_into and read_u64_into have incorrect checks on the source buffer length, allowing the destination buffer to be under-filled.</p>
 <p>Implications: some downstream RNGs, including Hc128Rng (but not the more widely used ChaCha*Rng), allow seeding using the SeedableRng::from_seed trait-function with too short keys.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

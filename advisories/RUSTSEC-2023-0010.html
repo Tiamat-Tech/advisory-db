@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/openssl-src/RUSTSEC-2023-0010.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/openssl-src/RUSTSEC-2023-0010.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/openssl-src/RUSTSEC-2023-0010.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2023-0010">JSON (OSV)</a>
         </span>
     
 
@@ -85,6 +86,10 @@
       <dd>
         <time datetime="2023-02-07">
           February  7, 2023
+        </time>
+        
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -130,16 +135,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-v5w6-wcm8-jm4q">GHSA-v5w6-wcm8-jm4q</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://www.openssl.org/news/secadv/20230207.txt">
-          https://www.openssl.org/news/secadv/20230207.txt
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://www.openssl.org/news/secadv/20230207.txt">
+              https://www.openssl.org/news/secadv/20230207.txt
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -153,9 +171,9 @@
         
         <ul>
           
-          <li><code>&gt;=111.25, &lt;300.0</code></li>
+          <li><code>&#62;=111.25, &#60;300.0</code></li>
           
-          <li><code>&gt;=300.0.12</code></li>
+          <li><code>&#62;=300.0.12</code></li>
           
         </ul>
         
@@ -192,5 +210,11 @@ header argument if <code>PEM_read_bio_ex()</code> returns a failure code. These 
 include the <code>PEM_read_bio_TYPE()</code> functions as well as the decoders introduced in
 OpenSSL 3.0.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

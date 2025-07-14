@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/windows/RUSTSEC-2022-0008.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/windows/RUSTSEC-2022-0008.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/windows/RUSTSEC-2022-0008.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2022-0008">JSON (OSV)</a>
         </span>
     
 
@@ -85,6 +86,10 @@
       <dd>
         <time datetime="2022-02-04">
           February  4, 2022
+        </time>
+        
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -123,13 +128,33 @@
       
 
       
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-x4mq-m75f-mx8m">GHSA-x4mq-m75f-mx8m</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/microsoft/windows-rs/issues/1409">
-          https://github.com/microsoft/windows-rs/issues/1409
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/microsoft/windows-rs/issues/1409">
+              https://github.com/microsoft/windows-rs/issues/1409
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -143,7 +168,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.32.0</code></li>
+          <li><code>&#62;=0.32.0</code></li>
           
         </ul>
         
@@ -154,7 +179,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.1.2</code></li>
+          <li><code>&#60;0.1.2</code></li>
           
         </ul>
       </dd>
@@ -185,5 +210,11 @@
     <p>Affected versions of this crate did not require event handlers to have <code>Send</code> bound despite there being no guarantee of them being called on any particular thread, which can potentially lead to data races and undefined behavior.</p>
 <p>The flaw was corrected in commit <a href="https://github.com/microsoft/windows-rs/commit/afe32525c22209aa8f632a0f4ad607863b51796a">afe3252</a> by adding <code>Send</code> bounds.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/truetype/RUSTSEC-2021-0029.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/truetype/RUSTSEC-2021-0029.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/truetype/RUSTSEC-2021-0029.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2021-0029">JSON (OSV)</a>
         </span>
     
 
@@ -87,8 +88,8 @@
           March  1, 2021
         </time>
         
-        <time datetime="2021-10-19">
-          (last modified: October 19, 2021)
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -134,16 +135,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-v7q4-97x4-4qw2">GHSA-v7q4-97x4-4qw2</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/bodoni/truetype/issues/11">
-          https://github.com/bodoni/truetype/issues/11
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/bodoni/truetype/issues/11">
+              https://github.com/bodoni/truetype/issues/11
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -163,7 +177,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -193,7 +207,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</a></dd>
+      
 
       
 
@@ -202,7 +219,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.30.1</code></li>
+          <li><code>&#62;=0.30.1</code></li>
           
         </ul>
         
@@ -225,5 +242,11 @@ buffer leading to undefined behavior.</p>
 <p>The flaw was corrected in commit <code>1f2dc7f37dd</code> by removing the unsafe block
 and zero-initializing the buffer.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

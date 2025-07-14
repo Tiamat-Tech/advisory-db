@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/openssl-src/RUSTSEC-2023-0008.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/openssl-src/RUSTSEC-2023-0008.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/openssl-src/RUSTSEC-2023-0008.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2023-0008">JSON (OSV)</a>
         </span>
     
 
@@ -85,6 +86,10 @@
       <dd>
         <time datetime="2023-02-07">
           February  7, 2023
+        </time>
+        
+        <time datetime="2023-06-13">
+          (last modified: June 13, 2023)
         </time>
         
       </dd>
@@ -132,16 +137,29 @@
             
           </li>
           
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-w67w-mw4j-8qrv">GHSA-w67w-mw4j-8qrv</a>
+            
+          </li>
+          
         </ul>
       </dd>
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://www.openssl.org/news/secadv/20230207.txt">
-          https://www.openssl.org/news/secadv/20230207.txt
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://www.openssl.org/news/secadv/20230207.txt">
+              https://www.openssl.org/news/secadv/20230207.txt
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -155,7 +173,7 @@
         
         <ul>
           
-          <li><code>&gt;=300.0.12</code></li>
+          <li><code>&#62;=300.0.12</code></li>
           
         </ul>
         
@@ -166,7 +184,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;300.0.0</code></li>
+          <li><code>&#60;300.0.0</code></li>
           
         </ul>
       </dd>
@@ -195,5 +213,11 @@ contents disclosure as of the time of release of this advisory.</p>
 server. In a TLS server, this can be triggered if the server requests
 client authentication and a malicious client connects.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

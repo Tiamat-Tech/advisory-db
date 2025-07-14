@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2022-0041: crossbeam-utils: Unsoundness of AtomicCell&lt;*64&gt; arithmetics on 32-bit targets that support Atomic*64 › RustSec Advisory Database</title>
+<title>RUSTSEC-2022-0041: crossbeam-utils: Unsoundness of AtomicCell&#60;*64&#62; arithmetics on 32-bit targets that support Atomic*64 › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/crossbeam-utils/RUSTSEC-2022-0041.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/crossbeam-utils/RUSTSEC-2022-0041.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/crossbeam-utils/RUSTSEC-2022-0041.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2022-0041">JSON (OSV)</a>
         </span>
     
 
@@ -142,11 +143,18 @@
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/crossbeam-rs/crossbeam/pull/781">
-          https://github.com/crossbeam-rs/crossbeam/pull/781
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/crossbeam-rs/crossbeam/pull/781">
+              https://github.com/crossbeam-rs/crossbeam/pull/781
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -160,7 +168,7 @@
         
         <ul>
           
-          <li><code>&gt;=0.8.7</code></li>
+          <li><code>&#62;=0.8.7</code></li>
           
         </ul>
         
@@ -210,5 +218,11 @@
 <p>Affected 0.8.x releases have been yanked.</p>
 <p>Thanks to @taiki-e</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>

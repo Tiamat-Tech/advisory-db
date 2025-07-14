@@ -57,7 +57,8 @@
     
         <span class="floating-menu">
           <a href="https://github.com/RustSec/advisory-db/commits/main/crates/rand_core/RUSTSEC-2019-0035.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/rand_core/RUSTSEC-2019-0035.md">Edit</a>
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/rand_core/RUSTSEC-2019-0035.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2019-0035">JSON (OSV)</a>
         </span>
     
 
@@ -83,8 +84,8 @@
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2020-10-02">
-          October  2, 2020
+        <time datetime="2020-10-01">
+          October  1, 2020
         </time>
         
         <time datetime="2021-10-19">
@@ -137,11 +138,18 @@
       
 
       
-      <dt id="details">Details</dt>
+      <dt id="details">References</dt>
       <dd>
-        <a href="https://github.com/rust-random/rand/blob/master/rand_core/CHANGELOG.md#050---2019-06-06">
-          https://github.com/rust-random/rand/blob/master/rand_core/CHANGELOG.md#050---2019-06-06
-        </a>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/rust-random/rand/blob/master/rand_core/CHANGELOG.md#050---2019-06-06">
+              https://github.com/rust-random/rand/blob/master/rand_core/CHANGELOG.md#050---2019-06-06
+            </a>
+          </li>
+        
+        
+        </ul>
       </dd>
       
 
@@ -161,7 +169,7 @@
           
 
           
-          <dt>Attack complexity</dt><dd>Low</d>
+          <dt>Attack complexity</dt><dd>Low</dd>
           
 
           
@@ -191,7 +199,10 @@
       </dd>
 
       <dt id="cvss">CVSS Vector</dt>
-      <dd><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+
+      
+      <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
+      
 
       
 
@@ -202,7 +213,7 @@
           
           <li><code>^0.3.1</code></li>
           
-          <li><code>&gt;=0.4.2</code></li>
+          <li><code>&#62;=0.4.2</code></li>
           
         </ul>
         
@@ -227,7 +238,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.4.2</code></li>
+          <li><code>&#60;0.4.2</code></li>
           
         </ul>
       </dd>
@@ -236,7 +247,7 @@
       <dd>
         <ul>
           
-          <li><code>&lt;0.4.2</code></li>
+          <li><code>&#60;0.4.2</code></li>
           
         </ul>
       </dd>
@@ -251,5 +262,11 @@
 integer slices, resulting in undefined behavior.</p>
 <p>The flaw was corrected by Ralf Jung and Diggory Hardy.</p>
 
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>
