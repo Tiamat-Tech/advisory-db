@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>Advisories with keyword &#39;GUI&#39; › RustSec Advisory Database</title>
+<title>RUSTSEC-2025-0047: slab: Out-of-bounds access in `get_disjoint_mut` due to incorrect bounds check › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -52,293 +52,188 @@
   </nav>
 </header>
 
-<main class="advisories">
+<main class="advisory">
   <article>
+    
+        <span class="floating-menu">
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/slab/RUSTSEC-2025-0047.md">History</a> ⋅ 
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/slab/RUSTSEC-2025-0047.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2025-0047">JSON (OSV)</a>
+        </span>
+    
 
     <header>
-      <span class="floating-menu">
-  <a href="/categories/">Categories</a> ⋅
-  <a href="/keywords/">Keywords</a> ⋅
-  <a href="/packages/">Packages</a>
+      <h1>
+        
+        RUSTSEC-2025-0047
+        
+      </h1>
+      <span class="subtitle"><p>Out-of-bounds access in <code>get_disjoint_mut</code> due to incorrect bounds check</p>
 </span>
-      <h1>Advisories with keyword &#39;GUI&#39;</h1>
     </header>
 
-    <ul>
-      
-      <li>
-  <time datetime="2024-12-09">
-    December  9, 2024
-  </time>
+    
 
-  
-  <h3>
-    
-        
-          <span class="tag info">INFO</span>
-        
-    
-    <a href="/advisories/RUSTSEC-2024-0412.html">
-      RUSTSEC-2024-0412: gdk is unmaintained
-    </a>
-  </h3>
-  <span><p>gtk-rs GTK3 bindings - no longer maintained</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2024-12-09">
-    December  9, 2024
-  </time>
+    <dl>
+      <dt id="reported">Reported</dt>
+      <dd>
+        <time datetime="2025-08-12">
+          August 12, 2025
+        </time>
+      </dd>
 
-  
-  <h3>
-    
+      <dt id="issued">Issued</dt>
+      <dd>
+        <time datetime="2025-08-12">
+          August 12, 2025
+        </time>
         
-          <span class="tag info">INFO</span>
-        
-    
-    <a href="/advisories/RUSTSEC-2024-0417.html">
-      RUSTSEC-2024-0417: gdkx11 is unmaintained
-    </a>
-  </h3>
-  <span><p>gtk-rs GTK3 bindings - no longer maintained</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2024-12-09">
-    December  9, 2024
-  </time>
+      </dd>
 
-  
-  <h3>
-    
+      <dt id="package">Package</dt>
+      <dd>
         
-          <span class="tag info">INFO</span>
         
-    
-    <a href="/advisories/RUSTSEC-2024-0423.html">
-      RUSTSEC-2024-0423: gtk-layer-shell-sys is unmaintained
-    </a>
-  </h3>
-  <span><p>gtk-layer-shell-sys GTK3 bindings - no longer maintained</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2024-12-09">
-    December  9, 2024
-  </time>
+        <a href="/packages/slab.html">slab</a>
+          (<a href="https://crates.io/crates/slab">crates.io</a>)
+        
+        
+      </dd>
 
-  
-  <h3>
-    
+      <dt id="type">Type</dt>
+      <dd>
         
-          <span class="tag info">INFO</span>
+        Vulnerability
         
-    
-    <a href="/advisories/RUSTSEC-2024-0419.html">
-      RUSTSEC-2024-0419: gtk3-macros is unmaintained
-    </a>
-  </h3>
-  <span><p>gtk-rs GTK3 bindings - no longer maintained</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2024-12-09">
-    December  9, 2024
-  </time>
+      </dd>
 
-  
-  <h3>
-    
-        
-          <span class="tag info">INFO</span>
-        
-    
-    <a href="/advisories/RUSTSEC-2024-0415.html">
-      RUSTSEC-2024-0415: gtk is unmaintained
-    </a>
-  </h3>
-  <span><p>gtk-rs GTK3 bindings - no longer maintained</p>
-</span>
-  
-</li>
       
-      <li>
-  <time datetime="2024-12-09">
-    December  9, 2024
-  </time>
 
-  
-  <h3>
-    
-        
-          <span class="tag info">INFO</span>
-        
-    
-    <a href="/advisories/RUSTSEC-2024-0411.html">
-      RUSTSEC-2024-0411: gdkwayland-sys is unmaintained
-    </a>
-  </h3>
-  <span><p>gtk-rs GTK3 bindings - no longer maintained</p>
-</span>
-  
-</li>
       
-      <li>
-  <time datetime="2024-12-09">
-    December  9, 2024
-  </time>
+      <dt id="keywords">Keywords</dt>
+      <dd>
+        
+          <a href="/keywords/memory-exposure.html">#memory-exposure</a>
+        
+          <a href="/keywords/bounds-check.html">#bounds-check</a>
+        
+      </dd>
+      
 
-  
-  <h3>
-    
-        
-          <span class="tag info">INFO</span>
-        
-    
-    <a href="/advisories/RUSTSEC-2024-0410.html">
-      RUSTSEC-2024-0410: gdkwayland is unmaintained
-    </a>
-  </h3>
-  <span><p>gtk-rs GTK3 bindings - no longer maintained</p>
-</span>
-  
-</li>
       
-      <li>
-  <time datetime="2024-12-09">
-    December  9, 2024
-  </time>
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-55159">CVE-2025-55159</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-qx2v-8332-m4fv">GHSA-qx2v-8332-m4fv</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
 
-  
-  <h3>
-    
-        
-          <span class="tag info">INFO</span>
-        
-    
-    <a href="/advisories/RUSTSEC-2024-0422.html">
-      RUSTSEC-2024-0422: gtk-layer-shell is unmaintained
-    </a>
-  </h3>
-  <span><p>gtk-layer-shell GTK3 bindings - no longer maintained</p>
-</span>
-  
-</li>
       
-      <li>
-  <time datetime="2024-12-09">
-    December  9, 2024
-  </time>
+      <dt id="details">References</dt>
+      <dd>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/tokio-rs/slab/security/advisories/GHSA-qx2v-8332-m4fv">
+              https://github.com/tokio-rs/slab/security/advisories/GHSA-qx2v-8332-m4fv
+            </a>
+          </li>
+        
+        
+          <li>
+            <a href="https://github.com/tokio-rs/slab/pull/152">
+              https://github.com/tokio-rs/slab/pull/152
+            </a>
+          </li>
+        
+        </ul>
+      </dd>
+      
 
-  
-  <h3>
-    
-        
-          <span class="tag info">INFO</span>
-        
-    
-    <a href="/advisories/RUSTSEC-2024-0420.html">
-      RUSTSEC-2024-0420: gtk-sys is unmaintained
-    </a>
-  </h3>
-  <span><p>gtk-rs GTK3 bindings - no longer maintained</p>
-</span>
-  
-</li>
       
-      <li>
-  <time datetime="2024-12-09">
-    December  9, 2024
-  </time>
 
-  
-  <h3>
-    
-        
-          <span class="tag info">INFO</span>
-        
-    
-    <a href="/advisories/RUSTSEC-2024-0418.html">
-      RUSTSEC-2024-0418: gdk-sys is unmaintained
-    </a>
-  </h3>
-  <span><p>gtk-rs GTK3 bindings - no longer maintained</p>
-</span>
-  
-</li>
       
-      <li>
-  <time datetime="2024-12-09">
-    December  9, 2024
-  </time>
+      
 
-  
-  <h3>
-    
+      <dt id="patched">Patched</dt>
+      <dd>
         
-          <span class="tag info">INFO</span>
+        <ul>
+          
+          <li><code>&#62;=0.4.11</code></li>
+          
+        </ul>
         
-    
-    <a href="/advisories/RUSTSEC-2024-0414.html">
-      RUSTSEC-2024-0414: gdkx11-sys is unmaintained
-    </a>
-  </h3>
-  <span><p>gtk-rs GTK3 bindings - no longer maintained</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2024-12-09">
-    December  9, 2024
-  </time>
+      </dd>
 
-  
-  <h3>
-    
-        
-          <span class="tag info">INFO</span>
-        
-    
-    <a href="/advisories/RUSTSEC-2024-0416.html">
-      RUSTSEC-2024-0416: atk-sys is unmaintained
-    </a>
-  </h3>
-  <span><p>gtk-rs GTK3 bindings - no longer maintained</p>
-</span>
-  
-</li>
       
-      <li>
-  <time datetime="2024-12-09">
-    December  9, 2024
-  </time>
+      <dt id="unaffected">Unaffected</dt>
+      <dd>
+        <ul>
+          
+          <li><code>&#60;0.4.10</code></li>
+          
+        </ul>
+      </dd>
+      
 
-  
-  <h3>
-    
-        
-          <span class="tag info">INFO</span>
-        
-    
-    <a href="/advisories/RUSTSEC-2024-0413.html">
-      RUSTSEC-2024-0413: atk is unmaintained
-    </a>
-  </h3>
-  <span><p>gtk-rs GTK3 bindings - no longer maintained</p>
-</span>
-  
-</li>
       
-    </ul>
+      
+
+      
+      
+    </dl>
+
+    
+    
+    <dl>
+      <dt>Affected Functions</dt>
+      <dd>Version</dd>
+      
+      <dt><code>slab::Slab::get_disjoint_mut</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>=0.4.10</code></li>
+          
+        </ul>
+      </dd>
+      
+    </dl>
+    
+
+    
+
+    <h3 id="description">Description</h3>
+    <h2>Impact</h2>
+<p>The <code>get_disjoint_mut</code> method in slab v0.4.10 incorrectly checked if indices were within the slab's capacity instead of its length, allowing access to uninitialized memory. This could lead to undefined behavior or potential crashes.</p>
+<h2>Patches</h2>
+<p>This has been fixed in slab v0.4.11.</p>
+<h2>Workarounds</h2>
+<p>Avoid using <code>get_disjoint_mut</code> with indices that might be beyond the slab's actual length, or upgrade to v0.4.11 or later.</p>
+<h2>References</h2>
+<ul>
+<li><a href="https://github.com/tokio-rs/slab/pull/152">https://github.com/tokio-rs/slab/pull/152</a></li>
+</ul>
+
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>
