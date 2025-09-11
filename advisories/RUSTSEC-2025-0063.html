@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2024-0376: tonic: Remotely exploitable Denial of Service in Tonic › RustSec Advisory Database</title>
+<title>RUSTSEC-2025-0063: fast-able: Possible unsound public API › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -56,19 +56,19 @@
   <article>
     
         <span class="floating-menu">
-          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/tonic/RUSTSEC-2024-0376.md">History</a> ⋅ 
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/tonic/RUSTSEC-2024-0376.md">Edit</a> ⋅
-          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2024-0376">JSON (OSV)</a>
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/fast-able/RUSTSEC-2025-0063.md">History</a> ⋅ 
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/fast-able/RUSTSEC-2025-0063.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2025-0063">JSON (OSV)</a>
         </span>
     
 
     <header>
       <h1>
         
-        RUSTSEC-2024-0376
+        RUSTSEC-2025-0063
         
       </h1>
-      <span class="subtitle"><p>Remotely exploitable Denial of Service in Tonic</p>
+      <span class="subtitle"><p>Possible unsound public API</p>
 </span>
     </header>
 
@@ -77,19 +77,15 @@
     <dl>
       <dt id="reported">Reported</dt>
       <dd>
-        <time datetime="2024-10-01">
-          October  1, 2024
+        <time datetime="2025-04-25">
+          April 25, 2025
         </time>
       </dd>
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2024-10-01">
-          October  1, 2024
-        </time>
-        
         <time datetime="2025-09-11">
-          (last modified: September 11, 2025)
+          September 11, 2025
         </time>
         
       </dd>
@@ -98,8 +94,8 @@
       <dd>
         
         
-        <a href="/packages/tonic.html">tonic</a>
-          (<a href="https://crates.io/crates/tonic">crates.io</a>)
+        <a href="/packages/fast-able.html">fast-able</a>
+          (<a href="https://crates.io/crates/fast-able">crates.io</a>)
         
         
       </dd>
@@ -116,56 +112,16 @@
       <dd>
         <ul>
           
-          <li><a href="/categories/denial-of-service.html">denial-of-service</a></li>
+          <li><a href="/categories/memory-corruption.html">memory-corruption</a></li>
           
         </ul>
       </dd>
       
 
       
-      <dt id="keywords">Keywords</dt>
-      <dd>
-        
-          <a href="/keywords/dos.html">#dos</a>
-        
-      </dd>
-      
 
       
-      <dt id="aliases">Aliases</dt>
-      <dd>
-        <ul>
-          
-          <li>
-            
-            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-47609">CVE-2024-47609</a>
-            
-          </li>
-          
-          <li>
-            
-            <a href="https://github.com/advisories/GHSA-4jwc-w2hc-78qv">GHSA-4jwc-w2hc-78qv</a>
-            
-          </li>
-          
-        </ul>
-      </dd>
-      
 
-      
-      <dt id="details">References</dt>
-      <dd>
-        <ul>
-        
-          <li>
-            <a href="https://github.com/hyperium/tonic/security/advisories/GHSA-4jwc-w2hc-78qv">
-              https://github.com/hyperium/tonic/security/advisories/GHSA-4jwc-w2hc-78qv
-            </a>
-          </li>
-        
-        
-        </ul>
-      </dd>
       
 
       
@@ -178,21 +134,15 @@
         
         <ul>
           
-          <li><code>&#62;=0.12.3</code></li>
+          <li><code>&#62;=1.13.7</code></li>
           
         </ul>
         
       </dd>
 
       
-      <dt id="unaffected">Unaffected</dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#60;0.12.2</code></li>
-          
-        </ul>
-      </dd>
+
+      
       
 
       
@@ -201,15 +151,26 @@
 
     
     
+    <dl>
+      <dt>Affected Functions</dt>
+      <dd>Version</dd>
+      
+      <dt><code>fast_able::vec::SyncVec::get_unchecked</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>&#60;1.13.7</code></li>
+          
+        </ul>
+      </dd>
+      
+    </dl>
+    
+
+    
 
     <h3 id="description">Description</h3>
-    <h2>Impact</h2>
-<p>When using <code>tonic::transport::Server</code> there is a remote DoS attack that can cause the server to exit cleanly on accepting a tcp/tls stream. This can be triggered via causing the accept call to error out with errors there were not covered correctly causing the accept loop to exit.</p>
-<p>More information can be found <a href="https://github.com/hyperium/tonic/issues/1897">here</a></p>
-<h2>Patches</h2>
-<p>Upgrading to tonic <code>0.12.3</code> and above contains the fix.</p>
-<h2>Workarounds</h2>
-<p>A custom accept loop is a possible workaround.</p>
+    <p>The public accessible struct SyncVec has a public safe method get_unchecked. It accept a parameter index and used in the get_unchecked without sufficient checks as mentioned <a href="https://doc.rust-lang.org/std/primitive.slice.html#method.get_unchecked">here</a>.</p>
 
 
     <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
