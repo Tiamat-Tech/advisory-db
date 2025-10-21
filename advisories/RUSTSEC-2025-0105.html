@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>Advisories with keyword &#39;uninitialized-memory&#39; › RustSec Advisory Database</title>
+<title>RUSTSEC-2025-0105: direct_ring_buffer: Uninitialized memory exposure in create_ring_buffer › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -52,176 +52,163 @@
   </nav>
 </header>
 
-<main class="advisories">
+<main class="advisory">
   <article>
+    
+        <span class="floating-menu">
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/direct_ring_buffer/RUSTSEC-2025-0105.md">History</a> ⋅ 
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/direct_ring_buffer/RUSTSEC-2025-0105.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2025-0105">JSON (OSV)</a>
+        </span>
+    
 
     <header>
-      <span class="floating-menu">
-  <a href="/categories/">Categories</a> ⋅
-  <a href="/keywords/">Keywords</a> ⋅
-  <a href="/packages/">Packages</a>
+      <h1>
+        
+        RUSTSEC-2025-0105
+        
+      </h1>
+      <span class="subtitle"><p>Uninitialized memory exposure in create_ring_buffer</p>
 </span>
-      <h1>Advisories with keyword &#39;uninitialized-memory&#39;</h1>
     </header>
 
-    <ul>
-      
-      <li>
-  <time datetime="2025-10-21">
-    October 21, 2025
-  </time>
-
-  
-  <h3>
     
+
+    <dl>
+      <dt id="reported">Reported</dt>
+      <dd>
+        <time datetime="2025-10-21">
+          October 21, 2025
+        </time>
+      </dd>
+
+      <dt id="issued">Issued</dt>
+      <dd>
+        <time datetime="2025-10-21">
+          October 21, 2025
+        </time>
         
-          <span class="tag info">INFO</span>
+      </dd>
+
+      <dt id="package">Package</dt>
+      <dd>
         
-    
-    <a href="/advisories/RUSTSEC-2025-0105.html">
-      RUSTSEC-2025-0105: Unsoundness in direct_ring_buffer
-    </a>
-  </h3>
-  <span><p>Uninitialized memory exposure in create_ring_buffer</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2025-09-01">
-    September  1, 2025
-  </time>
-
-  
-  <h3>
-    
         
-    
-    <a href="/advisories/RUSTSEC-2025-0054.html">
-      RUSTSEC-2025-0054: Vulnerability in array-queue
-    </a>
-  </h3>
-  <span><p>ArrayQueue::push_front is not panic-safe</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2025-08-15">
-    August 15, 2025
-  </time>
-
-  
-  <h3>
-    
+        <a href="/packages/direct_ring_buffer.html">direct_ring_buffer</a>
+          (<a href="https://crates.io/crates/direct_ring_buffer">crates.io</a>)
         
-    
-    <a href="/advisories/RUSTSEC-2025-0050.html">
-      RUSTSEC-2025-0050: Vulnerability in id-map
-    </a>
-  </h3>
-  <span><p>IdMap::from_iter may lead to uninitialized memory being freed on drop</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2022-11-07">
-    November  7, 2022
-  </time>
-
-  
-  <h3>
-    
         
-          <span class="tag info">INFO</span>
+      </dd>
+
+      <dt id="type">Type</dt>
+      <dd>
         
-    
-    <a href="/advisories/RUSTSEC-2022-0067.html">
-      RUSTSEC-2022-0067: Unsoundness in lzf
-    </a>
-  </h3>
-  <span><p>Invalid use of <code>mem::uninitialized</code> causes <code>use-of-uninitialized-value</code></p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2022-08-08">
-    August  8, 2022
-  </time>
-
-  
-  <h3>
-    
+        <span class="tag info">INFO</span>
+        Unsound
         
-    
-    <a href="/advisories/RUSTSEC-2018-0022.html">
-      RUSTSEC-2018-0022: Vulnerability in temporary
-    </a>
-  </h3>
-  <span><p>Use of uninitialized memory in temporary</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2020-10-01">
-    October  1, 2020
-  </time>
+      </dd>
 
-  
-  <h3>
-    
-      <span class="tag critical">CRITICAL</span>
       
-    <a href="/advisories/RUSTSEC-2019-0015.html">
-      RUSTSEC-2019-0015: Vulnerability in compact_arena
-    </a>
-  </h3>
-  <span><p>Flaw in generativity allows out-of-bounds access</p>
-</span>
-  
-</li>
+      <dt id="categories">Categories</dt>
+      <dd>
+        <ul>
+          
+          <li><a href="/categories/memory-exposure.html">memory-exposure</a></li>
+          
+        </ul>
+      </dd>
       
-      <li>
-  <time datetime="2020-10-01">
-    October  1, 2020
-  </time>
 
-  
-  <h3>
-    
-      <span class="tag medium">MEDIUM</span>
       
-    <a href="/advisories/RUSTSEC-2018-0004.html">
-      RUSTSEC-2018-0004: Vulnerability in claxon
-    </a>
-  </h3>
-  <span><p>Malicious input could cause uninitialized memory to be exposed</p>
-</span>
-  
-</li>
+      <dt id="keywords">Keywords</dt>
+      <dd>
+        
+          <a href="/keywords/uninitialized-memory.html">#uninitialized-memory</a>
+        
+          <a href="/keywords/soundness.html">#soundness</a>
+        
+      </dd>
       
-      <li>
-  <time datetime="2020-10-01">
-    October  1, 2020
-  </time>
 
-  
-  <h3>
+      
+
+      
+      <dt id="details">References</dt>
+      <dd>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/ain1084/direct_ring_buffer/issues/1">
+              https://github.com/ain1084/direct_ring_buffer/issues/1
+            </a>
+          </li>
+        
+        
+          <li>
+            <a href="https://github.com/ain1084/direct_ring_buffer/pull/2">
+              https://github.com/ain1084/direct_ring_buffer/pull/2
+            </a>
+          </li>
+        
+        </ul>
+      </dd>
+      
+
+      
+
+      
+      
+
+      <dt id="patched">Patched</dt>
+      <dd>
+        
+        <ul>
+          
+          <li><code>&#62;=0.2.2</code></li>
+          
+        </ul>
+        
+      </dd>
+
+      
+
+      
+      
+
+      
+      
+    </dl>
+
     
-      <span class="tag medium">MEDIUM</span>
+    
+    <dl>
+      <dt>Affected Functions</dt>
+      <dd>Version</dd>
       
-    <a href="/advisories/RUSTSEC-2020-0047.html">
-      RUSTSEC-2020-0047: Vulnerability in array-queue
-    </a>
-  </h3>
-  <span><p>array_queue pop_back() may cause a use-after-free</p>
-</span>
-  
-</li>
+      <dt><code>direct_ring_buffer::create_ring_buffer</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>&#60;=0.2.1</code></li>
+          
+        </ul>
+      </dd>
       
-    </ul>
+    </dl>
+    
+
+    
+
+    <h3 id="description">Description</h3>
+    <p>The safe function <code>create_ring_buffer</code> allocates a buffer using <code>Vec::with_capacity</code> followed by <code>set_len</code>, creating a <code>Box&lt;[T]&gt;</code> containing uninitialized memory.</p>
+<p>This leads to undefined behavior when functions like <code>write_slices</code> create typed slices (e.g., <code>&amp;mut [bool]</code>) over the uninitialized memory, violating Rust's validity invariants. The issue has been confirmed using Miri.</p>
+<p>Fixed in version 0.2.2 by using <code>resize_with</code> to properly initialize the buffer with <code>T::default()</code>, adding a <code>T: Default</code> bound to ensure sound initialization.</p>
+
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>
