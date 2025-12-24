@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>Advisories with keyword &#39;out-of-bounds&#39; › RustSec Advisory Database</title>
+<title>RUSTSEC-2024-0447: pgp: Panics on Malformed Untrusted Input › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -52,77 +52,224 @@
   </nav>
 </header>
 
-<main class="advisories">
+<main class="advisory">
   <article>
+    
+        <span class="floating-menu">
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/pgp/RUSTSEC-2024-0447.md">History</a> ⋅
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/pgp/RUSTSEC-2024-0447.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2024-0447">JSON (OSV)</a>
+        </span>
+    
 
     <header>
-      <span class="floating-menu">
-  <a href="/categories/">Categories</a> ⋅
-  <a href="/keywords/">Keywords</a> ⋅
-  <a href="/packages/">Packages</a>
+      <h1>
+        
+        RUSTSEC-2024-0447
+        
+      </h1>
+      <span class="subtitle"><p>Panics on Malformed Untrusted Input</p>
 </span>
-      <h1>Advisories with keyword &#39;out-of-bounds&#39;</h1>
     </header>
 
-    <ul>
-      
-      <li>
-  <time datetime="2025-12-24">
-    December 24, 2025
-  </time>
-
-  
-  <h3>
     
+
+    <dl>
+      <dt id="reported">Reported</dt>
+      <dd>
+        <time datetime="2024-12-05">
+          December  5, 2024
+        </time>
+      </dd>
+
+      <dt id="issued">Issued</dt>
+      <dd>
+        <time datetime="2025-12-24">
+          December 24, 2025
+        </time>
+        
+      </dd>
+
+      <dt id="package">Package</dt>
+      <dd>
+        
+        
+        <a href="/packages/pgp.html">pgp</a>
+          (<a href="https://crates.io/crates/pgp">crates.io</a>)
+        
+        
+      </dd>
+
+      <dt id="type">Type</dt>
+      <dd>
+        
+        Vulnerability
+        
+      </dd>
+
+      
+      <dt id="categories">Categories</dt>
+      <dd>
+        <ul>
+          
+          <li><a href="/categories/denial-of-service.html">denial-of-service</a></li>
+          
+        </ul>
+      </dd>
+      
+
+      
+
+      
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-53856">CVE-2024-53856</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-9rmp-2568-59rv">GHSA-9rmp-2568-59rv</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
+
+      
+      <dt id="details">References</dt>
+      <dd>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/rpgp/rpgp/security/advisories/GHSA-9rmp-2568-59rv">
+              https://github.com/rpgp/rpgp/security/advisories/GHSA-9rmp-2568-59rv
+            </a>
+          </li>
+        
+        
+          <li>
+            <a href="https://github.com/radicallyopensecurity/ros-website/blob/8169b16fc138a0b0dde14dd0e222d1279701b4d3/ros-public-reports/ROS%20-%20NLNet%20-%20rPGP%20-%202024.pdf">
+              https://github.com/radicallyopensecurity/ros-website/blob/8169b16fc138a0b0dde14dd0e222d1279701b4d3/ros-public-reports/ROS%20-%20NLNet%20-%20rPGP%20-%202024.pdf
+            </a>
+          </li>
+        
+        </ul>
+      </dd>
+      
+
+      
+
+      
+      <dt id="cvss_score">CVSS Score</dt>
+      <dd>7.5 <span class="tag high">
+        HIGH
+      </span></dd>
+
+      <dt id="cvss_details">CVSS Details</dt>
+      <dd>
+        <dl>
+          
+            <dt>Attack Vector</dt>
+            <dd>Network</dd>
+          
+            <dt>Attack Complexity</dt>
+            <dd>Low</dd>
+          
+            <dt>Privileges Required</dt>
+            <dd>None</dd>
+          
+            <dt>User Interaction</dt>
+            <dd>None</dd>
+          
+            <dt>Scope</dt>
+            <dd>Unchanged</dd>
+          
+            <dt>Confidentiality Impact</dt>
+            <dd>None</dd>
+          
+            <dt>Integrity Impact</dt>
+            <dd>None</dd>
+          
+            <dt>Availability Impact</dt>
+            <dd>High</dd>
+          
+        </dl>
+      </dd>
+
+      <dt id="cvss">CVSS Vector</dt>
+
+      
+          <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+        
+
+      
+
+      <dt id="patched">Patched</dt>
+      <dd>
+        
+        <ul>
+          
+          <li><code>&#62;=0.14.1</code></li>
+          
+        </ul>
+        
+      </dd>
+
+      
+
+      
+      
+    </dl>
+
+    
+    
+
+    <h3 id="description">Description</h3>
+    <p>During a security audit, Radically Open Security discovered
+several reachable edge cases which allow an attacker to
+trigger rpgp crashes by providing crafted data.</p>
+<h2>Impact</h2>
+<p>When processing malformed input, rpgp can run into Rust panics which halt
+the program.</p>
+<p>This can happen in the following scenarios:</p>
+<ul>
+<li>Parsing OpenPGP messages from binary or armor format</li>
+<li>Decrypting OpenPGP messages via decrypt_with_password()</li>
+<li>Parsing or converting public keys</li>
+<li>Parsing signed cleartext messages from armor format</li>
+<li>Using malformed private keys to sign or encrypt</li>
+</ul>
+<p>Given the affected components, we consider most attack vectors to be
+reachable by remote attackers during typical use cases of the rpgp
+library. The attack complexity is low since the malformed messages
+are generic, short, and require no victim-specific knowledge.</p>
+<p>The result is a denial-of-service impact via program termination.
+There is no impact to confidentiality or integrity security properties.</p>
+<h2>Versions and Patches</h2>
+<p>All recent versions are affected by at least some of the above mentioned
+issues.</p>
+<p>The vulnerabilities have been fixed with version 0.14.1. We recommend
+all users to upgrade to this version.</p>
+<h2>References</h2>
+<p>The security audit was made possible by the NLnet Foundation
+NGI Zero Core grant program for rpgp.</p>
+
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC-BY-4.0.html">CC-BY-4.0</a>
+    license.
+
+    
+      
+      
+          Source: <a href="https://github.com/rpgp/rpgp/security/advisories/GHSA-9rmp-2568-59rv">https://github.com/rpgp/rpgp/security/advisories/GHSA-9rmp-2568-59rv</a>
         
     
-    <a href="/advisories/RUSTSEC-2025-0137.html">
-      RUSTSEC-2025-0137: Vulnerability in ruint
-    </a>
-  </h3>
-  <span><p>Unsoundness of safe <code>reciprocal_mg10</code></p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2022-08-26">
-    August 26, 2022
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag critical">CRITICAL</span>
-      
-    <a href="/advisories/RUSTSEC-2022-0051.html">
-      RUSTSEC-2022-0051: Vulnerability in lz4-sys
-    </a>
-  </h3>
-  <span><p>Memory corruption in liblz4</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2021-03-31">
-    March 31, 2021
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag high">HIGH</span>
-      
-    <a href="/advisories/RUSTSEC-2021-0050.html">
-      RUSTSEC-2021-0050: Vulnerability in reorder
-    </a>
-  </h3>
-  <span><p>swap_index can write out of bounds and return uninitialized memory</p>
-</span>
-  
-</li>
-      
-    </ul>
+    </p>
   </article>
 </main>
