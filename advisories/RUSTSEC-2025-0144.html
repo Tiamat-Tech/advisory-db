@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2024-0436: paste: paste - no longer maintained › RustSec Advisory Database</title>
+<title>RUSTSEC-2025-0144: ml-dsa: Timing side-channel in ML-DSA decomposition › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -56,19 +56,19 @@
   <article>
     
         <span class="floating-menu">
-          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/paste/RUSTSEC-2024-0436.md">History</a> ⋅
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/paste/RUSTSEC-2024-0436.md">Edit</a> ⋅
-          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2024-0436">JSON (OSV)</a>
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/ml-dsa/RUSTSEC-2025-0144.md">History</a> ⋅
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/ml-dsa/RUSTSEC-2025-0144.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2025-0144">JSON (OSV)</a>
         </span>
     
 
     <header>
       <h1>
         
-        RUSTSEC-2024-0436
+        RUSTSEC-2025-0144
         
       </h1>
-      <span class="subtitle"><p>paste - no longer maintained</p>
+      <span class="subtitle"><p>Timing side-channel in ML-DSA decomposition</p>
 </span>
     </header>
 
@@ -77,19 +77,15 @@
     <dl>
       <dt id="reported">Reported</dt>
       <dd>
-        <time datetime="2024-10-07">
-          October  7, 2024
+        <time datetime="2025-12-12">
+          December 12, 2025
         </time>
       </dd>
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2025-03-07">
-          March  7, 2025
-        </time>
-        
         <time datetime="2026-01-27">
-          (last modified: January 27, 2026)
+          January 27, 2026
         </time>
         
       </dd>
@@ -98,8 +94,8 @@
       <dd>
         
         
-        <a href="/packages/paste.html">paste</a>
-          (<a href="https://crates.io/crates/paste">crates.io</a>)
+        <a href="/packages/ml-dsa.html">ml-dsa</a>
+          (<a href="https://crates.io/crates/ml-dsa">crates.io</a>)
         
         
       </dd>
@@ -107,15 +103,42 @@
       <dt id="type">Type</dt>
       <dd>
         
-        <span class="tag info">INFO</span>
-        Unmaintained
+        Vulnerability
         
       </dd>
 
       
+      <dt id="categories">Categories</dt>
+      <dd>
+        <ul>
+          
+          <li><a href="/categories/crypto-failure.html">crypto-failure</a></li>
+          
+        </ul>
+      </dd>
+      
 
       
 
+      
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22705">CVE-2026-22705</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-hcp2-x6j4-29j7">GHSA-hcp2-x6j4-29j7</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
       
 
       
@@ -124,8 +147,8 @@
         <ul>
         
           <li>
-            <a href="https://github.com/dtolnay/paste">
-              https://github.com/dtolnay/paste
+            <a href="https://github.com/RustCrypto/signatures/security/advisories/GHSA-hcp2-x6j4-29j7">
+              https://github.com/RustCrypto/signatures/security/advisories/GHSA-hcp2-x6j4-29j7
             </a>
           </li>
         
@@ -137,12 +160,58 @@
       
 
       
+      <dt id="cvss_score">CVSS Score</dt>
+      <dd>6.4 <span class="tag medium">
+        MEDIUM
+      </span></dd>
+
+      <dt id="cvss_details">CVSS Details</dt>
+      <dd>
+        <dl>
+          
+            <dt>Attack Vector</dt>
+            <dd>Adjacent</dd>
+          
+            <dt>Attack Complexity</dt>
+            <dd>High</dd>
+          
+            <dt>Privileges Required</dt>
+            <dd>Low</dd>
+          
+            <dt>User Interaction</dt>
+            <dd>None</dd>
+          
+            <dt>Scope</dt>
+            <dd>Unchanged</dd>
+          
+            <dt>Confidentiality Impact</dt>
+            <dd>High</dd>
+          
+            <dt>Integrity Impact</dt>
+            <dd>High</dd>
+          
+            <dt>Availability Impact</dt>
+            <dd>None</dd>
+          
+        </dl>
+      </dd>
+
+      <dt id="cvss">CVSS Vector</dt>
+
+      
+          <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N">CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N</a></dd>
+        
+
       
 
       <dt id="patched">Patched</dt>
       <dd>
         
-        no patched versions
+        <ul>
+          
+          <li><code>&#62;=0.1.0-rc.3</code></li>
+          
+        </ul>
         
       </dd>
 
@@ -156,18 +225,40 @@
     
 
     <h3 id="description">Description</h3>
-    <p>The creator of the crate <code>paste</code> has stated in the <a href="https://github.com/dtolnay/paste/blob/master/README.md"><code>README.md</code></a>
-that this project is not longer maintained as well as archived the repository</p>
-<h2>Possible Alternative(s)</h2>
+    <h3>Summary</h3>
+<p>A timing side-channel was discovered in the Decompose algorithm which is used during ML-DSA signing to generate hints for the signature.</p>
+<h3>Details</h3>
+<p>The analysis was performed using a constant-time analyzer that examines compiled assembly code for instructions with data-dependent timing behavior. The analyzer flags:</p>
 <ul>
-<li><a href="https://crates.io/crates/pastey"><code>pastey</code></a>: a fork of paste and is aimed to be a drop-in replacement with additional features for paste crate</li>
-<li><a href="https://crates.io/crates/with_builtin_macros"><code>with_builtin_macros</code></a>: crate providing a <a href="https://docs.rs/with_builtin_macros/0.1.0/with_builtin_macros/macro.with_eager_expansions.html">superset of <code>paste</code>'s functionality including general <code>macro_rules!</code> eager expansions</a>  and <code>concat!</code>/<code>concat_idents!</code> macros</li>
+<li><strong>UDIV/SDIV instructions</strong>: Hardware division instructions have early termination optimizations where execution time depends on operand values.</li>
 </ul>
+<p>The <code>decompose</code> function used a hardware division instruction to compute <code>r1.0 / TwoGamma2::U32</code>. This function is called during signing through <code>high_bits()</code> and <code>low_bits()</code>, which process values derived from secret key components:</p>
+<ul>
+<li><code>(&amp;w - &amp;cs2).low_bits()</code> where <code>cs2</code> is derived from secret key component <code>s2</code></li>
+<li><code>Hint::new()</code> calls <code>high_bits()</code> on values derived from secret key component <code>t0</code></li>
+</ul>
+<p><strong>Original Code</strong>:</p>
+<pre><code class="language-rust">fn decompose&lt;TwoGamma2: Unsigned&gt;(self) -&gt; (Elem, Elem) {
+    // ...
+    let mut r1 = r_plus - r0;
+    r1.0 /= TwoGamma2::U32;  // Variable-time division on secret-derived data
+    (r1, r0)
+}
+</code></pre>
+<h3>Impact</h3>
+<p>The dividend (<code>r1.0</code>) is derived from secret key material. An attacker with precise timing measurements could extract information about the signing key by observing timing variations in the division operation.</p>
+<h3>Mitigation</h3>
+<p>Integer division was replaced with a constant-time Barrett reduction.</p>
 
 
-    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC-BY-4.0.html">CC-BY-4.0</a>
     license.
 
+    
+      
+      
+          Source: <a href="https://github.com/RustCrypto/signatures/security/advisories/GHSA-hcp2-x6j4-29j7">https://github.com/RustCrypto/signatures/security/advisories/GHSA-hcp2-x6j4-29j7</a>
+        
     
     </p>
   </article>
