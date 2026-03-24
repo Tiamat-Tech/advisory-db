@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>Advisories for package &#39;libcrux-ed25519&#39; › RustSec Advisory Database</title>
+<title>RUSTSEC-2026-0071: hpke-rs: Nonce Reuse in HPKE Context › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -52,58 +52,228 @@
   </nav>
 </header>
 
-<main class="advisories">
+<main class="advisory">
   <article>
+    
+        <span class="floating-menu">
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/hpke-rs/RUSTSEC-2026-0071.md">History</a> ⋅
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/hpke-rs/RUSTSEC-2026-0071.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0071">JSON (OSV)</a>
+        </span>
+    
 
     <header>
-      <span class="floating-menu">
-  <a href="/categories/">Categories</a> ⋅
-  <a href="/keywords/">Keywords</a> ⋅
-  <a href="/packages/">Packages</a>
+      <h1>
+        
+        RUSTSEC-2026-0071
+        
+      </h1>
+      <span class="subtitle"><p>Nonce Reuse in HPKE Context</p>
 </span>
-      <h1>Advisories for package &#39;libcrux-ed25519&#39;</h1>
     </header>
 
-    <ul>
-      
-      <li>
-  <time datetime="2026-03-24">
-    March 24, 2026
-  </time>
-
-  
-  <h3>
     
-      <span class="tag high">HIGH</span>
-      
-    <a href="/advisories/RUSTSEC-2026-0075.html">
-      RUSTSEC-2026-0075: Vulnerability in libcrux-ed25519
-    </a>
-  </h3>
-  <span><p>All-Zero Key Generation on Catastrophic RNG Failure</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2026-02-25">
-    February 25, 2026
-  </time>
 
-  
-  <h3>
+    <dl>
+      <dt id="reported">Reported</dt>
+      <dd>
+        <time datetime="2026-02-05">
+          February  5, 2026
+        </time>
+      </dd>
+
+      <dt id="issued">Issued</dt>
+      <dd>
+        <time datetime="2026-03-24">
+          March 24, 2026
+        </time>
+        
+      </dd>
+
+      <dt id="package">Package</dt>
+      <dd>
+        
+        
+        <a href="/packages/hpke-rs.html">hpke-rs</a>
+           
+          (<a href="https://crates.io/crates/hpke-rs">crates.io</a>)
+          
+        
+        
+      </dd>
+
+      <dt id="type">Type</dt>
+      <dd>
+        
+        Vulnerability
+        
+      </dd>
+
+      
+
+      
+
+      
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-g433-pq76-6cmf">GHSA-g433-pq76-6cmf</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
+
+      
+      <dt id="details">References</dt>
+      <dd>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/cryspen/hpke-rs/pull/123">
+              https://github.com/cryspen/hpke-rs/pull/123
+            </a>
+          </li>
+        
+        
+        </ul>
+      </dd>
+      
+
+      
+
+      
+      <dt id="cvss_score">CVSS Score</dt>
+      <dd>9.3 <span class="tag critical">
+        CRITICAL
+      </span></dd>
+
+      <dt id="cvss_details">CVSS Details</dt>
+      <dd>
+        <dl>
+          
+            <dt>Attack Complexity</dt>
+            <dd>Low</dd>
+          
+            <dt>Attack Requirements</dt>
+            <dd>None</dd>
+          
+            <dt>Attack Vector</dt>
+            <dd>Network</dd>
+          
+            <dt>Privileges Required</dt>
+            <dd>None</dd>
+          
+            <dt>Availability Impact to the Subsequent System</dt>
+            <dd>None</dd>
+          
+            <dt>Confidentiality Impact to the Subsequent System</dt>
+            <dd>None</dd>
+          
+            <dt>Integrity Impact to the Subsequent System</dt>
+            <dd>None</dd>
+          
+            <dt>User Interaction</dt>
+            <dd>None</dd>
+          
+            <dt>Availability Impact to the Vulnerable System</dt>
+            <dd>None</dd>
+          
+            <dt>Confidentiality Impact to the Vulnerable System</dt>
+            <dd>High</dd>
+          
+            <dt>Integrity Impact to the Vulnerable System</dt>
+            <dd>High</dd>
+          
+        </dl>
+      </dd>
+
+      <dt id="cvss">CVSS Vector</dt>
+
+      
+          <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N">CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N</a></dd>
+        
+
+      
+
+      <dt id="patched">Patched</dt>
+      <dd>
+        
+        <ul>
+          
+          <li><code>&#62;=0.6.0</code></li>
+          
+        </ul>
+        
+      </dd>
+
+      
+
+      
+      
+
+      
+      
+    </dl>
+
     
-      <span class="tag none">NONE</span>
+    
+    <dl>
+      <dt>Affected Functions</dt>
+      <dd>Version</dd>
       
-    <a href="/advisories/RUSTSEC-2026-0026.html">
-      RUSTSEC-2026-0026: Vulnerability in libcrux-ed25519
-    </a>
-  </h3>
-  <span><p>Unnecessary clamping of seed reduces seed entropy to 251 bits</p>
-</span>
-  
-</li>
+      <dt><code>hpke_rs::Context::open</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>&#60;=0.5.0</code></li>
+          
+        </ul>
+      </dd>
       
-    </ul>
+      <dt><code>hpke_rs::Context::seal</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>&#60;=0.5.0</code></li>
+          
+        </ul>
+      </dd>
+      
+    </dl>
+    
+
+    
+
+    <h3 id="description">Description</h3>
+    <p>The sequence number that is used to compute the AEAD nonce when using
+a re-usable HPKE context is incremented after each seal or open
+operation. This sequence number was stored as a <code>u32</code> and used regular
+addition on <code>u32</code> for the increment, meaning in release mode it would
+silently wrap around to 0 after 2^32 seal or open operations.</p>
+<h2>Impact</h2>
+<p>Nonce reuse causes catastrophic breakage of AEAD ciphers, enabling
+plaintext recovery attacks and authentication tag forgeries, depending
+on the concrete AEAD.</p>
+<p>This bug impacts applications that use hpke-rs to encrypt a large
+number of messages using the same context. Applications using the
+one-shot APIs are unaffected.</p>
+<h2>Mitigation</h2>
+<p>Starting with version <code>0.6.0</code>, <code>checked_add</code> is used to increment the
+sequence number, which avoids a silent wraparound in release
+mode. Additionally, the sequence number is now stored as a <code>u64</code>,
+increasing the maximally allowed number of seal and open operations on
+a given HPKE context.</p>
+
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>
