@@ -1,5 +1,473 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>RustSec Advisories</title><id>https://rustsec.org/feed.xml</id><updated>2026-03-30T12:00:00+00:00</updated><author><name>RustSec</name></author><icon>https://rustsec.org/favicon.ico</icon><link href="https://rustsec.org/feed.xml" rel="self" type="application/atom+xml"/><link href="https://rustsec.org/" rel="alternate" type="text/html"/><subtitle xml:lang="en">Security advisories filed against Rust crates</subtitle><entry><title>RUSTSEC-2025-0156: tree-sitter-pkl contained malicious code</title><id>https://rustsec.org/advisories/RUSTSEC-2025-0156.html</id><updated>2026-03-30T12:00:00+00:00</updated><category term="malicious"/><link href="https://rustsec.org/advisories/RUSTSEC-2025-0156.html" rel="alternate" type="text/html" title="RUSTSEC-2025-0156: tree-sitter-pkl contained malicious code"/><published>2026-03-30T12:00:00+00:00</published><summary xml:lang="en">`tree-sitter-pkl` was removed from crates.io for malicious code</summary><content xml:lang="en" type="html">  &lt;article&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>RustSec Advisories</title><id>https://rustsec.org/feed.xml</id><updated>2026-04-02T12:00:00+00:00</updated><author><name>RustSec</name></author><icon>https://rustsec.org/favicon.ico</icon><link href="https://rustsec.org/feed.xml" rel="self" type="application/atom+xml"/><link href="https://rustsec.org/" rel="alternate" type="text/html"/><subtitle xml:lang="en">Security advisories filed against Rust crates</subtitle><entry><title>RUSTSEC-2023-0125: Vulnerability in aws-sigv4</title><id>https://rustsec.org/advisories/RUSTSEC-2023-0125.html</id><updated>2026-04-02T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2023-0125.html" rel="alternate" type="text/html" title="RUSTSEC-2023-0125: Vulnerability in aws-sigv4"/><published>2026-04-02T12:00:00+00:00</published><summary xml:lang="en">Logs AWS credentials when TRACE-level logging is enabled</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/aws-sigv4/RUSTSEC-2023-0125.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/aws-sigv4/RUSTSEC-2023-0125.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2023-0125&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2023-0125
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Logs AWS credentials when TRACE-level logging is enabled&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2023-04-19&quot;&gt;
+          April 19, 2023
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-04-02&quot;&gt;
+          April  2, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/aws-sigv4.html&quot;&gt;aws-sigv4&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/aws-sigv4&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/information.html&quot;&gt;#information&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/leak.html&quot;&gt;#leak&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/aws.html&quot;&gt;#aws&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/logs.html&quot;&gt;#logs&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-30610&quot;&gt;CVE-2023-30610&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-mjv9-vp6w-3rc9&quot;&gt;GHSA-mjv9-vp6w-3rc9&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/awslabs/aws-sdk-rust/security/advisories/GHSA-mjv9-vp6w-3rc9&quot;&gt;
+              https://github.com/awslabs/aws-sdk-rust/security/advisories/GHSA-mjv9-vp6w-3rc9
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
+      &lt;dd&gt;5.5 &lt;span class=&quot;tag medium&quot;&gt;
+        MEDIUM
+      &lt;/span&gt;&lt;/dd&gt;
+
+      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;dl&gt;
+          
+            &lt;dt&gt;Attack Vector&lt;/dt&gt;
+            &lt;dd&gt;Local&lt;/dd&gt;
+          
+            &lt;dt&gt;Attack Complexity&lt;/dt&gt;
+            &lt;dd&gt;Low&lt;/dd&gt;
+          
+            &lt;dt&gt;Privileges Required&lt;/dt&gt;
+            &lt;dd&gt;Low&lt;/dd&gt;
+          
+            &lt;dt&gt;User Interaction&lt;/dt&gt;
+            &lt;dd&gt;None&lt;/dd&gt;
+          
+            &lt;dt&gt;Scope&lt;/dt&gt;
+            &lt;dd&gt;Unchanged&lt;/dd&gt;
+          
+            &lt;dt&gt;Confidentiality Impact&lt;/dt&gt;
+            &lt;dd&gt;High&lt;/dd&gt;
+          
+            &lt;dt&gt;Integrity Impact&lt;/dt&gt;
+            &lt;dd&gt;None&lt;/dd&gt;
+          
+            &lt;dt&gt;Availability Impact&lt;/dt&gt;
+            &lt;dd&gt;None&lt;/dd&gt;
+          
+        &lt;/dl&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
+
+      
+          &lt;dd&gt;&lt;a href=&quot;https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N&quot;&gt;CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N&lt;/a&gt;&lt;/dd&gt;
+        
+
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.55.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.54.2&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.53.2&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.52.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.51.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.50.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.49.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.48.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.47.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.46.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.15.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.14.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.13.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.12.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.11.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.10.2&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.9.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.8.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.7.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.6.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.5.3&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.3.1&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.2.1&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;aws-sigv4 is a rust library for low level request signing in the aws cloud platform.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;aws_sigv4::SigningParams&lt;/code&gt; struct had a derived &lt;code&gt;Debug&lt;/code&gt; implementation.
+When debug-formatted, it would include a user&apos;s AWS access key, AWS secret key,
+and security token in plaintext. When TRACE-level logging is enabled for an SDK,
+&lt;code&gt;SigningParams&lt;/code&gt; is printed, thereby revealing those credentials to anyone
+with access to logs.&lt;/p&gt;
+&lt;p&gt;All users of the AWS SDK for Rust who enabled TRACE-level logging,
+either globally (e.g. &lt;code&gt;RUST_LOG=trace&lt;/code&gt;), or for the &lt;code&gt;aws-sigv4&lt;/code&gt;
+crate specifically are affected.&lt;/p&gt;
+&lt;p&gt;This issue has been addressed in a set of new releases.&lt;/p&gt;
+&lt;p&gt;Users are advised to upgrade.&lt;/p&gt;
+&lt;p&gt;Users unable to upgrade should disable TRACE-level logging for AWS Rust SDK crates.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0079: Unsoundness in dyn-future</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0079.html</id><updated>2026-04-02T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0079.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0079: Unsoundness in dyn-future"/><published>2026-04-02T12:00:00+00:00</published><summary xml:lang="en">`DynFuture` drop can construct a dangling reference</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/dyn-future/RUSTSEC-2026-0079.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/dyn-future/RUSTSEC-2026-0079.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0079&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0079
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;&lt;code&gt;DynFuture&lt;/code&gt; drop can construct a dangling reference&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-01-21&quot;&gt;
+          January 21, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-04-02&quot;&gt;
+          April  2, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/dyn-future.html&quot;&gt;dyn-future&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/dyn-future&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unsound
+        
+      &lt;/dd&gt;
+
+      
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/rustsec/advisory-db/issues/2595&quot;&gt;
+              https://github.com/rustsec/advisory-db/issues/2595
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        no patched versions
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;DynFuture is unsound because its Drop implementation transmutes a trait-object reference into unrelated reference types, which constructs an invalid reference from trait object metadata.&lt;/p&gt;
+&lt;p&gt;This issue was reproduced against &lt;code&gt;dyn-future&lt;/code&gt; 3.0.4 under Miri. And the crate is unmaintained.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0080: Unsoundness in scaly</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0080.html</id><updated>2026-04-02T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0080.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0080: Unsoundness in scaly"/><published>2026-04-02T12:00:00+00:00</published><summary xml:lang="en">Multiple soundness issues in `scaly` safe APIs</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/scaly/RUSTSEC-2026-0080.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/scaly/RUSTSEC-2026-0080.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0080&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0080
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Multiple soundness issues in &lt;code&gt;scaly&lt;/code&gt; safe APIs&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-01-19&quot;&gt;
+          January 19, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-04-02&quot;&gt;
+          April  2, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/scaly.html&quot;&gt;scaly&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/scaly&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unsound
+        
+      &lt;/dd&gt;
+
+      
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/rustsec/advisory-db/issues/2594&quot;&gt;
+              https://github.com/rustsec/advisory-db/issues/2594
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        no patched versions
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;Affected versions contain multiple safe APIs that can trigger undefined
+behavior:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Array&amp;lt;T&amp;gt;::index&lt;/code&gt; can perform an out-of-bounds read.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;String::get_length&lt;/code&gt; can perform an out-of-bounds read.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;String::append_character&lt;/code&gt; can perform an invalid write.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;String::to_c_string&lt;/code&gt; can perform an out-of-bounds write.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These issues were reproduced against &lt;code&gt;scaly&lt;/code&gt; 0.0.37 under Miri. And the crate is unmaintained.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2025-0156: tree-sitter-pkl contained malicious code</title><id>https://rustsec.org/advisories/RUSTSEC-2025-0156.html</id><updated>2026-03-30T12:00:00+00:00</updated><category term="malicious"/><link href="https://rustsec.org/advisories/RUSTSEC-2025-0156.html" rel="alternate" type="text/html" title="RUSTSEC-2025-0156: tree-sitter-pkl contained malicious code"/><published>2026-03-30T12:00:00+00:00</published><summary xml:lang="en">`tree-sitter-pkl` was removed from crates.io for malicious code</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
         &lt;span class=&quot;floating-menu&quot;&gt;
           &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/tree-sitter-pkl/RUSTSEC-2025-0156.md&quot;&gt;History&lt;/a&gt; ⋅
@@ -3045,1895 +3513,6 @@ account has been banned.&lt;/p&gt;
 information and download records of the malicious crate are no longer
 available. The related malicious crates have been yanked, and the malicious
 account has been banned.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2025-0154: replit_ruspty contained malicious code</title><id>https://rustsec.org/advisories/RUSTSEC-2025-0154.html</id><updated>2026-03-25T12:00:00+00:00</updated><category term="malicious"/><link href="https://rustsec.org/advisories/RUSTSEC-2025-0154.html" rel="alternate" type="text/html" title="RUSTSEC-2025-0154: replit_ruspty contained malicious code"/><published>2026-03-25T12:00:00+00:00</published><summary xml:lang="en">`replit_ruspty` was removed from crates.io for malicious code</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/replit_ruspty/RUSTSEC-2025-0154.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/replit_ruspty/RUSTSEC-2025-0154.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2025-0154&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2025-0154
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;&lt;code&gt;replit_ruspty&lt;/code&gt; was removed from crates.io for malicious code&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2025-11-04&quot;&gt;
-          November  4, 2025
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-03-25&quot;&gt;
-          March 25, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/replit_ruspty.html&quot;&gt;replit_ruspty&lt;/a&gt;
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/malicious.html&quot;&gt;malicious&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            MAL-2025-49350
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/ossf/malicious-packages/blob/main/osv/malicious/crates.io/replit_ruspty/MAL-2025-49350.json&quot;&gt;
-              https://github.com/ossf/malicious-packages/blob/main/osv/malicious/crates.io/replit_ruspty/MAL-2025-49350.json
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        no patched versions
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The OpenSSF Package Analysis project identified &apos;replit_ruspty&apos; @ 1.0.0 (crates.io) as malicious. Version 2.0.0 was also published with malware.&lt;/p&gt;
-&lt;p&gt;It is considered malicious because: The package communicates with a domain associated with malicious activity. The package executes one or more commands associated with malicious behavior.&lt;/p&gt;
-&lt;p&gt;This advisory is to retrospectively document this attack. The download records of the malicious crate are no longer available. The related malicious crates have been deleted.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0072: Vulnerability in hpke-rs-rust-crypto</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0072.html</id><updated>2026-03-24T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0072.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0072: Vulnerability in hpke-rs-rust-crypto"/><published>2026-03-24T12:00:00+00:00</published><summary xml:lang="en">Missing Check for All-Zero X25519 Shared Secret</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/hpke-rs-rust-crypto/RUSTSEC-2026-0072.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/hpke-rs-rust-crypto/RUSTSEC-2026-0072.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0072&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0072
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Missing Check for All-Zero X25519 Shared Secret&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-02-04&quot;&gt;
-          February  4, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-03-24&quot;&gt;
-          March 24, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/hpke-rs-rust-crypto.html&quot;&gt;hpke-rs-rust-crypto&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/hpke-rs-rust-crypto&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            &lt;a href=&quot;https://github.com/advisories/GHSA-g433-pq76-6cmf&quot;&gt;GHSA-g433-pq76-6cmf&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/cryspen/hpke-rs/pull/124&quot;&gt;
-              https://github.com/cryspen/hpke-rs/pull/124
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=0.6.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-    &lt;dl&gt;
-      &lt;dt&gt;Affected Functions&lt;/dt&gt;
-      &lt;dd&gt;Version&lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;hpke_rs_rust_crypto::HpkeRustCrypto::dh&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;=0.5.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-    &lt;/dl&gt;
-    
-
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;Computing an X25519 shared secret with
-&lt;code&gt;x25519_dalek::StaticSecret::diffie_hellman&lt;/code&gt; does not include the
-check that the key exchange was contributory, i.e. does not ensure on
-its own that the resulting shared secret is non-zero.&lt;/p&gt;
-&lt;h2&gt;Impact&lt;/h2&gt;
-&lt;p&gt;RFC 9180 mandates that implementations of HPKE must check for all zero
-Diffie-Hellman shared secrets and abort if so.&lt;/p&gt;
-&lt;p&gt;Applications using hpke-rs with the RustCryto provider would not
-perform this check allowing for non-contributive Diffie-Hellman shared
-secrets. Applications using hpke-rs with the libcrux provider are not
-affected.&lt;/p&gt;
-&lt;h2&gt;Mitigation&lt;/h2&gt;
-&lt;p&gt;Starting with version &lt;code&gt;0.6.0&lt;/code&gt;, an error will be returned when
-the computed Diffie-Hellman shared secret is all-zero.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0074: Vulnerability in libcrux-sha3</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0074.html</id><updated>2026-03-27T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0074.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0074: Vulnerability in libcrux-sha3"/><published>2026-03-24T12:00:00+00:00</published><summary xml:lang="en">Incorrect Output of Incremental Portable SHAKE API</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/libcrux-sha3/RUSTSEC-2026-0074.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/libcrux-sha3/RUSTSEC-2026-0074.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0074&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0074
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Incorrect Output of Incremental Portable SHAKE API&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-03-04&quot;&gt;
-          March  4, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-03-24&quot;&gt;
-          March 24, 2026
-        &lt;/time&gt;
-        
-        &lt;time datetime=&quot;2026-03-27&quot;&gt;
-          (last modified: March 27, 2026)
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/libcrux-sha3.html&quot;&gt;libcrux-sha3&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/libcrux-sha3&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            &lt;a href=&quot;https://github.com/advisories/GHSA-q29p-9pfr-j652&quot;&gt;GHSA-q29p-9pfr-j652&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/cryspen/libcrux/pull/1352&quot;&gt;
-              https://github.com/cryspen/libcrux/pull/1352
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=0.0.8&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-    &lt;dl&gt;
-      &lt;dt&gt;Affected Functions&lt;/dt&gt;
-      &lt;dd&gt;Version&lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;libcrux_sha3::portable::incremental::Shake128Xof::squeeze&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;=0.0.7&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;libcrux_sha3::portable::incremental::Shake256Xof::squeeze&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;=0.0.7&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-    &lt;/dl&gt;
-    
-
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The incremental squeeze functions in the portable SHAKE XOF API, when
-attempting to squeeze more than &lt;code&gt;RATE&lt;/code&gt; (168 for SHAKE128, 136 for
-SHAKE256) bytes, performed an additional permutation of the state
-before producing the first output block, thus discarding the first
-block of &lt;code&gt;RATE&lt;/code&gt; bytes of valid XOF output.&lt;/p&gt;
-&lt;h2&gt;Impact&lt;/h2&gt;
-&lt;p&gt;This bug impacts users that rely on this XOF API to squeeze more than
-&lt;code&gt;RATE&lt;/code&gt; bytes. It does not impact the use of libcrux-sha3 in
-libcrux-ml-kem or libcrux-ml-dsa.&lt;/p&gt;
-&lt;h2&gt;Mitigation&lt;/h2&gt;
-&lt;p&gt;Starting from version &lt;code&gt;0.0.8&lt;/code&gt; the squeeze functions correctly output
-all blocks including the first block.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0073: Vulnerability in libcrux-poly1305</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0073.html</id><updated>2026-03-27T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0073.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0073: Vulnerability in libcrux-poly1305"/><published>2026-03-24T12:00:00+00:00</published><summary xml:lang="en">Panic in Standalone MAC Operations</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/libcrux-poly1305/RUSTSEC-2026-0073.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/libcrux-poly1305/RUSTSEC-2026-0073.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0073&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0073
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Panic in Standalone MAC Operations&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-03-04&quot;&gt;
-          March  4, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-03-24&quot;&gt;
-          March 24, 2026
-        &lt;/time&gt;
-        
-        &lt;time datetime=&quot;2026-03-27&quot;&gt;
-          (last modified: March 27, 2026)
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/libcrux-poly1305.html&quot;&gt;libcrux-poly1305&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/libcrux-poly1305&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            &lt;a href=&quot;https://github.com/advisories/GHSA-pv9v-5j35-xwcr&quot;&gt;GHSA-pv9v-5j35-xwcr&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/cryspen/libcrux/pull/1351&quot;&gt;
-              https://github.com/cryspen/libcrux/pull/1351
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
-      &lt;dd&gt;8.7 &lt;span class=&quot;tag high&quot;&gt;
-        HIGH
-      &lt;/span&gt;&lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;dl&gt;
-          
-            &lt;dt&gt;Attack Complexity&lt;/dt&gt;
-            &lt;dd&gt;Low&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Requirements&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Vector&lt;/dt&gt;
-            &lt;dd&gt;Network&lt;/dd&gt;
-          
-            &lt;dt&gt;Privileges Required&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;User Interaction&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-        &lt;/dl&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
-
-      
-          &lt;dd&gt;&lt;a href=&quot;https://www.first.org/cvss/calculator/3.1#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N&quot;&gt;CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N&lt;/a&gt;&lt;/dd&gt;
-        
-
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=0.0.5&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-    &lt;dl&gt;
-      &lt;dt&gt;Affected Functions&lt;/dt&gt;
-      &lt;dd&gt;Version&lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;libcrux_poly1305::mac&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;=0.0.4&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-    &lt;/dl&gt;
-    
-
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;An incorrect constant for the key length in libcrux-poly1305 caused
-the standalone MAC function &lt;code&gt;libcrux_poly1305::mac&lt;/code&gt; to always panic
-with an out-of-bounds memory access.&lt;/p&gt;
-&lt;h2&gt;Impact&lt;/h2&gt;
-&lt;p&gt;Applications wishing to use libcrux-poly1305 as a standalone MAC would
-experience panics. The use of libcrux-poly1305 in
-libcrux-chacha20poly1305 is unaffected.&lt;/p&gt;
-&lt;h2&gt;Mitigation&lt;/h2&gt;
-&lt;p&gt;Starting from version &lt;code&gt;0.0.5&lt;/code&gt;, the correct value is used for the key
-length constant.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0076: Vulnerability in libcrux-ml-dsa</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0076.html</id><updated>2026-03-27T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0076.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0076: Vulnerability in libcrux-ml-dsa"/><published>2026-03-24T12:00:00+00:00</published><summary xml:lang="en">Panic in Signature Hint Decoding During Verification</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/libcrux-ml-dsa/RUSTSEC-2026-0076.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/libcrux-ml-dsa/RUSTSEC-2026-0076.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0076&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0076
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Panic in Signature Hint Decoding During Verification&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-03-04&quot;&gt;
-          March  4, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-03-24&quot;&gt;
-          March 24, 2026
-        &lt;/time&gt;
-        
-        &lt;time datetime=&quot;2026-03-27&quot;&gt;
-          (last modified: March 27, 2026)
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/libcrux-ml-dsa.html&quot;&gt;libcrux-ml-dsa&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/libcrux-ml-dsa&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            &lt;a href=&quot;https://github.com/advisories/GHSA-xrf2-5r3p-5wgj&quot;&gt;GHSA-xrf2-5r3p-5wgj&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/cryspen/libcrux/pull/1348&quot;&gt;
-              https://github.com/cryspen/libcrux/pull/1348
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
-      &lt;dd&gt;8.7 &lt;span class=&quot;tag high&quot;&gt;
-        HIGH
-      &lt;/span&gt;&lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;dl&gt;
-          
-            &lt;dt&gt;Attack Complexity&lt;/dt&gt;
-            &lt;dd&gt;Low&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Requirements&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Vector&lt;/dt&gt;
-            &lt;dd&gt;Network&lt;/dd&gt;
-          
-            &lt;dt&gt;Privileges Required&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;User Interaction&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-        &lt;/dl&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
-
-      
-          &lt;dd&gt;&lt;a href=&quot;https://www.first.org/cvss/calculator/3.1#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N&quot;&gt;CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N&lt;/a&gt;&lt;/dd&gt;
-        
-
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=0.0.8&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-    &lt;dl&gt;
-      &lt;dt&gt;Affected Functions&lt;/dt&gt;
-      &lt;dd&gt;Version&lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;libcrux_ml_dsa::ml_dsa_44::verify&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;=0.0.7&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;libcrux_ml_dsa::ml_dsa_65::verify&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;=0.0.7&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;libcrux_ml_dsa::ml_dsa_87::verify&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;=0.0.7&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-    &lt;/dl&gt;
-    
-
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;During ML-DSA verification the serialized hint values are decoded as
-specified in algorithm 22 &lt;code&gt;HintBitUnpack&lt;/code&gt; of &lt;a href=&quot;https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf#%5B%7B%22num%22%3A120%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22FitH%22%7D%2C657%5D&quot;&gt;FIPS 204, subsection
-7.1&lt;/a&gt;. The
-algorithm requires that the cumulative hint counters per row of the
-hint vector are strictly increasing and below a maximum value which
-depends on the choice of ML-DSA parameter set (line 4).&lt;/p&gt;
-&lt;p&gt;In libcrux-ml-dsa, hint decoding did not check the boundedness of the
-cumulative hint counter of the last row of the hint vector.&lt;/p&gt;
-&lt;h2&gt;Impact&lt;/h2&gt;
-&lt;p&gt;A manipulated invalid hint can cause an out-of-bounds memory access
-since the hint decoding logic may attempt to read outside the bounds
-of the serialized signature, causing a runtime panic.&lt;/p&gt;
-&lt;h2&gt;Mitigation&lt;/h2&gt;
-&lt;p&gt;Starting from version &lt;code&gt;0.0.8&lt;/code&gt;, hint decoding will check the cumulative
-hint counter of the last row as well.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0077: Vulnerability in libcrux-ml-dsa</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0077.html</id><updated>2026-03-27T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0077.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0077: Vulnerability in libcrux-ml-dsa"/><published>2026-03-24T12:00:00+00:00</published><summary xml:lang="en">Incorrect Check of Signer Response Norm During Verification</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/libcrux-ml-dsa/RUSTSEC-2026-0077.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/libcrux-ml-dsa/RUSTSEC-2026-0077.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0077&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0077
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Incorrect Check of Signer Response Norm During Verification&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-03-04&quot;&gt;
-          March  4, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-03-24&quot;&gt;
-          March 24, 2026
-        &lt;/time&gt;
-        
-        &lt;time datetime=&quot;2026-03-27&quot;&gt;
-          (last modified: March 27, 2026)
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/libcrux-ml-dsa.html&quot;&gt;libcrux-ml-dsa&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/libcrux-ml-dsa&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            &lt;a href=&quot;https://github.com/advisories/GHSA-cp57-fq8g-qh6v&quot;&gt;GHSA-cp57-fq8g-qh6v&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/cryspen/libcrux/pull/1347&quot;&gt;
-              https://github.com/cryspen/libcrux/pull/1347
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=0.0.8&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-    &lt;dl&gt;
-      &lt;dt&gt;Affected Functions&lt;/dt&gt;
-      &lt;dd&gt;Version&lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;libcrux_ml_dsa::ml_dsa_44::verify&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;=0.0.7&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;libcrux_ml_dsa::ml_dsa_65::verify&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;=0.0.7&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;libcrux_ml_dsa::ml_dsa_87::verify&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;=0.0.7&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-    &lt;/dl&gt;
-    
-
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The ML-DSA verification algorithm as specified in &lt;a href=&quot;https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf#subsection.6.3&quot;&gt;FIPS 204,
-subsection
-6.3&lt;/a&gt;
-requires verifiers to check that the infinity norm of the deserialized
-signer response $z$ does not exceed $\gamma_1 - \beta$ (line 13 of
-Algorithm 8).
-The same check is required to be performed during signature generation.&lt;/p&gt;
-&lt;p&gt;libcrux-ml-dsa did not perform this check correctly during signature
-verification, accepting signatures with signer response norm above the
-allowed maximum value.  The check is correctly performed during
-signing.&lt;/p&gt;
-&lt;h2&gt;Impact&lt;/h2&gt;
-&lt;p&gt;Applications using libcrux-ml-dsa for signature verification would
-have accepted signatures that would be rejected by a conforming
-implementation.&lt;/p&gt;
-&lt;h2&gt;Mitigation&lt;/h2&gt;
-&lt;p&gt;Starting from version &lt;code&gt;0.0.8&lt;/code&gt;, signature verification uses the correct
-value for $\gamma_1$ in the signer response norm check.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0075: Vulnerability in libcrux-ed25519</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0075.html</id><updated>2026-03-27T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0075.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0075: Vulnerability in libcrux-ed25519"/><published>2026-03-24T12:00:00+00:00</published><summary xml:lang="en">All-Zero Key Generation on Catastrophic RNG Failure</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/libcrux-ed25519/RUSTSEC-2026-0075.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/libcrux-ed25519/RUSTSEC-2026-0075.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0075&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0075
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;All-Zero Key Generation on Catastrophic RNG Failure&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-03-04&quot;&gt;
-          March  4, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-03-24&quot;&gt;
-          March 24, 2026
-        &lt;/time&gt;
-        
-        &lt;time datetime=&quot;2026-03-27&quot;&gt;
-          (last modified: March 27, 2026)
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/libcrux-ed25519.html&quot;&gt;libcrux-ed25519&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/libcrux-ed25519&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            &lt;a href=&quot;https://github.com/advisories/GHSA-434v-x5qv-pmh6&quot;&gt;GHSA-434v-x5qv-pmh6&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/cryspen/libcrux/pull/1349&quot;&gt;
-              https://github.com/cryspen/libcrux/pull/1349
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
-      &lt;dd&gt;8.2 &lt;span class=&quot;tag high&quot;&gt;
-        HIGH
-      &lt;/span&gt;&lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;dl&gt;
-          
-            &lt;dt&gt;Attack Complexity&lt;/dt&gt;
-            &lt;dd&gt;Low&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Requirements&lt;/dt&gt;
-            &lt;dd&gt;Present&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Vector&lt;/dt&gt;
-            &lt;dd&gt;Network&lt;/dd&gt;
-          
-            &lt;dt&gt;Privileges Required&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;User Interaction&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-        &lt;/dl&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
-
-      
-          &lt;dd&gt;&lt;a href=&quot;https://www.first.org/cvss/calculator/3.1#CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N&quot;&gt;CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N&lt;/a&gt;&lt;/dd&gt;
-        
-
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=0.0.7&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-    &lt;dl&gt;
-      &lt;dt&gt;Affected Functions&lt;/dt&gt;
-      &lt;dd&gt;Version&lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;libcrux_ed25519::generate_key_pair&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;=0.0.6&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-    &lt;/dl&gt;
-    
-
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The libcrux-ed25519 key generation samples Ed25519 secret keys from a
-provided CSPRNG in a loop for up to 100 attempts until a non-zero key
-is found.  If a non-zero key could not be sampled within 100 attempts
-the key generation function would silently continue with an all-zero buffer as
-the secret key.&lt;/p&gt;
-&lt;h2&gt;Impact&lt;/h2&gt;
-&lt;p&gt;This bug only occurs in the event of a catastrophic failure of the
-CSPRNG, but would allow anyone to forge signatures under the resulting
-static signing key.&lt;/p&gt;
-&lt;h2&gt;Mitigation&lt;/h2&gt;
-&lt;p&gt;Instead of silently continuing with an all-zero signing key, starting
-from version &lt;code&gt;0.0.7&lt;/code&gt; key generation will error in the case of 100
-failed attempts at sampling a valid key.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0071: Vulnerability in hpke-rs</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0071.html</id><updated>2026-03-24T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0071.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0071: Vulnerability in hpke-rs"/><published>2026-03-24T12:00:00+00:00</published><summary xml:lang="en">Nonce Reuse in HPKE Context</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/hpke-rs/RUSTSEC-2026-0071.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/hpke-rs/RUSTSEC-2026-0071.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0071&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0071
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Nonce Reuse in HPKE Context&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-02-05&quot;&gt;
-          February  5, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-03-24&quot;&gt;
-          March 24, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/hpke-rs.html&quot;&gt;hpke-rs&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/hpke-rs&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            &lt;a href=&quot;https://github.com/advisories/GHSA-g433-pq76-6cmf&quot;&gt;GHSA-g433-pq76-6cmf&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/cryspen/hpke-rs/pull/123&quot;&gt;
-              https://github.com/cryspen/hpke-rs/pull/123
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
-      &lt;dd&gt;9.3 &lt;span class=&quot;tag critical&quot;&gt;
-        CRITICAL
-      &lt;/span&gt;&lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;dl&gt;
-          
-            &lt;dt&gt;Attack Complexity&lt;/dt&gt;
-            &lt;dd&gt;Low&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Requirements&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Vector&lt;/dt&gt;
-            &lt;dd&gt;Network&lt;/dd&gt;
-          
-            &lt;dt&gt;Privileges Required&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;User Interaction&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-        &lt;/dl&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
-
-      
-          &lt;dd&gt;&lt;a href=&quot;https://www.first.org/cvss/calculator/3.1#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N&quot;&gt;CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N&lt;/a&gt;&lt;/dd&gt;
-        
-
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=0.6.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-    &lt;dl&gt;
-      &lt;dt&gt;Affected Functions&lt;/dt&gt;
-      &lt;dd&gt;Version&lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;hpke_rs::Context::open&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;=0.5.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;hpke_rs::Context::seal&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;=0.5.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-    &lt;/dl&gt;
-    
-
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The sequence number that is used to compute the AEAD nonce when using
-a re-usable HPKE context is incremented after each seal or open
-operation. This sequence number was stored as a &lt;code&gt;u32&lt;/code&gt; and used regular
-addition on &lt;code&gt;u32&lt;/code&gt; for the increment, meaning in release mode it would
-silently wrap around to 0 after 2^32 seal or open operations.&lt;/p&gt;
-&lt;h2&gt;Impact&lt;/h2&gt;
-&lt;p&gt;Nonce reuse causes catastrophic breakage of AEAD ciphers, enabling
-plaintext recovery attacks and authentication tag forgeries, depending
-on the concrete AEAD.&lt;/p&gt;
-&lt;p&gt;This bug impacts applications that use hpke-rs to encrypt a large
-number of messages using the same context. Applications using the
-one-shot APIs are unaffected.&lt;/p&gt;
-&lt;h2&gt;Mitigation&lt;/h2&gt;
-&lt;p&gt;Starting with version &lt;code&gt;0.6.0&lt;/code&gt;, &lt;code&gt;checked_add&lt;/code&gt; is used to increment the
-sequence number, which avoids a silent wraparound in release
-mode. Additionally, the sequence number is now stored as a &lt;code&gt;u64&lt;/code&gt;,
-increasing the maximally allowed number of seal and open operations on
-a given HPKE context.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0069: Vulnerability in hpke-rs</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0069.html</id><updated>2026-03-24T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0069.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0069: Vulnerability in hpke-rs"/><published>2026-03-24T12:00:00+00:00</published><summary xml:lang="en">Incorrect Length Encoding on KDF Export</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/hpke-rs/RUSTSEC-2026-0069.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/hpke-rs/RUSTSEC-2026-0069.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0069&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0069
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Incorrect Length Encoding on KDF Export&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-02-11&quot;&gt;
-          February 11, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-03-24&quot;&gt;
-          March 24, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/hpke-rs.html&quot;&gt;hpke-rs&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/hpke-rs&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            &lt;a href=&quot;https://github.com/advisories/GHSA-g433-pq76-6cmf&quot;&gt;GHSA-g433-pq76-6cmf&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/cryspen/hpke-rs/pull/128&quot;&gt;
-              https://github.com/cryspen/hpke-rs/pull/128
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=0.6.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-    &lt;dl&gt;
-      &lt;dt&gt;Affected Functions&lt;/dt&gt;
-      &lt;dd&gt;Version&lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;hpke_rs::Context::export&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;=0.5.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-    &lt;/dl&gt;
-    
-
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;Passing values &lt;code&gt;length &amp;gt; 65535&lt;/code&gt; to &lt;code&gt;Context::export&lt;/code&gt; produces output
-that disagrees with the RFC 9180 label encoding. In particular the
-length value is cast to &lt;code&gt;u16&lt;/code&gt; truncating any value exceeding
-65535.&lt;/p&gt;
-&lt;h2&gt;Impact&lt;/h2&gt;
-&lt;p&gt;Applications that use hpke-rs to export very large secrets would
-experience interoperability issues with other applications that use a
-correct implementation to export very large secrets.&lt;/p&gt;
-&lt;h2&gt;Mitigation&lt;/h2&gt;
-&lt;p&gt;Starting with version &lt;code&gt;0.6.0&lt;/code&gt;, an error will be returned when
-attempting to call &lt;code&gt;Context::export&lt;/code&gt; with an output length &amp;gt; 65535.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0070: Vulnerability in hpke-rs</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0070.html</id><updated>2026-03-24T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0070.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0070: Vulnerability in hpke-rs"/><published>2026-03-24T12:00:00+00:00</published><summary xml:lang="en">Panic When Opening or Sealing on Export-Only Context</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/hpke-rs/RUSTSEC-2026-0070.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/hpke-rs/RUSTSEC-2026-0070.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0070&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0070
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Panic When Opening or Sealing on Export-Only Context&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-02-11&quot;&gt;
-          February 11, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-03-24&quot;&gt;
-          March 24, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/hpke-rs.html&quot;&gt;hpke-rs&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/hpke-rs&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            &lt;a href=&quot;https://github.com/advisories/GHSA-g433-pq76-6cmf&quot;&gt;GHSA-g433-pq76-6cmf&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/cryspen/hpke-rs/pull/128&quot;&gt;
-              https://github.com/cryspen/hpke-rs/pull/128
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
-      &lt;dd&gt;8.2 &lt;span class=&quot;tag high&quot;&gt;
-        HIGH
-      &lt;/span&gt;&lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;dl&gt;
-          
-            &lt;dt&gt;Attack Complexity&lt;/dt&gt;
-            &lt;dd&gt;Low&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Requirements&lt;/dt&gt;
-            &lt;dd&gt;Present&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Vector&lt;/dt&gt;
-            &lt;dd&gt;Network&lt;/dd&gt;
-          
-            &lt;dt&gt;Privileges Required&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;User Interaction&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-        &lt;/dl&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
-
-      
-          &lt;dd&gt;&lt;a href=&quot;https://www.first.org/cvss/calculator/3.1#CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N&quot;&gt;CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N&lt;/a&gt;&lt;/dd&gt;
-        
-
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=0.6.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-    &lt;dl&gt;
-      &lt;dt&gt;Affected Functions&lt;/dt&gt;
-      &lt;dd&gt;Version&lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;hpke_rs::Context::open&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;=0.5.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;hpke_rs::Context::seal&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;=0.5.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-    &lt;/dl&gt;
-    
-
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;Constructing an HPKE Context with the AEAD algorithm set to
-&lt;code&gt;HpkeExport&lt;/code&gt; resulted in a panic when calling &lt;code&gt;Context::seal&lt;/code&gt;, or
-&lt;code&gt;Context::open&lt;/code&gt;. This was due to an underflowing integer subtraction
-when calculating the length of a vector allocation for the AEAD nonce,
-which would panic on its own in debug mode and cause out-of-memory
-abort on the allocation in release mode.&lt;/p&gt;
-&lt;h2&gt;Impact&lt;/h2&gt;
-&lt;p&gt;Applications that could be made to use an HPKE context configured with
-&lt;code&gt;HpkeExport&lt;/code&gt; as AEAD algorithm to open or seal a ciphertext would
-crash. Other applications are unaffected.&lt;/p&gt;
-&lt;h2&gt;Mitigation&lt;/h2&gt;
-&lt;p&gt;Starting with version &lt;code&gt;0.6.0&lt;/code&gt;, an error will be returned when
-attempting to call &lt;code&gt;Context::seal&lt;/code&gt; or &lt;code&gt;Context::open&lt;/code&gt; on an HPKE
-context with &lt;code&gt;HpkeExport&lt;/code&gt; as AEADAlgorithm.&lt;/p&gt;
 
 
     &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
