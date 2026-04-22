@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>Advisories in category &#39;privilege-escalation&#39; › RustSec Advisory Database</title>
+<title>RUSTSEC-2026-0106: hickory-recursor: Record cache accepts AUTHORITY section NS from sibling zone via parent-pool zone-context elevation › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -52,324 +52,162 @@
   </nav>
 </header>
 
-<main class="advisories">
+<main class="advisory">
   <article>
+    
+        <span class="floating-menu">
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/hickory-recursor/RUSTSEC-2026-0106.md">History</a> ⋅
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/hickory-recursor/RUSTSEC-2026-0106.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0106">JSON (OSV)</a>
+        </span>
+    
 
     <header>
-      <span class="floating-menu">
-  <a href="/categories/">Categories</a> ⋅
-  <a href="/keywords/">Keywords</a> ⋅
-  <a href="/packages/">Packages</a>
+      <h1>
+        
+        RUSTSEC-2026-0106
+        
+      </h1>
+      <span class="subtitle"><p>Record cache accepts AUTHORITY section NS from sibling zone via parent-pool zone-context elevation</p>
 </span>
-      <h1>Advisories in category &#39;privilege-escalation&#39;</h1>
     </header>
 
-    <ul>
-      
-      <li>
-  <time datetime="2026-04-22">
-    April 22, 2026
-  </time>
-
-  
-  <h3>
     
+
+    <dl>
+      <dt id="reported">Reported</dt>
+      <dd>
+        <time datetime="2026-04-22">
+          April 22, 2026
+        </time>
+      </dd>
+
+      <dt id="issued">Issued</dt>
+      <dd>
+        <time datetime="2026-04-22">
+          April 22, 2026
+        </time>
+        
+      </dd>
+
+      <dt id="package">Package</dt>
+      <dd>
+        
+        
+        <a href="/packages/hickory-recursor.html">hickory-recursor</a>
+           
+          (<a href="https://crates.io/crates/hickory-recursor">crates.io</a>)
+          
+        
+        
+      </dd>
+
+      <dt id="type">Type</dt>
+      <dd>
+        
+        Vulnerability
+        
+      </dd>
+
+      
+      <dt id="categories">Categories</dt>
+      <dd>
+        <ul>
+          
+          <li><a href="/categories/privilege-escalation.html">privilege-escalation</a></li>
+          
+        </ul>
+      </dd>
+      
+
+      
+      <dt id="keywords">Keywords</dt>
+      <dd>
+        
+          <a href="/keywords/dns.html">#dns</a>
+        
+          <a href="/keywords/cache-poisoning.html">#cache-poisoning</a>
+        
+      </dd>
+      
+
+      
+
+      
+      <dt id="details">References</dt>
+      <dd>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-83hf-93m4-rgwq">
+              https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-83hf-93m4-rgwq
+            </a>
+          </li>
+        
+        
+        </ul>
+      </dd>
+      
+
+      
+
+      
+      
+
+      <dt id="patched">Patched</dt>
+      <dd>
+        
+        no patched versions
+        
+      </dd>
+
+      
+
+      
+      
+    </dl>
+
+    
+    
+
+    <h3 id="description">Description</h3>
+    <p>The Hickory DNS project's experimental <code>hickory-recursor</code> crate's record cache
+(<code>DnsLru</code>) stores records from DNS responses keyed by each record's own (name,
+type), not by the query that triggered the response. <code>cache_response()</code> in
+<code>crates/recursor/src/lib.rs</code> chains <code>ANSWER</code>, <code>AUTHORITY</code>, and <code>ADDITIONAL</code>
+sections into one record iterator before insertion. The bailiwick filter it
+applies uses the zone context of the NS pool that serviced the lookup, not the
+zone being queried.</p>
+<p>This creates a cross-zone poisoning path. When Hickory builds the NS pool for
+<code>attacker.poc.</code> it uses the parent <code>poc.</code> <code>NS</code> pool (<code>ns.zone() = &quot;poc.&quot;</code>). If
+the <code>poc.</code> nameserver under the attacker's control includes in its response's
+<code>AUTHORITY</code> section a record for a sibling zone like <code>victim.poc. NS ns.evil.poc.</code>, the bailiwick check <code>is_subzone(&quot;poc.&quot;, &quot;victim.poc.&quot;)</code> passes
+(<code>victim.poc.</code> is a subdomain of <code>poc.</code>). The record is stored under
+<code>(victim.poc., NS)</code> in the shared cache.</p>
+<p>Subsequently, any client querying a name in <code>victim.poc</code>. causes Hickory to
+build its NS pool from the poisoned cache entry, routing queries to the
+attacker's nameserver (<code>ns.evil.poc.</code>) rather than to the legitimate nameserver
+for <code>victim.poc.</code>. The legitimate <code>NS</code> for that zone receives zero queries.</p>
+<p>This issue is fixed in <code>hickory-resolver</code> 0.26.0 with the <code>recursor</code> feature
+through an architectural change to response-level caching: responses are stored
+keyed by the originating query <code>(name, type)</code>. A response to <code>(attacker.poc. NS)</code> is stored only under that key and cannot affect the <code>(victim.poc., NS)</code>
+cache entry.</p>
+<p>We believe this issue has been present in all published versions of the
+experimental <code>hickory-recursor</code> crate, which has now been folded into the
+<code>hickory-resolver</code> crate under the non-default <code>recursor</code> feature flag. The
+<code>hickory-recursor</code> crate will not receive any updates going forward and all
+users should migrate to <code>hickory-resolver</code> with the <code>recursor</code> feature.</p>
+
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC-BY-4.0.html">CC-BY-4.0</a>
+    license.
+
+    
+      
+      
+          Source: <a href="https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-83hf-93m4-rgwq">https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-83hf-93m4-rgwq</a>
         
     
-    <a href="/advisories/RUSTSEC-2026-0106.html">
-      RUSTSEC-2026-0106: Vulnerability in hickory-recursor
-    </a>
-  </h3>
-  <span><p>Record cache accepts AUTHORITY section NS from sibling zone via parent-pool zone-context elevation</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2026-03-20">
-    March 20, 2026
-  </time>
-
-  
-  <h3>
-    
-        
-    
-    <a href="/advisories/RUSTSEC-2026-0049.html">
-      RUSTSEC-2026-0049: Vulnerability in rustls-webpki
-    </a>
-  </h3>
-  <span><p>CRLs not considered authoritative by Distribution Point due to faulty matching logic</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2026-03-10">
-    March 10, 2026
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag critical">CRITICAL</span>
-      
-    <a href="/advisories/RUSTSEC-2026-0038.html">
-      RUSTSEC-2026-0038: Vulnerability in rssn
-    </a>
-  </h3>
-  <span><p>RustSec Advisory</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2026-02-07">
-    February  7, 2026
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag high">HIGH</span>
-      
-    <a href="/advisories/RUSTSEC-2025-0149.html">
-      RUSTSEC-2025-0149: Vulnerability in below
-    </a>
-  </h3>
-  <span><p>World Writable Directory in /var/log/below Allows Local Privilege Escalation</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2026-01-04">
-    January  4, 2026
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag high">HIGH</span>
-      
-    <a href="/advisories/RUSTSEC-2025-0139.html">
-      RUSTSEC-2025-0139: Vulnerability in theshit
-    </a>
-  </h3>
-  <span><p>theshit vulnerable to unsafe loading of user-owned Python rules when running as root</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2025-12-21">
-    December 21, 2025
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag high">HIGH</span>
-      
-    <a href="/advisories/RUSTSEC-2022-0103.html">
-      RUSTSEC-2022-0103: Vulnerability in coreos-installer
-    </a>
-  </h3>
-  <span><p>Incorrect signature verification on gzip-compressed install images</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2025-06-03">
-    June  3, 2025
-  </time>
-
-  
-  <h3>
-    
-        
-    
-    <a href="/advisories/RUSTSEC-2025-0040.html">
-      RUSTSEC-2025-0040: Vulnerability in users
-    </a>
-  </h3>
-  <span><p><code>root</code> appended to group listings</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2024-12-09">
-    December  9, 2024
-  </time>
-
-  
-  <h3>
-    
-        
-    
-    <a href="/advisories/RUSTSEC-2024-0421.html">
-      RUSTSEC-2024-0421: Vulnerability in idna
-    </a>
-  </h3>
-  <span><p><code>idna</code> accepts Punycode labels that do not produce any non-ASCII when decoded</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2024-09-07">
-    September  7, 2024
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag medium">MEDIUM</span>
-      
-    <a href="/advisories/RUSTSEC-2024-0371.html">
-      RUSTSEC-2024-0371: Vulnerability in gix-path
-    </a>
-  </h3>
-  <span><p>gix-path improperly resolves configuration path reported by Git</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2024-07-18">
-    July 18, 2024
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag medium">MEDIUM</span>
-      
-    <a href="/advisories/RUSTSEC-2024-0355.html">
-      RUSTSEC-2024-0355: Vulnerability in gix-path
-    </a>
-  </h3>
-  <span><p>gix-path can use a fake program files location</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2023-10-03">
-    October  3, 2023
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag medium">MEDIUM</span>
-      
-    <a href="/advisories/RUSTSEC-2023-0066.html">
-      RUSTSEC-2023-0066: Vulnerability in pleaser
-    </a>
-  </h3>
-  <span><p>Vulnerable to privilege escalation using ioctls TIOCSTI and TIOCLINUX</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2023-02-25">
-    February 25, 2023
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag low">LOW</span>
-      
-    <a href="/advisories/RUSTSEC-2022-0091.html">
-      RUSTSEC-2022-0091: Vulnerability in tauri
-    </a>
-  </h3>
-  <span><p><code>tauri</code> filesystem scope partial bypass</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2023-02-05">
-    February  5, 2023
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag medium">MEDIUM</span>
-      
-    <a href="/advisories/RUSTSEC-2022-0088.html">
-      RUSTSEC-2022-0088: Vulnerability in tauri
-    </a>
-  </h3>
-  <span><p><code>tauri</code>'s <code>readDir</code> endpoint allows possible enumeration outside of filesystem scope</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2021-09-09">
-    September  9, 2021
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag high">HIGH</span>
-      
-    <a href="/advisories/RUSTSEC-2021-0101.html">
-      RUSTSEC-2021-0101: Vulnerability in pleaser
-    </a>
-  </h3>
-  <span><p>Permissions bypass in pleaser</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2021-09-09">
-    September  9, 2021
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag high">HIGH</span>
-      
-    <a href="/advisories/RUSTSEC-2021-0102.html">
-      RUSTSEC-2021-0102: Vulnerability in pleaser
-    </a>
-  </h3>
-  <span><p>Permissions bypass in pleaser</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2021-01-19">
-    January 19, 2021
-  </time>
-
-  
-  <h3>
-    
-      <span class="tag high">HIGH</span>
-      
-    <a href="/advisories/RUSTSEC-2021-0007.html">
-      RUSTSEC-2021-0007: Vulnerability in av-data
-    </a>
-  </h3>
-  <span><p><code>Frame::copy_from_raw_parts</code> can lead to segfault without <code>unsafe</code></p>
-</span>
-  
-</li>
-      
-    </ul>
+    </p>
   </article>
 </main>
