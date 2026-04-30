@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>RustSec Advisories</title><id>https://rustsec.org/feed.xml</id><updated>2026-04-28T12:00:00+00:00</updated><author><name>RustSec</name></author><icon>https://rustsec.org/favicon.ico</icon><link href="https://rustsec.org/feed.xml" rel="self" type="application/atom+xml"/><link href="https://rustsec.org/" rel="alternate" type="text/html"/><subtitle xml:lang="en">Security advisories filed against Rust crates</subtitle><entry><title>RUSTSEC-2026-0112: Vulnerability in astral-tokio-tar</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0112.html</id><updated>2026-04-28T12:00:00+00:00</updated><category term="format-injection"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0112.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0112: Vulnerability in astral-tokio-tar"/><published>2026-04-28T12:00:00+00:00</published><summary xml:lang="en">PAX Header Desynchronization in astral-tokio-tar</summary><content xml:lang="en" type="html">  &lt;article&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>RustSec Advisories</title><id>https://rustsec.org/feed.xml</id><updated>2026-04-30T12:00:00+00:00</updated><author><name>RustSec</name></author><icon>https://rustsec.org/favicon.ico</icon><link href="https://rustsec.org/feed.xml" rel="self" type="application/atom+xml"/><link href="https://rustsec.org/" rel="alternate" type="text/html"/><subtitle xml:lang="en">Security advisories filed against Rust crates</subtitle><entry><title>RUSTSEC-2026-0114: Vulnerability in wasmtime</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0114.html</id><updated>2026-04-30T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0114.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0114: Vulnerability in wasmtime"/><published>2026-04-30T12:00:00+00:00</published><summary xml:lang="en">Panic when allocating a table exceeding the size of the host&amp;apos;s address space</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
         &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/astral-tokio-tar/RUSTSEC-2026-0112.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/astral-tokio-tar/RUSTSEC-2026-0112.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0112&quot;&gt;JSON (OSV)&lt;/a&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/wasmtime/RUSTSEC-2026-0114.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/wasmtime/RUSTSEC-2026-0114.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0114&quot;&gt;JSON (OSV)&lt;/a&gt;
         &lt;/span&gt;
     
 
     &lt;header&gt;
       &lt;h1&gt;
         
-        RUSTSEC-2026-0112
+        RUSTSEC-2026-0114
         
       &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;PAX Header Desynchronization in astral-tokio-tar&lt;/p&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Panic when allocating a table exceeding the size of the host&apos;s address space&lt;/p&gt;
 &lt;/span&gt;
     &lt;/header&gt;
 
@@ -23,15 +23,15 @@
     &lt;dl&gt;
       &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
       &lt;dd&gt;
-        &lt;time datetime=&quot;2026-04-27&quot;&gt;
-          April 27, 2026
+        &lt;time datetime=&quot;2026-04-30&quot;&gt;
+          April 30, 2026
         &lt;/time&gt;
       &lt;/dd&gt;
 
       &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
       &lt;dd&gt;
-        &lt;time datetime=&quot;2026-04-28&quot;&gt;
-          April 28, 2026
+        &lt;time datetime=&quot;2026-04-30&quot;&gt;
+          April 30, 2026
         &lt;/time&gt;
         
       &lt;/dd&gt;
@@ -40,9 +40,9 @@
       &lt;dd&gt;
         
         
-        &lt;a href=&quot;/packages/astral-tokio-tar.html&quot;&gt;astral-tokio-tar&lt;/a&gt;
+        &lt;a href=&quot;/packages/wasmtime.html&quot;&gt;wasmtime&lt;/a&gt;
            
-          (&lt;a href=&quot;https://crates.io/crates/astral-tokio-tar&quot;&gt;crates.io&lt;/a&gt;)
+          (&lt;a href=&quot;https://crates.io/crates/wasmtime&quot;&gt;crates.io&lt;/a&gt;)
           
         
         
@@ -56,25 +56,7 @@
       &lt;/dd&gt;
 
       
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/format-injection.html&quot;&gt;format-injection&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
 
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/parser-differential.html&quot;&gt;#parser-differential&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/smuggling.html&quot;&gt;#smuggling&lt;/a&gt;
-        
-      &lt;/dd&gt;
       
 
       
@@ -84,7 +66,7 @@
           
           &lt;li&gt;
             
-            &lt;a href=&quot;https://github.com/advisories/GHSA-fp55-jw48-c537&quot;&gt;GHSA-fp55-jw48-c537&lt;/a&gt;
+            &lt;a href=&quot;https://github.com/advisories/GHSA-p8xm-42r7-89xg&quot;&gt;GHSA-p8xm-42r7-89xg&lt;/a&gt;
             
           &lt;/li&gt;
           
@@ -98,8 +80,8 @@
         &lt;ul&gt;
         
           &lt;li&gt;
-            &lt;a href=&quot;https://github.com/advisories/GHSA-fp55-jw48-c537&quot;&gt;
-              https://github.com/advisories/GHSA-fp55-jw48-c537
+            &lt;a href=&quot;https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-p8xm-42r7-89xg&quot;&gt;
+              https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-p8xm-42r7-89xg
             &lt;/a&gt;
           &lt;/li&gt;
         
@@ -111,6 +93,57 @@
       
 
       
+      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
+      &lt;dd&gt;5.9 &lt;span class=&quot;tag medium&quot;&gt;
+        MEDIUM
+      &lt;/span&gt;&lt;/dd&gt;
+
+      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;dl&gt;
+          
+            &lt;dt&gt;Attack Complexity&lt;/dt&gt;
+            &lt;dd&gt;Low&lt;/dd&gt;
+          
+            &lt;dt&gt;Attack Requirements&lt;/dt&gt;
+            &lt;dd&gt;Present&lt;/dd&gt;
+          
+            &lt;dt&gt;Attack Vector&lt;/dt&gt;
+            &lt;dd&gt;Network&lt;/dd&gt;
+          
+            &lt;dt&gt;Privileges Required&lt;/dt&gt;
+            &lt;dd&gt;Low&lt;/dd&gt;
+          
+            &lt;dt&gt;Availability Impact to the Subsequent System&lt;/dt&gt;
+            &lt;dd&gt;None&lt;/dd&gt;
+          
+            &lt;dt&gt;Confidentiality Impact to the Subsequent System&lt;/dt&gt;
+            &lt;dd&gt;None&lt;/dd&gt;
+          
+            &lt;dt&gt;Integrity Impact to the Subsequent System&lt;/dt&gt;
+            &lt;dd&gt;None&lt;/dd&gt;
+          
+            &lt;dt&gt;User Interaction&lt;/dt&gt;
+            &lt;dd&gt;Passive&lt;/dd&gt;
+          
+            &lt;dt&gt;Availability Impact to the Vulnerable System&lt;/dt&gt;
+            &lt;dd&gt;High&lt;/dd&gt;
+          
+            &lt;dt&gt;Confidentiality Impact to the Vulnerable System&lt;/dt&gt;
+            &lt;dd&gt;None&lt;/dd&gt;
+          
+            &lt;dt&gt;Integrity Impact to the Vulnerable System&lt;/dt&gt;
+            &lt;dd&gt;None&lt;/dd&gt;
+          
+        &lt;/dl&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
+
+      
+          &lt;dd&gt;&lt;a href=&quot;https://www.first.org/cvss/calculator/3.1#CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N&quot;&gt;CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N&lt;/a&gt;&lt;/dd&gt;
+        
+
       
 
       &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
@@ -118,12 +151,25 @@
         
         &lt;ul&gt;
           
-          &lt;li&gt;&lt;code&gt;&amp;#62;=0.6.1&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code&gt;&amp;#62;=36.0.8, &amp;#60;37.0.0&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=43.0.2, &amp;#60;44.0.0&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=44.0.1&lt;/code&gt;&lt;/li&gt;
           
         &lt;/ul&gt;
         
       &lt;/dd&gt;
 
+      
+      &lt;dt id=&quot;unaffected&quot;&gt;Unaffected&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;30.0.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
       
 
       
@@ -134,11 +180,10 @@
     
 
     &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;Versions of astral-tokio-tar prior to 0.6.1 contain a PAX header interpretation
-bug that allows manipulated entries to be made selectively visible or invisible
-during extraction with astral-tokio-tar versus other tar implementations.
-An attacker could use this differential to smuggle unexpected files onto a
-victim&apos;s filesystem.&lt;/p&gt;
+    &lt;p&gt;This is an entry in the RustSec database for the Wasmtime security advisory
+located at
+https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-p8xm-42r7-89xg
+For more information see the GitHub-hosted security advisory.&lt;/p&gt;
 
 
     &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
@@ -288,6 +333,513 @@ that maliciously changes directory permissions outside of its intended
 hierarchy. This flaw only affects directories; individual file permissions
 cannot be modified via it.&lt;/p&gt;
 &lt;p&gt;See GHSA-j4xf-2g29-59ph for the equivalent flaw in the tar crate.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0112: Vulnerability in astral-tokio-tar</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0112.html</id><updated>2026-04-28T12:00:00+00:00</updated><category term="format-injection"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0112.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0112: Vulnerability in astral-tokio-tar"/><published>2026-04-28T12:00:00+00:00</published><summary xml:lang="en">PAX Header Desynchronization in astral-tokio-tar</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/astral-tokio-tar/RUSTSEC-2026-0112.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/astral-tokio-tar/RUSTSEC-2026-0112.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0112&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0112
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;PAX Header Desynchronization in astral-tokio-tar&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-04-27&quot;&gt;
+          April 27, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-04-28&quot;&gt;
+          April 28, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/astral-tokio-tar.html&quot;&gt;astral-tokio-tar&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/astral-tokio-tar&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/format-injection.html&quot;&gt;format-injection&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/parser-differential.html&quot;&gt;#parser-differential&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/smuggling.html&quot;&gt;#smuggling&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-fp55-jw48-c537&quot;&gt;GHSA-fp55-jw48-c537&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/advisories/GHSA-fp55-jw48-c537&quot;&gt;
+              https://github.com/advisories/GHSA-fp55-jw48-c537
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.6.1&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;Versions of astral-tokio-tar prior to 0.6.1 contain a PAX header interpretation
+bug that allows manipulated entries to be made selectively visible or invisible
+during extraction with astral-tokio-tar versus other tar implementations.
+An attacker could use this differential to smuggle unexpected files onto a
+victim&apos;s filesystem.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0107: mysten-metrics contained malicious code</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0107.html</id><updated>2026-04-24T12:00:00+00:00</updated><category term="malicious"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0107.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0107: mysten-metrics contained malicious code"/><published>2026-04-24T12:00:00+00:00</published><summary xml:lang="en">`mysten-metrics` was removed from crates.io for malicious code</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/mysten-metrics/RUSTSEC-2026-0107.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/mysten-metrics/RUSTSEC-2026-0107.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0107&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0107
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;&lt;code&gt;mysten-metrics&lt;/code&gt; was removed from crates.io for malicious code&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-04-22&quot;&gt;
+          April 22, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-04-24&quot;&gt;
+          April 24, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/mysten-metrics.html&quot;&gt;mysten-metrics&lt;/a&gt;
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/malicious.html&quot;&gt;malicious&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        no patched versions
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;&lt;code&gt;mysten-metrics&lt;/code&gt; included a build script that attempted to exfiltrate data from
+the build machine.&lt;/p&gt;
+&lt;p&gt;The malicious crate had 1 version published on 2026-04-20 and had no evidence
+of actual usage. This crate had no dependencies on crates.io.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0110: bare-metal is unmaintained</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0110.html</id><updated>2026-04-24T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0110.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0110: bare-metal is unmaintained"/><published>2026-04-24T12:00:00+00:00</published><summary xml:lang="en">bare-metal is deprecated</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/bare-metal/RUSTSEC-2026-0110.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/bare-metal/RUSTSEC-2026-0110.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0110&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0110
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;bare-metal is deprecated&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-04-23&quot;&gt;
+          April 23, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-04-24&quot;&gt;
+          April 24, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/bare-metal.html&quot;&gt;bare-metal&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/bare-metal&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unmaintained
+        
+      &lt;/dd&gt;
+
+      
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/rust-embedded/bare-metal/pull/49&quot;&gt;
+              https://github.com/rust-embedded/bare-metal/pull/49
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        no patched versions
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;The &lt;code&gt;bare-metal&lt;/code&gt; crate has been deprecated and archived.&lt;/p&gt;
+&lt;p&gt;For &lt;code&gt;Mutex&lt;/code&gt; and &lt;code&gt;CriticalSection&lt;/code&gt;, see the &lt;a href=&quot;https://crates.io/crates/critical-section&quot;&gt;&lt;code&gt;critical-section&lt;/code&gt;&lt;/a&gt; crate instead.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0111: Unsoundness in diesel</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0111.html</id><updated>2026-04-24T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0111.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0111: Unsoundness in diesel"/><published>2026-04-24T12:00:00+00:00</published><summary xml:lang="en">Possible UTF-8 corruption in Diesels SQLite backend</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/diesel/RUSTSEC-2026-0111.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/diesel/RUSTSEC-2026-0111.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0111&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0111
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Possible UTF-8 corruption in Diesels SQLite backend&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-04-24&quot;&gt;
+          April 24, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-04-24&quot;&gt;
+          April 24, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/diesel.html&quot;&gt;diesel&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/diesel&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unsound
+        
+      &lt;/dd&gt;
+
+      
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/diesel-rs/diesel/pull/5042&quot;&gt;
+              https://github.com/diesel-rs/diesel/pull/5042
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=2.3.8&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+    &lt;dl&gt;
+      &lt;dt&gt;Affected Functions&lt;/dt&gt;
+      &lt;dd&gt;Version&lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;diesel::deserialize::FromSql::&amp;#60;Text,Sqlite&amp;#62;::from_sql&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;2.3.8&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;diesel::sqlite::SqliteValue::read_str&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;2.3.8&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+    &lt;/dl&gt;
+    
+
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;Diesel uses the &lt;code&gt;sqlite3_value_text&lt;/code&gt; function to receive strings from SQLite while deserializing query results. We misinterpreted the corresponding &lt;a href=&quot;https://sqlite.org/c3ref/value_blob.html&quot;&gt;SQLite&lt;/a&gt; documentation that this function always returns a UTF-8 encoded string values as &lt;code&gt;*const c_char&lt;/code&gt;. Based on that we used &lt;code&gt;str::from_utf8_unchecked&lt;/code&gt; to construct a Rust string slice without any additional UTF-8 checks in place. It turned out that this function doesn&apos;t always return correct UTF-8 strings. For field of the SQLite side storage type &lt;code&gt;BLOB&lt;/code&gt; this pointer can contain arbitrary bytes, which makes the usage of &lt;code&gt;str::from_utf8_unchecked&lt;/code&gt; unsound as this violates the safety contract of &lt;code&gt;str&lt;/code&gt; to only contain valid UTF-8 encoded Strings.&lt;/p&gt;
+&lt;h2&gt;Mitigation&lt;/h2&gt;
+&lt;p&gt;The preferred mitigation to the outlined problem is to update to a Diesel version 2.3.8 or newer, which includes fixes for the problem.&lt;/p&gt;
+&lt;h2&gt;Resolution&lt;/h2&gt;
+&lt;p&gt;Diesel now correctly checks whether the provides byte buffer is actually valid UTF-8, instead of relying on SQLite&apos;s documentation. This fix is included in the &lt;code&gt;2.3.8&lt;/code&gt; release.&lt;/p&gt;
 
 
     &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
@@ -577,366 +1129,6 @@ any following commits.&lt;/p&gt;
 into merging the malicious MR.  If Alice is reviewing MRs, then
 she is likely to notice changes to the signing policy.&lt;/p&gt;
 &lt;p&gt;Reported-by: Hassan Sheet&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0107: mysten-metrics contained malicious code</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0107.html</id><updated>2026-04-24T12:00:00+00:00</updated><category term="malicious"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0107.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0107: mysten-metrics contained malicious code"/><published>2026-04-24T12:00:00+00:00</published><summary xml:lang="en">`mysten-metrics` was removed from crates.io for malicious code</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/mysten-metrics/RUSTSEC-2026-0107.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/mysten-metrics/RUSTSEC-2026-0107.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0107&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0107
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;&lt;code&gt;mysten-metrics&lt;/code&gt; was removed from crates.io for malicious code&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-04-22&quot;&gt;
-          April 22, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-04-24&quot;&gt;
-          April 24, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/mysten-metrics.html&quot;&gt;mysten-metrics&lt;/a&gt;
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/malicious.html&quot;&gt;malicious&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        no patched versions
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;&lt;code&gt;mysten-metrics&lt;/code&gt; included a build script that attempted to exfiltrate data from
-the build machine.&lt;/p&gt;
-&lt;p&gt;The malicious crate had 1 version published on 2026-04-20 and had no evidence
-of actual usage. This crate had no dependencies on crates.io.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0111: Unsoundness in diesel</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0111.html</id><updated>2026-04-24T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0111.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0111: Unsoundness in diesel"/><published>2026-04-24T12:00:00+00:00</published><summary xml:lang="en">Possible UTF-8 corruption in Diesels SQLite backend</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/diesel/RUSTSEC-2026-0111.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/diesel/RUSTSEC-2026-0111.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0111&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0111
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Possible UTF-8 corruption in Diesels SQLite backend&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-04-24&quot;&gt;
-          April 24, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-04-24&quot;&gt;
-          April 24, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/diesel.html&quot;&gt;diesel&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/diesel&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
-        Unsound
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/diesel-rs/diesel/pull/5042&quot;&gt;
-              https://github.com/diesel-rs/diesel/pull/5042
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=2.3.8&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-    &lt;dl&gt;
-      &lt;dt&gt;Affected Functions&lt;/dt&gt;
-      &lt;dd&gt;Version&lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;diesel::deserialize::FromSql::&amp;#60;Text,Sqlite&amp;#62;::from_sql&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;2.3.8&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;diesel::sqlite::SqliteValue::read_str&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;2.3.8&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-    &lt;/dl&gt;
-    
-
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;Diesel uses the &lt;code&gt;sqlite3_value_text&lt;/code&gt; function to receive strings from SQLite while deserializing query results. We misinterpreted the corresponding &lt;a href=&quot;https://sqlite.org/c3ref/value_blob.html&quot;&gt;SQLite&lt;/a&gt; documentation that this function always returns a UTF-8 encoded string values as &lt;code&gt;*const c_char&lt;/code&gt;. Based on that we used &lt;code&gt;str::from_utf8_unchecked&lt;/code&gt; to construct a Rust string slice without any additional UTF-8 checks in place. It turned out that this function doesn&apos;t always return correct UTF-8 strings. For field of the SQLite side storage type &lt;code&gt;BLOB&lt;/code&gt; this pointer can contain arbitrary bytes, which makes the usage of &lt;code&gt;str::from_utf8_unchecked&lt;/code&gt; unsound as this violates the safety contract of &lt;code&gt;str&lt;/code&gt; to only contain valid UTF-8 encoded Strings.&lt;/p&gt;
-&lt;h2&gt;Mitigation&lt;/h2&gt;
-&lt;p&gt;The preferred mitigation to the outlined problem is to update to a Diesel version 2.3.8 or newer, which includes fixes for the problem.&lt;/p&gt;
-&lt;h2&gt;Resolution&lt;/h2&gt;
-&lt;p&gt;Diesel now correctly checks whether the provides byte buffer is actually valid UTF-8, instead of relying on SQLite&apos;s documentation. This fix is included in the &lt;code&gt;2.3.8&lt;/code&gt; release.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0110: bare-metal is unmaintained</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0110.html</id><updated>2026-04-24T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0110.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0110: bare-metal is unmaintained"/><published>2026-04-24T12:00:00+00:00</published><summary xml:lang="en">bare-metal is deprecated</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/bare-metal/RUSTSEC-2026-0110.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/bare-metal/RUSTSEC-2026-0110.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0110&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0110
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;bare-metal is deprecated&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-04-23&quot;&gt;
-          April 23, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-04-24&quot;&gt;
-          April 24, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/bare-metal.html&quot;&gt;bare-metal&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/bare-metal&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
-        Unmaintained
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/rust-embedded/bare-metal/pull/49&quot;&gt;
-              https://github.com/rust-embedded/bare-metal/pull/49
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        no patched versions
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The &lt;code&gt;bare-metal&lt;/code&gt; crate has been deprecated and archived.&lt;/p&gt;
-&lt;p&gt;For &lt;code&gt;Mutex&lt;/code&gt; and &lt;code&gt;CriticalSection&lt;/code&gt;, see the &lt;a href=&quot;https://crates.io/crates/critical-section&quot;&gt;&lt;code&gt;critical-section&lt;/code&gt;&lt;/a&gt; crate instead.&lt;/p&gt;
 
 
     &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
@@ -1236,413 +1428,6 @@ users should migrate to &lt;code&gt;hickory-resolver&lt;/code&gt; with the &lt;c
       
           Source: &lt;a href=&quot;https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-83hf-93m4-rgwq&quot;&gt;https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-83hf-93m4-rgwq&lt;/a&gt;
         
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0105: core2 is unmaintained</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0105.html</id><updated>2026-04-25T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0105.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0105: core2 is unmaintained"/><published>2026-04-22T12:00:00+00:00</published><summary xml:lang="en">core2 is unmaintained, all versions yanked</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/core2/RUSTSEC-2026-0105.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/core2/RUSTSEC-2026-0105.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0105&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0105
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;core2 is unmaintained, all versions yanked&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-04-14&quot;&gt;
-          April 14, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-04-22&quot;&gt;
-          April 22, 2026
-        &lt;/time&gt;
-        
-        &lt;time datetime=&quot;2026-04-25&quot;&gt;
-          (last modified: April 25, 2026)
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/core2.html&quot;&gt;core2&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/core2&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
-        Unmaintained
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://hachyderm.io/@piecritic/116404790999620656&quot;&gt;
-              https://hachyderm.io/@piecritic/116404790999620656
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        no patched versions
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The maintainer decided stop maintaining crate and yanked all published versions.&lt;/p&gt;
-&lt;p&gt;Potential alternatives:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://crates.io/crates/embedded-io&quot;&gt;&lt;code&gt;embedded-io&lt;/code&gt;&lt;/a&gt; solves the same general problem&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://crates.io/crates/no-std-io2&quot;&gt;&lt;code&gt;no-std-io2&lt;/code&gt;&lt;/a&gt; is a maintained fork&lt;/li&gt;
-&lt;/ul&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0103: Vulnerability in thin-vec</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0103.html</id><updated>2026-04-27T12:00:00+00:00</updated><category term="code-execution"/><category term="memory-corruption"/><category term="memory-exposure"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0103.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0103: Vulnerability in thin-vec"/><published>2026-04-21T12:00:00+00:00</published><summary xml:lang="en">Use-After-Free and Double Free in IntoIter::drop When Element Drop Panics</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/thin-vec/RUSTSEC-2026-0103.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/thin-vec/RUSTSEC-2026-0103.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0103&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0103
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Use-After-Free and Double Free in IntoIter::drop When Element Drop Panics&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-04-14&quot;&gt;
-          April 14, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-04-21&quot;&gt;
-          April 21, 2026
-        &lt;/time&gt;
-        
-        &lt;time datetime=&quot;2026-04-27&quot;&gt;
-          (last modified: April 27, 2026)
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/thin-vec.html&quot;&gt;thin-vec&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/thin-vec&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/code-execution.html&quot;&gt;code-execution&lt;/a&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/memory-exposure.html&quot;&gt;memory-exposure&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/memory-safety.html&quot;&gt;#memory-safety&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/double-free.html&quot;&gt;#double-free&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/use-after-free.html&quot;&gt;#use-after-free&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6654&quot;&gt;CVE-2026-6654&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-          &lt;li&gt;
-            
-            &lt;a href=&quot;https://github.com/advisories/GHSA-xphw-cqx3-667j&quot;&gt;GHSA-xphw-cqx3-667j&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/mozilla/thin-vec/security/advisories/GHSA-xphw-cqx3-667j&quot;&gt;
-              https://github.com/mozilla/thin-vec/security/advisories/GHSA-xphw-cqx3-667j
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
-      &lt;dd&gt;7.3 &lt;span class=&quot;tag high&quot;&gt;
-        HIGH
-      &lt;/span&gt;&lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;dl&gt;
-          
-            &lt;dt&gt;Attack Vector&lt;/dt&gt;
-            &lt;dd&gt;Local&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Complexity&lt;/dt&gt;
-            &lt;dd&gt;Low&lt;/dd&gt;
-          
-            &lt;dt&gt;Privileges Required&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;User Interaction&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Scope&lt;/dt&gt;
-            &lt;dd&gt;Unchanged&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact&lt;/dt&gt;
-            &lt;dd&gt;Low&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact&lt;/dt&gt;
-            &lt;dd&gt;Low&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-        &lt;/dl&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
-
-      
-          &lt;dd&gt;&lt;a href=&quot;https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H&quot;&gt;CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H&lt;/a&gt;&lt;/dd&gt;
-        
-
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=0.2.16&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;A Double Free / Use-After-Free (UAF) vulnerability has been identified in the
-&lt;code&gt;IntoIter::drop&lt;/code&gt; and &lt;code&gt;ThinVec::clear&lt;/code&gt; implementations of the &lt;code&gt;thin-vec&lt;/code&gt; crate.
-Both vulnerabilities share the same root cause and can trigger memory
-corruption using only safe Rust code - no unsafe blocks required. Undefined
-Behavior has been confirmed via Miri and AddressSanitizer (ASAN).&lt;/p&gt;
-&lt;h2&gt;Details&lt;/h2&gt;
-&lt;p&gt;When a &lt;strong&gt;panic occurs&lt;/strong&gt; during sequential element deallocation, the subsequent
-length cleanup code (&lt;code&gt;set_len(0)&lt;/code&gt;) is never executed. During stack unwinding,
-the container is dropped again, causing already-freed memory to be re-freed
-(Double Free / UAF).&lt;/p&gt;
-&lt;h3&gt;Vulnerability 1 - &lt;code&gt;IntoIter::drop&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;IntoIter::drop&lt;/code&gt; transfers ownership of the internal buffer via &lt;code&gt;mem::replace&lt;/code&gt;,
-then sequentially frees elements via &lt;code&gt;ptr::drop_in_place&lt;/code&gt;. If a panic occurs
-during element deallocation, &lt;code&gt;set_len_non_singleton(0)&lt;/code&gt; is never reached.
-During unwinding, &lt;code&gt;vec&lt;/code&gt; is dropped again, re-freeing already-freed elements.
-The standard library&apos;s &lt;code&gt;std::vec::IntoIter&lt;/code&gt; prevents this with a &lt;strong&gt;DropGuard
-pattern&lt;/strong&gt;, but thin-vec lacks this defense.&lt;/p&gt;
-&lt;h3&gt;PoC&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;language-rust&quot;&gt;use thin_vec::ThinVec;
-
-struct PanicBomb(String);
-
-impl Drop for PanicBomb {
-    fn drop(&amp;amp;mut self) {
-        if self.0 == &amp;quot;panic&amp;quot; {
-            panic!(&amp;quot;panic!&amp;quot;);
-        }
-        println!(&amp;quot;Dropping: {}&amp;quot;, self.0);
-    }
-}
-
-fn main() {
-    let mut v = ThinVec::new();
-    v.push(PanicBomb(String::from(&amp;quot;normal1&amp;quot;)));
-    v.push(PanicBomb(String::from(&amp;quot;panic&amp;quot;)));  // trigger element
-    v.push(PanicBomb(String::from(&amp;quot;normal2&amp;quot;)));
-
-    let mut iter = v.into_iter();
-    iter.next();
-    // When iter is dropped: panic occurs at &amp;quot;panic&amp;quot; element
-    // → During unwinding, Double Drop is triggered on &amp;quot;normal1&amp;quot; (already freed)
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Vulnerability 2 - &lt;code&gt;ThinVec::clear&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;clear()&lt;/code&gt; calls &lt;code&gt;ptr::drop_in_place(&amp;amp;mut self[..])&lt;/code&gt; followed by
-&lt;code&gt;self.set_len(0)&lt;/code&gt; to reset the length. If a panic occurs during element
-deallocation, &lt;code&gt;set_len(0)&lt;/code&gt; is never executed. When the &lt;code&gt;ThinVec&lt;/code&gt; itself is
-subsequently dropped, already-freed elements are freed again.&lt;/p&gt;
-&lt;h3&gt;PoC&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;language-rust&quot;&gt;use thin_vec::ThinVec;
-use std::panic;
-
-struct Poison(Box&amp;lt;usize&amp;gt;, &amp;amp;&apos;static str);
-
-impl Drop for Poison {
-    fn drop(&amp;amp;mut self) {
-        if self.1 == &amp;quot;panic&amp;quot; {
-            panic!(&amp;quot;panic!&amp;quot;);
-        }
-        println!(&amp;quot;Dropping: {}&amp;quot;, self.0);
-    }
-}
-
-fn main() {
-    let mut v = ThinVec::new();
-    v.push(Poison(Box::new(1), &amp;quot;normal1&amp;quot;)); // index 0
-    v.push(Poison(Box::new(2), &amp;quot;panic&amp;quot;));   // index 1 → panic triggered here
-    v.push(Poison(Box::new(3), &amp;quot;normal2&amp;quot;)); // index 2
-
-    let _ = panic::catch_unwind(panic::AssertUnwindSafe(|| {
-        v.clear();
-        // panic occurs at &amp;quot;panic&amp;quot; element during clear()
-        // → set_len(0) is never called
-        // → already-freed elements are re-freed when v goes out of scope
-    }));
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;Prerequisites&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;ThinVec&lt;/code&gt; stores heap-owning types (&lt;code&gt;String&lt;/code&gt;, &lt;code&gt;Vec&lt;/code&gt;, &lt;code&gt;Box&lt;/code&gt;, etc.)&lt;/li&gt;
-&lt;li&gt;(Vulnerability 1) An iterator is created via &lt;code&gt;into_iter()&lt;/code&gt; and dropped before being fully consumed, or
-(Vulnerability 2) &lt;code&gt;clear()&lt;/code&gt; is called while a remaining element&apos;s &lt;code&gt;Drop&lt;/code&gt; implementation can panic&lt;/li&gt;
-&lt;li&gt;The &lt;code&gt;Drop&lt;/code&gt; implementation of a remaining element triggers a panic&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;When combined with &lt;code&gt;Box&amp;lt;dyn Trait&amp;gt; types&lt;/code&gt;, an exploit primitive enabling
-Arbitrary Code Execution (ACE) via heap spray and vtable hijacking has been
-confirmed. If the freed fat pointer slot (16 bytes) at the point of Double Drop
-is reclaimed by an attacker-controlled fake vtable, subsequent Drop calls can
-be redirected to attacker-controlled code.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
     
     &lt;/p&gt;
   &lt;/article&gt;</content></entry></feed>
