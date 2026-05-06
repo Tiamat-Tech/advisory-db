@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2026-0109: sequoia-git: Broken hard revocation handling › RustSec Advisory Database</title>
+<title>Advisories for package &#39;steamworks&#39; › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -52,208 +52,39 @@
   </nav>
 </header>
 
-<main class="advisory">
+<main class="advisories">
   <article>
-    
-        <span class="floating-menu">
-          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/sequoia-git/RUSTSEC-2026-0109.md">History</a> ⋅
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/sequoia-git/RUSTSEC-2026-0109.md">Edit</a> ⋅
-          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0109">JSON (OSV)</a>
-        </span>
-    
 
     <header>
-      <h1>
-        
-        RUSTSEC-2026-0109
-        
-      </h1>
-      <span class="subtitle"><p>Broken hard revocation handling</p>
+      <span class="floating-menu">
+  <a href="/categories/">Categories</a> ⋅
+  <a href="/keywords/">Keywords</a> ⋅
+  <a href="/packages/">Packages</a>
 </span>
+      <h1>Advisories for package &#39;steamworks&#39;</h1>
     </header>
 
+    <ul>
+      
+      <li>
+  <time datetime="2026-05-06">
+    May  6, 2026
+  </time>
+
+  
+  <h3>
     
-
-    <dl>
-      <dt id="reported">Reported</dt>
-      <dd>
-        <time datetime="2026-04-21">
-          April 21, 2026
-        </time>
-      </dd>
-
-      <dt id="issued">Issued</dt>
-      <dd>
-        <time datetime="2026-04-24">
-          April 24, 2026
-        </time>
         
-        <time datetime="2026-05-06">
-          (last modified: May  6, 2026)
-        </time>
-        
-      </dd>
-
-      <dt id="package">Package</dt>
-      <dd>
-        
-        
-        <a href="/packages/sequoia-git.html">sequoia-git</a>
-           
-          (<a href="https://crates.io/crates/sequoia-git">crates.io</a>)
-          
-        
-        
-      </dd>
-
-      <dt id="type">Type</dt>
-      <dd>
-        
-        Vulnerability
-        
-      </dd>
-
-      
-
-      
-
-      
-      <dt id="aliases">Aliases</dt>
-      <dd>
-        <ul>
-          
-          <li>
-            
-            <a href="https://github.com/advisories/GHSA-g27r-r6ph-vf5r">GHSA-g27r-r6ph-vf5r</a>
-            
-          </li>
-          
-        </ul>
-      </dd>
-      
-
-      
-      <dt id="details">References</dt>
-      <dd>
-        <ul>
-        
-          <li>
-            <a href="https://gitlab.com/sequoia-pgp/sequoia-git/-/commit/f9c9074bd80023456221f09c3c4ff19957ee9c58">
-              https://gitlab.com/sequoia-pgp/sequoia-git/-/commit/f9c9074bd80023456221f09c3c4ff19957ee9c58
-            </a>
-          </li>
-        
-        
-        </ul>
-      </dd>
-      
-
-      
-
-      
-      <dt id="cvss_score">CVSS Score</dt>
-      <dd>1.8 <span class="tag low">
-        LOW
-      </span></dd>
-
-      <dt id="cvss_details">CVSS Details</dt>
-      <dd>
-        <dl>
-          
-            <dt>Attack Complexity</dt>
-            <dd>High</dd>
-          
-            <dt>Attack Requirements</dt>
-            <dd>Present</dd>
-          
-            <dt>Attack Vector</dt>
-            <dd>Network</dd>
-          
-            <dt>Privileges Required</dt>
-            <dd>High</dd>
-          
-            <dt>Availability Impact to the Subsequent System</dt>
-            <dd>None</dd>
-          
-            <dt>Confidentiality Impact to the Subsequent System</dt>
-            <dd>None</dd>
-          
-            <dt>Integrity Impact to the Subsequent System</dt>
-            <dd>None</dd>
-          
-            <dt>User Interaction</dt>
-            <dd>Active</dd>
-          
-            <dt>Availability Impact to the Vulnerable System</dt>
-            <dd>None</dd>
-          
-            <dt>Confidentiality Impact to the Vulnerable System</dt>
-            <dd>None</dd>
-          
-            <dt>Integrity Impact to the Vulnerable System</dt>
-            <dd>Low</dd>
-          
-        </dl>
-      </dd>
-
-      <dt id="cvss">CVSS Vector</dt>
-
-      
-          <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N">CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N</a></dd>
-        
-
-      
-
-      <dt id="patched">Patched</dt>
-      <dd>
-        
-        <ul>
-          
-          <li><code>&#62;=0.6.0</code></li>
-          
-        </ul>
-        
-      </dd>
-
-      
-
-      
-      
-    </dl>
-
     
-    
-
-    <h3 id="description">Description</h3>
-    <p>Before <code>sq-git</code> checks if a commit can be authenticated, it first
-looks for hard revocations.  Because parsing a policy is expensive
-and a project's policy rarely changes, <code>sq-git</code> has an
-optimization to only check a policy if it hasn't checked it
-before.  It does this by maintaining a set of policies that it had
-already seen keyed on the policy's hash.  Unfortunately, due to a
-bug the hash was truncated to be 0 bytes and thus only hard
-revocations in the target commit were considered.  Normally this
-is not a problem as hard revocations are not removed from the
-signing policy.</p>
-<p>An attacker could nevertheless exploit this flaw as follows.
-Consider Alice and Bob who maintain a project together.  If Bob's
-certificate is compromised and Bob issues a hard revocation, Alice
-can add it to the project's signing policy.  An attacker who has
-access to Bob's key can then create a merge request that strips
-the hard revocation.  If Alice merges Bob's merge request, then
-the latest commit will not carry the hard revocation, and <code>sq-git</code>
-will not see the hard revocation when authenticating that commit or
-any following commits.</p>
-<p>Note: for this attack to be successful, Alice needs to be tricked
-into merging the malicious MR.  If Alice is reviewing MRs, then
-she is likely to notice changes to the signing policy.</p>
-<p>Reported-by: Hassan Sheet</p>
-
-
-    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
-    license.
-
-    
-    </p>
+    <a href="/advisories/RUSTSEC-2026-0121.html">
+      RUSTSEC-2026-0121: Vulnerability in steamworks
+    </a>
+  </h3>
+  <span><p>Denial of service in Steamworks game clients/servers using P2P authentication</p>
+</span>
+  
+</li>
+      
+    </ul>
   </article>
 </main>

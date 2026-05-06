@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2026-0109: sequoia-git: Broken hard revocation handling › RustSec Advisory Database</title>
+<title>RUSTSEC-2026-0121: steamworks: Denial of service in Steamworks game clients/servers using P2P authentication › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -56,19 +56,19 @@
   <article>
     
         <span class="floating-menu">
-          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/sequoia-git/RUSTSEC-2026-0109.md">History</a> ⋅
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/sequoia-git/RUSTSEC-2026-0109.md">Edit</a> ⋅
-          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0109">JSON (OSV)</a>
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/steamworks/RUSTSEC-2026-0121.md">History</a> ⋅
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/steamworks/RUSTSEC-2026-0121.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0121">JSON (OSV)</a>
         </span>
     
 
     <header>
       <h1>
         
-        RUSTSEC-2026-0109
+        RUSTSEC-2026-0121
         
       </h1>
-      <span class="subtitle"><p>Broken hard revocation handling</p>
+      <span class="subtitle"><p>Denial of service in Steamworks game clients/servers using P2P authentication</p>
 </span>
     </header>
 
@@ -77,19 +77,15 @@
     <dl>
       <dt id="reported">Reported</dt>
       <dd>
-        <time datetime="2026-04-21">
-          April 21, 2026
+        <time datetime="2026-05-05">
+          May  5, 2026
         </time>
       </dd>
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2026-04-24">
-          April 24, 2026
-        </time>
-        
         <time datetime="2026-05-06">
-          (last modified: May  6, 2026)
+          May  6, 2026
         </time>
         
       </dd>
@@ -98,9 +94,9 @@
       <dd>
         
         
-        <a href="/packages/sequoia-git.html">sequoia-git</a>
+        <a href="/packages/steamworks.html">steamworks</a>
            
-          (<a href="https://crates.io/crates/sequoia-git">crates.io</a>)
+          (<a href="https://crates.io/crates/steamworks">crates.io</a>)
           
         
         
@@ -114,22 +110,25 @@
       </dd>
 
       
-
-      
-
-      
-      <dt id="aliases">Aliases</dt>
+      <dt id="categories">Categories</dt>
       <dd>
         <ul>
           
-          <li>
-            
-            <a href="https://github.com/advisories/GHSA-g27r-r6ph-vf5r">GHSA-g27r-r6ph-vf5r</a>
-            
-          </li>
+          <li><a href="/categories/denial-of-service.html">denial-of-service</a></li>
           
         </ul>
       </dd>
+      
+
+      
+      <dt id="keywords">Keywords</dt>
+      <dd>
+        
+          <a href="/keywords/panic.html">#panic</a>
+        
+      </dd>
+      
+
       
 
       
@@ -138,8 +137,8 @@
         <ul>
         
           <li>
-            <a href="https://gitlab.com/sequoia-pgp/sequoia-git/-/commit/f9c9074bd80023456221f09c3c4ff19957ee9c58">
-              https://gitlab.com/sequoia-pgp/sequoia-git/-/commit/f9c9074bd80023456221f09c3c4ff19957ee9c58
+            <a href="https://github.com/Noxime/steamworks-rs/issues/321">
+              https://github.com/Noxime/steamworks-rs/issues/321
             </a>
           </li>
         
@@ -151,57 +150,6 @@
       
 
       
-      <dt id="cvss_score">CVSS Score</dt>
-      <dd>1.8 <span class="tag low">
-        LOW
-      </span></dd>
-
-      <dt id="cvss_details">CVSS Details</dt>
-      <dd>
-        <dl>
-          
-            <dt>Attack Complexity</dt>
-            <dd>High</dd>
-          
-            <dt>Attack Requirements</dt>
-            <dd>Present</dd>
-          
-            <dt>Attack Vector</dt>
-            <dd>Network</dd>
-          
-            <dt>Privileges Required</dt>
-            <dd>High</dd>
-          
-            <dt>Availability Impact to the Subsequent System</dt>
-            <dd>None</dd>
-          
-            <dt>Confidentiality Impact to the Subsequent System</dt>
-            <dd>None</dd>
-          
-            <dt>Integrity Impact to the Subsequent System</dt>
-            <dd>None</dd>
-          
-            <dt>User Interaction</dt>
-            <dd>Active</dd>
-          
-            <dt>Availability Impact to the Vulnerable System</dt>
-            <dd>None</dd>
-          
-            <dt>Confidentiality Impact to the Vulnerable System</dt>
-            <dd>None</dd>
-          
-            <dt>Integrity Impact to the Vulnerable System</dt>
-            <dd>Low</dd>
-          
-        </dl>
-      </dd>
-
-      <dt id="cvss">CVSS Vector</dt>
-
-      
-          <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N">CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N</a></dd>
-        
-
       
 
       <dt id="patched">Patched</dt>
@@ -209,7 +157,7 @@
         
         <ul>
           
-          <li><code>&#62;=0.6.0</code></li>
+          <li><code>&#62;=0.13.1</code></li>
           
         </ul>
         
@@ -219,35 +167,69 @@
 
       
       
+
+      
+      
     </dl>
 
     
     
+    <dl>
+      <dt>Affected Functions</dt>
+      <dd>Version</dd>
+      
+      <dt><code>steamworks::Client::process_callbacks</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>&#60;0.13.1</code></li>
+          
+        </ul>
+      </dd>
+      
+      <dt><code>steamworks::Client::register_callback</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>&#60;0.13.1</code></li>
+          
+        </ul>
+      </dd>
+      
+      <dt><code>steamworks::Server::begin_authentication_session</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>&#60;0.13.1</code></li>
+          
+        </ul>
+      </dd>
+      
+      <dt><code>steamworks::User::begin_authentication_session</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>&#60;0.13.1</code></li>
+          
+        </ul>
+      </dd>
+      
+      <dt><code>steamworks::ValidateAuthTicketResponse::from_raw</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>&#60;0.13.1</code></li>
+          
+        </ul>
+      </dd>
+      
+    </dl>
+    
+
+    
 
     <h3 id="description">Description</h3>
-    <p>Before <code>sq-git</code> checks if a commit can be authenticated, it first
-looks for hard revocations.  Because parsing a policy is expensive
-and a project's policy rarely changes, <code>sq-git</code> has an
-optimization to only check a policy if it hasn't checked it
-before.  It does this by maintaining a set of policies that it had
-already seen keyed on the policy's hash.  Unfortunately, due to a
-bug the hash was truncated to be 0 bytes and thus only hard
-revocations in the target commit were considered.  Normally this
-is not a problem as hard revocations are not removed from the
-signing policy.</p>
-<p>An attacker could nevertheless exploit this flaw as follows.
-Consider Alice and Bob who maintain a project together.  If Bob's
-certificate is compromised and Bob issues a hard revocation, Alice
-can add it to the project's signing policy.  An attacker who has
-access to Bob's key can then create a merge request that strips
-the hard revocation.  If Alice merges Bob's merge request, then
-the latest commit will not carry the hard revocation, and <code>sq-git</code>
-will not see the hard revocation when authenticating that commit or
-any following commits.</p>
-<p>Note: for this attack to be successful, Alice needs to be tricked
-into merging the malicious MR.  If Alice is reviewing MRs, then
-she is likely to notice changes to the signing policy.</p>
-<p>Reported-by: Hassan Sheet</p>
+    <p>Processing the raw <code>ValidateAuthTicketResponse_t</code> callback data panics when the <code>m_eAuthSessionResponse</code> field is <code>k_EAuthSessionResponseAuthTicketNetworkIdentityFailure</code>. This can lead to denial of service in game clients and servers using the <code>begin_authentication_session</code> API to authenticate players if a malicious game client sends an authentication ticket with a network identity that does not match that of the verifier.</p>
 
 
     <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
