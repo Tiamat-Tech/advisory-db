@@ -3311,7 +3311,7 @@ causes an out-of-bounds access since position 10 exceeds the slice length.&lt;/p
 
     
     &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0122: Unsoundness in rkyv</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0122.html</id><updated>2026-05-11T12:00:00+00:00</updated><category term="code-execution"/><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0122.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0122: Unsoundness in rkyv"/><published>2026-05-11T12:00:00+00:00</published><summary xml:lang="en">Potential use-after-free due to lack of panic safety in `InlineVec::clear` and `SerVec::clear`</summary><content xml:lang="en" type="html">  &lt;article&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0122: Unsoundness in rkyv</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0122.html</id><updated>2026-05-16T12:00:00+00:00</updated><category term="code-execution"/><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0122.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0122: Unsoundness in rkyv"/><published>2026-05-11T12:00:00+00:00</published><summary xml:lang="en">Potential use-after-free due to lack of panic safety in `InlineVec::clear` and `SerVec::clear`</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
         &lt;span class=&quot;floating-menu&quot;&gt;
           &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/rkyv/RUSTSEC-2026-0122.md&quot;&gt;History&lt;/a&gt; ⋅
@@ -3344,6 +3344,10 @@ causes an out-of-bounds access since position 10 exceeds the slice length.&lt;/p
       &lt;dd&gt;
         &lt;time datetime=&quot;2026-05-11&quot;&gt;
           May 11, 2026
+        &lt;/time&gt;
+        
+        &lt;time datetime=&quot;2026-05-16&quot;&gt;
+          (last modified: May 16, 2026)
         &lt;/time&gt;
         
       &lt;/dd&gt;
@@ -3396,6 +3400,19 @@ causes an out-of-bounds access since position 10 exceeds the slice length.&lt;/p
       &lt;/dd&gt;
       
 
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-vfvv-c25p-m7mm&quot;&gt;GHSA-vfvv-c25p-m7mm&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
       
 
       
