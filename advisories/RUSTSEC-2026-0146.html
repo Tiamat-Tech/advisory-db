@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2026-0140: dynoxide-rs: DNS rebinding and cross-origin CSRF in dynoxide&#39;s MCP HTTP transport › RustSec Advisory Database</title>
+<title>RUSTSEC-2026-0146: anchor-lang: `InterfaceAccount` allows account substitution between unexpected types › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -56,19 +56,19 @@
   <article>
     
         <span class="floating-menu">
-          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/dynoxide-rs/RUSTSEC-2026-0140.md">History</a> ⋅
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/dynoxide-rs/RUSTSEC-2026-0140.md">Edit</a> ⋅
-          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0140">JSON (OSV)</a>
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/anchor-lang/RUSTSEC-2026-0146.md">History</a> ⋅
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/anchor-lang/RUSTSEC-2026-0146.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0146">JSON (OSV)</a>
         </span>
     
 
     <header>
       <h1>
         
-        RUSTSEC-2026-0140
+        RUSTSEC-2026-0146
         
       </h1>
-      <span class="subtitle"><p>DNS rebinding and cross-origin CSRF in dynoxide's MCP HTTP transport</p>
+      <span class="subtitle"><p><code>InterfaceAccount</code> allows account substitution between unexpected types</p>
 </span>
     </header>
 
@@ -77,19 +77,15 @@
     <dl>
       <dt id="reported">Reported</dt>
       <dd>
-        <time datetime="2026-05-12">
-          May 12, 2026
+        <time datetime="2026-05-08">
+          May  8, 2026
         </time>
       </dd>
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2026-05-13">
-          May 13, 2026
-        </time>
-        
         <time datetime="2026-05-19">
-          (last modified: May 19, 2026)
+          May 19, 2026
         </time>
         
       </dd>
@@ -98,9 +94,9 @@
       <dd>
         
         
-        <a href="/packages/dynoxide-rs.html">dynoxide-rs</a>
+        <a href="/packages/anchor-lang.html">anchor-lang</a>
            
-          (<a href="https://crates.io/crates/dynoxide-rs">crates.io</a>)
+          (<a href="https://crates.io/crates/anchor-lang">crates.io</a>)
           
         
         
@@ -119,11 +115,13 @@
       <dt id="keywords">Keywords</dt>
       <dd>
         
-          <a href="/keywords/dns-rebinding.html">#dns-rebinding</a>
+          <a href="/keywords/solana.html">#solana</a>
         
-          <a href="/keywords/csrf.html">#csrf</a>
+          <a href="/keywords/anchor.html">#anchor</a>
         
-          <a href="/keywords/mcp.html">#mcp</a>
+          <a href="/keywords/account-validation.html">#account-validation</a>
+        
+          <a href="/keywords/interface-account.html">#interface-account</a>
         
       </dd>
       
@@ -135,19 +133,7 @@
           
           <li>
             
-            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42559">CVE-2026-42559</a>
-            
-          </li>
-          
-          <li>
-            
-            <a href="https://github.com/advisories/GHSA-89vp-x53w-74fx">GHSA-89vp-x53w-74fx</a>
-            
-          </li>
-          
-          <li>
-            
-            <a href="https://github.com/advisories/GHSA-fvh2-gm75-j4j7">GHSA-fvh2-gm75-j4j7</a>
+            <a href="https://github.com/advisories/GHSA-429q-fhh4-r6hj">GHSA-429q-fhh4-r6hj</a>
             
           </li>
           
@@ -161,15 +147,27 @@
         <ul>
         
           <li>
-            <a href="https://github.com/nubo-db/dynoxide/security/advisories/GHSA-fvh2-gm75-j4j7">
-              https://github.com/nubo-db/dynoxide/security/advisories/GHSA-fvh2-gm75-j4j7
+            <a href="https://github.com/otter-sec/anchor/security/advisories/GHSA-429q-fhh4-r6hj">
+              https://github.com/otter-sec/anchor/security/advisories/GHSA-429q-fhh4-r6hj
             </a>
           </li>
         
         
           <li>
-            <a href="https://github.com/nubo-db/dynoxide/releases/tag/v0.9.13">
-              https://github.com/nubo-db/dynoxide/releases/tag/v0.9.13
+            <a href="https://github.com/otter-sec/anchor/pull/3837">
+              https://github.com/otter-sec/anchor/pull/3837
+            </a>
+          </li>
+        
+          <li>
+            <a href="https://github.com/otter-sec/anchor/pull/4139">
+              https://github.com/otter-sec/anchor/pull/4139
+            </a>
+          </li>
+        
+          <li>
+            <a href="https://github.com/otter-sec/anchor/commit/26ef36968a62e28a1f028e7adae4806af30c747d">
+              https://github.com/otter-sec/anchor/commit/26ef36968a62e28a1f028e7adae4806af30c747d
             </a>
           </li>
         
@@ -177,24 +175,11 @@
       </dd>
       
 
-      
-      <dt id="related">Related</dt>
-      <dd>
-        <ul>
-          
-          <li>
-            
-            <a href="https://github.com/advisories/GHSA-89vp-x53w-74fx">GHSA-89vp-x53w-74fx</a>
-            
-          </li>
-          
-        </ul>
-      </dd>
       
 
       
       <dt id="cvss_score">CVSS Score</dt>
-      <dd>8.8 <span class="tag high">
+      <dd>8.7 <span class="tag high">
         HIGH
       </span></dd>
 
@@ -202,28 +187,37 @@
       <dd>
         <dl>
           
-            <dt>Attack Vector</dt>
-            <dd>Network</dd>
-          
             <dt>Attack Complexity</dt>
             <dd>Low</dd>
+          
+            <dt>Attack Requirements</dt>
+            <dd>None</dd>
+          
+            <dt>Attack Vector</dt>
+            <dd>Network</dd>
           
             <dt>Privileges Required</dt>
             <dd>None</dd>
           
+            <dt>Availability Impact to the Subsequent System</dt>
+            <dd>None</dd>
+          
+            <dt>Confidentiality Impact to the Subsequent System</dt>
+            <dd>None</dd>
+          
+            <dt>Integrity Impact to the Subsequent System</dt>
+            <dd>None</dd>
+          
             <dt>User Interaction</dt>
-            <dd>Required</dd>
+            <dd>None</dd>
           
-            <dt>Scope</dt>
-            <dd>Unchanged</dd>
+            <dt>Availability Impact to the Vulnerable System</dt>
+            <dd>None</dd>
           
-            <dt>Confidentiality Impact</dt>
-            <dd>High</dd>
+            <dt>Confidentiality Impact to the Vulnerable System</dt>
+            <dd>None</dd>
           
-            <dt>Integrity Impact</dt>
-            <dd>High</dd>
-          
-            <dt>Availability Impact</dt>
+            <dt>Integrity Impact to the Vulnerable System</dt>
             <dd>High</dd>
           
         </dl>
@@ -232,7 +226,7 @@
       <dt id="cvss">CVSS Vector</dt>
 
       
-          <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H</a></dd>
+          <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N">CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N</a></dd>
         
 
       
@@ -242,7 +236,7 @@
         
         <ul>
           
-          <li><code>&#62;=0.9.13</code></li>
+          <li><code>&#62;=1.0.0-rc.2</code></li>
           
         </ul>
         
@@ -253,7 +247,7 @@
       <dd>
         <ul>
           
-          <li><code>&#60;0.9.3</code></li>
+          <li><code>&#60;1.0.0-rc.1</code></li>
           
         </ul>
       </dd>
@@ -267,21 +261,31 @@
     
 
     <h3 id="description">Description</h3>
-    <p>dynoxide's MCP HTTP transport was vulnerable to DNS rebinding via its transitive <code>rmcp</code> dependency, plus a related cross-origin CSRF gap.</p>
-<p>A malicious web page could make the user's browser send requests to a local <code>dynoxide mcp --http</code> or <code>dynoxide serve --mcp</code> server with a non-loopback <code>Host</code> header, which the server would then process. The Host check alone did not close a related cross-origin CSRF vector: a page could <code>fetch</code> the loopback endpoint with <code>mode: 'no-cors'</code>, and the Host header would match while the Origin header went unchecked.</p>
-<p>Affected MCP write tools include <code>put_item</code>, <code>update_item</code>, <code>delete_item</code>, <code>create_table</code>, and <code>batch_write_item</code>.</p>
-<p>The stdio transport (<code>dynoxide mcp</code> without <code>--http</code>) is not affected.</p>
-<h2>Patches</h2>
-<p>dynoxide 0.9.13 closes both vectors:</p>
-<ul>
-<li>Upgrades <code>rmcp</code> from 1.1.1 to 1.6.0 (which ships a default Host-header allowlist).</li>
-<li>Sets explicit <code>allowed_hosts</code> and <code>allowed_origins</code> on <code>StreamableHttpServerConfig</code>.</li>
-</ul>
+    <p>Affected versions of <code>anchor-lang</code> allowed <code>InterfaceAccount</code> to accept accounts
+with an unexpected Anchor discriminator. A change to <code>InterfaceAccount</code> caused
+checked deserialization to be bypassed for this account wrapper, so validation
+proved only that the account owner matched one of the accepted interface owners.
+It did not prove that the account data belonged to the expected account type.</p>
+<p>Programs using <code>InterfaceAccount</code> rely on Anchor to enforce both owner and
+account-type validation before the handler runs. With discriminator checking
+disabled, an attacker could pass another account type owned by an accepted
+program and have it deserialized through the expected interface wrapper. This
+could bypass account-type assumptions made by the program and lead to incorrect
+authorization or state handling.</p>
+<p>The issue was fixed in <code>anchor-lang</code> 1.0.0-rc.2 by restoring checked
+deserialization for <code>InterfaceAccount::try_from</code>, while keeping explicitly
+unchecked behavior available only through the unchecked API. Users should
+upgrade to <code>anchor-lang</code> 1.0.0-rc.2 or later.</p>
 
 
-    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC-BY-4.0.html">CC-BY-4.0</a>
     license.
 
+    
+      
+      
+          Source: <a href="https://github.com/otter-sec/anchor/security/advisories/GHSA-429q-fhh4-r6hj">https://github.com/otter-sec/anchor/security/advisories/GHSA-429q-fhh4-r6hj</a>
+        
     
     </p>
   </article>
