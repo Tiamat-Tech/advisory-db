@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2026-0136: diesel: Command injection in Diesel&#39;s implementation of `COPY FROM`/`COPY TO` › RustSec Advisory Database</title>
+<title>RUSTSEC-2026-0148: boxlite: OCI layer symlink escape → arbitrary host write › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -56,19 +56,19 @@
   <article>
     
         <span class="floating-menu">
-          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/diesel/RUSTSEC-2026-0136.md">History</a> ⋅
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/diesel/RUSTSEC-2026-0136.md">Edit</a> ⋅
-          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0136">JSON (OSV)</a>
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/boxlite/RUSTSEC-2026-0148.md">History</a> ⋅
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/boxlite/RUSTSEC-2026-0148.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0148">JSON (OSV)</a>
         </span>
     
 
     <header>
       <h1>
         
-        RUSTSEC-2026-0136
+        RUSTSEC-2026-0148
         
       </h1>
-      <span class="subtitle"><p>Command injection in Diesel's implementation of <code>COPY FROM</code>/<code>COPY TO</code></p>
+      <span class="subtitle"><p>OCI layer symlink escape → arbitrary host write</p>
 </span>
     </header>
 
@@ -77,19 +77,15 @@
     <dl>
       <dt id="reported">Reported</dt>
       <dd>
-        <time datetime="2026-04-24">
-          April 24, 2026
+        <time datetime="2026-05-16">
+          May 16, 2026
         </time>
       </dd>
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2026-05-13">
-          May 13, 2026
-        </time>
-        
         <time datetime="2026-05-20">
-          (last modified: May 20, 2026)
+          May 20, 2026
         </time>
         
       </dd>
@@ -98,9 +94,9 @@
       <dd>
         
         
-        <a href="/packages/diesel.html">diesel</a>
+        <a href="/packages/boxlite.html">boxlite</a>
            
-          (<a href="https://crates.io/crates/diesel">crates.io</a>)
+          (<a href="https://crates.io/crates/boxlite">crates.io</a>)
           
         
         
@@ -118,12 +114,31 @@
       <dd>
         <ul>
           
-          <li><a href="/categories/format-injection.html">format-injection</a></li>
+          <li><a href="/categories/privilege-escalation.html">privilege-escalation</a></li>
+          
+          <li><a href="/categories/file-disclosure.html">file-disclosure</a></li>
           
         </ul>
       </dd>
       
 
+      
+      <dt id="keywords">Keywords</dt>
+      <dd>
+        
+          <a href="/keywords/sandbox.html">#sandbox</a>
+        
+          <a href="/keywords/container.html">#container</a>
+        
+          <a href="/keywords/oci.html">#oci</a>
+        
+          <a href="/keywords/tar.html">#tar</a>
+        
+          <a href="/keywords/symlink.html">#symlink</a>
+        
+          <a href="/keywords/path-traversal.html">#path-traversal</a>
+        
+      </dd>
       
 
       
@@ -133,7 +148,13 @@
           
           <li>
             
-            <a href="https://github.com/advisories/GHSA-m9p2-fxp5-v3fp">GHSA-m9p2-fxp5-v3fp</a>
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-46703">CVE-2026-46703</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-f396-4rp4-7v2j">GHSA-f396-4rp4-7v2j</a>
             
           </li>
           
@@ -147,11 +168,29 @@
         <ul>
         
           <li>
-            <a href="https://github.com/diesel-rs/diesel/pull/5042">
-              https://github.com/diesel-rs/diesel/pull/5042
+            <a href="https://github.com/boxlite-ai/boxlite/security/advisories/GHSA-f396-4rp4-7v2j">
+              https://github.com/boxlite-ai/boxlite/security/advisories/GHSA-f396-4rp4-7v2j
             </a>
           </li>
         
+        
+          <li>
+            <a href="https://github.com/boxlite-ai/boxlite/pull/429">
+              https://github.com/boxlite-ai/boxlite/pull/429
+            </a>
+          </li>
+        
+          <li>
+            <a href="https://github.com/boxlite-ai/boxlite/pull/446">
+              https://github.com/boxlite-ai/boxlite/pull/446
+            </a>
+          </li>
+        
+          <li>
+            <a href="https://github.com/boxlite-ai/boxlite/pull/461">
+              https://github.com/boxlite-ai/boxlite/pull/461
+            </a>
+          </li>
         
         </ul>
       </dd>
@@ -160,6 +199,48 @@
       
 
       
+      <dt id="cvss_score">CVSS Score</dt>
+      <dd>10 <span class="tag critical">
+        CRITICAL
+      </span></dd>
+
+      <dt id="cvss_details">CVSS Details</dt>
+      <dd>
+        <dl>
+          
+            <dt>Attack Vector</dt>
+            <dd>Network</dd>
+          
+            <dt>Attack Complexity</dt>
+            <dd>Low</dd>
+          
+            <dt>Privileges Required</dt>
+            <dd>None</dd>
+          
+            <dt>User Interaction</dt>
+            <dd>None</dd>
+          
+            <dt>Scope</dt>
+            <dd>Changed</dd>
+          
+            <dt>Confidentiality Impact</dt>
+            <dd>High</dd>
+          
+            <dt>Integrity Impact</dt>
+            <dd>High</dd>
+          
+            <dt>Availability Impact</dt>
+            <dd>High</dd>
+          
+        </dl>
+      </dd>
+
+      <dt id="cvss">CVSS Vector</dt>
+
+      
+          <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H</a></dd>
+        
+
       
 
       <dt id="patched">Patched</dt>
@@ -167,7 +248,7 @@
         
         <ul>
           
-          <li><code>&#62;=2.3.8</code></li>
+          <li><code>&#62;=0.9.0</code></li>
           
         </ul>
         
@@ -177,111 +258,26 @@
 
       
       
-
-      
-      
     </dl>
 
     
-    
-    <dl>
-      <dt>Affected Functions</dt>
-      <dd>Version</dd>
-      
-      <dt><code>diesel::pg::CopyFromQuery::with_default</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#60;2.3.8</code></li>
-          
-        </ul>
-      </dd>
-      
-      <dt><code>diesel::pg::CopyFromQuery::with_delimiter</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#60;2.3.8</code></li>
-          
-        </ul>
-      </dd>
-      
-      <dt><code>diesel::pg::CopyFromQuery::with_escape</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#60;2.3.8</code></li>
-          
-        </ul>
-      </dd>
-      
-      <dt><code>diesel::pg::CopyFromQuery::with_null</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#60;2.3.8</code></li>
-          
-        </ul>
-      </dd>
-      
-      <dt><code>diesel::pg::CopyFromQuery::with_quote</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#60;2.3.8</code></li>
-          
-        </ul>
-      </dd>
-      
-      <dt><code>diesel::pg::CopyToQuery::with_delimiter</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#60;2.3.8</code></li>
-          
-        </ul>
-      </dd>
-      
-      <dt><code>diesel::pg::CopyToQuery::with_escape</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#60;2.3.8</code></li>
-          
-        </ul>
-      </dd>
-      
-      <dt><code>diesel::pg::CopyToQuery::with_null</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#60;2.3.8</code></li>
-          
-        </ul>
-      </dd>
-      
-      <dt><code>diesel::pg::CopyToQuery::with_quote</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#60;2.3.8</code></li>
-          
-        </ul>
-      </dd>
-      
-    </dl>
-    
-
     
 
     <h3 id="description">Description</h3>
-    <p>Diesel allows users to configure various options for PostgreSQL's <code>COPY FROM</code> and <code>COPY TO</code> statements. These configurations are partially provided as strings or characters.</p>
-<p>Diesel did not check if any these user-provided options contain a quote character <code>'</code>, which can lead to the injection of additional options in the current <code>COPY FROM</code>/<code>COPY TO</code> statement.</p>
-<p>This vulnerability affects any user of <code>COPY FROM</code>/<code>COPY TO</code> that passes user-provided input to any of the affected functions. It can result in modifications of options in the current statement, but it is not possible inject additional statements.</p>
-<h2>Mitigation</h2>
-<p>The preferred mitigation to the outlined problem is to update to Diesel version 2.3.8 or newer, which includes fixes for the problem.</p>
-<h2>Resolution</h2>
-<p>Diesel now correctly escapes any quotes contained in the provided arguments.</p>
+    <p>Affected versions of <code>boxlite</code> extract OCI image layer tarballs without
+fully containing path resolution to the extraction root. A crafted layer
+containing a symlink whose target is an absolute on-host path (e.g.
+<code>escape -&gt; /tmp</code>) followed by a file entry that resolves through that
+symlink (e.g. <code>escape/&lt;path&gt;/pwned.txt</code>) caused the extractor to write
+the payload to the host filesystem outside the intended rootfs directory.</p>
+<p>The fix in v0.9.0 routes every destructive filesystem operation through a
+<code>SafeRoot</code> handle (<code>openat2(RESOLVE_IN_ROOT)</code> on Linux, lexical fallback
+elsewhere) so that no tar entry can resolve outside the extraction root,
+even with adversarial symlinks placed by earlier entries in the same
+layer.</p>
+<p>This is a container-escape during image extraction, exploitable by any
+user who pulls or loads a malicious OCI image — including via
+<code>SimpleBox(rootfs_path=...)</code> from an untrusted local layout.</p>
 
 
     <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
