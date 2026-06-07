@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2024-0370: proc-macro-error: proc-macro-error is unmaintained › RustSec Advisory Database</title>
+<title>RUSTSEC-2026-0173: proc-macro-error2: proc-macro-error2 is unmaintained › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -56,19 +56,19 @@
   <article>
     
         <span class="floating-menu">
-          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/proc-macro-error/RUSTSEC-2024-0370.md">History</a> ⋅
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/proc-macro-error/RUSTSEC-2024-0370.md">Edit</a> ⋅
-          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2024-0370">JSON (OSV)</a>
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/proc-macro-error2/RUSTSEC-2026-0173.md">History</a> ⋅
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/proc-macro-error2/RUSTSEC-2026-0173.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0173">JSON (OSV)</a>
         </span>
     
 
     <header>
       <h1>
         
-        RUSTSEC-2024-0370
+        RUSTSEC-2026-0173
         
       </h1>
-      <span class="subtitle"><p>proc-macro-error is unmaintained</p>
+      <span class="subtitle"><p>proc-macro-error2 is unmaintained</p>
 </span>
     </header>
 
@@ -77,19 +77,15 @@
     <dl>
       <dt id="reported">Reported</dt>
       <dd>
-        <time datetime="2024-09-01">
-          September  1, 2024
+        <time datetime="2026-06-07">
+          June  7, 2026
         </time>
       </dd>
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2024-09-05">
-          September  5, 2024
-        </time>
-        
         <time datetime="2026-06-07">
-          (last modified: June  7, 2026)
+          June  7, 2026
         </time>
         
       </dd>
@@ -98,9 +94,9 @@
       <dd>
         
         
-        <a href="/packages/proc-macro-error.html">proc-macro-error</a>
+        <a href="/packages/proc-macro-error2.html">proc-macro-error2</a>
            
-          (<a href="https://crates.io/crates/proc-macro-error">crates.io</a>)
+          (<a href="https://crates.io/crates/proc-macro-error2">crates.io</a>)
           
         
         
@@ -126,8 +122,8 @@
         <ul>
         
           <li>
-            <a href="https://gitlab.com/CreepySkeleton/proc-macro-error/-/issues/20">
-              https://gitlab.com/CreepySkeleton/proc-macro-error/-/issues/20
+            <a href="https://github.com/GnomedDev/proc-macro-error-2/issues/17">
+              https://github.com/GnomedDev/proc-macro-error-2/issues/17
             </a>
           </li>
         
@@ -158,8 +154,8 @@
     
 
     <h3 id="description">Description</h3>
-    <p>proc-macro-error's maintainer seems to be unreachable, with no commits for 2 years, no releases pushed for 4 years, and no activity on the GitLab repo or response to email.</p>
-<p>proc-macro-error also depends on <code>syn 1.x</code>, which may be bringing duplicate dependencies into dependant build trees.</p>
+    <p>The author of <code>proc-macro-error2</code> has <a href="https://github.com/GnomedDev/proc-macro-error-2/issues/17#issuecomment-4643215473">confirmed</a> that the crate is no longer maintained and recommends that users migrate away from it.</p>
+<p><code>proc-macro-error2</code> was originally created as a maintained fork of <a href="https://crates.io/crates/proc-macro-error"><code>proc-macro-error</code></a> (see <a href="https://rustsec.org/advisories/RUSTSEC-2024-0370">RUSTSEC-2024-0370</a>). Both the original crate and this fork are now unmaintained.</p>
 <h2>Possible Alternative(s)</h2>
 <ul>
 <li><a href="https://crates.io/crates/manyhow">manyhow</a></li>
