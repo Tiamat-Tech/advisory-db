@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2026-0176: pyo3: Out-of-bounds read in `nth` / `nth_back` for `PyList` and `PyTuple` iterators › RustSec Advisory Database</title>
+<title>RUSTSEC-2026-0181: vibeio-http: DoS vulnerability in HTTP/1.x chunked encoding parser triggered by maliciously crafted chunk lengths › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -56,19 +56,19 @@
   <article>
     
         <span class="floating-menu">
-          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/pyo3/RUSTSEC-2026-0176.md">History</a> ⋅
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/pyo3/RUSTSEC-2026-0176.md">Edit</a> ⋅
-          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0176">JSON (OSV)</a>
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/vibeio-http/RUSTSEC-2026-0181.md">History</a> ⋅
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/vibeio-http/RUSTSEC-2026-0181.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0181">JSON (OSV)</a>
         </span>
     
 
     <header>
       <h1>
         
-        RUSTSEC-2026-0176
+        RUSTSEC-2026-0181
         
       </h1>
-      <span class="subtitle"><p>Out-of-bounds read in <code>nth</code> / <code>nth_back</code> for <code>PyList</code> and <code>PyTuple</code> iterators</p>
+      <span class="subtitle"><p>DoS vulnerability in HTTP/1.x chunked encoding parser triggered by maliciously crafted chunk lengths</p>
 </span>
     </header>
 
@@ -77,19 +77,15 @@
     <dl>
       <dt id="reported">Reported</dt>
       <dd>
-        <time datetime="2026-06-11">
-          June 11, 2026
+        <time datetime="2026-06-06">
+          June  6, 2026
         </time>
       </dd>
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2026-06-11">
-          June 11, 2026
-        </time>
-        
         <time datetime="2026-06-13">
-          (last modified: June 13, 2026)
+          June 13, 2026
         </time>
         
       </dd>
@@ -98,9 +94,9 @@
       <dd>
         
         
-        <a href="/packages/pyo3.html">pyo3</a>
+        <a href="/packages/vibeio-http.html">vibeio-http</a>
            
-          (<a href="https://crates.io/crates/pyo3">crates.io</a>)
+          (<a href="https://crates.io/crates/vibeio-http">crates.io</a>)
           
         
         
@@ -118,7 +114,7 @@
       <dd>
         <ul>
           
-          <li><a href="/categories/memory-exposure.html">memory-exposure</a></li>
+          <li><a href="/categories/denial-of-service.html">denial-of-service</a></li>
           
         </ul>
       </dd>
@@ -128,26 +124,13 @@
       <dt id="keywords">Keywords</dt>
       <dd>
         
-          <a href="/keywords/out-of-bounds-read.html">#out-of-bounds-read</a>
+          <a href="/keywords/http.html">#http</a>
         
-          <a href="/keywords/integer-overflow.html">#integer-overflow</a>
+          <a href="/keywords/DoS.html">#DoS</a>
         
       </dd>
       
 
-      
-      <dt id="aliases">Aliases</dt>
-      <dd>
-        <ul>
-          
-          <li>
-            
-            <a href="https://github.com/advisories/GHSA-36hh-v3qg-5jq4">GHSA-36hh-v3qg-5jq4</a>
-            
-          </li>
-          
-        </ul>
-      </dd>
       
 
       
@@ -156,8 +139,8 @@
         <ul>
         
           <li>
-            <a href="https://github.com/PyO3/pyo3/pull/6086">
-              https://github.com/PyO3/pyo3/pull/6086
+            <a href="https://github.com/ferronweb/vibeio-http/blob/main/CHANGELOG.md#vibeio-http-032">
+              https://github.com/ferronweb/vibeio-http/blob/main/CHANGELOG.md#vibeio-http-032
             </a>
           </li>
         
@@ -176,92 +159,24 @@
         
         <ul>
           
-          <li><code>&#62;=0.29.0</code></li>
+          <li><code>&#62;=0.3.2</code></li>
           
         </ul>
         
       </dd>
 
       
-      <dt id="unaffected">Unaffected</dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#60;0.24.0</code></li>
-          
-        </ul>
-      </dd>
-      
-
-      
-      
 
       
       
     </dl>
 
     
-    
-    <dl>
-      <dt>Affected Functions</dt>
-      <dd>Version</dd>
-      
-      <dt><code>pyo3::types::list::BoundListIterator::nth</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#62;=0.24.0, &#60;0.29.0</code></li>
-          
-        </ul>
-      </dd>
-      
-      <dt><code>pyo3::types::list::BoundListIterator::nth_back</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#62;=0.24.0, &#60;0.29.0</code></li>
-          
-        </ul>
-      </dd>
-      
-      <dt><code>pyo3::types::tuple::BoundTupleIterator::nth</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#62;=0.24.0, &#60;0.29.0</code></li>
-          
-        </ul>
-      </dd>
-      
-      <dt><code>pyo3::types::tuple::BoundTupleIterator::nth_back</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#62;=0.24.0, &#60;0.29.0</code></li>
-          
-        </ul>
-      </dd>
-      
-    </dl>
-    
-
     
 
     <h3 id="description">Description</h3>
-    <p>PyO3 0.24.0 added optimized implementations of <code>Iterator::nth</code> and
-<code>DoubleEndedIterator::nth_back</code> for the <code>BoundListIterator</code> and
-<code>BoundTupleIterator</code> types. These implementations computed the target index
-using unchecked <code>usize</code> addition (<code>index + n</code>) before bounds-checking against
-the sequence length, then read the element via <code>get_item_unchecked</code>.</p>
-<p>In <code>nth</code> methods, a sufficiently large <code>n</code> (combined with a non-zero internal
-index) could cause the addition to overflow and wrap around, producing a small
-&quot;target index&quot; that passed the bounds check and enabling reads at the front
-of the <code>list</code> or <code>tuple</code> of elements previously yielded by the iterator.</p>
-<p>In <code>nth_back</code> methods, a sufficiently large <code>n</code> could cause underflow in a
-similar fashion, however would instead allow reads of arbitrary memory past
-the end of the <code>list</code> or <code>tuple</code> storage.</p>
-<p>PyO3 0.29.0 has corrected these methods to use checked arithmetic at the
-positions which could be at risk of overflow.</p>
+    <p>When using the affected versions of the <code>vibeio-http</code> crate, an attacker could craft a malicious HTTP/1.x request with a large chunk length (between <code>usize::MAX - 1</code> and <code>usize::MAX</code> inclusive) and send it, causing the server to crash (integer overflow panic in debug builds, split_to out of bounds panic in release builds).</p>
+<p>This was fixed in <code>vibeio-http</code> 0.3.2 by erroring on the chunk length if it exceeds <code>usize::MAX - 2</code> (using <code>checked_add()</code> instead of <code>+</code> operator), preventing integer overflow.</p>
 
 
     <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
