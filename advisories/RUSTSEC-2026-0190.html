@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>Advisories for package &#39;wasmtime-wasi&#39; › RustSec Advisory Database</title>
+<title>RUSTSEC-2026-0190: anyhow: Unsoundness in `Error::downcast_mut()` › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -52,77 +52,200 @@
   </nav>
 </header>
 
-<main class="advisories">
+<main class="advisory">
   <article>
+    
+        <span class="floating-menu">
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/anyhow/RUSTSEC-2026-0190.md">History</a> ⋅
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/anyhow/RUSTSEC-2026-0190.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0190">JSON (OSV)</a>
+        </span>
+    
 
     <header>
-      <span class="floating-menu">
-  <a href="/categories/">Categories</a> ⋅
-  <a href="/keywords/">Keywords</a> ⋅
-  <a href="/packages/">Packages</a>
+      <h1>
+        
+        RUSTSEC-2026-0190
+        
+      </h1>
+      <span class="subtitle"><p>Unsoundness in <code>Error::downcast_mut()</code></p>
 </span>
-      <h1>Advisories for package &#39;wasmtime-wasi&#39;</h1>
     </header>
 
-    <ul>
-      
-      <li>
-  <time datetime="2026-06-29">
-    June 29, 2026
-  </time>
-
-  
-  <h3>
     
-      <span class="tag medium">MEDIUM</span>
-      
-    <a href="/advisories/RUSTSEC-2026-0188.html">
-      RUSTSEC-2026-0188: Vulnerability in wasmtime-wasi
-    </a>
-  </h3>
-  <span><p>WASI hard links and renames bypass wasmtime-wasi's FilePerms for destination</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2026-06-15">
-    June 15, 2026
-  </time>
 
-  
-  <h3>
-    
-      <span class="tag low">LOW</span>
-      
-    <a href="/advisories/RUSTSEC-2026-0182.html">
-      RUSTSEC-2026-0182: Vulnerability in wasmtime-wasi
-    </a>
-  </h3>
-  <span><p>Leak in WASIp1 <code>fd_renumber</code> implementation</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2026-05-22">
-    May 22, 2026
-  </time>
+    <dl>
+      <dt id="reported">Reported</dt>
+      <dd>
+        <time datetime="2026-06-25">
+          June 25, 2026
+        </time>
+      </dd>
 
-  
-  <h3>
+      <dt id="issued">Issued</dt>
+      <dd>
+        <time datetime="2026-06-29">
+          June 29, 2026
+        </time>
+        
+      </dd>
+
+      <dt id="package">Package</dt>
+      <dd>
+        
+        
+        <a href="/packages/anyhow.html">anyhow</a>
+           
+          (<a href="https://crates.io/crates/anyhow">crates.io</a>)
+          
+        
+        
+      </dd>
+
+      <dt id="type">Type</dt>
+      <dd>
+        
+        <span class="tag info">INFO</span>
+        Unsound
+        
+      </dd>
+
+      
+      <dt id="categories">Categories</dt>
+      <dd>
+        <ul>
+          
+          <li><a href="/categories/memory-corruption.html">memory-corruption</a></li>
+          
+        </ul>
+      </dd>
+      
+
+      
+      <dt id="keywords">Keywords</dt>
+      <dd>
+        
+          <a href="/keywords/unsound.html">#unsound</a>
+        
+          <a href="/keywords/downcast_mut.html">#downcast_mut</a>
+        
+      </dd>
+      
+
+      
+
+      
+      <dt id="details">References</dt>
+      <dd>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/dtolnay/anyhow/issues/451">
+              https://github.com/dtolnay/anyhow/issues/451
+            </a>
+          </li>
+        
+        
+        </ul>
+      </dd>
+      
+
+      
+
+      
+      
+
+      <dt id="patched">Patched</dt>
+      <dd>
+        
+        <ul>
+          
+          <li><code>&#62;=1.0.103</code></li>
+          
+        </ul>
+        
+      </dd>
+
+      
+
+      
+      
+
+      
+      
+    </dl>
+
     
-      <span class="tag high">HIGH</span>
+    
+    <dl>
+      <dt>Affected Functions</dt>
+      <dd>Version</dd>
       
-    <a href="/advisories/RUSTSEC-2026-0149.html">
-      RUSTSEC-2026-0149: Vulnerability in wasmtime-wasi
-    </a>
-  </h3>
-  <span><p>WASI path_open(TRUNCATE) bypasses <code>FilePerms::WRITE</code> host restriction</p>
-</span>
-  
-</li>
+      <dt><code>anyhow::Error::downcast_mut</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>&#60;1.0.103</code></li>
+          
+        </ul>
+      </dd>
       
-    </ul>
+    </dl>
+    
+
+    
+
+    <h3 id="description">Description</h3>
+    <p>Affected versions of this crate violate borrow rules, resulting in undefined behavior, when the user adds context to an error via <code>Error::context</code> and then later calls <code>Error::downcast_mut</code> on the returned <code>Error</code>.</p>
+<p>The flaw was corrected in commit <code>6e8c000</code> by revising how the mutable reference is constructed, avoiding inclusion of a shared reference in the resulting borrow chain.</p>
+<h2>Example</h2>
+<pre><code class="language-rust">use anyhow::Error;
+use std::fmt;
+
+#[derive(Debug)]
+struct ErrorContext(&amp;'static str);
+
+impl fmt::Display for ErrorContext {
+    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {
+        fmt::Display::fmt(&amp;self.0, f)
+    }
+}
+
+fn main() {
+    let mut error = Error::msg(&quot;inner error&quot;).context(ErrorContext(&quot;old context&quot;));
+    let context: &amp;mut ErrorContext = error.downcast_mut().unwrap();
+    context.0 = &quot;new context&quot;;
+    println!(&quot;{:?}&quot;, error);
+}
+</code></pre>
+<h2>Miri output</h2>
+<pre><code>error: Undefined Behavior: trying to retag from &lt;1538&gt; for Unique permission at alloc602[0x38], but that tag only grants SharedReadOnly permission for this location
+   --&gt; src/ptr.rs:170:18
+    |
+170 |         unsafe { &amp;mut *self.ptr.as_ptr() }
+    |                  ^^^^^^^^^^^^^^^^^^^^^^^ this error occurs as part of retag at alloc602[0x38..0x48]
+    |
+    = help: this indicates a potential bug in the program: it performed an invalid operation, but the Stacked Borrows rules it violated are still experimental
+    = help: see https://github.com/rust-lang/unsafe-code-guidelines/blob/master/wip/stacked-borrows.md for further information
+help: &lt;1538&gt; was created by a SharedReadOnly retag at offsets [0x38..0x48]
+   --&gt; src/ptr.rs:89:18
+    |
+ 89 |             ptr: NonNull::from(ptr),
+    |                  ^^^^^^^^^^^^^^^^^^
+    = note: stack backtrace:
+            0: anyhow::ptr::Mut::&lt;'_, ErrorContext&gt;::deref_mut
+                at src/ptr.rs:170:18: 170:41
+            1: anyhow::error::&lt;impl anyhow::Error&gt;::downcast_mut::&lt;ErrorContext&gt;
+                at src/error.rs:560:18: 560:46
+            2: main
+                at examples/downcast_mut.rs:15:38: 15:58
+</code></pre>
+
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>
