@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>Advisories with keyword &#39;aliasing&#39; › RustSec Advisory Database</title>
+<title>RUSTSEC-2026-0197: cgmath: `Matrix{2,3,4}::swap_columns` can trigger undefined behavior for identical indices › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -52,119 +52,182 @@
   </nav>
 </header>
 
-<main class="advisories">
+<main class="advisory">
   <article>
+    
+        <span class="floating-menu">
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/cgmath/RUSTSEC-2026-0197.md">History</a> ⋅
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/cgmath/RUSTSEC-2026-0197.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0197">JSON (OSV)</a>
+        </span>
+    
 
     <header>
-      <span class="floating-menu">
-  <a href="/categories/">Categories</a> ⋅
-  <a href="/keywords/">Keywords</a> ⋅
-  <a href="/packages/">Packages</a>
+      <h1>
+        
+        RUSTSEC-2026-0197
+        
+      </h1>
+      <span class="subtitle"><p><code>Matrix{2,3,4}::swap_columns</code> can trigger undefined behavior for identical indices</p>
 </span>
-      <h1>Advisories with keyword &#39;aliasing&#39;</h1>
     </header>
 
-    <ul>
-      
-      <li>
-  <time datetime="2026-07-03">
-    July  3, 2026
-  </time>
+    
 
-  
-  <h3>
-    
-        
-          <span class="tag info">INFO</span>
-        
-    
-    <a href="/advisories/RUSTSEC-2026-0198.html">
-      RUSTSEC-2026-0198: Unsoundness in error-stack
-    </a>
-  </h3>
-  <span><p><code>Report::frames_mut</code> allows aliased mutable references</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2026-07-03">
-    July  3, 2026
-  </time>
+    <dl>
+      <dt id="reported">Reported</dt>
+      <dd>
+        <time datetime="2026-03-11">
+          March 11, 2026
+        </time>
+      </dd>
 
-  
-  <h3>
-    
+      <dt id="issued">Issued</dt>
+      <dd>
+        <time datetime="2026-07-03">
+          July  3, 2026
+        </time>
         
-          <span class="tag info">INFO</span>
+      </dd>
+
+      <dt id="package">Package</dt>
+      <dd>
         
-    
-    <a href="/advisories/RUSTSEC-2026-0197.html">
-      RUSTSEC-2026-0197: Unsoundness in cgmath
-    </a>
-  </h3>
-  <span><p><code>Matrix{2,3,4}::swap_columns</code> can trigger undefined behavior for identical indices</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2021-09-23">
-    September 23, 2021
-  </time>
-
-  
-  <h3>
-    
         
-    
-    <a href="/advisories/RUSTSEC-2021-0114.html">
-      RUSTSEC-2021-0114: Vulnerability in nanorand
-    </a>
-  </h3>
-  <span><p>Aliased mutable references from <code>tls_rand</code> &amp; <code>TlsWyRand</code></p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2021-03-26">
-    March 26, 2021
-  </time>
+        <a href="/packages/cgmath.html">cgmath</a>
+           
+          (<a href="https://crates.io/crates/cgmath">crates.io</a>)
+          
+        
+        
+      </dd>
 
-  
-  <h3>
-    
-      <span class="tag medium">MEDIUM</span>
-      
-    <a href="/advisories/RUSTSEC-2020-0148.html">
-      RUSTSEC-2020-0148: Vulnerability in cgc
-    </a>
-  </h3>
-  <span><p>Multiple soundness issues in <code>Ptr</code></p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2021-03-02">
-    March  2, 2021
-  </time>
+      <dt id="type">Type</dt>
+      <dd>
+        
+        <span class="tag info">INFO</span>
+        Unsound
+        
+      </dd>
 
-  
-  <h3>
+      
+      <dt id="categories">Categories</dt>
+      <dd>
+        <ul>
+          
+          <li><a href="/categories/memory-corruption.html">memory-corruption</a></li>
+          
+        </ul>
+      </dd>
+      
+
+      
+      <dt id="keywords">Keywords</dt>
+      <dd>
+        
+          <a href="/keywords/soundness.html">#soundness</a>
+        
+          <a href="/keywords/undefined-behavior.html">#undefined-behavior</a>
+        
+          <a href="/keywords/aliasing.html">#aliasing</a>
+        
+          <a href="/keywords/stacked-borrows.html">#stacked-borrows</a>
+        
+      </dd>
+      
+
+      
+
+      
+      <dt id="details">References</dt>
+      <dd>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/rustgd/cgmath/issues/565">
+              https://github.com/rustgd/cgmath/issues/565
+            </a>
+          </li>
+        
+        
+        </ul>
+      </dd>
+      
+
+      
+
+      
+      
+
+      <dt id="patched">Patched</dt>
+      <dd>
+        
+        no patched versions
+        
+      </dd>
+
+      
+
+      
+      
+
+      
+      
+    </dl>
+
     
-      <span class="tag critical">CRITICAL</span>
+    
+    <dl>
+      <dt>Affected Functions</dt>
+      <dd>Version</dd>
       
-    <a href="/advisories/RUSTSEC-2021-0031.html">
-      RUSTSEC-2021-0031: Vulnerability in nano_arena
-    </a>
-  </h3>
-  <span><p>split_at allows obtaining multiple mutable references to the same data</p>
-</span>
-  
-</li>
+      <dt><code>cgmath::Matrix2::swap_columns</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>=0.18.0</code></li>
+          
+        </ul>
+      </dd>
       
-    </ul>
+      <dt><code>cgmath::Matrix3::swap_columns</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>=0.18.0</code></li>
+          
+        </ul>
+      </dd>
+      
+      <dt><code>cgmath::Matrix4::swap_columns</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>=0.18.0</code></li>
+          
+        </ul>
+      </dd>
+      
+    </dl>
+    
+
+    
+
+    <h3 id="description">Description</h3>
+    <p>The <code>Matrix2::swap_columns</code>, <code>Matrix3::swap_columns</code>, and <code>Matrix4::swap_columns</code>
+implementations call <code>ptr::swap(&amp;mut self[a], &amp;mut self[b])</code>.</p>
+<p>When <code>a == b</code>, these safe APIs create two mutable references to the same matrix
+column and pass them to <code>ptr::swap</code>. This violates Rust's aliasing rules and can
+trigger undefined behavior. The issue can be reproduced from safe Rust by calling
+<code>swap_columns</code> with identical column indices, for example <code>m.swap_columns(0, 0)</code>.</p>
+<p>A minimal fix is to return early when the two column indices are equal before
+calling <code>ptr::swap</code>.</p>
+
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
+    license.
+
+    
+    </p>
   </article>
 </main>
