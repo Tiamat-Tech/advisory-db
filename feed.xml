@@ -1,5 +1,1176 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>RustSec Advisories</title><id>https://rustsec.org/feed.xml</id><updated>2026-08-06T12:00:00+00:00</updated><author><name>RustSec</name></author><icon>https://rustsec.org/favicon.ico</icon><link href="https://rustsec.org/feed.xml" rel="self" type="application/atom+xml"/><link href="https://rustsec.org/" rel="alternate" type="text/html"/><subtitle xml:lang="en">Security advisories filed against Rust crates</subtitle><entry><title>RUSTSEC-2026-0236: Vulnerability in viperjs</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0236.html</id><updated>2026-08-06T12:00:00+00:00</updated><category term="denial-of-service"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0236.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0236: Vulnerability in viperjs"/><published>2026-08-06T12:00:00+00:00</published><summary xml:lang="en">A `BigInt` division panics, and two neighbouring operations answer wrongly in silence</summary><content xml:lang="en" type="html">  &lt;article&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>RustSec Advisories</title><id>https://rustsec.org/feed.xml</id><updated>2026-08-09T12:00:00+00:00</updated><author><name>RustSec</name></author><icon>https://rustsec.org/favicon.ico</icon><link href="https://rustsec.org/feed.xml" rel="self" type="application/atom+xml"/><link href="https://rustsec.org/" rel="alternate" type="text/html"/><subtitle xml:lang="en">Security advisories filed against Rust crates</subtitle><entry><title>RUSTSEC-2026-0237: nostr-relay-builder is unmaintained</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0237.html</id><updated>2026-08-09T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0237.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0237: nostr-relay-builder is unmaintained"/><published>2026-08-09T12:00:00+00:00</published><summary xml:lang="en">`nostr-relay-builder` is unmaintained</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/nostr-relay-builder/RUSTSEC-2026-0237.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/nostr-relay-builder/RUSTSEC-2026-0237.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0237&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0237
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;&lt;code&gt;nostr-relay-builder&lt;/code&gt; is unmaintained&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-03&quot;&gt;
+          August  3, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-09&quot;&gt;
+          August  9, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/nostr-relay-builder.html&quot;&gt;nostr-relay-builder&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/nostr-relay-builder&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unmaintained
+        
+      &lt;/dd&gt;
+
+      
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/nostrdevkit/nostr/issues/1415&quot;&gt;
+              https://github.com/nostrdevkit/nostr/issues/1415
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        no patched versions
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;The &lt;code&gt;nostr-relay-builder&lt;/code&gt; crate is no longer actively maintained as a standalone crate.&lt;/p&gt;
+&lt;p&gt;Its functionality has been incorporated into &lt;a href=&quot;https://crates.io/crates/nostr-sdk&quot;&gt;&lt;code&gt;nostr-sdk&lt;/code&gt;&lt;/a&gt; starting with version &lt;code&gt;0.45.0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Users should migrate to &lt;a href=&quot;https://crates.io/crates/nostr-sdk&quot;&gt;&lt;code&gt;nostr-sdk&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0238: Vulnerability in dcrypt-algorithms</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0238.html</id><updated>2026-08-09T12:00:00+00:00</updated><category term="crypto-failure"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0238.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0238: Vulnerability in dcrypt-algorithms"/><published>2026-08-09T12:00:00+00:00</published><summary xml:lang="en">Low-level GCM ignores the operation nonce</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/dcrypt-algorithms/RUSTSEC-2026-0238.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/dcrypt-algorithms/RUSTSEC-2026-0238.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0238&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0238
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Low-level GCM ignores the operation nonce&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-09&quot;&gt;
+          August  9, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-09&quot;&gt;
+          August  9, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/dcrypt-algorithms.html&quot;&gt;dcrypt-algorithms&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/dcrypt-algorithms&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/crypto-failure.html&quot;&gt;crypto-failure&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/aes-gcm.html&quot;&gt;#aes-gcm&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/nonce-reuse.html&quot;&gt;#nonce-reuse&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-h9f2-fgp8-vc4h&quot;&gt;GHSA-h9f2-fgp8-vc4h&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/ioi-foundation/dcrypt/security/advisories/GHSA-h9f2-fgp8-vc4h&quot;&gt;
+              https://github.com/ioi-foundation/dcrypt/security/advisories/GHSA-h9f2-fgp8-vc4h
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/ioi-foundation/dcrypt/commit/c99cc86f0ee353010cd202cbcd2c310371b0bbb8&quot;&gt;
+              https://github.com/ioi-foundation/dcrypt/commit/c99cc86f0ee353010cd202cbcd2c310371b0bbb8
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/ioi-foundation/dcrypt/releases/tag/v2.0.0&quot;&gt;
+              https://github.com/ioi-foundation/dcrypt/releases/tag/v2.0.0
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=2.0.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;In all published versions of &lt;code&gt;dcrypt-algorithms&lt;/code&gt; before 2.0.0, the low-level
+&lt;code&gt;Gcm&lt;/code&gt; builder required an operation nonce but derived &lt;code&gt;J0&lt;/code&gt; from the nonce
+captured by the original &lt;code&gt;Gcm&lt;/code&gt; constructor. Multiple operations could therefore
+silently reuse a nonce even when callers supplied distinct values, compromising
+confidentiality and authenticity under an affected key.&lt;/p&gt;
+&lt;p&gt;Version 2.0.0 makes &lt;code&gt;Gcm&lt;/code&gt; key-only and passes the operation nonce through IV
+derivation, encryption, and decryption. It also corrects non-96-bit IV
+processing, rejects tags shorter than 96 bits, and enforces counter limits.
+Applications must upgrade, identify affected keys, rotate them, and re-encrypt
+affected data; updating the implementation cannot restore security after nonce
+reuse.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0239: Vulnerability in dcrypt-symmetric</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0239.html</id><updated>2026-08-09T12:00:00+00:00</updated><category term="crypto-failure"/><category term="denial-of-service"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0239.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0239: Vulnerability in dcrypt-symmetric"/><published>2026-08-09T12:00:00+00:00</published><summary xml:lang="en">Streaming AEAD does not authenticate stream structure</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/dcrypt-symmetric/RUSTSEC-2026-0239.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/dcrypt-symmetric/RUSTSEC-2026-0239.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0239&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0239
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Streaming AEAD does not authenticate stream structure&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-09&quot;&gt;
+          August  9, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-09&quot;&gt;
+          August  9, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/dcrypt-symmetric.html&quot;&gt;dcrypt-symmetric&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/dcrypt-symmetric&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/crypto-failure.html&quot;&gt;crypto-failure&lt;/a&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/denial-of-service.html&quot;&gt;denial-of-service&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/aead.html&quot;&gt;#aead&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/reordering.html&quot;&gt;#reordering&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/replay.html&quot;&gt;#replay&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/streaming.html&quot;&gt;#streaming&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/truncation.html&quot;&gt;#truncation&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-8cwp-4826-jg9f&quot;&gt;GHSA-8cwp-4826-jg9f&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/ioi-foundation/dcrypt/security/advisories/GHSA-8cwp-4826-jg9f&quot;&gt;
+              https://github.com/ioi-foundation/dcrypt/security/advisories/GHSA-8cwp-4826-jg9f
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/ioi-foundation/dcrypt/commit/c99cc86f0ee353010cd202cbcd2c310371b0bbb8&quot;&gt;
+              https://github.com/ioi-foundation/dcrypt/commit/c99cc86f0ee353010cd202cbcd2c310371b0bbb8
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/ioi-foundation/dcrypt/releases/tag/v2.0.0&quot;&gt;
+              https://github.com/ioi-foundation/dcrypt/releases/tag/v2.0.0
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=2.0.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;In all published versions of &lt;code&gt;dcrypt-symmetric&lt;/code&gt; before 2.0.0, version-1 GCM and
+ChaCha20-Poly1305 streams used unauthenticated terminator, counter, and length
+fields. Decryptors trusted transmitted counters, allocated from unbounded
+lengths, and discarded plaintext that did not fit a caller&apos;s single read
+buffer. An attacker could obtain successful truncated EOF, omit, replay, or
+reorder frames within a stream, or request an allocation approaching 4 GiB.&lt;/p&gt;
+&lt;p&gt;Version 2.0.0 introduces the &lt;code&gt;DCRSTRM2&lt;/code&gt; format, which authenticates its version,
+algorithm, random stream identifier, base nonce, strict sequence, bounded
+lengths, final flag, and caller AAD. It enforces authenticated finality and
+physical EOF, bounds frames to 16 KiB before allocation, retains partial-read
+plaintext, and rejects legacy version-1 input. Existing version-1 ciphertext
+cannot retrospectively prove completeness or ordering and must be migrated only
+through an application-specific, explicitly trusted process.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0240: Vulnerability in dcrypt-sign</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0240.html</id><updated>2026-08-09T12:00:00+00:00</updated><category term="crypto-failure"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0240.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0240: Vulnerability in dcrypt-sign"/><published>2026-08-09T12:00:00+00:00</published><summary xml:lang="en">Ed25519 identity public keys permit universal signature forgery</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/dcrypt-sign/RUSTSEC-2026-0240.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/dcrypt-sign/RUSTSEC-2026-0240.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0240&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0240
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Ed25519 identity public keys permit universal signature forgery&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-09&quot;&gt;
+          August  9, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-09&quot;&gt;
+          August  9, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/dcrypt-sign.html&quot;&gt;dcrypt-sign&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/dcrypt-sign&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/crypto-failure.html&quot;&gt;crypto-failure&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/ed25519.html&quot;&gt;#ed25519&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/identity-key.html&quot;&gt;#identity-key&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/signature-forgery.html&quot;&gt;#signature-forgery&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-7j32-2mpw-c784&quot;&gt;GHSA-7j32-2mpw-c784&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/ioi-foundation/dcrypt/security/advisories/GHSA-7j32-2mpw-c784&quot;&gt;
+              https://github.com/ioi-foundation/dcrypt/security/advisories/GHSA-7j32-2mpw-c784
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/ioi-foundation/dcrypt/commit/c99cc86f0ee353010cd202cbcd2c310371b0bbb8&quot;&gt;
+              https://github.com/ioi-foundation/dcrypt/commit/c99cc86f0ee353010cd202cbcd2c310371b0bbb8
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/ioi-foundation/dcrypt/releases/tag/v2.0.0&quot;&gt;
+              https://github.com/ioi-foundation/dcrypt/releases/tag/v2.0.0
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=2.0.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;All published versions of &lt;code&gt;dcrypt-sign&lt;/code&gt; before 2.0.0 accepted the Edwards
+identity as an Ed25519 public key. A signature with &lt;code&gt;R = B&lt;/code&gt; and &lt;code&gt;S = 1&lt;/code&gt; then
+verified for every message because the challenge term multiplied the identity.
+The implementation also admitted other noncanonical or small-order inputs.
+Consumers that accepted externally supplied dcrypt Ed25519 keys may therefore
+have accepted forged authorizations.&lt;/p&gt;
+&lt;p&gt;Version 2.0.0 replaces the custom arithmetic with &lt;code&gt;ed25519-dalek&lt;/code&gt;, uses strict
+verification, and rejects noncanonical, small-order, and non-torsion-free public
+keys and &lt;code&gt;R&lt;/code&gt; values, as well as noncanonical &lt;code&gt;S &amp;gt;= L&lt;/code&gt;. No wrapper around the
+affected verifier is recommended as a complete workaround. Upgrade to 2.0.0 or
+later, audit registered keys and trust stores, and review historical actions
+authorized with externally supplied keys.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0241: nostr-keyring is unmaintained</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0241.html</id><updated>2026-08-09T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0241.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0241: nostr-keyring is unmaintained"/><published>2026-08-09T12:00:00+00:00</published><summary xml:lang="en">`nostr-keyring` is unmaintained</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/nostr-keyring/RUSTSEC-2026-0241.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/nostr-keyring/RUSTSEC-2026-0241.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0241&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0241
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;&lt;code&gt;nostr-keyring&lt;/code&gt; is unmaintained&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-03&quot;&gt;
+          August  3, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-09&quot;&gt;
+          August  9, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/nostr-keyring.html&quot;&gt;nostr-keyring&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/nostr-keyring&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unmaintained
+        
+      &lt;/dd&gt;
+
+      
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/nostrdevkit/nostr/pull/1414&quot;&gt;
+              https://github.com/nostrdevkit/nostr/pull/1414
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/nostrdevkit/nostr/issues/1415&quot;&gt;
+              https://github.com/nostrdevkit/nostr/issues/1415
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        no patched versions
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;The &lt;code&gt;nostr-keyring&lt;/code&gt; crate is no longer actively maintained.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0244: Unsoundness in gettext-rs</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0244.html</id><updated>2026-08-09T12:00:00+00:00</updated><category term="memory-corruption"/><category term="thread-safety"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0244.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0244: Unsoundness in gettext-rs"/><published>2026-08-09T12:00:00+00:00</published><summary xml:lang="en">`setlocale` and `TextDomain::init` are unsound as they access environment with no synchronization</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/gettext-rs/RUSTSEC-2026-0244.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/gettext-rs/RUSTSEC-2026-0244.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0244&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0244
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;&lt;code&gt;setlocale&lt;/code&gt; and &lt;code&gt;TextDomain::init&lt;/code&gt; are unsound as they access environment with no synchronization&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-06&quot;&gt;
+          August  6, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-09&quot;&gt;
+          August  9, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/gettext-rs.html&quot;&gt;gettext-rs&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/gettext-rs&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unsound
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/thread-safety.html&quot;&gt;thread-safety&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/gettext-rs/gettext-rs/issues/64&quot;&gt;
+              https://github.com/gettext-rs/gettext-rs/issues/64
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.8.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+    &lt;dl&gt;
+      &lt;dt&gt;Affected Functions&lt;/dt&gt;
+      &lt;dd&gt;Version&lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;gettext_rs::TextDomain::init&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.8.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;gettext_rs::setlocale&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.8.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+    &lt;/dl&gt;
+    
+
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;&lt;code&gt;setlocale&lt;/code&gt; and &lt;code&gt;TextDomain::init&lt;/code&gt; are unsound and may allow safe code to exhibit undefined behavior when called in a multi-threaded program.&lt;/p&gt;
+&lt;p&gt;The flaw is fixed in 0.8.0 by marking these functions &lt;code&gt;unsafe&lt;/code&gt; and documenting the conditions under which they can be called safely.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0242: Vulnerability in dcrypt-api</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0242.html</id><updated>2026-08-09T12:00:00+00:00</updated><category term="memory-corruption"/><category term="thread-safety"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0242.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0242: Vulnerability in dcrypt-api"/><published>2026-08-09T12:00:00+00:00</published><summary xml:lang="en">Safe ErrorRegistry APIs can cause undefined behavior</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/dcrypt-api/RUSTSEC-2026-0242.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/dcrypt-api/RUSTSEC-2026-0242.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0242&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0242
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Safe ErrorRegistry APIs can cause undefined behavior&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-09&quot;&gt;
+          August  9, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-09&quot;&gt;
+          August  9, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/dcrypt-api.html&quot;&gt;dcrypt-api&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/dcrypt-api&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/thread-safety.html&quot;&gt;thread-safety&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/safe-code.html&quot;&gt;#safe-code&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/type-confusion.html&quot;&gt;#type-confusion&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/use-after-free.html&quot;&gt;#use-after-free&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-7hc7-h3f2-r4j6&quot;&gt;GHSA-7hc7-h3f2-r4j6&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/ioi-foundation/dcrypt/security/advisories/GHSA-7hc7-h3f2-r4j6&quot;&gt;
+              https://github.com/ioi-foundation/dcrypt/security/advisories/GHSA-7hc7-h3f2-r4j6
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/ioi-foundation/dcrypt/commit/c99cc86f0ee353010cd202cbcd2c310371b0bbb8&quot;&gt;
+              https://github.com/ioi-foundation/dcrypt/commit/c99cc86f0ee353010cd202cbcd2c310371b0bbb8
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/ioi-foundation/dcrypt/releases/tag/v2.0.0&quot;&gt;
+              https://github.com/ioi-foundation/dcrypt/releases/tag/v2.0.0
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=2.0.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;All published versions of &lt;code&gt;dcrypt-api&lt;/code&gt; before 2.0.0 exposed safe
+&lt;code&gt;ErrorRegistry&lt;/code&gt; operations that could trigger undefined behavior when the
+default &lt;code&gt;std&lt;/code&gt; feature was enabled.&lt;/p&gt;
+&lt;p&gt;Stored &lt;code&gt;Box&amp;lt;E&amp;gt;&lt;/code&gt; values were erased to raw pointers and later deallocated as
+&lt;code&gt;Box&amp;lt;()&amp;gt;&lt;/code&gt;. The &lt;code&gt;get_error&amp;lt;E&amp;gt;&lt;/code&gt; operation also performed an unchecked cast to a
+caller-selected type. Finally, concurrent replacement or clearing could free a
+value while another thread cloned it. Ordinary safe Rust could therefore cause
+mismatched deallocation, type confusion, and use-after-free. Crates that
+re-exported this API are affected transitively.&lt;/p&gt;
+&lt;p&gt;Version 2.0.0 replaces the raw pointers with owned &lt;code&gt;Box&amp;lt;dyn Any + Send&amp;gt;&lt;/code&gt; values
+behind a mutex, performs checked downcasts, and uses a mutation generation so
+concurrent stores and clears win safely. There is no reliable workaround while
+calling the affected registry API. Upgrade to 2.0.0 or later and avoid
+process-global error state where possible.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0243: nostr-relay-pool is unmaintained</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0243.html</id><updated>2026-08-09T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0243.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0243: nostr-relay-pool is unmaintained"/><published>2026-08-09T12:00:00+00:00</published><summary xml:lang="en">`nostr-relay-pool` is unmaintained</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/nostr-relay-pool/RUSTSEC-2026-0243.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/nostr-relay-pool/RUSTSEC-2026-0243.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0243&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0243
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;&lt;code&gt;nostr-relay-pool&lt;/code&gt; is unmaintained&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-03&quot;&gt;
+          August  3, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-09&quot;&gt;
+          August  9, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/nostr-relay-pool.html&quot;&gt;nostr-relay-pool&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/nostr-relay-pool&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unmaintained
+        
+      &lt;/dd&gt;
+
+      
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/nostrdevkit/nostr/issues/1415&quot;&gt;
+              https://github.com/nostrdevkit/nostr/issues/1415
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        no patched versions
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;The &lt;code&gt;nostr-relay-pool&lt;/code&gt; crate is no longer actively maintained as a standalone crate.&lt;/p&gt;
+&lt;p&gt;Its functionality has been incorporated into &lt;a href=&quot;https://crates.io/crates/nostr-sdk&quot;&gt;&lt;code&gt;nostr-sdk&lt;/code&gt;&lt;/a&gt; starting with version &lt;code&gt;0.45.0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Users should migrate to &lt;a href=&quot;https://crates.io/crates/nostr-sdk&quot;&gt;&lt;code&gt;nostr-sdk&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0236: Vulnerability in viperjs</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0236.html</id><updated>2026-08-06T12:00:00+00:00</updated><category term="denial-of-service"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0236.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0236: Vulnerability in viperjs"/><published>2026-08-06T12:00:00+00:00</published><summary xml:lang="en">A `BigInt` division panics, and two neighbouring operations answer wrongly in silence</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
         &lt;span class=&quot;floating-menu&quot;&gt;
           &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/viperjs/RUSTSEC-2026-0236.md&quot;&gt;History&lt;/a&gt; ⋅
@@ -2224,953 +3395,6 @@ event.&lt;/p&gt;
 &lt;p&gt;The SDK now verifies each event before policy evaluation, database lookup, or
 propagation decisions, and the verification cache stores the complete &lt;code&gt;EventId&lt;/code&gt; so a
 truncated hash collision cannot stand in for successful verification.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0224: Vulnerability in nostr-relay-pool</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0224.html</id><updated>2026-08-01T12:00:00+00:00</updated><category term="crypto-failure"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0224.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0224: Vulnerability in nostr-relay-pool"/><published>2026-08-01T12:00:00+00:00</published><summary xml:lang="en">Verification cache poisoning allows forged Nostr events to bypass signature validation</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/nostr-relay-pool/RUSTSEC-2026-0224.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/nostr-relay-pool/RUSTSEC-2026-0224.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0224&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0224
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Verification cache poisoning allows forged Nostr events to bypass signature validation&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-08-01&quot;&gt;
-          August  1, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-08-01&quot;&gt;
-          August  1, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/nostr-relay-pool.html&quot;&gt;nostr-relay-pool&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/nostr-relay-pool&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/crypto-failure.html&quot;&gt;crypto-failure&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/cache-poisoning.html&quot;&gt;#cache-poisoning&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/signature-verification.html&quot;&gt;#signature-verification&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            &lt;a href=&quot;https://github.com/advisories/GHSA-f96q-5f6p-v7cj&quot;&gt;GHSA-f96q-5f6p-v7cj&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/nostrdevkit/nostr/commit/02a88bd5688de058bfba8aa9fb4612441a384eff&quot;&gt;
-              https://github.com/nostrdevkit/nostr/commit/02a88bd5688de058bfba8aa9fb4612441a384eff
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
-      &lt;dd&gt;7.5 &lt;span class=&quot;tag high&quot;&gt;
-        HIGH
-      &lt;/span&gt;&lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;dl&gt;
-          
-            &lt;dt&gt;Attack Vector&lt;/dt&gt;
-            &lt;dd&gt;Network&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Complexity&lt;/dt&gt;
-            &lt;dd&gt;Low&lt;/dd&gt;
-          
-            &lt;dt&gt;Privileges Required&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;User Interaction&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Scope&lt;/dt&gt;
-            &lt;dd&gt;Unchanged&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-        &lt;/dl&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
-
-      
-          &lt;dd&gt;&lt;a href=&quot;https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N&quot;&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N&lt;/a&gt;&lt;/dd&gt;
-        
-
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=0.44.2&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The &lt;code&gt;nostr-relay-pool&lt;/code&gt; crate cached the result of event signature verification
-before the check was actually performed. Because the entry was inserted
-unconditionally, a first delivery whose signature failed was still recorded
-in the cache. A subsequent delivery of the same event (identical ID,
-but with a forged signature) would then hit the cache, causing signature
-verification to be skipped entirely. The forged event was passed on to
-&lt;code&gt;NostrDatabase::save_event()&lt;/code&gt; as if it had been validated.&lt;/p&gt;
-&lt;p&gt;Applications that connect to untrusted or compromised Nostr relays and persist
-received events are vulnerable. An attacker can inject arbitrary events
-without a valid signature into the application&apos;s trusted database, enabling
-impersonation of any public key or corruption of application state derived from
-stored events.&lt;/p&gt;
-&lt;p&gt;The issue does not compromise confidentiality or availability. It solely
-undermines the integrity of stored event data.&lt;/p&gt;
-&lt;p&gt;The fix, released in version 0.44.2, moves the cache insertion to occur only
-after a successful signature verification, so that failed attempts never create
-a cache entry.&lt;/p&gt;
-&lt;h2&gt;Credit&lt;/h2&gt;
-&lt;p&gt;Discovered and reported by &lt;a href=&quot;https://github.com/aykoooo&quot;&gt;Ali Al-Sorehi&lt;/a&gt;&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0221: Unsoundness in event-listener</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0221.html</id><updated>2026-07-31T12:00:00+00:00</updated><category term="memory-corruption"/><category term="thread-safety"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0221.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0221: Unsoundness in event-listener"/><published>2026-07-31T12:00:00+00:00</published><summary xml:lang="en">`event-listener` allows `!Send` tags to cross thread boundaries via `StackSlot`</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/event-listener/RUSTSEC-2026-0221.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/event-listener/RUSTSEC-2026-0221.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0221&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0221
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;&lt;code&gt;event-listener&lt;/code&gt; allows &lt;code&gt;!Send&lt;/code&gt; tags to cross thread boundaries via &lt;code&gt;StackSlot&lt;/code&gt;&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-07-13&quot;&gt;
-          July 13, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-07-31&quot;&gt;
-          July 31, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/event-listener.html&quot;&gt;event-listener&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/event-listener&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
-        Unsound
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/thread-safety.html&quot;&gt;thread-safety&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/concurrency.html&quot;&gt;#concurrency&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/smol-rs/event-listener/pull/163&quot;&gt;
-              https://github.com/smol-rs/event-listener/pull/163
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=5.4.2&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;unaffected&quot;&gt;Unaffected&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;5.1.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;Affected versions of &lt;code&gt;event-listener&lt;/code&gt; unconditionally implement &lt;code&gt;Send&lt;/code&gt; and
-&lt;code&gt;Sync&lt;/code&gt; for &lt;code&gt;StackSlot&amp;lt;&apos;_, T&amp;gt;&lt;/code&gt;, the stack-allocated listener type created
-by the &lt;code&gt;listener!&lt;/code&gt; macro.&lt;/p&gt;
-&lt;p&gt;This allows a &lt;code&gt;!Send&lt;/code&gt; tag type set via &lt;code&gt;Event::with_tag&lt;/code&gt; to be moved to
-another thread and accessed via &lt;code&gt;StackSlot::wait&lt;/code&gt;, causing a data race in safe
-code.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0222: Vulnerability in wasmtime</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0222.html</id><updated>2026-07-31T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0222.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0222: Vulnerability in wasmtime"/><published>2026-07-31T12:00:00+00:00</published><summary xml:lang="en">Stores can mix up type indices between engines</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/wasmtime/RUSTSEC-2026-0222.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/wasmtime/RUSTSEC-2026-0222.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0222&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0222
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Stores can mix up type indices between engines&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-07-31&quot;&gt;
-          July 31, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-07-31&quot;&gt;
-          July 31, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/wasmtime.html&quot;&gt;wasmtime&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/wasmtime&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            &lt;a href=&quot;https://github.com/advisories/GHSA-hgjw-h833-99q9&quot;&gt;GHSA-hgjw-h833-99q9&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-hgjw-h833-99q9&quot;&gt;
-              https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-hgjw-h833-99q9
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
-      &lt;dd&gt;3.8 &lt;span class=&quot;tag low&quot;&gt;
-        LOW
-      &lt;/span&gt;&lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;dl&gt;
-          
-            &lt;dt&gt;Attack Vector&lt;/dt&gt;
-            &lt;dd&gt;Local&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Complexity&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-            &lt;dt&gt;Privileges Required&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-            &lt;dt&gt;User Interaction&lt;/dt&gt;
-            &lt;dd&gt;Required&lt;/dd&gt;
-          
-            &lt;dt&gt;Scope&lt;/dt&gt;
-            &lt;dd&gt;Unchanged&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact&lt;/dt&gt;
-            &lt;dd&gt;Low&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact&lt;/dt&gt;
-            &lt;dd&gt;Low&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact&lt;/dt&gt;
-            &lt;dd&gt;Low&lt;/dd&gt;
-          
-        &lt;/dl&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
-
-      
-          &lt;dd&gt;&lt;a href=&quot;https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:L/I:L/A:L&quot;&gt;CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:L/I:L/A:L&lt;/a&gt;&lt;/dd&gt;
-        
-
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=24.0.12, &amp;#60;25.0.0&lt;/code&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=36.0.13, &amp;#60;37.0.0&lt;/code&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=46.0.2, &amp;#60;47.0.0&lt;/code&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=47.0.3&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;This is an entry in the RustSec database for the Wasmtime security advisory
-located at
-https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-hgjw-h833-99q9
-For more information see the GitHub-hosted security advisory.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0223: Vulnerability in wasmtime</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0223.html</id><updated>2026-07-31T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0223.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0223: Vulnerability in wasmtime"/><published>2026-07-31T12:00:00+00:00</published><summary xml:lang="en">Preemption and traps during bulk operations enable breaking internal VM state</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/wasmtime/RUSTSEC-2026-0223.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/wasmtime/RUSTSEC-2026-0223.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0223&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0223
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Preemption and traps during bulk operations enable breaking internal VM state&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-07-31&quot;&gt;
-          July 31, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-07-31&quot;&gt;
-          July 31, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/wasmtime.html&quot;&gt;wasmtime&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/wasmtime&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            &lt;a href=&quot;https://github.com/advisories/GHSA-2hw9-mc66-jc2q&quot;&gt;GHSA-2hw9-mc66-jc2q&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-2hw9-mc66-jc2q&quot;&gt;
-              https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-2hw9-mc66-jc2q
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
-      &lt;dd&gt;2 &lt;span class=&quot;tag low&quot;&gt;
-        LOW
-      &lt;/span&gt;&lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;dl&gt;
-          
-            &lt;dt&gt;Attack Complexity&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Requirements&lt;/dt&gt;
-            &lt;dd&gt;Present&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Vector&lt;/dt&gt;
-            &lt;dd&gt;Network&lt;/dd&gt;
-          
-            &lt;dt&gt;Privileges Required&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact to the Subsequent System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;User Interaction&lt;/dt&gt;
-            &lt;dd&gt;Passive&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;Low&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact to the Vulnerable System&lt;/dt&gt;
-            &lt;dd&gt;Low&lt;/dd&gt;
-          
-        &lt;/dl&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
-
-      
-          &lt;dd&gt;&lt;a href=&quot;https://www.first.org/cvss/calculator/3.1#CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:P/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N&quot;&gt;CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:P/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N&lt;/a&gt;&lt;/dd&gt;
-        
-
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=46.0.2, &amp;#60;47.0.0&lt;/code&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=47.0.3&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;unaffected&quot;&gt;Unaffected&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;46.0.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;This is an entry in the RustSec database for the Wasmtime security advisory
-located at
-https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-2hw9-mc66-jc2q
-For more information see the GitHub-hosted security advisory.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0220: Vulnerability in ruint</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0220.html</id><updated>2026-07-30T12:00:00+00:00</updated><category term="denial-of-service"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0220.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0220: Vulnerability in ruint"/><published>2026-07-30T12:00:00+00:00</published><summary xml:lang="en">Uint shift operations: incorrect overflow flags and truncated shift amounts</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/ruint/RUSTSEC-2026-0220.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/ruint/RUSTSEC-2026-0220.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0220&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0220
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Uint shift operations: incorrect overflow flags and truncated shift amounts&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-07-08&quot;&gt;
-          July  8, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-07-30&quot;&gt;
-          July 30, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/ruint.html&quot;&gt;ruint&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/ruint&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/denial-of-service.html&quot;&gt;denial-of-service&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/shift.html&quot;&gt;#shift&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/overflow.html&quot;&gt;#overflow&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/arithmetic.html&quot;&gt;#arithmetic&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/infinite-loop.html&quot;&gt;#infinite-loop&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/alloy-rs/ruint/pull/603&quot;&gt;
-              https://github.com/alloy-rs/ruint/pull/603
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=1.20.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-    &lt;dl&gt;
-      &lt;dt&gt;Affected Functions&lt;/dt&gt;
-      &lt;dd&gt;Version&lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;ruint::Uint::checked_shl&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;1.20.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;ruint::Uint::checked_shr&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;1.20.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;ruint::Uint::overflowing_shl&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;1.20.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;ruint::Uint::overflowing_shr&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;1.20.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;ruint::Uint::saturating_shl&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;1.20.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;ruint::Uint::saturating_shr&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;1.20.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;ruint::Uint::wrapping_shl&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;1.20.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;ruint::Uint::wrapping_shr&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;1.20.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-    &lt;/dl&gt;
-    
-
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;&lt;code&gt;Uint::overflowing_shl&lt;/code&gt;/&lt;code&gt;overflowing_shr&lt;/code&gt; returned false-negative overflow
-flags. &lt;code&gt;overflowing_shl&lt;/code&gt; missed bits shifted above &lt;code&gt;BITS&lt;/code&gt; but within the top
-limb (non-limb-aligned widths such as &lt;code&gt;U160&lt;/code&gt;), and limbs wholly discarded by
-shifts &amp;gt;= 64; &lt;code&gt;overflowing_shr&lt;/code&gt; missed wholly discarded low limbs. Shifted
-values were correct; only the flag was wrong.&lt;/p&gt;
-&lt;p&gt;The wrong flag propagates: &lt;code&gt;checked_shl&lt;/code&gt;/&lt;code&gt;checked_shr&lt;/code&gt; return &lt;code&gt;Some&lt;/code&gt; instead
-of &lt;code&gt;None&lt;/code&gt;, &lt;code&gt;strict_*&lt;/code&gt; fail to panic, and &lt;code&gt;saturating_*&lt;/code&gt; return a wrapped
-value instead of saturating. The incorrect &lt;code&gt;checked_shl&lt;/code&gt; result causes
-&lt;code&gt;to_base_be&lt;/code&gt; (and string formatting) to loop forever on no-alloc builds for
-non-limb-aligned widths — a denial of service if formatting is reachable
-from untrusted input.&lt;/p&gt;
-&lt;p&gt;Separately, &lt;code&gt;wrapping_shl&lt;/code&gt;/&lt;code&gt;wrapping_shr&lt;/code&gt; on 64/128/256-bit types truncated
-the shift amount modulo 2^32, so shifts &amp;gt;= 2^32 returned an incorrectly
-wrapped value instead of zero; on 32-bit targets the generic path also
-truncated 64-bit shift amounts.&lt;/p&gt;
-&lt;p&gt;Callers using checked or saturating shift semantics on untrusted shift
-amounts may compute incorrect results.&lt;/p&gt;
 
 
     &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
