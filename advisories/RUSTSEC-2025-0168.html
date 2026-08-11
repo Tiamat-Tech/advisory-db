@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>Advisories for package &#39;lru&#39; › RustSec Advisory Database</title>
+<title>RUSTSEC-2025-0168: zip: Incorrect path canonicalization during Archive Extraction Leading to Arbitrary File Write › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -52,81 +52,243 @@
   </nav>
 </header>
 
-<main class="advisories">
+<main class="advisory">
   <article>
+    
+        <span class="floating-menu">
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/zip/RUSTSEC-2025-0168.md">History</a> ⋅
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/zip/RUSTSEC-2025-0168.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2025-0168">JSON (OSV)</a>
+        </span>
+    
 
     <header>
-      <span class="floating-menu">
-  <a href="/categories/">Categories</a> ⋅
-  <a href="/keywords/">Keywords</a> ⋅
-  <a href="/packages/">Packages</a>
+      <h1>
+        
+        RUSTSEC-2025-0168
+        
+      </h1>
+      <span class="subtitle"><p>Incorrect path canonicalization during Archive Extraction Leading to Arbitrary File Write</p>
 </span>
-      <h1>Advisories for package &#39;lru&#39;</h1>
     </header>
 
-    <ul>
-      
-      <li>
-  <time datetime="2026-08-11">
-    August 11, 2026
-  </time>
+    
 
-  
-  <h3>
-    
-        
-          <span class="tag info">INFO</span>
-        
-    
-    <a href="/advisories/RUSTSEC-2026-0253.html">
-      RUSTSEC-2026-0253: Unsoundness in lru
-    </a>
-  </h3>
-  <span><p>Potential use-after-free due to lack of panic safety in <code>LruCache::pop()</code></p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2026-01-07">
-    January  7, 2026
-  </time>
+    <dl>
+      <dt id="reported">Reported</dt>
+      <dd>
+        <time datetime="2025-03-16">
+          March 16, 2025
+        </time>
+      </dd>
 
-  
-  <h3>
-    
+      <dt id="issued">Issued</dt>
+      <dd>
+        <time datetime="2026-08-11">
+          August 11, 2026
+        </time>
         
-          <span class="tag info">INFO</span>
-        
-    
-    <a href="/advisories/RUSTSEC-2026-0002.html">
-      RUSTSEC-2026-0002: Unsoundness in lru
-    </a>
-  </h3>
-  <span><p><code>IterMut</code> violates Stacked Borrows by invalidating internal pointer</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2021-12-21">
-    December 21, 2021
-  </time>
+      </dd>
 
-  
-  <h3>
+      <dt id="package">Package</dt>
+      <dd>
+        
+        
+        <a href="/packages/zip.html">zip</a>
+           
+          (<a href="https://crates.io/crates/zip">crates.io</a>)
+          
+        
+        
+      </dd>
+
+      <dt id="type">Type</dt>
+      <dd>
+        
+        Vulnerability
+        
+      </dd>
+
+      
+
+      
+      <dt id="keywords">Keywords</dt>
+      <dd>
+        
+          <a href="/keywords/file-overwrite.html">#file-overwrite</a>
+        
+          <a href="/keywords/symlink.html">#symlink</a>
+        
+          <a href="/keywords/path-traversal.html">#path-traversal</a>
+        
+      </dd>
+      
+
+      
+      <dt id="aliases">Aliases</dt>
+      <dd>
+        <ul>
+          
+          <li>
+            
+            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-29787">CVE-2025-29787</a>
+            
+          </li>
+          
+          <li>
+            
+            <a href="https://github.com/advisories/GHSA-94vh-gphv-8pm8">GHSA-94vh-gphv-8pm8</a>
+            
+          </li>
+          
+        </ul>
+      </dd>
+      
+
+      
+      <dt id="details">References</dt>
+      <dd>
+        <ul>
+        
+          <li>
+            <a href="https://github.com/zip-rs/zip2/security/advisories/GHSA-94vh-gphv-8pm8">
+              https://github.com/zip-rs/zip2/security/advisories/GHSA-94vh-gphv-8pm8
+            </a>
+          </li>
+        
+        
+        </ul>
+      </dd>
+      
+
+      
+
+      
+      <dt id="cvss_score">CVSS Score</dt>
+      <dd>7.3 <span class="tag high">
+        HIGH
+      </span></dd>
+
+      <dt id="cvss_details">CVSS Details</dt>
+      <dd>
+        <dl>
+          
+            <dt>Attack Complexity</dt>
+            <dd>High</dd>
+          
+            <dt>Attack Requirements</dt>
+            <dd>None</dd>
+          
+            <dt>Attack Vector</dt>
+            <dd>Network</dd>
+          
+            <dt>Privileges Required</dt>
+            <dd>Low</dd>
+          
+            <dt>Availability Impact to the Subsequent System</dt>
+            <dd>High</dd>
+          
+            <dt>Confidentiality Impact to the Subsequent System</dt>
+            <dd>High</dd>
+          
+            <dt>Integrity Impact to the Subsequent System</dt>
+            <dd>High</dd>
+          
+            <dt>User Interaction</dt>
+            <dd>None</dd>
+          
+            <dt>Availability Impact to the Vulnerable System</dt>
+            <dd>None</dd>
+          
+            <dt>Confidentiality Impact to the Vulnerable System</dt>
+            <dd>Low</dd>
+          
+            <dt>Integrity Impact to the Vulnerable System</dt>
+            <dd>High</dd>
+          
+        </dl>
+      </dd>
+
+      <dt id="cvss">CVSS Vector</dt>
+
+      
+          <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:L/VI:H/VA:N/SC:H/SI:H/SA:H">CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:L/VI:H/VA:N/SC:H/SI:H/SA:H</a></dd>
+        
+
+      
+
+      <dt id="patched">Patched</dt>
+      <dd>
+        
+        <ul>
+          
+          <li><code>&#62;=2.3.0</code></li>
+          
+        </ul>
+        
+      </dd>
+
+      
+      <dt id="unaffected">Unaffected</dt>
+      <dd>
+        <ul>
+          
+          <li><code>&#60;1.3.0</code></li>
+          
+        </ul>
+      </dd>
+      
+
+      
+      
+
+      
+      
+    </dl>
+
     
+    
+    <dl>
+      <dt>Affected Functions</dt>
+      <dd>Version</dd>
+      
+      <dt><code>zip::read::ZipArchive::extract</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>&#60;2.3.0, &#62;=1.3.0</code></li>
+          
+        </ul>
+      </dd>
+      
+      <dt><code>zip::unstable::stream::ZipStreamReader::extract</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>&#60;2.3.0, &#62;=1.3.0</code></li>
+          
+        </ul>
+      </dd>
+      
+    </dl>
+    
+
+    
+
+    <h3 id="description">Description</h3>
+    <p>In the archive extraction routine of affected versions of the zip crate, symbolic links earlier in the archive are allowed to be used for later files in the archive without validation of the final canonicalized path, allowing maliciously crafted archives to overwrite arbitrary files in the file system when extracted.</p>
+<p>For more details, see the GitHub-hosted security advisory: <a href="https://github.com/zip-rs/zip2/security/advisories/GHSA-94vh-gphv-8pm8">https://github.com/zip-rs/zip2/security/advisories/GHSA-94vh-gphv-8pm8</a></p>
+
+
+    <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC-BY-4.0.html">CC-BY-4.0</a>
+    license.
+
+    
+      
+      
+          Source: <a href="https://github.com/zip-rs/zip2/security/advisories/GHSA-94vh-gphv-8pm8">https://github.com/zip-rs/zip2/security/advisories/GHSA-94vh-gphv-8pm8</a>
         
     
-    <a href="/advisories/RUSTSEC-2021-0130.html">
-      RUSTSEC-2021-0130: Vulnerability in lru
-    </a>
-  </h3>
-  <span><p>Use after free in lru crate</p>
-</span>
-  
-</li>
-      
-    </ul>
+    </p>
   </article>
 </main>

@@ -1,5 +1,703 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>RustSec Advisories</title><id>https://rustsec.org/feed.xml</id><updated>2026-08-10T12:00:00+00:00</updated><author><name>RustSec</name></author><icon>https://rustsec.org/favicon.ico</icon><link href="https://rustsec.org/feed.xml" rel="self" type="application/atom+xml"/><link href="https://rustsec.org/" rel="alternate" type="text/html"/><subtitle xml:lang="en">Security advisories filed against Rust crates</subtitle><entry><title>RUSTSEC-2025-0167: Unsoundness in bitmaps</title><id>https://rustsec.org/advisories/RUSTSEC-2025-0167.html</id><updated>2026-08-10T12:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2025-0167.html" rel="alternate" type="text/html" title="RUSTSEC-2025-0167: Unsoundness in bitmaps"/><published>2026-08-10T12:00:00+00:00</published><summary xml:lang="en">`Bitmap::try_from(&amp;amp;[u8])` can create invalid values</summary><content xml:lang="en" type="html">  &lt;article&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>RustSec Advisories</title><id>https://rustsec.org/feed.xml</id><updated>2026-08-11T12:00:00+00:00</updated><author><name>RustSec</name></author><icon>https://rustsec.org/favicon.ico</icon><link href="https://rustsec.org/feed.xml" rel="self" type="application/atom+xml"/><link href="https://rustsec.org/" rel="alternate" type="text/html"/><subtitle xml:lang="en">Security advisories filed against Rust crates</subtitle><entry><title>RUSTSEC-2026-0252: Unsoundness in orx-split-vec</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0252.html</id><updated>2026-08-11T12:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0252.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0252: Unsoundness in orx-split-vec"/><published>2026-08-11T12:00:00+00:00</published><summary xml:lang="en">Panic-safety unsoundness in `SplitVec::extend_from_slice` (uninitialized read)</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/orx-split-vec/RUSTSEC-2026-0252.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/orx-split-vec/RUSTSEC-2026-0252.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0252&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0252
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Panic-safety unsoundness in &lt;code&gt;SplitVec::extend_from_slice&lt;/code&gt; (uninitialized read)&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-11&quot;&gt;
+          August 11, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-11&quot;&gt;
+          August 11, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/orx-split-vec.html&quot;&gt;orx-split-vec&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/orx-split-vec&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unsound
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/panic-safety.html&quot;&gt;#panic-safety&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/memory-safety.html&quot;&gt;#memory-safety&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/uninitialized-read.html&quot;&gt;#uninitialized-read&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/orxfun/orx-split-vec/issues/95&quot;&gt;
+              https://github.com/orxfun/orx-split-vec/issues/95
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=4.0.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;&lt;code&gt;SplitVec::extend_from_slice&lt;/code&gt; increments the logical length &lt;code&gt;self.len&lt;/code&gt; before cloning the incoming elements into the reserved slots. If an element&apos;s &lt;code&gt;Clone&lt;/code&gt; panics mid-fill, unwinding leaves &lt;code&gt;self.len&lt;/code&gt; counting slots that were never initialized. A later safe read (&lt;code&gt;get&lt;/code&gt;, indexing, &lt;code&gt;iter&lt;/code&gt;) then reads one of those uninitialized slots.&lt;/p&gt;
+&lt;p&gt;This is reachable from safe Rust — a read of uninitialized memory (CWE-908). It is not a double-free: &lt;code&gt;SplitVec&lt;/code&gt; has no manual &lt;code&gt;Drop&lt;/code&gt; and its elements live in a standard &lt;code&gt;Vec&lt;/code&gt;, so the defect is a read, not a free.&lt;/p&gt;
+&lt;h2&gt;Impact&lt;/h2&gt;
+&lt;p&gt;A safe read after the panic returns a value built from uninitialized bytes. For a heap-owning element type such as &lt;code&gt;String&lt;/code&gt;, the resulting value has garbage length/pointer fields.&lt;/p&gt;
+&lt;p&gt;Confirmed under Miri. AddressSanitizer stays silent for this class, since the uninitialized bytes are consumed as a non-dereferenced field rather than an invalid load or free.&lt;/p&gt;
+&lt;h2&gt;Fix&lt;/h2&gt;
+&lt;p&gt;Fixed in &lt;code&gt;orx-split-vec&lt;/code&gt; 4.0.0, which no longer commits the length before the elements are cloned.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2025-0168: Vulnerability in zip</title><id>https://rustsec.org/advisories/RUSTSEC-2025-0168.html</id><updated>2026-08-11T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2025-0168.html" rel="alternate" type="text/html" title="RUSTSEC-2025-0168: Vulnerability in zip"/><published>2026-08-11T12:00:00+00:00</published><summary xml:lang="en">Incorrect path canonicalization during Archive Extraction Leading to Arbitrary File Write</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/zip/RUSTSEC-2025-0168.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/zip/RUSTSEC-2025-0168.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2025-0168&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2025-0168
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Incorrect path canonicalization during Archive Extraction Leading to Arbitrary File Write&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-03-16&quot;&gt;
+          March 16, 2025
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-11&quot;&gt;
+          August 11, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/zip.html&quot;&gt;zip&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/zip&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/file-overwrite.html&quot;&gt;#file-overwrite&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/symlink.html&quot;&gt;#symlink&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/path-traversal.html&quot;&gt;#path-traversal&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-29787&quot;&gt;CVE-2025-29787&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-94vh-gphv-8pm8&quot;&gt;GHSA-94vh-gphv-8pm8&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/zip-rs/zip2/security/advisories/GHSA-94vh-gphv-8pm8&quot;&gt;
+              https://github.com/zip-rs/zip2/security/advisories/GHSA-94vh-gphv-8pm8
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
+      &lt;dd&gt;7.3 &lt;span class=&quot;tag high&quot;&gt;
+        HIGH
+      &lt;/span&gt;&lt;/dd&gt;
+
+      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;dl&gt;
+          
+            &lt;dt&gt;Attack Complexity&lt;/dt&gt;
+            &lt;dd&gt;High&lt;/dd&gt;
+          
+            &lt;dt&gt;Attack Requirements&lt;/dt&gt;
+            &lt;dd&gt;None&lt;/dd&gt;
+          
+            &lt;dt&gt;Attack Vector&lt;/dt&gt;
+            &lt;dd&gt;Network&lt;/dd&gt;
+          
+            &lt;dt&gt;Privileges Required&lt;/dt&gt;
+            &lt;dd&gt;Low&lt;/dd&gt;
+          
+            &lt;dt&gt;Availability Impact to the Subsequent System&lt;/dt&gt;
+            &lt;dd&gt;High&lt;/dd&gt;
+          
+            &lt;dt&gt;Confidentiality Impact to the Subsequent System&lt;/dt&gt;
+            &lt;dd&gt;High&lt;/dd&gt;
+          
+            &lt;dt&gt;Integrity Impact to the Subsequent System&lt;/dt&gt;
+            &lt;dd&gt;High&lt;/dd&gt;
+          
+            &lt;dt&gt;User Interaction&lt;/dt&gt;
+            &lt;dd&gt;None&lt;/dd&gt;
+          
+            &lt;dt&gt;Availability Impact to the Vulnerable System&lt;/dt&gt;
+            &lt;dd&gt;None&lt;/dd&gt;
+          
+            &lt;dt&gt;Confidentiality Impact to the Vulnerable System&lt;/dt&gt;
+            &lt;dd&gt;Low&lt;/dd&gt;
+          
+            &lt;dt&gt;Integrity Impact to the Vulnerable System&lt;/dt&gt;
+            &lt;dd&gt;High&lt;/dd&gt;
+          
+        &lt;/dl&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
+
+      
+          &lt;dd&gt;&lt;a href=&quot;https://www.first.org/cvss/calculator/3.1#CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:L/VI:H/VA:N/SC:H/SI:H/SA:H&quot;&gt;CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:L/VI:H/VA:N/SC:H/SI:H/SA:H&lt;/a&gt;&lt;/dd&gt;
+        
+
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=2.3.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;unaffected&quot;&gt;Unaffected&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;1.3.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+    &lt;dl&gt;
+      &lt;dt&gt;Affected Functions&lt;/dt&gt;
+      &lt;dd&gt;Version&lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;zip::read::ZipArchive::extract&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;2.3.0, &amp;#62;=1.3.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;zip::unstable::stream::ZipStreamReader::extract&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;2.3.0, &amp;#62;=1.3.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+    &lt;/dl&gt;
+    
+
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;In the archive extraction routine of affected versions of the zip crate, symbolic links earlier in the archive are allowed to be used for later files in the archive without validation of the final canonicalized path, allowing maliciously crafted archives to overwrite arbitrary files in the file system when extracted.&lt;/p&gt;
+&lt;p&gt;For more details, see the GitHub-hosted security advisory: &lt;a href=&quot;https://github.com/zip-rs/zip2/security/advisories/GHSA-94vh-gphv-8pm8&quot;&gt;https://github.com/zip-rs/zip2/security/advisories/GHSA-94vh-gphv-8pm8&lt;/a&gt;&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC-BY-4.0.html&quot;&gt;CC-BY-4.0&lt;/a&gt;
+    license.
+
+    
+      
+      
+          Source: &lt;a href=&quot;https://github.com/zip-rs/zip2/security/advisories/GHSA-94vh-gphv-8pm8&quot;&gt;https://github.com/zip-rs/zip2/security/advisories/GHSA-94vh-gphv-8pm8&lt;/a&gt;
+        
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0253: Unsoundness in lru</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0253.html</id><updated>2026-08-11T12:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0253.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0253: Unsoundness in lru"/><published>2026-08-11T12:00:00+00:00</published><summary xml:lang="en">Potential use-after-free due to lack of panic safety in `LruCache::pop()`</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/lru/RUSTSEC-2026-0253.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/lru/RUSTSEC-2026-0253.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0253&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0253
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Potential use-after-free due to lack of panic safety in &lt;code&gt;LruCache::pop()&lt;/code&gt;&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-05-12&quot;&gt;
+          May 12, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-11&quot;&gt;
+          August 11, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/lru.html&quot;&gt;lru&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/lru&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unsound
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/panic-safety.html&quot;&gt;#panic-safety&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/memory-safety.html&quot;&gt;#memory-safety&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/use-after-free.html&quot;&gt;#use-after-free&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/double-free.html&quot;&gt;#double-free&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/jeromefroe/lru-rs/pull/238&quot;&gt;
+              https://github.com/jeromefroe/lru-rs/pull/238
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.18.2&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;&lt;code&gt;LruCache::pop()&lt;/code&gt; in &lt;code&gt;lru&lt;/code&gt; was not panic-safe. If the &lt;code&gt;Drop&lt;/code&gt; implementation of a stored key panics during &lt;code&gt;pop()&lt;/code&gt;, &lt;code&gt;self.detach()&lt;/code&gt; is never called, leaving dangling pointers in the internal doubly-linked list.&lt;/p&gt;
+&lt;p&gt;A subsequent cache operation that triggers eviction can then dereference these dangling pointers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The node is freed from the map, but remains linked in the LRU list due to the skipped &lt;code&gt;detach()&lt;/code&gt; call&lt;/li&gt;
+&lt;li&gt;When a new insertion causes eviction, the LRU traversal encounters the dangling pointer&lt;/li&gt;
+&lt;li&gt;This results in a write to already-freed memory during the eviction process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Impact&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CWE-416 (Use-After-Free):&lt;/strong&gt; memory corruption when subsequent cache operations access freed node pointers in the linked list&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CWE-415 (Double Free):&lt;/strong&gt; potential heap corruption when the same memory is freed multiple times&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both types of undefined behavior can be invoked in safe Rust, but only if unwinding panics are enabled and &lt;code&gt;std::panic::catch_unwind&lt;/code&gt; is used with key types that have potentially-panicking &lt;code&gt;Drop&lt;/code&gt; implementations.&lt;/p&gt;
+&lt;h2&gt;Fix&lt;/h2&gt;
+&lt;p&gt;Fixed in &lt;code&gt;lru&lt;/code&gt; 0.18.2 by detaching the node from the linked list before freeing it and dropping the key (&lt;a href=&quot;https://github.com/jeromefroe/lru-rs/pull/238&quot;&gt;lru-rs#238&lt;/a&gt;).&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2025-0169: Unsoundness in stainless_ffmpeg</title><id>https://rustsec.org/advisories/RUSTSEC-2025-0169.html</id><updated>2026-08-11T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2025-0169.html" rel="alternate" type="text/html" title="RUSTSEC-2025-0169: Unsoundness in stainless_ffmpeg"/><published>2026-08-11T12:00:00+00:00</published><summary xml:lang="en">`FormatContext` stream accessors can cause undefined behavior from safe code</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/stainless_ffmpeg/RUSTSEC-2025-0169.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/stainless_ffmpeg/RUSTSEC-2025-0169.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2025-0169&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2025-0169
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;&lt;code&gt;FormatContext&lt;/code&gt; stream accessors can cause undefined behavior from safe code&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2025-04-24&quot;&gt;
+          April 24, 2025
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-11&quot;&gt;
+          August 11, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/stainless_ffmpeg.html&quot;&gt;stainless_ffmpeg&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/stainless_ffmpeg&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unsound
+        
+      &lt;/dd&gt;
+
+      
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/nomalab/stainless-ffmpeg/issues/63&quot;&gt;
+              https://github.com/nomalab/stainless-ffmpeg/issues/63
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/nomalab/stainless-ffmpeg/pull/64&quot;&gt;
+              https://github.com/nomalab/stainless-ffmpeg/pull/64
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/nomalab/stainless-ffmpeg/commit/a649e8cb4e7c9859279d1dc85051df5e7a4932f7&quot;&gt;
+              https://github.com/nomalab/stainless-ffmpeg/commit/a649e8cb4e7c9859279d1dc85051df5e7a4932f7
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.6.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+    &lt;dl&gt;
+      &lt;dt&gt;Affected Functions&lt;/dt&gt;
+      &lt;dd&gt;Version&lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;stainless_ffmpeg::format_context::FormatContext::get_codec_id&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.6.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;stainless_ffmpeg::format_context::FormatContext::get_stream&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.6.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;stainless_ffmpeg::format_context::FormatContext::get_stream_type&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.6.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;stainless_ffmpeg::format_context::FormatContext::get_stream_type_name&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.6.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+    &lt;/dl&gt;
+    
+
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;Affected versions of &lt;code&gt;stainless_ffmpeg&lt;/code&gt; exposed several safe public methods on &lt;code&gt;FormatContext&lt;/code&gt; that accepted a &lt;code&gt;stream_index&lt;/code&gt; parameter and used it in unsafe pointer operations without checking whether the index was valid. These methods performed pointer arithmetic and dereferenced the resulting stream pointer. Safe callers could pass a negative or out-of-bounds &lt;code&gt;stream_index&lt;/code&gt;, which could cause out-of-bounds pointer access and undefined behavior from safe Rust code.&lt;/p&gt;
+&lt;p&gt;The issue was fixed in version &lt;code&gt;0.6.0&lt;/code&gt; by marking the affected stream accessor methods as &lt;code&gt;unsafe&lt;/code&gt; and documenting that callers must ensure &lt;code&gt;stream_index&lt;/code&gt; is a valid stream index.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2025-0167: Unsoundness in bitmaps</title><id>https://rustsec.org/advisories/RUSTSEC-2025-0167.html</id><updated>2026-08-10T12:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2025-0167.html" rel="alternate" type="text/html" title="RUSTSEC-2025-0167: Unsoundness in bitmaps"/><published>2026-08-10T12:00:00+00:00</published><summary xml:lang="en">`Bitmap::try_from(&amp;amp;[u8])` can create invalid values</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
         &lt;span class=&quot;floating-menu&quot;&gt;
           &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/bitmaps/RUSTSEC-2025-0167.md&quot;&gt;History&lt;/a&gt; ⋅
