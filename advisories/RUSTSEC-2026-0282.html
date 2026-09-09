@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2026-0273: manzana: Stubbed cryptography without warnings › RustSec Advisory Database</title>
+<title>RUSTSEC-2026-0282: aligned_box: Double free in `AlignedBox&#60;[T]&#62;::realloc_with_default` when an element&#39;s `Drop` panics › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -56,19 +56,19 @@
   <article>
     
         <span class="floating-menu">
-          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/manzana/RUSTSEC-2026-0273.md">History</a> ⋅
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/manzana/RUSTSEC-2026-0273.md">Edit</a> ⋅
-          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0273">JSON (OSV)</a>
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/aligned_box/RUSTSEC-2026-0282.md">History</a> ⋅
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/aligned_box/RUSTSEC-2026-0282.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0282">JSON (OSV)</a>
         </span>
     
 
     <header>
       <h1>
         
-        RUSTSEC-2026-0273
+        RUSTSEC-2026-0282
         
       </h1>
-      <span class="subtitle"><p>Stubbed cryptography without warnings</p>
+      <span class="subtitle"><p>Double free in <code>AlignedBox&lt;[T]&gt;::realloc_with_default</code> when an element's <code>Drop</code> panics</p>
 </span>
     </header>
 
@@ -77,19 +77,15 @@
     <dl>
       <dt id="reported">Reported</dt>
       <dd>
-        <time datetime="2026-04-07">
-          April  7, 2026
+        <time datetime="2026-09-09">
+          September  9, 2026
         </time>
       </dd>
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2026-09-01">
-          September  1, 2026
-        </time>
-        
         <time datetime="2026-09-09">
-          (last modified: September  9, 2026)
+          September  9, 2026
         </time>
         
       </dd>
@@ -98,9 +94,9 @@
       <dd>
         
         
-        <a href="/packages/manzana.html">manzana</a>
+        <a href="/packages/aligned_box.html">aligned_box</a>
            
-          (<a href="https://crates.io/crates/manzana">crates.io</a>)
+          (<a href="https://crates.io/crates/aligned_box">crates.io</a>)
           
         
         
@@ -118,7 +114,7 @@
       <dd>
         <ul>
           
-          <li><a href="/categories/crypto-failure.html">crypto-failure</a></li>
+          <li><a href="/categories/memory-corruption.html">memory-corruption</a></li>
           
         </ul>
       </dd>
@@ -128,13 +124,13 @@
       <dt id="keywords">Keywords</dt>
       <dd>
         
-          <a href="/keywords/apple.html">#apple</a>
+          <a href="/keywords/memory-safety.html">#memory-safety</a>
         
-          <a href="/keywords/secure-enclave.html">#secure-enclave</a>
+          <a href="/keywords/double-free.html">#double-free</a>
         
-          <a href="/keywords/ecdsa.html">#ecdsa</a>
+          <a href="/keywords/use-after-free.html">#use-after-free</a>
         
-          <a href="/keywords/signature-verification.html">#signature-verification</a>
+          <a href="/keywords/panic-safety.html">#panic-safety</a>
         
       </dd>
       
@@ -147,29 +143,11 @@
         <ul>
         
           <li>
-            <a href="https://github.com/paiml/manzana/issues/3">
-              https://github.com/paiml/manzana/issues/3
+            <a href="https://github.com/michaellass/aligned_box/pull/6">
+              https://github.com/michaellass/aligned_box/pull/6
             </a>
           </li>
         
-        
-          <li>
-            <a href="https://github.com/paiml/manzana/blob/89e3183ac38088d418a2edeb9d3e0f35133b27a3/README.md">
-              https://github.com/paiml/manzana/blob/89e3183ac38088d418a2edeb9d3e0f35133b27a3/README.md
-            </a>
-          </li>
-        
-          <li>
-            <a href="https://github.com/paiml/manzana/blob/89e3183ac38088d418a2edeb9d3e0f35133b27a3/src/secure_enclave.rs#L312">
-              https://github.com/paiml/manzana/blob/89e3183ac38088d418a2edeb9d3e0f35133b27a3/src/secure_enclave.rs#L312
-            </a>
-          </li>
-        
-          <li>
-            <a href="https://github.com/paiml/manzana/blob/89e3183ac38088d418a2edeb9d3e0f35133b27a3/src/secure_enclave.rs#L352">
-              https://github.com/paiml/manzana/blob/89e3183ac38088d418a2edeb9d3e0f35133b27a3/src/secure_enclave.rs#L352
-            </a>
-          </li>
         
         </ul>
       </dd>
@@ -185,7 +163,7 @@
         
         <ul>
           
-          <li><code>&#62;=0.3.0</code></li>
+          <li><code>&#62;=0.3.1</code></li>
           
         </ul>
         
@@ -197,15 +175,6 @@
       
 
       
-      <dt>Affected OSes</dt>
-      <dd>
-        <ul>
-          
-          <li><code>macos</code></li>
-          
-        </ul>
-      </dd>
-      
       
     </dl>
 
@@ -215,47 +184,11 @@
       <dt>Affected Functions</dt>
       <dd>Version</dd>
       
-      <dt><code>manzana::secure_enclave::SecureEnclaveSigner::create</code></dt>
+      <dt><code>aligned_box::AlignedBox::realloc_with_default</code></dt>
       <dd>
         <ul>
           
-          <li><code>&#60;=0.2.0, &#62;=0.1.0</code></li>
-          
-        </ul>
-      </dd>
-      
-      <dt><code>manzana::secure_enclave::SecureEnclaveSigner::delete</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#60;=0.2.0, &#62;=0.1.0</code></li>
-          
-        </ul>
-      </dd>
-      
-      <dt><code>manzana::secure_enclave::SecureEnclaveSigner::load</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#60;=0.2.0, &#62;=0.1.0</code></li>
-          
-        </ul>
-      </dd>
-      
-      <dt><code>manzana::secure_enclave::SecureEnclaveSigner::sign</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#60;=0.2.0, &#62;=0.1.0</code></li>
-          
-        </ul>
-      </dd>
-      
-      <dt><code>manzana::secure_enclave::SecureEnclaveSigner::verify</code></dt>
-      <dd>
-        <ul>
-          
-          <li><code>&#60;=0.2.0, &#62;=0.1.0</code></li>
+          <li><code>&#60;0.3.1</code></li>
           
         </ul>
       </dd>
@@ -266,10 +199,22 @@
     
 
     <h3 id="description">Description</h3>
-    <p>The <code>manzana</code> crate appears to be a work-in-progress module for the Apple Silicon chips' features, including the Secure Enclave.</p>
-<p>This crate's description and <code>README</code>s make no hint at the fact that the <a href="https://docs.rs/manzana/0.2.0/manzana/secure_enclave/struct.SecureEnclaveSigner.html"><code>SecureEnclaveSigner</code></a> type is a stubbed implementation that does not actually perform any cryptographic operations, and instead returns fixed values.</p>
-<p>Unsuspecting users of the crate, who may not check the source code, receive no warning about this and may believe they are using a secure implementation when they are not.</p>
-<p>There are currently (as of <code>2026-04-07</code>) no versions of the crate that contain either a real implementation, or a warning about the stubbed cryptography.</p>
+    <p>Shrinking an <code>AlignedBox&lt;[T]&gt;</code> takes ownership of the buffer out of
+<code>self.container</code> with <code>ManuallyDrop::take</code>, destroys the elements past the new
+length, and only then commits the new <code>Box</code> back into <code>self.container</code>.
+<code>ManuallyDrop::take</code> moves ownership but not the bits, so until that commit
+<code>self.container</code> still points at the original buffer.</p>
+<p><code>T::drop</code> runs inside the destruction loop and is user code — <code>T</code> carries no
+bound that would exclude a panicking <code>Drop</code>. If it unwinds, the commit is
+skipped and <code>self.container</code> is left pointing at the buffer whose tail has
+already been destroyed. <code>AlignedBox</code>'s own destructor then reconstructs a <code>Box</code>
+from that pointer, drops every element again and deallocates — a double free
+(CWE-415) / use-after-free (CWE-416) reachable from safe Rust.</p>
+<p>Growing the slice destroys nothing and is unaffected, as is
+<code>realloc_with_value</code>, which requires <code>T: Copy</code> and therefore a <code>Drop</code> that
+cannot run.</p>
+<h2>Mitigation</h2>
+<p>Update to 0.3.1.</p>
 
 
     <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
