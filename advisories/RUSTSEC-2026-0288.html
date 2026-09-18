@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2026-0201: fulgur: Non-painting replaced elements amplify to thousands of blank PDF pages (denial of service) › RustSec Advisory Database</title>
+<title>RUSTSEC-2026-0288: cosmian_kyber: cosmian_kyber: AVX2 backend skips Fujisaki-Okamoto implicit rejection, enabling chosen-ciphertext key recovery › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -56,19 +56,19 @@
   <article>
     
         <span class="floating-menu">
-          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/fulgur/RUSTSEC-2026-0201.md">History</a> ⋅
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/fulgur/RUSTSEC-2026-0201.md">Edit</a> ⋅
-          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0201">JSON (OSV)</a>
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/cosmian_kyber/RUSTSEC-2026-0288.md">History</a> ⋅
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/cosmian_kyber/RUSTSEC-2026-0288.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0288">JSON (OSV)</a>
         </span>
     
 
     <header>
       <h1>
         
-        RUSTSEC-2026-0201
+        RUSTSEC-2026-0288
         
       </h1>
-      <span class="subtitle"><p>Non-painting replaced elements amplify to thousands of blank PDF pages (denial of service)</p>
+      <span class="subtitle"><p>cosmian_kyber: AVX2 backend skips Fujisaki-Okamoto implicit rejection, enabling chosen-ciphertext key recovery</p>
 </span>
     </header>
 
@@ -77,19 +77,15 @@
     <dl>
       <dt id="reported">Reported</dt>
       <dd>
-        <time datetime="2026-07-05">
-          July  5, 2026
+        <time datetime="2026-08-16">
+          August 16, 2026
         </time>
       </dd>
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2026-07-04">
-          July  4, 2026
-        </time>
-        
         <time datetime="2026-09-18">
-          (last modified: September 18, 2026)
+          September 18, 2026
         </time>
         
       </dd>
@@ -98,9 +94,9 @@
       <dd>
         
         
-        <a href="/packages/fulgur.html">fulgur</a>
+        <a href="/packages/cosmian_kyber.html">cosmian_kyber</a>
            
-          (<a href="https://crates.io/crates/fulgur">crates.io</a>)
+          (<a href="https://crates.io/crates/cosmian_kyber">crates.io</a>)
           
         
         
@@ -118,7 +114,7 @@
       <dd>
         <ul>
           
-          <li><a href="/categories/denial-of-service.html">denial-of-service</a></li>
+          <li><a href="/categories/crypto-failure.html">crypto-failure</a></li>
           
         </ul>
       </dd>
@@ -128,34 +124,21 @@
       <dt id="keywords">Keywords</dt>
       <dd>
         
-          <a href="/keywords/dos.html">#dos</a>
+          <a href="/keywords/kyber.html">#kyber</a>
         
-          <a href="/keywords/pagination.html">#pagination</a>
+          <a href="/keywords/ml-kem.html">#ml-kem</a>
         
-          <a href="/keywords/pdf.html">#pdf</a>
+          <a href="/keywords/key-recovery.html">#key-recovery</a>
+        
+          <a href="/keywords/fujisaki-okamoto.html">#fujisaki-okamoto</a>
+        
+          <a href="/keywords/ind-cca.html">#ind-cca</a>
+        
+          <a href="/keywords/avx2.html">#avx2</a>
         
       </dd>
       
 
-      
-      <dt id="aliases">Aliases</dt>
-      <dd>
-        <ul>
-          
-          <li>
-            
-            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-68537">CVE-2026-68537</a>
-            
-          </li>
-          
-          <li>
-            
-            <a href="https://github.com/advisories/GHSA-4rf6-qx84-q9fv">GHSA-4rf6-qx84-q9fv</a>
-            
-          </li>
-          
-        </ul>
-      </dd>
       
 
       
@@ -164,8 +147,8 @@
         <ul>
         
           <li>
-            <a href="https://github.com/fulgur-rs/fulgur/security/advisories/GHSA-4rf6-qx84-q9fv">
-              https://github.com/fulgur-rs/fulgur/security/advisories/GHSA-4rf6-qx84-q9fv
+            <a href="https://github.com/Cosmian/kyber/pull/6">
+              https://github.com/Cosmian/kyber/pull/6
             </a>
           </li>
         
@@ -178,7 +161,7 @@
 
       
       <dt id="cvss_score">CVSS Score</dt>
-      <dd>7.5 <span class="tag high">
+      <dd>7.4 <span class="tag high">
         HIGH
       </span></dd>
 
@@ -190,7 +173,7 @@
             <dd>Network</dd>
           
             <dt>Attack Complexity</dt>
-            <dd>Low</dd>
+            <dd>High</dd>
           
             <dt>Privileges Required</dt>
             <dd>None</dd>
@@ -202,13 +185,13 @@
             <dd>Unchanged</dd>
           
             <dt>Confidentiality Impact</dt>
-            <dd>None</dd>
+            <dd>High</dd>
           
             <dt>Integrity Impact</dt>
-            <dd>None</dd>
+            <dd>High</dd>
           
             <dt>Availability Impact</dt>
-            <dd>High</dd>
+            <dd>None</dd>
           
         </dl>
       </dd>
@@ -216,7 +199,7 @@
       <dt id="cvss">CVSS Vector</dt>
 
       
-          <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</a></dd>
+          <dd><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N">CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N</a></dd>
         
 
       
@@ -224,14 +207,13 @@
       <dt id="patched">Patched</dt>
       <dd>
         
-        <ul>
-          
-          <li><code>&#62;=0.26.0</code></li>
-          
-        </ul>
+        no patched versions
         
       </dd>
 
+      
+
+      
       
 
       
@@ -241,37 +223,44 @@
     
     
 
+    
+
     <h3 id="description">Description</h3>
-    <p><code>fulgur</code> converts untrusted HTML/CSS into PDF, commonly on a server that
-processes input supplied by many tenants. In versions prior to 0.26.0, a
-childless box that resolves to a pathologically tall height was amplified into
-thousands of blank PDF pages, even when it produces no visible output.</p>
-<p>The childless-collapse defense that would normally collapse such a box was gated
-by a tag-only &quot;replaced content&quot; check, so any non-painting replaced element
-bypassed it, including an unresolved <code>src</code> (the common offline-first case), a
-<code>visibility:hidden</code> image, an undecodable image format, and an empty <code>&lt;svg&gt;</code>. A
-trailing-sibling variant of the same gap was also open.</p>
-<p>A few bytes of HTML therefore amplified into roughly <code>MAX_PAGES</code> (10,000) blank
-pages; the renderer allocates and runs a per-page loop over them, producing CPU
-and memory exhaustion. An attacker able to submit HTML to a fulgur-based
-conversion service can trigger this with a trivially small payload, denying
-service to the host and any co-tenants.</p>
-<p>Fixed in 0.26.0: the tag-only gate was removed so that any pathologically tall
-childless box collapses regardless of whether it is a replaced element, closing
-the missing-<code>src</code>, <code>visibility:hidden</code>, undecodable-format, and empty-<code>&lt;svg&gt;</code>
-vectors along with the trailing-sibling variant.</p>
-<p>Versions prior to 0.19.0 additionally lacked any page-count cap, allowing an
-unbounded (rather than 10,000-page) variant of this amplification; that earlier
-variant is tracked separately as GHSA-j5cx-ph8g-95v3.</p>
-<h2>Attack Vector rationale</h2>
-<p><code>fulgur</code> performs no network I/O of its own; it renders HTML/CSS handed to it by
-the embedding application. This advisory scores the crate independent of any
-specific adopting program, so per the CVSS v3.1 User Guide §3.7 the Attack
-Vector is assessed as Network for the reasonable worst-case deployment — a
-network-facing service that renders untrusted HTML without user interaction. A
-concrete system that receives the HTML in one component and passes it to fulgur
-in a separate component may assess a lower environmental Attack Vector (Local,
-per §3.10).</p>
+    <h2>Summary</h2>
+<p><code>cosmian_kyber</code> is a fork of <code>Argyle-Software/kyber</code> and inherits a broken
+constant-time conditional-move routine <code>cmov</code> in its AVX2 backend. When built
+with the opt-in <code>avx2</code> feature on x86_64, <code>cmov</code> is a no-op: it never performs
+the copy. That <code>cmov</code> is the step that applies the Fujisaki-Okamoto (FO) implicit
+rejection during decapsulation. With it disabled, decapsulating an <em>invalid</em>
+ciphertext no longer returns a key-independent pseudorandom value; it returns a
+value that depends on the decrypted plaintext of the attacker-chosen ciphertext.
+This restores the chosen-ciphertext decryption oracle that the FO transform
+exists to remove, and yields full recovery of the static secret key.</p>
+<p>The attack requires no timing measurement, no side channel, and no faults; only
+the ability to submit ciphertexts to a decapsulation operation under a reused
+key pair and observe the resulting shared secret. See the linked pull request
+for the root cause and the reachable call path.</p>
+<h2>Affected configuration</h2>
+<p>Reachable only in builds with <code>features = [&quot;avx2&quot;]</code> on an x86_64 target. The
+default (reference) backend and all non-x86_64 targets are unaffected.</p>
+<h2>Impact</h2>
+<p>Complete IND-CCA break. The plaintext-checking oracle drives a standard
+chosen-ciphertext key-recovery attack and extracts the entire static secret key.
+Any protocol reusing a Kyber key pair across decapsulations is exposed;
+ephemeral-only key shares are not. The identical defect in the parent crate was
+verified end to end on ML-KEM-768 (full key recovered in 4,272 decapsulation
+queries).</p>
+<h2>Maintenance status</h2>
+<p><code>cosmian_kyber</code> is a stale fork (last published 0.1.0, January 2023) of an
+unmaintained upstream, and no fixed release is expected.</p>
+<h2>Mitigation</h2>
+<ul>
+<li>If remaining on this crate, do not enable the <code>avx2</code> feature; the default
+reference backend performs implicit rejection correctly.</li>
+<li>Do not reuse a Kyber key pair across decapsulations.</li>
+</ul>
+<h2>Credit</h2>
+<p>Reported by 007bsd.</p>
 
 
     <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
