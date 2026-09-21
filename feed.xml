@@ -1,5 +1,887 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>RustSec Advisories</title><id>https://rustsec.org/feed.xml</id><updated>2026-09-18T12:00:00+00:00</updated><author><name>RustSec</name></author><icon>https://rustsec.org/favicon.ico</icon><link href="https://rustsec.org/feed.xml" rel="self" type="application/atom+xml"/><link href="https://rustsec.org/" rel="alternate" type="text/html"/><subtitle xml:lang="en">Security advisories filed against Rust crates</subtitle><entry><title>RUSTSEC-2026-0288: Vulnerability in cosmian_kyber</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0288.html</id><updated>2026-09-18T12:00:00+00:00</updated><category term="crypto-failure"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0288.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0288: Vulnerability in cosmian_kyber"/><published>2026-09-18T12:00:00+00:00</published><summary xml:lang="en">cosmian_kyber: AVX2 backend skips Fujisaki-Okamoto implicit rejection, enabling chosen-ciphertext key recovery</summary><content xml:lang="en" type="html">  &lt;article&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>RustSec Advisories</title><id>https://rustsec.org/feed.xml</id><updated>2026-09-21T12:00:00+00:00</updated><author><name>RustSec</name></author><icon>https://rustsec.org/favicon.ico</icon><link href="https://rustsec.org/feed.xml" rel="self" type="application/atom+xml"/><link href="https://rustsec.org/" rel="alternate" type="text/html"/><subtitle xml:lang="en">Security advisories filed against Rust crates</subtitle><entry><title>RUSTSEC-2026-0293: Vulnerability in ringbuf</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0293.html</id><updated>2026-09-21T12:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0293.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0293: Vulnerability in ringbuf"/><published>2026-09-21T12:00:00+00:00</published><summary xml:lang="en">Double free / use-after-free in `Consumer::skip` and `Consumer::clear` when an element&amp;apos;s `Drop` panics</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/ringbuf/RUSTSEC-2026-0293.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/ringbuf/RUSTSEC-2026-0293.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0293&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0293
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Double free / use-after-free in &lt;code&gt;Consumer::skip&lt;/code&gt; and &lt;code&gt;Consumer::clear&lt;/code&gt; when an element&apos;s &lt;code&gt;Drop&lt;/code&gt; panics&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-09-21&quot;&gt;
+          September 21, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-09-21&quot;&gt;
+          September 21, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/ringbuf.html&quot;&gt;ringbuf&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/ringbuf&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/memory-safety.html&quot;&gt;#memory-safety&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/double-free.html&quot;&gt;#double-free&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/use-after-free.html&quot;&gt;#use-after-free&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/panic-safety.html&quot;&gt;#panic-safety&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/agerasev/ringbuf/pull/60&quot;&gt;
+              https://github.com/agerasev/ringbuf/pull/60
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.5.2&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+    &lt;dl&gt;
+      &lt;dt&gt;Affected Functions&lt;/dt&gt;
+      &lt;dd&gt;Version&lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;ringbuf::traits::consumer::Consumer::clear&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.5.2&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;ringbuf::traits::consumer::Consumer::skip&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.5.2&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+    &lt;/dl&gt;
+    
+
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;&lt;code&gt;Consumer::skip()&lt;/code&gt; and &lt;code&gt;Consumer::clear()&lt;/code&gt; are not panic-safe. They drop the
+consumed elements in place and only afterwards call &lt;code&gt;advance_read_index()&lt;/code&gt; to move
+the ring buffer&apos;s read index past them. If an element&apos;s &lt;code&gt;Drop&lt;/code&gt; panics mid-loop,
+&lt;code&gt;advance_read_index()&lt;/code&gt; is never reached, so the read index still points at the
+already-dropped elements. When the ring buffer is later dropped, its destructor
+re-visits those slots and drops the same elements a second time — a double free
+(CWE-415) / use-after-free (CWE-416) reachable from safe Rust, confirmed under
+AddressSanitizer.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Consumer::clear()&lt;/code&gt; delegates to &lt;code&gt;Consumer::skip(self.len())&lt;/code&gt;, so both share the
+same root cause and the same fix.&lt;/p&gt;
+&lt;h2&gt;Mitigation&lt;/h2&gt;
+&lt;p&gt;Update to 0.5.2 or later (fixed in agerasev/ringbuf#60).&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0291: Vulnerability in owned-alloc</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0291.html</id><updated>2026-09-21T12:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0291.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0291: Vulnerability in owned-alloc"/><published>2026-09-21T12:00:00+00:00</published><summary xml:lang="en">Double free in `OwnedAlloc::drop_in_place` when the contained value&amp;apos;s `Drop` panics</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/owned-alloc/RUSTSEC-2026-0291.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/owned-alloc/RUSTSEC-2026-0291.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0291&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0291
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Double free in &lt;code&gt;OwnedAlloc::drop_in_place&lt;/code&gt; when the contained value&apos;s &lt;code&gt;Drop&lt;/code&gt; panics&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-09-09&quot;&gt;
+          September  9, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-09-21&quot;&gt;
+          September 21, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/owned-alloc.html&quot;&gt;owned-alloc&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/owned-alloc&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/panic-safety.html&quot;&gt;#panic-safety&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/memory-safety.html&quot;&gt;#memory-safety&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/use-after-free.html&quot;&gt;#use-after-free&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/double-free.html&quot;&gt;#double-free&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://gitlab.com/bzim/owned-alloc/-/issues/1&quot;&gt;
+              https://gitlab.com/bzim/owned-alloc/-/issues/1
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        no patched versions
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+    &lt;dl&gt;
+      &lt;dt&gt;Affected Functions&lt;/dt&gt;
+      &lt;dd&gt;Version&lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;owned_alloc::MaybeUninitAlloc::drop_in_place&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;=0.2.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;owned_alloc::OwnedAlloc::drop_in_place&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;=0.2.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+    &lt;/dl&gt;
+    
+
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;&lt;code&gt;OwnedAlloc::drop_in_place&lt;/code&gt; destroys the contained value by hand, then commits
+the ownership transfer with &lt;code&gt;mem::forget(self)&lt;/code&gt; — which lives inside &lt;code&gt;into_raw&lt;/code&gt;
+and so runs only after the destruction. &lt;code&gt;T::drop&lt;/code&gt; is user code and may panic. If
+it does, the forget is skipped and the still-live &lt;code&gt;OwnedAlloc&lt;/code&gt; unwinds, whose
+destructor drops the same &lt;code&gt;T&lt;/code&gt; a second time and then deallocates. For a &lt;code&gt;T&lt;/code&gt; that
+owns an allocation, the same block is freed twice — a double free (CWE-415).
+That destructor also reads the already-destroyed value through
+&lt;code&gt;Layout::for_value&lt;/code&gt; before deallocating, a use-after-free (CWE-416).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;MaybeUninitAlloc::drop_in_place&lt;/code&gt; delegates to the same function, so both public
+entry points are affected. Storing a value whose &lt;code&gt;Drop&lt;/code&gt; can panic and calling
+either is enough — no &lt;code&gt;unsafe&lt;/code&gt; on the caller&apos;s side.&lt;/p&gt;
+&lt;h2&gt;Fix&lt;/h2&gt;
+&lt;p&gt;No fixed release is available. The crate has had no release since 2018 and the
+maintainer has not responded to the report, nor to the one on &lt;code&gt;lockfree&lt;/code&gt;, which
+is published from the same account. &lt;code&gt;forget_inner&lt;/code&gt; leaks the value instead of
+destroying it, which is safe.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0292: Vulnerability in imbl-sized-chunks</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0292.html</id><updated>2026-09-21T12:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0292.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0292: Vulnerability in imbl-sized-chunks"/><published>2026-09-21T12:00:00+00:00</published><summary xml:lang="en">Double free / use-after-free in `Chunk` and `InlineArray` removal methods when an element&amp;apos;s `Drop` panics</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/imbl-sized-chunks/RUSTSEC-2026-0292.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/imbl-sized-chunks/RUSTSEC-2026-0292.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0292&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0292
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Double free / use-after-free in &lt;code&gt;Chunk&lt;/code&gt; and &lt;code&gt;InlineArray&lt;/code&gt; removal methods when an element&apos;s &lt;code&gt;Drop&lt;/code&gt; panics&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-09-04&quot;&gt;
+          September  4, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-09-21&quot;&gt;
+          September 21, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/imbl-sized-chunks.html&quot;&gt;imbl-sized-chunks&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/imbl-sized-chunks&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/memory-safety.html&quot;&gt;#memory-safety&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/double-free.html&quot;&gt;#double-free&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/use-after-free.html&quot;&gt;#use-after-free&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/panic-safety.html&quot;&gt;#panic-safety&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/jneem/imbl-sized-chunks/pull/14&quot;&gt;
+              https://github.com/jneem/imbl-sized-chunks/pull/14
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.2.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+    &lt;dl&gt;
+      &lt;dt&gt;Affected Functions&lt;/dt&gt;
+      &lt;dd&gt;Version&lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;imbl_sized_chunks::inline_array::InlineArray::clear&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.2.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;imbl_sized_chunks::inline_array::InlineArray::truncate&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.2.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;imbl_sized_chunks::sized_chunk::Chunk::clear&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.2.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;imbl_sized_chunks::sized_chunk::Chunk::drop_left&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.2.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;imbl_sized_chunks::sized_chunk::Chunk::drop_right&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.2.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+    &lt;/dl&gt;
+    
+
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;&lt;code&gt;Chunk::{clear, drop_left, drop_right}&lt;/code&gt; and &lt;code&gt;InlineArray::{clear, truncate}&lt;/code&gt; drop the removed elements before updating the metadata that records which slots hold live values — the &lt;code&gt;left&lt;/code&gt;/&lt;code&gt;right&lt;/code&gt; index pair for &lt;code&gt;Chunk&lt;/code&gt;, the length field for &lt;code&gt;InlineArray&lt;/code&gt;. If an element&apos;s &lt;code&gt;Drop&lt;/code&gt; panics during the drop, that update is never reached, so the collection still treats the already-dropped elements as live. When the collection is later dropped (its destructor walks the range described by the stale metadata), or a subsequent operation touches the same slots, those elements are dropped a second time — a double free (CWE-415) / use-after-free (CWE-416) reachable from safe Rust.&lt;/p&gt;
+&lt;p&gt;The stale field is &lt;code&gt;left&lt;/code&gt; and &lt;code&gt;right&lt;/code&gt; for &lt;code&gt;Chunk::clear&lt;/code&gt;, &lt;code&gt;left&lt;/code&gt; for &lt;code&gt;drop_left&lt;/code&gt;, &lt;code&gt;right&lt;/code&gt; for &lt;code&gt;drop_right&lt;/code&gt;, and the length field for both &lt;code&gt;InlineArray&lt;/code&gt; methods.&lt;/p&gt;
+&lt;h2&gt;Mitigation&lt;/h2&gt;
+&lt;p&gt;Upgrade to &lt;code&gt;imbl-sized-chunks&lt;/code&gt; 0.2.0 or later, which commits the metadata before dropping any element (fixed in jneem/imbl-sized-chunks#14, released in 0.2.0).&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0294: Unsoundness in iceoryx2-bb-container</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0294.html</id><updated>2026-09-21T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0294.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0294: Unsoundness in iceoryx2-bb-container"/><published>2026-09-21T12:00:00+00:00</published><summary xml:lang="en">Unsoundness in UTF-8 &amp;apos;String&amp;apos; trait</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/iceoryx2-bb-container/RUSTSEC-2026-0294.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/iceoryx2-bb-container/RUSTSEC-2026-0294.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0294&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0294
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Unsoundness in UTF-8 &apos;String&apos; trait&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-09-18&quot;&gt;
+          September 18, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-09-21&quot;&gt;
+          September 21, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/iceoryx2-bb-container.html&quot;&gt;iceoryx2-bb-container&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/iceoryx2-bb-container&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unsound
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/unsound.html&quot;&gt;#unsound&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-8mq4-3mwq-qvg6&quot;&gt;GHSA-8mq4-3mwq-qvg6&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/eclipse-iceoryx/iceoryx2/pull/1956&quot;&gt;
+              https://github.com/eclipse-iceoryx/iceoryx2/pull/1956
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.10.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+    &lt;dl&gt;
+      &lt;dt&gt;Affected Functions&lt;/dt&gt;
+      &lt;dd&gt;Version&lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;iceoryx2_bb_container::string::String::as_mut_bytes&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.10.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;iceoryx2_bb_container::string::String::deref_mut&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.10.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;iceoryx2_bb_container::string::polymorphic_string::PolymorphicString::as_mut_bytes&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.10.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;iceoryx2_bb_container::string::polymorphic_string::PolymorphicString::deref_mut&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.10.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;iceoryx2_bb_container::string::relocatable_string::RelocatableString::as_mut_bytes&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.10.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;iceoryx2_bb_container::string::relocatable_string::RelocatableString::deref_mut&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.10.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;iceoryx2_bb_container::string::static_string::StaticString::as_mut_bytes&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.10.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;iceoryx2_bb_container::string::static_string::StaticString::deref_mut&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.10.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+    &lt;/dl&gt;
+    
+
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;The String API in iceoryx2-bb-container exposes its contents as mutable bytes through safe APIs, while String::as_str() converts those bytes into a Rust string slice without validating UTF-8.
+An application can therefore create an invalid &amp;amp;str and trigger undefined behavior using entirely safe Rust.&lt;/p&gt;
+&lt;p&gt;The API methods &lt;code&gt;as_mut_bytes&lt;/code&gt; and &lt;code&gt;deref_mut&lt;/code&gt; where removed from the String API and their implementations (PolymorphicString, RelocatableString, and StaticString ) without replacement.
+Link to Pull-Request: https://github.com/eclipse-iceoryx/iceoryx2/pull/1956&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0295: Vulnerability in z3</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0295.html</id><updated>2026-09-21T12:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0295.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0295: Vulnerability in z3"/><published>2026-09-21T12:00:00+00:00</published><summary xml:lang="en">Memory corruption bug on `ApplyResult` type</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/z3/RUSTSEC-2026-0295.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/z3/RUSTSEC-2026-0295.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0295&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0295
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Memory corruption bug on &lt;code&gt;ApplyResult&lt;/code&gt; type&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-08-12&quot;&gt;
+          August 12, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-09-21&quot;&gt;
+          September 21, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/z3.html&quot;&gt;z3&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/z3&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/prove-rs/z3.rs/pull/578&quot;&gt;
+              https://github.com/prove-rs/z3.rs/pull/578
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.21.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;The &lt;code&gt;ApplyResult&lt;/code&gt; type contains a raw pointer to a C++ memory object and has a derived &lt;code&gt;Clone&lt;/code&gt; implementation which creates a reference to this object without incrementing the associated reference counter.&lt;/p&gt;
+&lt;p&gt;As a result, if an instance of &lt;code&gt;ApplyResult&lt;/code&gt; is duplicated through &lt;code&gt;Clone&lt;/code&gt; and both instances are dropped a use-after-free can occur.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0288: Vulnerability in cosmian_kyber</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0288.html</id><updated>2026-09-18T12:00:00+00:00</updated><category term="crypto-failure"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0288.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0288: Vulnerability in cosmian_kyber"/><published>2026-09-18T12:00:00+00:00</published><summary xml:lang="en">cosmian_kyber: AVX2 backend skips Fujisaki-Okamoto implicit rejection, enabling chosen-ciphertext key recovery</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
         &lt;span class=&quot;floating-menu&quot;&gt;
           &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/cosmian_kyber/RUSTSEC-2026-0288.md&quot;&gt;History&lt;/a&gt; ⋅
@@ -1249,409 +2131,6 @@ a peer could send handshake messages that should be encrypted in plaintext
 without rustls rejecting the connection.&lt;/p&gt;
 &lt;p&gt;This is functionally the same bug as Go&apos;s
 &lt;a href=&quot;https://pkg.go.dev/vuln/GO-2026-4340&quot;&gt;GO-2026-4340&lt;/a&gt; (CVE-2025-61730).&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0283: clear_on_drop is unmaintained</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0283.html</id><updated>2026-09-13T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0283.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0283: clear_on_drop is unmaintained"/><published>2026-09-13T12:00:00+00:00</published><summary xml:lang="en">clear_on_drop is unmaintained</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/clear_on_drop/RUSTSEC-2026-0283.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/clear_on_drop/RUSTSEC-2026-0283.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0283&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0283
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;clear_on_drop is unmaintained&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-09-13&quot;&gt;
-          September 13, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-09-13&quot;&gt;
-          September 13, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/clear_on_drop.html&quot;&gt;clear_on_drop&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/clear_on_drop&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
-        Unmaintained
-        
-      &lt;/dd&gt;
-
-      
-
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/cesarb/clear_on_drop/commit/5916d6260acbad8a34290dba137f39963f13f467&quot;&gt;
-              https://github.com/cesarb/clear_on_drop/commit/5916d6260acbad8a34290dba137f39963f13f467
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        no patched versions
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;This crate is no longer maintained. Use the &lt;a href=&quot;https://crates.io/crates/zeroize&quot;&gt;zeroize&lt;/a&gt; crate instead.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Instead of &lt;code&gt;ClearOnDrop&lt;/code&gt;, use &lt;code&gt;Zeroizing&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Instead of &lt;code&gt;clear_stack&lt;/code&gt;, use &lt;code&gt;zeroize_stack&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0282: Vulnerability in aligned_box</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0282.html</id><updated>2026-09-09T12:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0282.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0282: Vulnerability in aligned_box"/><published>2026-09-09T12:00:00+00:00</published><summary xml:lang="en">Double free in `AlignedBox&amp;lt;[T]&amp;gt;::realloc_with_default` when an element&amp;apos;s `Drop` panics</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/aligned_box/RUSTSEC-2026-0282.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/aligned_box/RUSTSEC-2026-0282.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0282&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0282
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Double free in &lt;code&gt;AlignedBox&amp;lt;[T]&amp;gt;::realloc_with_default&lt;/code&gt; when an element&apos;s &lt;code&gt;Drop&lt;/code&gt; panics&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-09-09&quot;&gt;
-          September  9, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-09-09&quot;&gt;
-          September  9, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/aligned_box.html&quot;&gt;aligned_box&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/aligned_box&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/memory-safety.html&quot;&gt;#memory-safety&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/double-free.html&quot;&gt;#double-free&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/use-after-free.html&quot;&gt;#use-after-free&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/panic-safety.html&quot;&gt;#panic-safety&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/michaellass/aligned_box/pull/6&quot;&gt;
-              https://github.com/michaellass/aligned_box/pull/6
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;=0.3.1&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-    &lt;dl&gt;
-      &lt;dt&gt;Affected Functions&lt;/dt&gt;
-      &lt;dd&gt;Version&lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;aligned_box::AlignedBox::realloc_with_default&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;0.3.1&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-    &lt;/dl&gt;
-    
-
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;Shrinking an &lt;code&gt;AlignedBox&amp;lt;[T]&amp;gt;&lt;/code&gt; takes ownership of the buffer out of
-&lt;code&gt;self.container&lt;/code&gt; with &lt;code&gt;ManuallyDrop::take&lt;/code&gt;, destroys the elements past the new
-length, and only then commits the new &lt;code&gt;Box&lt;/code&gt; back into &lt;code&gt;self.container&lt;/code&gt;.
-&lt;code&gt;ManuallyDrop::take&lt;/code&gt; moves ownership but not the bits, so until that commit
-&lt;code&gt;self.container&lt;/code&gt; still points at the original buffer.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;T::drop&lt;/code&gt; runs inside the destruction loop and is user code — &lt;code&gt;T&lt;/code&gt; carries no
-bound that would exclude a panicking &lt;code&gt;Drop&lt;/code&gt;. If it unwinds, the commit is
-skipped and &lt;code&gt;self.container&lt;/code&gt; is left pointing at the buffer whose tail has
-already been destroyed. &lt;code&gt;AlignedBox&lt;/code&gt;&apos;s own destructor then reconstructs a &lt;code&gt;Box&lt;/code&gt;
-from that pointer, drops every element again and deallocates — a double free
-(CWE-415) / use-after-free (CWE-416) reachable from safe Rust.&lt;/p&gt;
-&lt;p&gt;Growing the slice destroys nothing and is unaffected, as is
-&lt;code&gt;realloc_with_value&lt;/code&gt;, which requires &lt;code&gt;T: Copy&lt;/code&gt; and therefore a &lt;code&gt;Drop&lt;/code&gt; that
-cannot run.&lt;/p&gt;
-&lt;h2&gt;Mitigation&lt;/h2&gt;
-&lt;p&gt;Update to 0.3.1.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0280: greentic-setup-dev contained malicious code</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0280.html</id><updated>2026-09-07T12:00:00+00:00</updated><category term="malicious"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0280.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0280: greentic-setup-dev contained malicious code"/><published>2026-09-07T12:00:00+00:00</published><summary xml:lang="en">`greentic-setup-dev` 1.3.34027618345 was removed from crates.io due to containing malicious code</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/greentic-setup-dev/RUSTSEC-2026-0280.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/greentic-setup-dev/RUSTSEC-2026-0280.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0280&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0280
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;&lt;code&gt;greentic-setup-dev&lt;/code&gt; 1.3.34027618345 was removed from crates.io due to containing malicious code&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-09-07&quot;&gt;
-          September  7, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-09-07&quot;&gt;
-          September  7, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/greentic-setup-dev.html&quot;&gt;greentic-setup-dev&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/greentic-setup-dev&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/malicious.html&quot;&gt;malicious&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        no patched versions
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;unaffected&quot;&gt;Unaffected&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#60;1.3.34027618345&lt;/code&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;#62;1.3.34027618345&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;A new version of the &lt;code&gt;greentic-setup-dev&lt;/code&gt; crate was published with a variant of
-the PolinRider malware included that would fire when a project depending on
-&lt;code&gt;greentic-setup-dev&lt;/code&gt; was opened in Visual Studio Code.&lt;/p&gt;
-&lt;p&gt;One malicious version was published on 2026-09-06, approximately 27 hours
-before removal. This crate has no dependencies on crates.io. We have no
-evidence that this crate version was downloaded by any actual users, but
-Greentic users should check their systems nonetheless.&lt;/p&gt;
-&lt;p&gt;Thanks to the Research Team at Nextron Systems GmbH for the report.&lt;/p&gt;
 
 
     &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
