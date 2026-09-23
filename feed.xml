@@ -141,6 +141,191 @@ using.&lt;/p&gt;
 
     
     &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0306: Unsoundness in faster-hex</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0306.html</id><updated>2026-09-23T12:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0306.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0306: Unsoundness in faster-hex"/><published>2026-09-23T12:00:00+00:00</published><summary xml:lang="en">`hex_decode_unchecked` AVX2 path reads past `src`</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/faster-hex/RUSTSEC-2026-0306.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/faster-hex/RUSTSEC-2026-0306.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0306&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0306
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;&lt;code&gt;hex_decode_unchecked&lt;/code&gt; AVX2 path reads past &lt;code&gt;src&lt;/code&gt;&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-09-20&quot;&gt;
+          September 20, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-09-23&quot;&gt;
+          September 23, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/faster-hex.html&quot;&gt;faster-hex&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/faster-hex&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unsound
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/buffer-overflow.html&quot;&gt;#buffer-overflow&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/avx2.html&quot;&gt;#avx2&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/nervosnetwork/faster-hex/issues/73&quot;&gt;
+              https://github.com/nervosnetwork/faster-hex/issues/73
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/nervosnetwork/faster-hex/pull/72&quot;&gt;
+              https://github.com/nervosnetwork/faster-hex/pull/72
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/nervosnetwork/faster-hex/pull/74&quot;&gt;
+              https://github.com/nervosnetwork/faster-hex/pull/74
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.10.1&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;unaffected&quot;&gt;Unaffected&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;0.3.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      
+      &lt;dt&gt;Affected Architectures&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;x86&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;x86_64&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+    &lt;dl&gt;
+      &lt;dt&gt;Affected Functions&lt;/dt&gt;
+      &lt;dd&gt;Version&lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;faster_hex::hex_decode_unchecked&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.3.0, &amp;#60;0.10.1&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+    &lt;/dl&gt;
+    
+
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;&lt;code&gt;faster_hex::hex_decode_unchecked&lt;/code&gt; is a safe function. On x86 and x86_64, when AVX2 is enabled, &lt;code&gt;hex_decode_avx2&lt;/code&gt; keeps decoding while &lt;code&gt;dst.len() &amp;gt;= 32&lt;/code&gt; and then loads 32 bytes from &lt;code&gt;src&lt;/code&gt; and 32 bytes from &lt;code&gt;src[32..]&lt;/code&gt;. Nothing in that loop requires &lt;code&gt;src&lt;/code&gt; to contain 64 bytes.&lt;/p&gt;
+&lt;p&gt;A safe caller can pass a short &lt;code&gt;src&lt;/code&gt; and a &lt;code&gt;dst&lt;/code&gt; of at least 32 bytes. The AVX2 load then reads outside &lt;code&gt;src&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The function has had this shape since 0.3.0. 0.10.0 is the last release with the unbounded AVX2 read. The maintainer agreed to this advisory and shipped the backport in 0.10.1 (pull request 74): the AVX2 loop now requires &lt;code&gt;src.len() &amp;gt;= 64&lt;/code&gt; before those loads. 1.0.0 rewrites &lt;code&gt;hex_decode_unchecked&lt;/code&gt; so the decoded length is &lt;code&gt;min(src.len() / 2, dst.len())&lt;/code&gt;. Both are covered by &lt;code&gt;&amp;gt;= 0.10.1&lt;/code&gt;. Other architectures take the scalar fallback and are outside this advisory.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
   &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0304: Vulnerability in connectrpc</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0304.html</id><updated>2026-09-23T12:00:00+00:00</updated><category term="denial-of-service"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0304.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0304: Vulnerability in connectrpc"/><published>2026-09-23T12:00:00+00:00</published><summary xml:lang="en">Finished streaming calls keep reading a stalled request body indefinitely</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
         &lt;span class=&quot;floating-menu&quot;&gt;
