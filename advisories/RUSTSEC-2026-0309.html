@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2018-0011: arrayfire: Enum repr causing potential memory corruption › RustSec Advisory Database</title>
+<title>RUSTSEC-2026-0309: bun_collections: `SinglyLinkedList::remove` dereferences a null link › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -56,19 +56,19 @@
   <article>
     
         <span class="floating-menu">
-          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/arrayfire/RUSTSEC-2018-0011.md">History</a> ⋅
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/arrayfire/RUSTSEC-2018-0011.md">Edit</a> ⋅
-          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2018-0011">JSON (OSV)</a>
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/bun_collections/RUSTSEC-2026-0309.md">History</a> ⋅
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/bun_collections/RUSTSEC-2026-0309.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0309">JSON (OSV)</a>
         </span>
     
 
     <header>
       <h1>
         
-        RUSTSEC-2018-0011
+        RUSTSEC-2026-0309
         
       </h1>
-      <span class="subtitle"><p>Enum repr causing potential memory corruption</p>
+      <span class="subtitle"><p><code>SinglyLinkedList::remove</code> dereferences a null link</p>
 </span>
     </header>
 
@@ -77,19 +77,15 @@
     <dl>
       <dt id="reported">Reported</dt>
       <dd>
-        <time datetime="2018-12-18">
-          December 18, 2018
+        <time datetime="2026-09-20">
+          September 20, 2026
         </time>
       </dd>
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2020-10-01">
-          October  1, 2020
-        </time>
-        
         <time datetime="2026-09-25">
-          (last modified: September 25, 2026)
+          September 25, 2026
         </time>
         
       </dd>
@@ -98,9 +94,9 @@
       <dd>
         
         
-        <a href="/packages/arrayfire.html">arrayfire</a>
+        <a href="/packages/bun_collections.html">bun_collections</a>
            
-          (<a href="https://crates.io/crates/arrayfire">crates.io</a>)
+          (<a href="https://crates.io/crates/bun_collections">crates.io</a>)
           
         
         
@@ -109,7 +105,8 @@
       <dt id="type">Type</dt>
       <dd>
         
-        Vulnerability
+        <span class="tag info">INFO</span>
+        Unsound
         
       </dd>
 
@@ -128,32 +125,11 @@
       <dt id="keywords">Keywords</dt>
       <dd>
         
-          <a href="/keywords/enum.html">#enum</a>
-        
-          <a href="/keywords/repr.html">#repr</a>
+          <a href="/keywords/null-pointer.html">#null-pointer</a>
         
       </dd>
       
 
-      
-      <dt id="aliases">Aliases</dt>
-      <dd>
-        <ul>
-          
-          <li>
-            
-            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20998">CVE-2018-20998</a>
-            
-          </li>
-          
-          <li>
-            
-            <a href="https://github.com/advisories/GHSA-69fv-gw6g-8ccg">GHSA-69fv-gw6g-8ccg</a>
-            
-          </li>
-          
-        </ul>
-      </dd>
       
 
       
@@ -162,8 +138,8 @@
         <ul>
         
           <li>
-            <a href="https://github.com/arrayfire/arrayfire-rust/pull/177">
-              https://github.com/arrayfire/arrayfire-rust/pull/177
+            <a href="https://github.com/putao520/bao/issues/46">
+              https://github.com/putao520/bao/issues/46
             </a>
           </li>
         
@@ -175,48 +151,6 @@
       
 
       
-      <dt id="cvss_score">CVSS Score</dt>
-      <dd>9.8 <span class="tag critical">
-        CRITICAL
-      </span></dd>
-
-      <dt id="cvss_details">CVSS Details</dt>
-      <dd>
-        <dl>
-          
-            <dt>Attack Vector</dt>
-            <dd>Network</dd>
-          
-            <dt>Attack Complexity</dt>
-            <dd>Low</dd>
-          
-            <dt>Privileges Required</dt>
-            <dd>None</dd>
-          
-            <dt>User Interaction</dt>
-            <dd>None</dd>
-          
-            <dt>Scope</dt>
-            <dd>Unchanged</dd>
-          
-            <dt>Confidentiality Impact</dt>
-            <dd>High</dd>
-          
-            <dt>Integrity Impact</dt>
-            <dd>High</dd>
-          
-            <dt>Availability Impact</dt>
-            <dd>High</dd>
-          
-        </dl>
-      </dd>
-
-      <dt id="cvss">CVSS Vector</dt>
-
-      
-          <dd><a href="https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
-        
-
       
 
       <dt id="patched">Patched</dt>
@@ -224,7 +158,7 @@
         
         <ul>
           
-          <li><code>&#62;=3.6.0</code></li>
+          <li><code>&#62;=0.2.1</code></li>
           
         </ul>
         
@@ -234,42 +168,34 @@
 
       
       
-      <dt>Affected Architectures</dt>
-      <dd>
-        <ul>
-          
-          <li><code>x86_64</code></li>
-          
-        </ul>
-      </dd>
-      
 
-      
-      <dt>Affected OSes</dt>
-      <dd>
-        <ul>
-          
-          <li><code>windows</code></li>
-          
-        </ul>
-      </dd>
       
       
     </dl>
 
     
     
+    <dl>
+      <dt>Affected Functions</dt>
+      <dd>Version</dd>
+      
+      <dt><code>bun_collections::pool::SinglyLinkedList::remove</code></dt>
+      <dd>
+        <ul>
+          
+          <li><code>&#60;0.2.1</code></li>
+          
+        </ul>
+      </dd>
+      
+    </dl>
+    
 
     
 
     <h3 id="description">Description</h3>
-    <p>The attribute repr() added to enums to be compatible with C-FFI caused
-memory corruption on MSVC toolchain.</p>
-<p>arrayfire crates &lt;= version 3.5.0 do not have this issue when used with
-Rust versions 1.27 or earlier. The issue only started to appear since
-Rust version 1.28.</p>
-<p>The issue seems to be interlinked with which version of Rust is being used.</p>
-<p>The issue was fixed in crate 3.6.0.</p>
+    <p>In versions before 0.2.1, <code>SinglyLinkedList::remove</code> is safe and walks the intrusive list with an unchecked dereference. On an empty list, or when <code>node</code> is not in the list, <code>(*current_elm).next</code> reads a null pointer. That is undefined behavior. The list head is a raw <code>*mut Node&lt;T&gt;</code>, and safe code can construct the empty list.</p>
+<p>The maintainer fixed this in 0.2.1 by rejecting those two cases with an unconditional <code>assert!</code> before the pointer is followed, matching the upstream Zig <code>unwrap</code> on the same paths. 0.2.0 was yanked. Versions 0.1.0 through 0.1.13 are still published and still contain the unchecked walk.</p>
 
 
     <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>

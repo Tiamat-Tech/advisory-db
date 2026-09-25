@@ -5,7 +5,7 @@
 
 <meta name="author" content="Rust Project Developers">
 <meta name="description" content="Security advisory database for Rust crates published through https://crates.io">
-<title>RUSTSEC-2018-0011: arrayfire: Enum repr causing potential memory corruption › RustSec Advisory Database</title>
+<title>RUSTSEC-2026-0310: domain: Various panics, soundness and resource exhaustion issues › RustSec Advisory Database</title>
 
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="/css/basic.css" rel="stylesheet">
@@ -56,19 +56,19 @@
   <article>
     
         <span class="floating-menu">
-          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/arrayfire/RUSTSEC-2018-0011.md">History</a> ⋅
-          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/arrayfire/RUSTSEC-2018-0011.md">Edit</a> ⋅
-          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2018-0011">JSON (OSV)</a>
+          <a href="https://github.com/RustSec/advisory-db/commits/main/crates/domain/RUSTSEC-2026-0310.md">History</a> ⋅
+          <a href="https://github.com/RustSec/advisory-db/edit/main/crates/domain/RUSTSEC-2026-0310.md">Edit</a> ⋅
+          <a href="https://api.osv.dev/v1/vulns/RUSTSEC-2026-0310">JSON (OSV)</a>
         </span>
     
 
     <header>
       <h1>
         
-        RUSTSEC-2018-0011
+        RUSTSEC-2026-0310
         
       </h1>
-      <span class="subtitle"><p>Enum repr causing potential memory corruption</p>
+      <span class="subtitle"><p>Various panics, soundness and resource exhaustion issues</p>
 </span>
     </header>
 
@@ -77,19 +77,15 @@
     <dl>
       <dt id="reported">Reported</dt>
       <dd>
-        <time datetime="2018-12-18">
-          December 18, 2018
+        <time datetime="2026-09-25">
+          September 25, 2026
         </time>
       </dd>
 
       <dt id="issued">Issued</dt>
       <dd>
-        <time datetime="2020-10-01">
-          October  1, 2020
-        </time>
-        
         <time datetime="2026-09-25">
-          (last modified: September 25, 2026)
+          September 25, 2026
         </time>
         
       </dd>
@@ -98,9 +94,9 @@
       <dd>
         
         
-        <a href="/packages/arrayfire.html">arrayfire</a>
+        <a href="/packages/domain.html">domain</a>
            
-          (<a href="https://crates.io/crates/arrayfire">crates.io</a>)
+          (<a href="https://crates.io/crates/domain">crates.io</a>)
           
         
         
@@ -118,42 +114,14 @@
       <dd>
         <ul>
           
-          <li><a href="/categories/memory-corruption.html">memory-corruption</a></li>
+          <li><a href="/categories/denial-of-service.html">denial-of-service</a></li>
           
         </ul>
       </dd>
       
 
       
-      <dt id="keywords">Keywords</dt>
-      <dd>
-        
-          <a href="/keywords/enum.html">#enum</a>
-        
-          <a href="/keywords/repr.html">#repr</a>
-        
-      </dd>
-      
 
-      
-      <dt id="aliases">Aliases</dt>
-      <dd>
-        <ul>
-          
-          <li>
-            
-            <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20998">CVE-2018-20998</a>
-            
-          </li>
-          
-          <li>
-            
-            <a href="https://github.com/advisories/GHSA-69fv-gw6g-8ccg">GHSA-69fv-gw6g-8ccg</a>
-            
-          </li>
-          
-        </ul>
-      </dd>
       
 
       
@@ -162,8 +130,8 @@
         <ul>
         
           <li>
-            <a href="https://github.com/arrayfire/arrayfire-rust/pull/177">
-              https://github.com/arrayfire/arrayfire-rust/pull/177
+            <a href="https://github.com/NLnetLabs/domain/releases/tag/v0.12.3">
+              https://github.com/NLnetLabs/domain/releases/tag/v0.12.3
             </a>
           </li>
         
@@ -175,48 +143,6 @@
       
 
       
-      <dt id="cvss_score">CVSS Score</dt>
-      <dd>9.8 <span class="tag critical">
-        CRITICAL
-      </span></dd>
-
-      <dt id="cvss_details">CVSS Details</dt>
-      <dd>
-        <dl>
-          
-            <dt>Attack Vector</dt>
-            <dd>Network</dd>
-          
-            <dt>Attack Complexity</dt>
-            <dd>Low</dd>
-          
-            <dt>Privileges Required</dt>
-            <dd>None</dd>
-          
-            <dt>User Interaction</dt>
-            <dd>None</dd>
-          
-            <dt>Scope</dt>
-            <dd>Unchanged</dd>
-          
-            <dt>Confidentiality Impact</dt>
-            <dd>High</dd>
-          
-            <dt>Integrity Impact</dt>
-            <dd>High</dd>
-          
-            <dt>Availability Impact</dt>
-            <dd>High</dd>
-          
-        </dl>
-      </dd>
-
-      <dt id="cvss">CVSS Vector</dt>
-
-      
-          <dd><a href="https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</a></dd>
-        
-
       
 
       <dt id="patched">Patched</dt>
@@ -224,7 +150,7 @@
         
         <ul>
           
-          <li><code>&#62;=3.6.0</code></li>
+          <li><code>&#62;=0.12.3</code></li>
           
         </ul>
         
@@ -234,42 +160,53 @@
 
       
       
-      <dt>Affected Architectures</dt>
-      <dd>
-        <ul>
-          
-          <li><code>x86_64</code></li>
-          
-        </ul>
-      </dd>
-      
-
-      
-      <dt>Affected OSes</dt>
-      <dd>
-        <ul>
-          
-          <li><code>windows</code></li>
-          
-        </ul>
-      </dd>
-      
-      
     </dl>
 
     
     
 
-    
-
     <h3 id="description">Description</h3>
-    <p>The attribute repr() added to enums to be compatible with C-FFI caused
-memory corruption on MSVC toolchain.</p>
-<p>arrayfire crates &lt;= version 3.5.0 do not have this issue when used with
-Rust versions 1.27 or earlier. The issue only started to appear since
-Rust version 1.28.</p>
-<p>The issue seems to be interlinked with which version of Rust is being used.</p>
-<p>The issue was fixed in crate 3.6.0.</p>
+    <p>Version 0.12.3 fixes a large number of panics, soundness issues, and
+CPU and memory exhaustion issues in all parts of the crate.</p>
+<p>The following is a summary of the issues per affected components.
+For details, please see the <a href="https://github.com/NLnetLabs/domain/releases/tag/v0.12.3">release
+notes</a>.</p>
+<h2>Base</h2>
+<ul>
+<li>Limited the number of compression pointers that are followed when parsing
+a compressed name to 255 to avoid following really long chains.</li>
+<li>Limited the length of CNAME chains followed by <code>Message::canonical_name</code>
+to 20. This also fixed an integer overflow in this method when ANCOUNT
+was<code>u16::MAX</code>.</li>
+<li>Changed <code>QuestionSection::answer</code> to skip over all remaining questions
+without parsing the QNAMEs to avoid being slowed down by malicious
+names.</li>
+<li>Added length checks when scanning and parsing variable length record
+data types. This fixes issues with the message builder, which assumes that
+record data is never too large for placing in a message.</li>
+</ul>
+<h2>Stub Resolver</h2>
+<ul>
+<li>Fixed possible panics in the resolver’s <code>FoundHosts::qname</code> and
+<code>FoundHosts::canonical_name</code>.</li>
+<li>Fixed various issues in SRV processing.</li>
+</ul>
+<h2>Zonefile parsing</h2>
+<ul>
+<li>Fixed soundness issues when reading UTF-8 and an integer overflow when
+reading unsigned integers.</li>
+<li>Fixed a panic when reading empty TXT records.</li>
+</ul>
+<h2>Client and server transports, DNSSEC signer and validator</h2>
+<p>Fixed various panics that could be triggered by malicious incoming DNS
+messages.</p>
+<h2>Zonetree</h2>
+<p>Fixed various panics and a memory exhaustion issue when updating the zone.</p>
+<h2>Acknowledgements</h2>
+<p>We would like to thank Qifan Zhang, Palo Alto Networks,
+Antoni (Tony) Jagodka (<a href="https://github.com/DrVelvetFog">@DrVelvetFog</a>),
+and <a href="https://github.com/SebastiaanYN">@SebastiaanYN</a> for
+reporting issues fixed in this release.</p>
 
 
     <p id="license" class="license">Advisory available under <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>
