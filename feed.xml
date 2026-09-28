@@ -1,5 +1,461 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>RustSec Advisories</title><id>https://rustsec.org/feed.xml</id><updated>2026-09-25T12:00:00+00:00</updated><author><name>RustSec</name></author><icon>https://rustsec.org/favicon.ico</icon><link href="https://rustsec.org/feed.xml" rel="self" type="application/atom+xml"/><link href="https://rustsec.org/" rel="alternate" type="text/html"/><subtitle xml:lang="en">Security advisories filed against Rust crates</subtitle><entry><title>RUSTSEC-2026-0309: Unsoundness in bun_collections</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0309.html</id><updated>2026-09-25T12:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0309.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0309: Unsoundness in bun_collections"/><published>2026-09-25T12:00:00+00:00</published><summary xml:lang="en">`SinglyLinkedList::remove` dereferences a null link</summary><content xml:lang="en" type="html">  &lt;article&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>RustSec Advisories</title><id>https://rustsec.org/feed.xml</id><updated>2026-09-28T12:00:00+00:00</updated><author><name>RustSec</name></author><icon>https://rustsec.org/favicon.ico</icon><link href="https://rustsec.org/feed.xml" rel="self" type="application/atom+xml"/><link href="https://rustsec.org/" rel="alternate" type="text/html"/><subtitle xml:lang="en">Security advisories filed against Rust crates</subtitle><entry><title>RUSTSEC-2026-0312: Vulnerability in x509-validator</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0312.html</id><updated>2026-09-28T12:00:00+00:00</updated><category term="crypto-failure"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0312.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0312: Vulnerability in x509-validator"/><published>2026-09-28T12:00:00+00:00</published><summary xml:lang="en">Excluded iPAddress name constraints with an all-zero mask are not applied</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/x509-validator/RUSTSEC-2026-0312.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/x509-validator/RUSTSEC-2026-0312.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0312&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0312
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Excluded iPAddress name constraints with an all-zero mask are not applied&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-09-24&quot;&gt;
+          September 24, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-09-28&quot;&gt;
+          September 28, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/x509-validator.html&quot;&gt;x509-validator&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/x509-validator&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/crypto-failure.html&quot;&gt;crypto-failure&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/x509.html&quot;&gt;#x509&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/name-constraints.html&quot;&gt;#name-constraints&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/certificate-validation.html&quot;&gt;#certificate-validation&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/tls.html&quot;&gt;#tls&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-39mm-4q6x-3vrx&quot;&gt;GHSA-39mm-4q6x-3vrx&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/namecare/x509-validator/commit/da661f8ecee820e05d089a76ecb654ff52a2c987&quot;&gt;
+              https://github.com/namecare/x509-validator/commit/da661f8ecee820e05d089a76ecb654ff52a2c987
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
+      &lt;dd&gt;7.4 &lt;span class=&quot;tag high&quot;&gt;
+        HIGH
+      &lt;/span&gt;&lt;/dd&gt;
+
+      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;dl&gt;
+          
+            &lt;dt&gt;Attack Vector&lt;/dt&gt;
+            &lt;dd&gt;Network&lt;/dd&gt;
+          
+            &lt;dt&gt;Attack Complexity&lt;/dt&gt;
+            &lt;dd&gt;High&lt;/dd&gt;
+          
+            &lt;dt&gt;Privileges Required&lt;/dt&gt;
+            &lt;dd&gt;None&lt;/dd&gt;
+          
+            &lt;dt&gt;User Interaction&lt;/dt&gt;
+            &lt;dd&gt;None&lt;/dd&gt;
+          
+            &lt;dt&gt;Scope&lt;/dt&gt;
+            &lt;dd&gt;Unchanged&lt;/dd&gt;
+          
+            &lt;dt&gt;Confidentiality Impact&lt;/dt&gt;
+            &lt;dd&gt;High&lt;/dd&gt;
+          
+            &lt;dt&gt;Integrity Impact&lt;/dt&gt;
+            &lt;dd&gt;High&lt;/dd&gt;
+          
+            &lt;dt&gt;Availability Impact&lt;/dt&gt;
+            &lt;dd&gt;None&lt;/dd&gt;
+          
+        &lt;/dl&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
+
+      
+          &lt;dd&gt;&lt;a href=&quot;https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N&quot;&gt;CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N&lt;/a&gt;&lt;/dd&gt;
+        
+
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=0.3.1&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;An &lt;code&gt;excluded_subtrees&lt;/code&gt; iPAddress name constraint with an all-zero mask
+(&lt;code&gt;0.0.0.0/0&lt;/code&gt; or &lt;code&gt;::/0&lt;/code&gt;) does not restrict iPAddress SANs in certificates issued
+beneath it. The mask check treated an all-zero mask as matching nothing, when a
+&lt;code&gt;/0&lt;/code&gt; prefix matches every address of its family, so the exclusion was silently
+ignored.&lt;/p&gt;
+&lt;p&gt;CA/Browser Forum Baseline Requirements §7.1.2.5.2 require exactly these
+exclusions on every technically constrained sub-CA that may not issue for IP
+addresses. As a result, anyone holding (or having compromised) the key of such
+a sub-CA can issue a certificate for an arbitrary IP address, and &lt;code&gt;Validator&lt;/code&gt;
+with &lt;code&gt;RFC5280Policy&lt;/code&gt; and &lt;code&gt;ServerIdentityPolicy&lt;/code&gt; accepts it for that address. A
+&lt;code&gt;permitted_subtrees&lt;/code&gt; dNSName entry on the same issuer does not prevent this,
+because iPAddress SANs are a different name form.&lt;/p&gt;
+&lt;p&gt;All users of &lt;code&gt;Validator&lt;/code&gt; with &lt;code&gt;RFC5280Policy&lt;/code&gt; are affected when a chain can
+contain a name-constrained issuer with an all-zero iPAddress exclusion.&lt;/p&gt;
+&lt;p&gt;The issue is fixed in x509-validator 0.3.1 (commit
+&lt;a href=&quot;https://github.com/namecare/x509-validator/commit/da661f8ecee820e05d089a76ecb654ff52a2c987&quot;&gt;da661f8&lt;/a&gt;).
+Users should upgrade to 0.3.1 or later.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0311: Vulnerability in latex-rust</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0311.html</id><updated>2026-09-28T12:00:00+00:00</updated><category term="denial-of-service"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0311.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0311: Vulnerability in latex-rust"/><published>2026-09-28T12:00:00+00:00</published><summary xml:lang="en">Stack overflow on deeply nested LaTeX input</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/latex-rust/RUSTSEC-2026-0311.md&quot;&gt;History&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/latex-rust/RUSTSEC-2026-0311.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0311&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2026-0311
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Stack overflow on deeply nested LaTeX input&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-09-27&quot;&gt;
+          September 27, 2026
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2026-09-28&quot;&gt;
+          September 28, 2026
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/latex-rust.html&quot;&gt;latex-rust&lt;/a&gt;
+           
+          (&lt;a href=&quot;https://crates.io/crates/latex-rust&quot;&gt;crates.io&lt;/a&gt;)
+          
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/denial-of-service.html&quot;&gt;denial-of-service&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/stack-overflow.html&quot;&gt;#stack-overflow&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/recursion.html&quot;&gt;#recursion&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/untrusted-input.html&quot;&gt;#untrusted-input&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/latex.html&quot;&gt;#latex&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/jscarr64/LaTeX-Rust/issues/6&quot;&gt;
+              https://github.com/jscarr64/LaTeX-Rust/issues/6
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/jscarr64/LaTeX-Rust/pull/10&quot;&gt;
+              https://github.com/jscarr64/LaTeX-Rust/pull/10
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/jscarr64/LaTeX-Rust/releases/tag/v1.0.5&quot;&gt;
+              https://github.com/jscarr64/LaTeX-Rust/releases/tag/v1.0.5
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#62;=1.0.5&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+    &lt;dl&gt;
+      &lt;dt&gt;Affected Functions&lt;/dt&gt;
+      &lt;dd&gt;Version&lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;latex_rust::latex_to_png&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;1.0.5&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;latex_rust::latex_to_shapes&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;1.0.5&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;latex_rust::latex_to_svg&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;1.0.5&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;latex_rust::layout&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;1.0.5&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;latex_rust::layout_with_numbering&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;1.0.5&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;latex_rust::parse&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;1.0.5&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;latex_rust::parse_with_colors&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;#60;1.0.5&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+    &lt;/dl&gt;
+    
+
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;The parser and layout engine in affected versions of &lt;code&gt;latex-rust&lt;/code&gt; recurse once
+per level of nesting with no limit. Deeply nested input, such as &lt;code&gt;\frac{1}{…}&lt;/code&gt;,
+braces, &lt;code&gt;\sqrt{…}&lt;/code&gt;, &lt;code&gt;\left(&lt;/code&gt;, or superscripts nested hundreds or thousands of
+levels deep, exhausts the call stack.&lt;/p&gt;
+&lt;p&gt;A stack overflow in Rust aborts the process. It is not a panic, so it cannot be
+caught with &lt;code&gt;catch_unwind&lt;/code&gt;. A program that renders LaTeX from untrusted input
+can therefore be terminated by a short string. With a release build on an 8 MiB
+stack, 700 nested &lt;code&gt;\frac{1}{…}&lt;/code&gt; (about 7 KB of input) abort version 1.0.4, and
+10,000 nested braces (about 20 KB) abort it as well. The threshold is lower on
+smaller stacks and in debug builds; on a 2 MiB thread in a debug build, about
+35 nested fractions are enough.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-rust&quot;&gt;let mut src = String::from(&amp;quot;1&amp;quot;);
+for _ in 0..700 {
+    src = format!(&amp;quot;\\frac{{1}}{{{src}}}&amp;quot;);
+}
+let _ = latex_rust::parse(&amp;amp;src); // stack overflow, process aborts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The fixed versions count nesting depth in the parser and in &lt;code&gt;layout&lt;/code&gt; and
+refuse input that nests more than 32 levels. &lt;code&gt;parse&lt;/code&gt;, &lt;code&gt;parse_with_colors&lt;/code&gt;, and
+the &lt;code&gt;latex_to_*&lt;/code&gt; functions return
+&lt;code&gt;ParseError::Malformed(&amp;quot;input nests deeper than 32 levels&amp;quot;)&lt;/code&gt;, and &lt;code&gt;layout&lt;/code&gt;
+returns &lt;code&gt;Error::Unsupported { what: &amp;quot;tree nests deeper than 32 levels&amp;quot; }&lt;/code&gt; for a
+tree built by hand. The count is of parser recursion levels, and a braced
+argument costs two, so the limit admits 15 nested &lt;code&gt;\frac&lt;/code&gt;, &lt;code&gt;\sqrt&lt;/code&gt;, or
+&lt;code&gt;x^{…}&lt;/code&gt;, and 31 nested groups, &lt;code&gt;\left…\right&lt;/code&gt; pairs, or environments. Input
+past the limit is refused within about 100 KiB of stack in an optimised build.&lt;/p&gt;
+&lt;p&gt;Version 1.0.5 fixes this with no API changes and is a drop-in replacement for
+1.0.4; upgrade with &lt;code&gt;cargo update -p latex-rust&lt;/code&gt;. It also includes the 2.0.0
+rendering fixes, so rendered output differs from 1.0.4. Versions 2.0.0 and
+2.0.1 contain the same fix, with the same limit and messages, together with
+breaking API changes relative to 1.x, and also let callers change the limit
+with &lt;code&gt;ParseOptions&lt;/code&gt; and &lt;code&gt;layout_with_max_depth&lt;/code&gt;.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0309: Unsoundness in bun_collections</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0309.html</id><updated>2026-09-25T12:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0309.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0309: Unsoundness in bun_collections"/><published>2026-09-25T12:00:00+00:00</published><summary xml:lang="en">`SinglyLinkedList::remove` dereferences a null link</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
         &lt;span class=&quot;floating-menu&quot;&gt;
           &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/bun_collections/RUSTSEC-2026-0309.md&quot;&gt;History&lt;/a&gt; ⋅
@@ -3340,691 +3796,6 @@ either is enough — no &lt;code&gt;unsafe&lt;/code&gt; on the caller&apos;s sid
 maintainer has not responded to the report, nor to the one on &lt;code&gt;lockfree&lt;/code&gt;, which
 is published from the same account. &lt;code&gt;forget_inner&lt;/code&gt; leaks the value instead of
 destroying it, which is safe.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0290: Vulnerability in pqc_kyber</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0290.html</id><updated>2026-09-18T12:00:00+00:00</updated><category term="crypto-failure"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0290.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0290: Vulnerability in pqc_kyber"/><published>2026-09-18T12:00:00+00:00</published><summary xml:lang="en">pqc_kyber: AVX2 backend skips Fujisaki-Okamoto implicit rejection, enabling chosen-ciphertext key recovery</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/pqc_kyber/RUSTSEC-2026-0290.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/pqc_kyber/RUSTSEC-2026-0290.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0290&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0290
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;pqc_kyber: AVX2 backend skips Fujisaki-Okamoto implicit rejection, enabling chosen-ciphertext key recovery&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-08-16&quot;&gt;
-          August 16, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-09-18&quot;&gt;
-          September 18, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/pqc_kyber.html&quot;&gt;pqc_kyber&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/pqc_kyber&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/crypto-failure.html&quot;&gt;crypto-failure&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/kyber.html&quot;&gt;#kyber&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/ml-kem.html&quot;&gt;#ml-kem&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/key-recovery.html&quot;&gt;#key-recovery&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/fujisaki-okamoto.html&quot;&gt;#fujisaki-okamoto&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/ind-cca.html&quot;&gt;#ind-cca&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/avx2.html&quot;&gt;#avx2&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/Argyle-Software/kyber/pull/121&quot;&gt;
-              https://github.com/Argyle-Software/kyber/pull/121
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
-      &lt;dd&gt;7.4 &lt;span class=&quot;tag high&quot;&gt;
-        HIGH
-      &lt;/span&gt;&lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;dl&gt;
-          
-            &lt;dt&gt;Attack Vector&lt;/dt&gt;
-            &lt;dd&gt;Network&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Complexity&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-            &lt;dt&gt;Privileges Required&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;User Interaction&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Scope&lt;/dt&gt;
-            &lt;dd&gt;Unchanged&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-        &lt;/dl&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
-
-      
-          &lt;dd&gt;&lt;a href=&quot;https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N&quot;&gt;CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N&lt;/a&gt;&lt;/dd&gt;
-        
-
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        no patched versions
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;h2&gt;Summary&lt;/h2&gt;
-&lt;p&gt;When &lt;code&gt;pqc_kyber&lt;/code&gt; is built with the opt-in &lt;code&gt;avx2&lt;/code&gt; feature on x86_64, its
-constant-time conditional-move routine &lt;code&gt;cmov&lt;/code&gt; is a no-op: it never performs the
-copy. That &lt;code&gt;cmov&lt;/code&gt; is exactly the step that applies the Fujisaki-Okamoto (FO)
-implicit rejection during decapsulation. With it disabled, decapsulating an
-&lt;em&gt;invalid&lt;/em&gt; ciphertext no longer returns a key-independent pseudorandom value;
-it returns a value that depends on the decrypted plaintext of the
-attacker-chosen ciphertext. This restores the chosen-ciphertext decryption
-oracle that the FO transform exists to remove, and yields full recovery of the
-static secret key.&lt;/p&gt;
-&lt;p&gt;The attack requires no timing measurement, no side channel, and no faults; only
-the ability to submit ciphertexts to a decapsulation operation under a reused
-key pair and observe the resulting shared secret. See the linked pull request
-for the root cause, the reachable call path, and reproduction details.&lt;/p&gt;
-&lt;h2&gt;Affected configuration&lt;/h2&gt;
-&lt;p&gt;Reachable only in builds with &lt;code&gt;features = [&amp;quot;avx2&amp;quot;]&lt;/code&gt; on an x86_64 target. The
-default (reference) backend and all non-x86_64 targets are unaffected.&lt;/p&gt;
-&lt;h2&gt;Impact&lt;/h2&gt;
-&lt;p&gt;Complete IND-CCA break. The plaintext-checking oracle drives a standard
-chosen-ciphertext key-recovery attack and extracts the entire static secret
-key. Any protocol reusing a Kyber key pair across decapsulations (static or
-long-term KEM keys, KEMTLS, HPKE recipients, pinned keys) is exposed;
-ephemeral-only key shares are not. The defect was verified end to end on
-ML-KEM-768: the full secret key was recovered in 4,272 decapsulation queries.&lt;/p&gt;
-&lt;h2&gt;Maintenance status&lt;/h2&gt;
-&lt;p&gt;The crate is unmaintained (last release 0.7.1, August 2023); no patched version
-exists or is expected.&lt;/p&gt;
-&lt;h2&gt;Mitigation&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;If remaining on this crate, do not enable the &lt;code&gt;avx2&lt;/code&gt; feature; the default
-reference backend performs implicit rejection correctly.&lt;/li&gt;
-&lt;li&gt;Do not reuse a Kyber key pair across decapsulations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Credit&lt;/h2&gt;
-&lt;p&gt;Reported by 007bsd.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0289: pqc_kyber is unmaintained</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0289.html</id><updated>2026-09-18T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0289.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0289: pqc_kyber is unmaintained"/><published>2026-09-18T12:00:00+00:00</published><summary xml:lang="en">pqc_kyber is unmaintained</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/pqc_kyber/RUSTSEC-2026-0289.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/pqc_kyber/RUSTSEC-2026-0289.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0289&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0289
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;pqc_kyber is unmaintained&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-09-17&quot;&gt;
-          September 17, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-09-18&quot;&gt;
-          September 18, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/pqc_kyber.html&quot;&gt;pqc_kyber&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/pqc_kyber&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
-        Unmaintained
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/kyber.html&quot;&gt;#kyber&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/ml-kem.html&quot;&gt;#ml-kem&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/post-quantum.html&quot;&gt;#post-quantum&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/Argyle-Software/kyber/pull/121&quot;&gt;
-              https://github.com/Argyle-Software/kyber/pull/121
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        no patched versions
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The crate has had no releases since 0.7.1 (2023-08-23), and the upstream
-repository shows no maintainer activity. Open pull requests, including a fix for
-a chosen-ciphertext key-recovery flaw in the AVX2 backend
-(Argyle-Software/kyber#121), have gone unanswered.&lt;/p&gt;
-&lt;p&gt;Recommended alternatives:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://crates.io/crates/aws-lc-rs&quot;&gt;aws-lc-rs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://crates.io/crates/graviola&quot;&gt;graviola&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0288: Vulnerability in cosmian_kyber</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0288.html</id><updated>2026-09-18T12:00:00+00:00</updated><category term="crypto-failure"/><link href="https://rustsec.org/advisories/RUSTSEC-2026-0288.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0288: Vulnerability in cosmian_kyber"/><published>2026-09-18T12:00:00+00:00</published><summary xml:lang="en">cosmian_kyber: AVX2 backend skips Fujisaki-Okamoto implicit rejection, enabling chosen-ciphertext key recovery</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/cosmian_kyber/RUSTSEC-2026-0288.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/cosmian_kyber/RUSTSEC-2026-0288.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0288&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0288
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;cosmian_kyber: AVX2 backend skips Fujisaki-Okamoto implicit rejection, enabling chosen-ciphertext key recovery&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-08-16&quot;&gt;
-          August 16, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-09-18&quot;&gt;
-          September 18, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/cosmian_kyber.html&quot;&gt;cosmian_kyber&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/cosmian_kyber&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/crypto-failure.html&quot;&gt;crypto-failure&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/kyber.html&quot;&gt;#kyber&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/ml-kem.html&quot;&gt;#ml-kem&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/key-recovery.html&quot;&gt;#key-recovery&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/fujisaki-okamoto.html&quot;&gt;#fujisaki-okamoto&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/ind-cca.html&quot;&gt;#ind-cca&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/avx2.html&quot;&gt;#avx2&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/Cosmian/kyber/pull/6&quot;&gt;
-              https://github.com/Cosmian/kyber/pull/6
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
-      &lt;dd&gt;7.4 &lt;span class=&quot;tag high&quot;&gt;
-        HIGH
-      &lt;/span&gt;&lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;dl&gt;
-          
-            &lt;dt&gt;Attack Vector&lt;/dt&gt;
-            &lt;dd&gt;Network&lt;/dd&gt;
-          
-            &lt;dt&gt;Attack Complexity&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-            &lt;dt&gt;Privileges Required&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;User Interaction&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-            &lt;dt&gt;Scope&lt;/dt&gt;
-            &lt;dd&gt;Unchanged&lt;/dd&gt;
-          
-            &lt;dt&gt;Confidentiality Impact&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-            &lt;dt&gt;Integrity Impact&lt;/dt&gt;
-            &lt;dd&gt;High&lt;/dd&gt;
-          
-            &lt;dt&gt;Availability Impact&lt;/dt&gt;
-            &lt;dd&gt;None&lt;/dd&gt;
-          
-        &lt;/dl&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
-
-      
-          &lt;dd&gt;&lt;a href=&quot;https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N&quot;&gt;CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N&lt;/a&gt;&lt;/dd&gt;
-        
-
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        no patched versions
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;h2&gt;Summary&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;cosmian_kyber&lt;/code&gt; is a fork of &lt;code&gt;Argyle-Software/kyber&lt;/code&gt; and inherits a broken
-constant-time conditional-move routine &lt;code&gt;cmov&lt;/code&gt; in its AVX2 backend. When built
-with the opt-in &lt;code&gt;avx2&lt;/code&gt; feature on x86_64, &lt;code&gt;cmov&lt;/code&gt; is a no-op: it never performs
-the copy. That &lt;code&gt;cmov&lt;/code&gt; is the step that applies the Fujisaki-Okamoto (FO) implicit
-rejection during decapsulation. With it disabled, decapsulating an &lt;em&gt;invalid&lt;/em&gt;
-ciphertext no longer returns a key-independent pseudorandom value; it returns a
-value that depends on the decrypted plaintext of the attacker-chosen ciphertext.
-This restores the chosen-ciphertext decryption oracle that the FO transform
-exists to remove, and yields full recovery of the static secret key.&lt;/p&gt;
-&lt;p&gt;The attack requires no timing measurement, no side channel, and no faults; only
-the ability to submit ciphertexts to a decapsulation operation under a reused
-key pair and observe the resulting shared secret. See the linked pull request
-for the root cause and the reachable call path.&lt;/p&gt;
-&lt;h2&gt;Affected configuration&lt;/h2&gt;
-&lt;p&gt;Reachable only in builds with &lt;code&gt;features = [&amp;quot;avx2&amp;quot;]&lt;/code&gt; on an x86_64 target. The
-default (reference) backend and all non-x86_64 targets are unaffected.&lt;/p&gt;
-&lt;h2&gt;Impact&lt;/h2&gt;
-&lt;p&gt;Complete IND-CCA break. The plaintext-checking oracle drives a standard
-chosen-ciphertext key-recovery attack and extracts the entire static secret key.
-Any protocol reusing a Kyber key pair across decapsulations is exposed;
-ephemeral-only key shares are not. The identical defect in the parent crate was
-verified end to end on ML-KEM-768 (full key recovered in 4,272 decapsulation
-queries).&lt;/p&gt;
-&lt;h2&gt;Maintenance status&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;cosmian_kyber&lt;/code&gt; is a stale fork (last published 0.1.0, January 2023) of an
-unmaintained upstream, and no fixed release is expected.&lt;/p&gt;
-&lt;h2&gt;Mitigation&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;If remaining on this crate, do not enable the &lt;code&gt;avx2&lt;/code&gt; feature; the default
-reference backend performs implicit rejection correctly.&lt;/li&gt;
-&lt;li&gt;Do not reuse a Kyber key pair across decapsulations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Credit&lt;/h2&gt;
-&lt;p&gt;Reported by 007bsd.&lt;/p&gt;
-
-
-    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
-    license.
-
-    
-    &lt;/p&gt;
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2026-0287: cosmian_kyber is unmaintained</title><id>https://rustsec.org/advisories/RUSTSEC-2026-0287.html</id><updated>2026-09-18T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2026-0287.html" rel="alternate" type="text/html" title="RUSTSEC-2026-0287: cosmian_kyber is unmaintained"/><published>2026-09-18T12:00:00+00:00</published><summary xml:lang="en">cosmian_kyber is unmaintained</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/cosmian_kyber/RUSTSEC-2026-0287.md&quot;&gt;History&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/cosmian_kyber/RUSTSEC-2026-0287.md&quot;&gt;Edit&lt;/a&gt; ⋅
-          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2026-0287&quot;&gt;JSON (OSV)&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        RUSTSEC-2026-0287
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;cosmian_kyber is unmaintained&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-09-17&quot;&gt;
-          September 17, 2026
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2026-09-18&quot;&gt;
-          September 18, 2026
-        &lt;/time&gt;
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;a href=&quot;/packages/cosmian_kyber.html&quot;&gt;cosmian_kyber&lt;/a&gt;
-           
-          (&lt;a href=&quot;https://crates.io/crates/cosmian_kyber&quot;&gt;crates.io&lt;/a&gt;)
-          
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
-        Unmaintained
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/kyber.html&quot;&gt;#kyber&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/ml-kem.html&quot;&gt;#ml-kem&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/post-quantum.html&quot;&gt;#post-quantum&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-        
-          &lt;li&gt;
-            &lt;a href=&quot;https://github.com/Cosmian/kyber/pull/6&quot;&gt;
-              https://github.com/Cosmian/kyber/pull/6
-            &lt;/a&gt;
-          &lt;/li&gt;
-        
-        
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        no patched versions
-        
-      &lt;/dd&gt;
-
-      
-
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;&lt;code&gt;cosmian_kyber&lt;/code&gt; is a fork of &lt;code&gt;Argyle-Software/kyber&lt;/code&gt; that has seen no maintainer
-activity. It inherits the fork parent&apos;s broken AVX2 constant-time code, and the
-open fix pull request (Cosmian/kyber#6) has gone unanswered.&lt;/p&gt;
-&lt;p&gt;Recommended alternatives:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://crates.io/crates/aws-lc-rs&quot;&gt;aws-lc-rs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://crates.io/crates/graviola&quot;&gt;graviola&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
 
     &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
